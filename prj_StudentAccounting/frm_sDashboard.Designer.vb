@@ -120,13 +120,13 @@ Partial Class frm_sDashboard
         'lbl_accountNumber
         '
         Me.lbl_accountNumber.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_accountNumber.AutoSize = True
         Me.lbl_accountNumber.Font = New System.Drawing.Font("Segoe UI", 10.8!)
-        Me.lbl_accountNumber.Location = New System.Drawing.Point(941, 71)
+        Me.lbl_accountNumber.Location = New System.Drawing.Point(845, 71)
         Me.lbl_accountNumber.Name = "lbl_accountNumber"
-        Me.lbl_accountNumber.Size = New System.Drawing.Size(216, 25)
+        Me.lbl_accountNumber.Size = New System.Drawing.Size(311, 25)
         Me.lbl_accountNumber.TabIndex = 6
         Me.lbl_accountNumber.Text = "Account Number: 134563"
+        Me.lbl_accountNumber.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label11
         '

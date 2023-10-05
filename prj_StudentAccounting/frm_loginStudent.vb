@@ -11,6 +11,8 @@ Public Class frm_loginStudent
         password = txt_password.Text
 
         Try
+            sqlDBAdapter = New MySqlDataAdapter
+            dataTable = New DataTable
 
             With command
                 .Parameters.Clear()
@@ -35,7 +37,7 @@ Public Class frm_loginStudent
             dataTable.Dispose()
 
         Catch ex As Exception
-            MessageBox.Show("No Available records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show("" & ex.Message)
         End Try
 
 

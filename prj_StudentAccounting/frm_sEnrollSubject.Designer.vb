@@ -22,9 +22,9 @@ Partial Class frm_sEnrollSubject
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -50,7 +50,7 @@ Partial Class frm_sEnrollSubject
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.lbl_name = New System.Windows.Forms.Label()
-        Me.lb_accountNumber = New System.Windows.Forms.Label()
+        Me.lbl_accountNumber = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel8.SuspendLayout()
@@ -176,37 +176,37 @@ Partial Class frm_sEnrollSubject
         Me.dgv_enrollSubject.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgv_enrollSubject.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.dgv_enrollSubject.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_enrollSubject.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_enrollSubject.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dgv_enrollSubject.ColumnHeadersHeight = 35
         Me.dgv_enrollSubject.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column7, Me.Column6})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_enrollSubject.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_enrollSubject.DefaultCellStyle = DataGridViewCellStyle5
         Me.dgv_enrollSubject.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_enrollSubject.Location = New System.Drawing.Point(1, 1)
         Me.dgv_enrollSubject.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dgv_enrollSubject.Name = "dgv_enrollSubject"
         Me.dgv_enrollSubject.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_enrollSubject.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_enrollSubject.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.dgv_enrollSubject.RowHeadersWidth = 51
         Me.dgv_enrollSubject.RowTemplate.Height = 35
         Me.dgv_enrollSubject.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -334,7 +334,7 @@ Partial Class frm_sEnrollSubject
         'Panel6
         '
         Me.Panel6.Controls.Add(Me.lbl_name)
-        Me.Panel6.Controls.Add(Me.lb_accountNumber)
+        Me.Panel6.Controls.Add(Me.lbl_accountNumber)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel6.Location = New System.Drawing.Point(0, 0)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -344,25 +344,25 @@ Partial Class frm_sEnrollSubject
         '
         'lbl_name
         '
-        Me.lbl_name.AutoSize = True
         Me.lbl_name.Font = New System.Drawing.Font("Segoe UI", 19.8!, System.Drawing.FontStyle.Bold)
         Me.lbl_name.ForeColor = System.Drawing.SystemColors.GrayText
         Me.lbl_name.Location = New System.Drawing.Point(184, 66)
         Me.lbl_name.Name = "lbl_name"
-        Me.lbl_name.Size = New System.Drawing.Size(315, 45)
+        Me.lbl_name.Size = New System.Drawing.Size(716, 45)
         Me.lbl_name.TabIndex = 1
         Me.lbl_name.Text = "Alvez, Cyril Charles"
+        Me.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'lb_accountNumber
+        'lbl_accountNumber
         '
-        Me.lb_accountNumber.AutoSize = True
-        Me.lb_accountNumber.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.lb_accountNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.lb_accountNumber.Location = New System.Drawing.Point(184, 34)
-        Me.lb_accountNumber.Name = "lb_accountNumber"
-        Me.lb_accountNumber.Size = New System.Drawing.Size(88, 31)
-        Me.lb_accountNumber.TabIndex = 0
-        Me.lb_accountNumber.Text = "134563"
+        Me.lbl_accountNumber.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.lbl_accountNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.lbl_accountNumber.Location = New System.Drawing.Point(187, 34)
+        Me.lbl_accountNumber.Name = "lbl_accountNumber"
+        Me.lbl_accountNumber.Size = New System.Drawing.Size(167, 31)
+        Me.lbl_accountNumber.TabIndex = 0
+        Me.lbl_accountNumber.Text = "134563"
+        Me.lbl_accountNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'frm_sEnrollSubject
         '
@@ -392,7 +392,6 @@ Partial Class frm_sEnrollSubject
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -407,7 +406,7 @@ Partial Class frm_sEnrollSubject
     Friend WithEvents Panel8 As Panel
     Friend WithEvents pnl_Datagrid As Panel
     Friend WithEvents dgv_enrollSubject As DataGridView
-    Friend WithEvents lb_accountNumber As Label
+    Friend WithEvents lbl_accountNumber As Label
     Friend WithEvents lbl_name As Label
     Friend WithEvents Panel9 As Panel
     Friend WithEvents lvl_studentType As Label
