@@ -168,6 +168,7 @@
       <DependentUpon>frm_StudentDashboard.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ModGlobalProcedure.vb" />
     <Compile Include="ModGlobalVariable.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
