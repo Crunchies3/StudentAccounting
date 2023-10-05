@@ -38,29 +38,29 @@
         End With
     End Sub
 
-    'Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-    '    button = 3
-    '    responsive()
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        button = 3
+        responsive()
 
-    '    With frm_sEnrollSubject
-    '        .TopLevel = False
-    '        pnl_main.Controls.Add(frm_sEnrollSubject)
-    '        .BringToFront()
-    '        .Show()
-    '    End With
-    'End Sub
+        With frm_sEnrollSubject
+            .TopLevel = False
+            pnl_main.Controls.Add(frm_sEnrollSubject)
+            .BringToFront()
+            .Show()
+        End With
+    End Sub
 
-    'Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-    '    button = 4
-    '    responsive()
+    Private Sub button5_click(sender As Object, e As EventArgs) Handles Button5.Click
+        button = 4
+        responsive()
 
-    '    With frm_sAssessment
-    '        .TopLevel = False
-    '        pnl_main.Controls.Add(frm_sAssessment)
-    '        .BringToFront()
-    '        .Show()
-    '    End With
-    'End Sub
+        With frm_sAssessment
+            .TopLevel = False
+            pnl_main.Controls.Add(frm_sAssessment)
+            .BringToFront()
+            .Show()
+        End With
+    End Sub
 
     Private Sub frm_StudentDashboard_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
 
@@ -80,17 +80,20 @@
                 frm_sSubjects.Location = New Point(0, 0)
                 frm_sSubjects.Show()
 
-                'Case 3
-                '    frm_sEnrollSubject.Size = pnl_main.Size
-                '    frm_sEnrollSubject.Location = New Point(0, 0)
-                '    frm_sEnrollSubject.Show()
-                'Case 4
-                '    frm_sAssessment.Size = pnl_main.Size
-                '    frm_sAssessment.Location = New Point(0, 0)
-                '    frm_sAssessment.Show()
+            Case 3
+                frm_sEnrollSubject.Size = pnl_main.Size
+                frm_sEnrollSubject.Location = New Point(0, 0)
+                frm_sEnrollSubject.Show()
+            Case 4
+                frm_sAssessment.Size = pnl_main.Size
+                frm_sAssessment.Location = New Point(0, 0)
+                frm_sAssessment.Show()
 
         End Select
     End Sub
+
+
+
 
 
 

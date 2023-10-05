@@ -79,10 +79,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_sAssessment.Designer.vb">
+      <DependentUpon>frm_sAssessment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_sAssessment.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_sDashboard.Designer.vb">
       <DependentUpon>frm_sDashboard.vb</DependentUpon>
     </Compile>
     <Compile Include="frm_sDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_sEnrollSubject.Designer.vb">
+      <DependentUpon>frm_sEnrollSubject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_sEnrollSubject.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_sSubjects.Designer.vb">
@@ -116,8 +128,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_sAssessment.resx">
+      <DependentUpon>frm_sAssessment.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_sDashboard.resx">
       <DependentUpon>frm_sDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_sEnrollSubject.resx">
+      <DependentUpon>frm_sEnrollSubject.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_sSubjects.resx">
       <DependentUpon>frm_sSubjects.vb</DependentUpon>
