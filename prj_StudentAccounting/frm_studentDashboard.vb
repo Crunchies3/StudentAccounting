@@ -27,6 +27,8 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+
         button = 2
         responsive()
 
@@ -39,6 +41,12 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+
+        'kung pisliton ang button 3 kay iyang i check na dapat ang balance sa student kay
+        ' -1000.00 para ma open. pero kung dili less than 0 mag hatag dapat ug messagebox na moingon na mobayad daan 
+        ' sa cashier para maka open enroll subject na part
+
+
         button = 3
         responsive()
 
