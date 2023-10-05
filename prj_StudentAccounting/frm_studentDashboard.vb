@@ -91,20 +91,13 @@
 
         End Select
     End Sub
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        frm_loginStudent.Show()
+        Me.Dispose()
+    End Sub
 
-
-
-
-
-
-    'Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-    '    frm_loginStudent.Show()
-    '    Me.Dispose()
-    'End Sub
-
-    'Private Sub frm_StudentDashboard_Closed(sender As Object, e As EventArgs) Handles MyBase.Closed
-    '    frm_loginStudent.Show()
-    'End Sub
-
+    Private Sub frm_StudentDashboard_Closed(sender As Object, e As EventArgs) Handles MyBase.Closed
+        frm_loginStudent.Show()
+    End Sub
 
 End Class
