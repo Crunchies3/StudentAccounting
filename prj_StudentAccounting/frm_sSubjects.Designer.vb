@@ -30,10 +30,10 @@ Partial Class frm_sSubjects
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btn_submit = New System.Windows.Forms.Button()
+        Me.btn_remove = New System.Windows.Forms.Button()
         Me.pnl_Datagrid = New System.Windows.Forms.Panel()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgv_subjects = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -43,10 +43,10 @@ Partial Class frm_sSubjects
         Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lbl_smallSemester = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lbl_program = New System.Windows.Forms.Label()
+        Me.lbl_semester = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
@@ -54,7 +54,7 @@ Partial Class frm_sSubjects
         Me.Panel5.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.pnl_Datagrid.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgv_subjects, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.SuspendLayout()
@@ -109,8 +109,8 @@ Partial Class frm_sSubjects
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.White
-        Me.Panel8.Controls.Add(Me.Button2)
-        Me.Panel8.Controls.Add(Me.Button1)
+        Me.Panel8.Controls.Add(Me.btn_submit)
+        Me.Panel8.Controls.Add(Me.btn_remove)
         Me.Panel8.Controls.Add(Me.pnl_Datagrid)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel8.Location = New System.Drawing.Point(0, 205)
@@ -119,33 +119,33 @@ Partial Class frm_sSubjects
         Me.Panel8.Size = New System.Drawing.Size(1319, 417)
         Me.Panel8.TabIndex = 2
         '
-        'Button2
+        'btn_submit
         '
-        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(1050, 331)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 26)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Submit"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btn_submit.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_submit.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btn_submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_submit.ForeColor = System.Drawing.Color.White
+        Me.btn_submit.Location = New System.Drawing.Point(1050, 331)
+        Me.btn_submit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_submit.Name = "btn_submit"
+        Me.btn_submit.Size = New System.Drawing.Size(103, 35)
+        Me.btn_submit.TabIndex = 9
+        Me.btn_submit.Text = "Submit"
+        Me.btn_submit.UseVisualStyleBackColor = False
         '
-        'Button1
+        'btn_remove
         '
-        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(184, 331)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 26)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "Remove"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btn_remove.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btn_remove.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btn_remove.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_remove.ForeColor = System.Drawing.Color.White
+        Me.btn_remove.Location = New System.Drawing.Point(184, 331)
+        Me.btn_remove.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_remove.Name = "btn_remove"
+        Me.btn_remove.Size = New System.Drawing.Size(104, 35)
+        Me.btn_remove.TabIndex = 9
+        Me.btn_remove.Text = "Remove"
+        Me.btn_remove.UseVisualStyleBackColor = False
         '
         'pnl_Datagrid
         '
@@ -153,7 +153,7 @@ Partial Class frm_sSubjects
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnl_Datagrid.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.pnl_Datagrid.Controls.Add(Me.DataGridView1)
+        Me.pnl_Datagrid.Controls.Add(Me.dgv_subjects)
         Me.pnl_Datagrid.Location = New System.Drawing.Point(186, 50)
         Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnl_Datagrid.Name = "pnl_Datagrid"
@@ -161,13 +161,13 @@ Partial Class frm_sSubjects
         Me.pnl_Datagrid.Size = New System.Drawing.Size(967, 263)
         Me.pnl_Datagrid.TabIndex = 5
         '
-        'DataGridView1
+        'dgv_subjects
         '
-        Me.DataGridView1.AllowUserToResizeColumns = False
-        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgv_subjects.AllowUserToResizeColumns = False
+        Me.dgv_subjects.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.dgv_subjects.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgv_subjects.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.dgv_subjects.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -175,9 +175,9 @@ Partial Class frm_sSubjects
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.DataGridView1.ColumnHeadersHeight = 35
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column6, Me.Column5, Me.Column7})
+        Me.dgv_subjects.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgv_subjects.ColumnHeadersHeight = 35
+        Me.dgv_subjects.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column6, Me.Column5, Me.Column7})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -185,12 +185,12 @@ Partial Class frm_sSubjects
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.Location = New System.Drawing.Point(1, 1)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgv_subjects.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgv_subjects.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgv_subjects.Location = New System.Drawing.Point(1, 1)
+        Me.dgv_subjects.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dgv_subjects.Name = "dgv_subjects"
+        Me.dgv_subjects.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -198,12 +198,12 @@ Partial Class frm_sSubjects
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 35
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(965, 261)
-        Me.DataGridView1.TabIndex = 3
+        Me.dgv_subjects.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgv_subjects.RowHeadersWidth = 51
+        Me.dgv_subjects.RowTemplate.Height = 35
+        Me.dgv_subjects.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_subjects.Size = New System.Drawing.Size(965, 261)
+        Me.dgv_subjects.TabIndex = 3
         '
         'Column1
         '
@@ -258,7 +258,7 @@ Partial Class frm_sSubjects
         'Panel7
         '
         Me.Panel7.Controls.Add(Me.Label11)
-        Me.Panel7.Controls.Add(Me.Label1)
+        Me.Panel7.Controls.Add(Me.lbl_smallSemester)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel7.Location = New System.Drawing.Point(0, 122)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -278,22 +278,22 @@ Partial Class frm_sSubjects
         Me.Label11.TabIndex = 6
         Me.Label11.Text = "Official Subjects"
         '
-        'Label1
+        'lbl_smallSemester
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(184, 49)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(258, 31)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "First Semester 2023-24"
+        Me.lbl_smallSemester.AutoSize = True
+        Me.lbl_smallSemester.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_smallSemester.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.lbl_smallSemester.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.lbl_smallSemester.Location = New System.Drawing.Point(184, 49)
+        Me.lbl_smallSemester.Name = "lbl_smallSemester"
+        Me.lbl_smallSemester.Size = New System.Drawing.Size(258, 31)
+        Me.lbl_smallSemester.TabIndex = 6
+        Me.lbl_smallSemester.Text = "First Semester 2023-24"
         '
         'Panel6
         '
-        Me.Panel6.Controls.Add(Me.Label14)
-        Me.Panel6.Controls.Add(Me.Label2)
+        Me.Panel6.Controls.Add(Me.lbl_program)
+        Me.Panel6.Controls.Add(Me.lbl_semester)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel6.Location = New System.Drawing.Point(0, 0)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -301,33 +301,33 @@ Partial Class frm_sSubjects
         Me.Panel6.Size = New System.Drawing.Size(1319, 122)
         Me.Panel6.TabIndex = 0
         '
-        'Label14
+        'lbl_program
         '
-        Me.Label14.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.lbl_program.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label14.BackColor = System.Drawing.Color.Transparent
-        Me.Label14.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Label14.Location = New System.Drawing.Point(0, 33)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(1319, 25)
-        Me.Label14.TabIndex = 11
-        Me.Label14.Text = "Bachelor Of Science In Computer Science"
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lbl_program.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_program.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.lbl_program.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.lbl_program.Location = New System.Drawing.Point(0, 33)
+        Me.lbl_program.Name = "lbl_program"
+        Me.lbl_program.Size = New System.Drawing.Size(1319, 25)
+        Me.lbl_program.TabIndex = 11
+        Me.lbl_program.Text = "Bachelor Of Science In Computer Science"
+        Me.lbl_program.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label2
+        'lbl_semester
         '
-        Me.Label2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.lbl_semester.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold)
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(0, 63)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(1319, 33)
-        Me.Label2.TabIndex = 10
-        Me.Label2.Text = "First Semester 2023-24"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lbl_semester.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_semester.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold)
+        Me.lbl_semester.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.lbl_semester.Location = New System.Drawing.Point(0, 63)
+        Me.lbl_semester.Name = "lbl_semester"
+        Me.lbl_semester.Size = New System.Drawing.Size(1319, 33)
+        Me.lbl_semester.TabIndex = 10
+        Me.lbl_semester.Text = "First Semester 2023-24"
+        Me.lbl_semester.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel4
         '
@@ -366,7 +366,7 @@ Partial Class frm_sSubjects
         Me.Panel5.ResumeLayout(False)
         Me.Panel8.ResumeLayout(False)
         Me.pnl_Datagrid.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv_subjects, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
         Me.Panel6.ResumeLayout(False)
@@ -383,10 +383,10 @@ Partial Class frm_sSubjects
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lbl_smallSemester As Label
     Friend WithEvents Panel8 As Panel
     Friend WithEvents pnl_Datagrid As Panel
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgv_subjects As DataGridView
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
@@ -394,8 +394,8 @@ Partial Class frm_sSubjects
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label14 As Label
+    Friend WithEvents btn_submit As Button
+    Friend WithEvents btn_remove As Button
+    Friend WithEvents lbl_semester As Label
+    Friend WithEvents lbl_program As Label
 End Class
