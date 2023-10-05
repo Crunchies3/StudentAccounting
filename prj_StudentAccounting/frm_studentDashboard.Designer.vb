@@ -70,7 +70,7 @@ Partial Class frm_StudentDashboard
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(37, 476)
+        Me.Button6.Location = New System.Drawing.Point(37, 442)
         Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(182, 31)

@@ -128,7 +128,7 @@ Partial Class frm_sSubjects
         Me.Button2.Location = New System.Drawing.Point(1050, 331)
         Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 26)
+        Me.Button2.Size = New System.Drawing.Size(103, 35)
         Me.Button2.TabIndex = 9
         Me.Button2.Text = "Submit"
         Me.Button2.UseVisualStyleBackColor = False
@@ -142,7 +142,7 @@ Partial Class frm_sSubjects
         Me.Button1.Location = New System.Drawing.Point(184, 331)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 26)
+        Me.Button1.Size = New System.Drawing.Size(104, 35)
         Me.Button1.TabIndex = 9
         Me.Button1.Text = "Remove"
         Me.Button1.UseVisualStyleBackColor = False

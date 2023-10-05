@@ -383,7 +383,7 @@ Partial Class frm_sDashboard
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 35
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(969, 434)
+        Me.DataGridView1.Size = New System.Drawing.Size(969, 382)
         Me.DataGridView1.TabIndex = 3
         '
         'Column1
@@ -458,7 +458,7 @@ Partial Class frm_sDashboard
         Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnl_Datagrid.Name = "pnl_Datagrid"
         Me.pnl_Datagrid.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_Datagrid.Size = New System.Drawing.Size(971, 436)
+        Me.pnl_Datagrid.Size = New System.Drawing.Size(971, 384)
         Me.pnl_Datagrid.TabIndex = 4
         '
         'frm_sDashboard
