@@ -33,6 +33,9 @@ Public Class frm_sEnrollSubject
     End Sub
 
     Private Sub funcDisplaySubject()
+        'diria ibutang ang code para i display ang mga available subjects. dapat ang ipakita lang na subject is ka level. example 3rd year student
+        'dapat pang 3rd year rapud na subject ang i display
+
 
     End Sub
 
