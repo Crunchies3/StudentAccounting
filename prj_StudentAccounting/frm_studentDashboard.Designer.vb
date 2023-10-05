@@ -187,7 +187,7 @@ Partial Class frm_StudentDashboard
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frm_StudentDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Dashboard"
+        Me.Text = "Student Portal"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.pnl_menu.ResumeLayout(False)
         Me.pnl_buttons.ResumeLayout(False)
