@@ -29,24 +29,24 @@ Partial Class frm_sDashboard
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lbl_accountNumber = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
+        Me.lbl_program = New System.Windows.Forms.Label()
+        Me.lbl_semester = New System.Windows.Forms.Label()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lbl_totalAssessment = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lbl_totalPayment = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.lbl_currentBalance = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lbl_perExam = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgv_transactionHistory = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -63,7 +63,7 @@ Partial Class frm_sDashboard
         Me.Panel8.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.Panel10.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.pnl_Datagrid.SuspendLayout()
         Me.SuspendLayout()
@@ -106,10 +106,10 @@ Partial Class frm_sDashboard
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel3.BackColor = System.Drawing.Color.White
-        Me.Panel3.Controls.Add(Me.Label12)
+        Me.Panel3.Controls.Add(Me.lbl_accountNumber)
         Me.Panel3.Controls.Add(Me.Label11)
-        Me.Panel3.Controls.Add(Me.Label14)
-        Me.Panel3.Controls.Add(Me.Label13)
+        Me.Panel3.Controls.Add(Me.lbl_program)
+        Me.Panel3.Controls.Add(Me.lbl_semester)
         Me.Panel3.Controls.Add(Me.TableLayoutPanel2)
         Me.Panel3.Location = New System.Drawing.Point(36, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -117,16 +117,16 @@ Partial Class frm_sDashboard
         Me.Panel3.Size = New System.Drawing.Size(1319, 286)
         Me.Panel3.TabIndex = 2
         '
-        'Label12
+        'lbl_accountNumber
         '
-        Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Segoe UI", 10.8!)
-        Me.Label12.Location = New System.Drawing.Point(941, 71)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(216, 25)
-        Me.Label12.TabIndex = 6
-        Me.Label12.Text = "Account Number: 134563"
+        Me.lbl_accountNumber.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_accountNumber.AutoSize = True
+        Me.lbl_accountNumber.Font = New System.Drawing.Font("Segoe UI", 10.8!)
+        Me.lbl_accountNumber.Location = New System.Drawing.Point(941, 71)
+        Me.lbl_accountNumber.Name = "lbl_accountNumber"
+        Me.lbl_accountNumber.Size = New System.Drawing.Size(216, 25)
+        Me.lbl_accountNumber.TabIndex = 6
+        Me.lbl_accountNumber.Text = "Account Number: 134563"
         '
         'Label11
         '
@@ -140,33 +140,33 @@ Partial Class frm_sDashboard
         Me.Label11.TabIndex = 5
         Me.Label11.Text = "Financial"
         '
-        'Label14
+        'lbl_program
         '
-        Me.Label14.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.lbl_program.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label14.BackColor = System.Drawing.Color.Transparent
-        Me.Label14.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Label14.Location = New System.Drawing.Point(0, 33)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(1319, 25)
-        Me.Label14.TabIndex = 7
-        Me.Label14.Text = "Bachelor Of Science In Computer Science"
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lbl_program.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_program.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.lbl_program.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.lbl_program.Location = New System.Drawing.Point(0, 33)
+        Me.lbl_program.Name = "lbl_program"
+        Me.lbl_program.Size = New System.Drawing.Size(1319, 25)
+        Me.lbl_program.TabIndex = 7
+        Me.lbl_program.Text = "Bachelor Of Science In Computer Science"
+        Me.lbl_program.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label13
+        'lbl_semester
         '
-        Me.Label13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.lbl_semester.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label13.BackColor = System.Drawing.Color.Transparent
-        Me.Label13.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold)
-        Me.Label13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Label13.Location = New System.Drawing.Point(0, 63)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(1319, 33)
-        Me.Label13.TabIndex = 7
-        Me.Label13.Text = "First Semester 2023-24"
-        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lbl_semester.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_semester.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold)
+        Me.lbl_semester.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.lbl_semester.Location = New System.Drawing.Point(0, 63)
+        Me.lbl_semester.Name = "lbl_semester"
+        Me.lbl_semester.Size = New System.Drawing.Size(1319, 33)
+        Me.lbl_semester.TabIndex = 7
+        Me.lbl_semester.Text = "First Semester 2023-24"
+        Me.lbl_semester.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TableLayoutPanel2
         '
@@ -194,7 +194,7 @@ Partial Class frm_sDashboard
         '
         Me.Panel7.BackColor = System.Drawing.Color.Transparent
         Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel7.Controls.Add(Me.Label5)
+        Me.Panel7.Controls.Add(Me.lbl_totalAssessment)
         Me.Panel7.Controls.Add(Me.Label1)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
@@ -203,18 +203,18 @@ Partial Class frm_sDashboard
         Me.Panel7.Size = New System.Drawing.Size(232, 125)
         Me.Panel7.TabIndex = 0
         '
-        'Label5
+        'lbl_totalAssessment
         '
-        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.lbl_totalAssessment.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(124, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(144, 36)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(64, 45)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "0.0"
+        Me.lbl_totalAssessment.AutoSize = True
+        Me.lbl_totalAssessment.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
+        Me.lbl_totalAssessment.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(124, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.lbl_totalAssessment.Location = New System.Drawing.Point(144, 36)
+        Me.lbl_totalAssessment.Name = "lbl_totalAssessment"
+        Me.lbl_totalAssessment.Size = New System.Drawing.Size(64, 45)
+        Me.lbl_totalAssessment.TabIndex = 0
+        Me.lbl_totalAssessment.Text = "0.0"
         '
         'Label1
         '
@@ -232,7 +232,7 @@ Partial Class frm_sDashboard
         '
         Me.Panel8.BackColor = System.Drawing.Color.Transparent
         Me.Panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel8.Controls.Add(Me.Label6)
+        Me.Panel8.Controls.Add(Me.lbl_totalPayment)
         Me.Panel8.Controls.Add(Me.Label2)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel8.Location = New System.Drawing.Point(242, 0)
@@ -241,18 +241,18 @@ Partial Class frm_sDashboard
         Me.Panel8.Size = New System.Drawing.Size(232, 125)
         Me.Panel8.TabIndex = 0
         '
-        'Label6
+        'lbl_totalPayment
         '
-        Me.Label6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.lbl_totalPayment.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(113, Byte), Integer), CType(CType(154, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(144, 36)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(64, 45)
-        Me.Label6.TabIndex = 0
-        Me.Label6.Text = "0.0"
+        Me.lbl_totalPayment.AutoSize = True
+        Me.lbl_totalPayment.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
+        Me.lbl_totalPayment.ForeColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(113, Byte), Integer), CType(CType(154, Byte), Integer))
+        Me.lbl_totalPayment.Location = New System.Drawing.Point(144, 36)
+        Me.lbl_totalPayment.Name = "lbl_totalPayment"
+        Me.lbl_totalPayment.Size = New System.Drawing.Size(64, 45)
+        Me.lbl_totalPayment.TabIndex = 0
+        Me.lbl_totalPayment.Text = "0.0"
         '
         'Label2
         '
@@ -270,7 +270,7 @@ Partial Class frm_sDashboard
         '
         Me.Panel9.BackColor = System.Drawing.Color.Transparent
         Me.Panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel9.Controls.Add(Me.Label7)
+        Me.Panel9.Controls.Add(Me.lbl_currentBalance)
         Me.Panel9.Controls.Add(Me.Label3)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel9.Location = New System.Drawing.Point(484, 0)
@@ -279,18 +279,18 @@ Partial Class frm_sDashboard
         Me.Panel9.Size = New System.Drawing.Size(232, 125)
         Me.Panel9.TabIndex = 0
         '
-        'Label7
+        'lbl_currentBalance
         '
-        Me.Label7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.lbl_currentBalance.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
-        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(172, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(4, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(144, 36)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(64, 45)
-        Me.Label7.TabIndex = 0
-        Me.Label7.Text = "0.0"
+        Me.lbl_currentBalance.AutoSize = True
+        Me.lbl_currentBalance.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
+        Me.lbl_currentBalance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(172, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(4, Byte), Integer))
+        Me.lbl_currentBalance.Location = New System.Drawing.Point(144, 36)
+        Me.lbl_currentBalance.Name = "lbl_currentBalance"
+        Me.lbl_currentBalance.Size = New System.Drawing.Size(64, 45)
+        Me.lbl_currentBalance.TabIndex = 0
+        Me.lbl_currentBalance.Text = "0.0"
         '
         'Label3
         '
@@ -308,7 +308,7 @@ Partial Class frm_sDashboard
         '
         Me.Panel10.BackColor = System.Drawing.Color.Transparent
         Me.Panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel10.Controls.Add(Me.Label8)
+        Me.Panel10.Controls.Add(Me.lbl_perExam)
         Me.Panel10.Controls.Add(Me.Label4)
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel10.Location = New System.Drawing.Point(726, 0)
@@ -317,18 +317,18 @@ Partial Class frm_sDashboard
         Me.Panel10.Size = New System.Drawing.Size(245, 125)
         Me.Panel10.TabIndex = 1
         '
-        'Label8
+        'lbl_perExam
         '
-        Me.Label8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.lbl_perExam.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
-        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(167, 36)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(64, 45)
-        Me.Label8.TabIndex = 0
-        Me.Label8.Text = "0.0"
+        Me.lbl_perExam.AutoSize = True
+        Me.lbl_perExam.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
+        Me.lbl_perExam.ForeColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.lbl_perExam.Location = New System.Drawing.Point(167, 36)
+        Me.lbl_perExam.Name = "lbl_perExam"
+        Me.lbl_perExam.Size = New System.Drawing.Size(64, 45)
+        Me.lbl_perExam.TabIndex = 0
+        Me.lbl_perExam.Text = "0.0"
         '
         'Label4
         '
@@ -342,13 +342,13 @@ Partial Class frm_sDashboard
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Per Exam"
         '
-        'DataGridView1
+        'dgv_transactionHistory
         '
-        Me.DataGridView1.AllowUserToResizeColumns = False
-        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgv_transactionHistory.AllowUserToResizeColumns = False
+        Me.dgv_transactionHistory.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.dgv_transactionHistory.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgv_transactionHistory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.dgv_transactionHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -356,9 +356,9 @@ Partial Class frm_sDashboard
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.DataGridView1.ColumnHeadersHeight = 35
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column6})
+        Me.dgv_transactionHistory.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgv_transactionHistory.ColumnHeadersHeight = 35
+        Me.dgv_transactionHistory.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column6})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -366,12 +366,12 @@ Partial Class frm_sDashboard
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.Location = New System.Drawing.Point(1, 1)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgv_transactionHistory.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgv_transactionHistory.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgv_transactionHistory.Location = New System.Drawing.Point(1, 1)
+        Me.dgv_transactionHistory.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dgv_transactionHistory.Name = "dgv_transactionHistory"
+        Me.dgv_transactionHistory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
@@ -379,12 +379,12 @@ Partial Class frm_sDashboard
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 35
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(969, 382)
-        Me.DataGridView1.TabIndex = 3
+        Me.dgv_transactionHistory.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgv_transactionHistory.RowHeadersWidth = 51
+        Me.dgv_transactionHistory.RowTemplate.Height = 35
+        Me.dgv_transactionHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_transactionHistory.Size = New System.Drawing.Size(969, 382)
+        Me.dgv_transactionHistory.TabIndex = 3
         '
         'Column1
         '
@@ -453,7 +453,7 @@ Partial Class frm_sDashboard
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnl_Datagrid.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.pnl_Datagrid.Controls.Add(Me.DataGridView1)
+        Me.pnl_Datagrid.Controls.Add(Me.dgv_transactionHistory)
         Me.pnl_Datagrid.Location = New System.Drawing.Point(186, 50)
         Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnl_Datagrid.Name = "pnl_Datagrid"
@@ -491,7 +491,7 @@ Partial Class frm_sDashboard
         Me.Panel9.PerformLayout()
         Me.Panel10.ResumeLayout(False)
         Me.Panel10.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.pnl_Datagrid.ResumeLayout(False)
@@ -506,7 +506,7 @@ Partial Class frm_sDashboard
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Panel10 As Panel
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgv_transactionHistory As DataGridView
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
@@ -516,17 +516,17 @@ Partial Class frm_sDashboard
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
+    Friend WithEvents lbl_totalAssessment As Label
+    Friend WithEvents lbl_totalPayment As Label
+    Friend WithEvents lbl_currentBalance As Label
+    Friend WithEvents lbl_perExam As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Label9 As Label
     Friend WithEvents pnl_Datagrid As Panel
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label12 As Label
+    Friend WithEvents lbl_semester As Label
+    Friend WithEvents lbl_accountNumber As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents Label14 As Label
+    Friend WithEvents lbl_program As Label
 End Class
