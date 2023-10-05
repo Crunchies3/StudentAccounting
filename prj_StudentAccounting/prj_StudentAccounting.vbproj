@@ -85,6 +85,12 @@
     <Compile Include="frm_sDashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_sSubjects.Designer.vb">
+      <DependentUpon>frm_sSubjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_sSubjects.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_StudentDashboard.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
   <ItemGroup>
     <EmbeddedResource Include="frm_sDashboard.resx">
       <DependentUpon>frm_sDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_sSubjects.resx">
+      <DependentUpon>frm_sSubjects.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_StudentDashboard.resx">
       <DependentUpon>frm_StudentDashboard.vb</DependentUpon>

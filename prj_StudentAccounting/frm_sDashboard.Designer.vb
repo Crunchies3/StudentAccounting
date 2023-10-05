@@ -111,10 +111,10 @@ Partial Class frm_sDashboard
         Me.Panel3.Controls.Add(Me.Label14)
         Me.Panel3.Controls.Add(Me.Label13)
         Me.Panel3.Controls.Add(Me.TableLayoutPanel2)
-        Me.Panel3.Location = New System.Drawing.Point(37, 0)
+        Me.Panel3.Location = New System.Drawing.Point(36, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1321, 286)
+        Me.Panel3.Size = New System.Drawing.Size(1319, 286)
         Me.Panel3.TabIndex = 2
         '
         'Label12
@@ -122,7 +122,7 @@ Partial Class frm_sDashboard
         Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Segoe UI", 10.8!)
-        Me.Label12.Location = New System.Drawing.Point(943, 71)
+        Me.Label12.Location = New System.Drawing.Point(941, 71)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(216, 25)
         Me.Label12.TabIndex = 6
@@ -149,7 +149,7 @@ Partial Class frm_sDashboard
         Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.Label14.Location = New System.Drawing.Point(0, 33)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(1321, 25)
+        Me.Label14.Size = New System.Drawing.Size(1319, 25)
         Me.Label14.TabIndex = 7
         Me.Label14.Text = "Bachelor Of Science In Computer Science"
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -163,7 +163,7 @@ Partial Class frm_sDashboard
         Me.Label13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.Label13.Location = New System.Drawing.Point(0, 63)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(1321, 33)
+        Me.Label13.Size = New System.Drawing.Size(1319, 33)
         Me.Label13.TabIndex = 7
         Me.Label13.Text = "First Semester 2023-24"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -187,7 +187,7 @@ Partial Class frm_sDashboard
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(973, 133)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(971, 133)
         Me.TableLayoutPanel2.TabIndex = 1
         '
         'Panel7
@@ -200,7 +200,7 @@ Partial Class frm_sDashboard
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(0, 0, 10, 8)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(233, 125)
+        Me.Panel7.Size = New System.Drawing.Size(232, 125)
         Me.Panel7.TabIndex = 0
         '
         'Label5
@@ -210,7 +210,7 @@ Partial Class frm_sDashboard
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(124, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(145, 36)
+        Me.Label5.Location = New System.Drawing.Point(144, 36)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(64, 45)
         Me.Label5.TabIndex = 0
@@ -235,10 +235,10 @@ Partial Class frm_sDashboard
         Me.Panel8.Controls.Add(Me.Label6)
         Me.Panel8.Controls.Add(Me.Label2)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel8.Location = New System.Drawing.Point(243, 0)
+        Me.Panel8.Location = New System.Drawing.Point(242, 0)
         Me.Panel8.Margin = New System.Windows.Forms.Padding(0, 0, 10, 8)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(233, 125)
+        Me.Panel8.Size = New System.Drawing.Size(232, 125)
         Me.Panel8.TabIndex = 0
         '
         'Label6
@@ -248,7 +248,7 @@ Partial Class frm_sDashboard
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(113, Byte), Integer), CType(CType(154, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(145, 36)
+        Me.Label6.Location = New System.Drawing.Point(144, 36)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(64, 45)
         Me.Label6.TabIndex = 0
@@ -273,10 +273,10 @@ Partial Class frm_sDashboard
         Me.Panel9.Controls.Add(Me.Label7)
         Me.Panel9.Controls.Add(Me.Label3)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel9.Location = New System.Drawing.Point(486, 0)
+        Me.Panel9.Location = New System.Drawing.Point(484, 0)
         Me.Panel9.Margin = New System.Windows.Forms.Padding(0, 0, 10, 8)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(233, 125)
+        Me.Panel9.Size = New System.Drawing.Size(232, 125)
         Me.Panel9.TabIndex = 0
         '
         'Label7
@@ -286,7 +286,7 @@ Partial Class frm_sDashboard
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(172, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(4, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(145, 36)
+        Me.Label7.Location = New System.Drawing.Point(144, 36)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(64, 45)
         Me.Label7.TabIndex = 0
@@ -311,10 +311,10 @@ Partial Class frm_sDashboard
         Me.Panel10.Controls.Add(Me.Label8)
         Me.Panel10.Controls.Add(Me.Label4)
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel10.Location = New System.Drawing.Point(729, 0)
+        Me.Panel10.Location = New System.Drawing.Point(726, 0)
         Me.Panel10.Margin = New System.Windows.Forms.Padding(0, 0, 0, 8)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(244, 125)
+        Me.Panel10.Size = New System.Drawing.Size(245, 125)
         Me.Panel10.TabIndex = 1
         '
         'Label8
@@ -324,7 +324,7 @@ Partial Class frm_sDashboard
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(166, 36)
+        Me.Label8.Location = New System.Drawing.Point(167, 36)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(64, 45)
         Me.Label8.TabIndex = 0
@@ -383,7 +383,7 @@ Partial Class frm_sDashboard
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 35
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(971, 434)
+        Me.DataGridView1.Size = New System.Drawing.Size(969, 434)
         Me.DataGridView1.TabIndex = 3
         '
         'Column1
@@ -430,10 +430,10 @@ Partial Class frm_sDashboard
         Me.Panel4.BackColor = System.Drawing.Color.White
         Me.Panel4.Controls.Add(Me.Label10)
         Me.Panel4.Controls.Add(Me.pnl_Datagrid)
-        Me.Panel4.Location = New System.Drawing.Point(37, 329)
+        Me.Panel4.Location = New System.Drawing.Point(36, 329)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1321, 574)
+        Me.Panel4.Size = New System.Drawing.Size(1319, 574)
         Me.Panel4.TabIndex = 4
         '
         'Label10
@@ -458,7 +458,7 @@ Partial Class frm_sDashboard
         Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnl_Datagrid.Name = "pnl_Datagrid"
         Me.pnl_Datagrid.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_Datagrid.Size = New System.Drawing.Size(973, 436)
+        Me.pnl_Datagrid.Size = New System.Drawing.Size(971, 436)
         Me.pnl_Datagrid.TabIndex = 4
         '
         'frm_sDashboard

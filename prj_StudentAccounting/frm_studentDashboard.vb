@@ -26,17 +26,17 @@
         End With
     End Sub
 
-    'Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-    '    button = 2
-    '    responsive()
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        button = 2
+        responsive()
 
-    '    With frm_sSubjects
-    '        .TopLevel = False
-    '        pnl_main.Controls.Add(frm_sSubjects)
-    '        .BringToFront()
-    '        .Show()
-    '    End With
-    'End Sub
+        With frm_sSubjects
+            .TopLevel = False
+            pnl_main.Controls.Add(frm_sSubjects)
+            .BringToFront()
+            .Show()
+        End With
+    End Sub
 
     'Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
     '    button = 3
@@ -75,10 +75,10 @@
                 frm_sDashboard.Size = pnl_main.Size
                 frm_sDashboard.Location = New Point(0, 0)
                 frm_sDashboard.Show()
-                'Case 2
-                '    frm_sSubjects.Size = pnl_main.Size
-                '    frm_sSubjects.Location = New Point(0, 0)
-                '    frm_sSubjects.Show()
+            Case 2
+                frm_sSubjects.Size = pnl_main.Size
+                frm_sSubjects.Location = New Point(0, 0)
+                frm_sSubjects.Show()
 
                 'Case 3
                 '    frm_sEnrollSubject.Size = pnl_main.Size
@@ -91,6 +91,8 @@
 
         End Select
     End Sub
+
+
 
     'Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
     '    frm_loginStudent.Show()

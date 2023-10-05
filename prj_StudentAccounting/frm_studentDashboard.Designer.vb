@@ -175,7 +175,7 @@ Partial Class frm_StudentDashboard
         Me.pnl_main.Size = New System.Drawing.Size(1179, 640)
         Me.pnl_main.TabIndex = 4
         '
-        'frm_studentDashboard
+        'frm_StudentDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -185,7 +185,7 @@ Partial Class frm_StudentDashboard
         Me.Controls.Add(Me.pnl_header)
         Me.Controls.Add(Me.pnl_menu)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Name = "frm_studentDashboard"
+        Me.Name = "frm_StudentDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Dashboard"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
