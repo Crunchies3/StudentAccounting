@@ -216,6 +216,20 @@ CREATE TABLE `tbltransaction` (
 
 /*Data for the table `tbltransaction` */
 
+/* Procedure structure for procedure `prcDisplaySubjectByYearLevel` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `prcDisplaySubjectByYearLevel` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `prcDisplaySubjectByYearLevel`(p_studentid varchar(15))
+BEGIN
+		select c.id, c.title, c.description, c.units, a.program, c.level
+		from tblstudent a, tblsubject c
+		where a.studentid = p_studentid and a.yearlevel = concat(left(c.level,1));
+	END */$$
+DELIMITER ;
+
 /* Procedure structure for procedure `prcGetName` */
 
 /*!50003 DROP PROCEDURE IF EXISTS  `prcGetName` */;
