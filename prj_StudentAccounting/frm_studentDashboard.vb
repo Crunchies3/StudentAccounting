@@ -1,5 +1,6 @@
 ﻿Imports System.Security.Cryptography.X509Certificates
 Imports MySql.Data.MySqlClient
+Imports Mysqlx.XDevAPI.Common
 
 Public Class frm_StudentDashboard
 
@@ -53,16 +54,40 @@ Public Class frm_StudentDashboard
         ' -1000.00 para ma open. pero kung dili less than 0 mag hatag dapat ug messagebox na moingon na mobayad daan 
         ' sa cashier para maka open enroll subject na part
 
+        sqlDBAdapter = New MySqlDataAdapter
+        dataTable = New DataTable
 
-        button = 3
-        responsive()
+        With command
+            .Parameters.Clear()
+            .CommandText = "prcEligibilityToEnlistSubject"
+            .CommandType = CommandType.StoredProcedure
+            .Parameters.AddWithValue("@p_studentid", userID)
+            sqlDBAdapter.SelectCommand = command
+            dataTable.Clear()
+            sqlDBAdapter.Fill(dataTable)
 
-        With frm_sEnrollSubject
-            .TopLevel = False
-            pnl_main.Controls.Add(frm_sEnrollSubject)
-            .BringToFront()
-            .Show()
+            If dataTable.Rows(0).Item("Eligibility") = True Then
+                button = 3
+                responsive()
+                With frm_sEnrollSubject
+                    .TopLevel = False
+                    pnl_main.Controls.Add(frm_sEnrollSubject)
+                    .BringToFront()
+                    .Show()
+                End With
+            Else
+                MessageBox.Show("Please pay first on the cashier to enroll a subject", "Insufficient Balance", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            End If
         End With
+        sqlDBAdapter.Dispose()
+        dataTable.Dispose()
+        Try
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+
     End Sub
 
     Private Sub button5_click(sender As Object, e As EventArgs) Handles Button5.Click
