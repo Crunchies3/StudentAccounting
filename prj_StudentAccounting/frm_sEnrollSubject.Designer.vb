@@ -195,6 +195,7 @@ Partial Class frm_sEnrollSubject
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgv_enrollSubject.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgv_enrollSubject.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgv_enrollSubject.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgv_enrollSubject.Location = New System.Drawing.Point(1, 1)
         Me.dgv_enrollSubject.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dgv_enrollSubject.Name = "dgv_enrollSubject"
