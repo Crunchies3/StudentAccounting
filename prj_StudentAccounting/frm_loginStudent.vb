@@ -36,6 +36,8 @@ Public Class frm_loginStudent
             sqlDBAdapter.Dispose()
             dataTable.Dispose()
 
+
+
         Catch ex As Exception
             MessageBox.Show("" & ex.Message)
         End Try

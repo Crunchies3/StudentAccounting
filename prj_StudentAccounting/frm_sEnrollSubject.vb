@@ -9,27 +9,7 @@ Public Class frm_sEnrollSubject
 
     Private Sub funcLoadLabels()
         lbl_accountNumber.Text = userID
-        Try
-            sqlDBAdapter = New MySqlDataAdapter
-            dataTable = New DataTable
-
-            With command
-                .Parameters.Clear()
-                .CommandText = "prcGetName"
-                .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@p_id", userID)
-                sqlDBAdapter.SelectCommand = command
-                dataTable.Clear()
-                sqlDBAdapter.Fill(dataTable)
-                lbl_name.Text = dataTable.Rows(0).Item("fullname").ToString
-
-            End With
-
-            sqlDBAdapter.Dispose()
-            dataTable.Dispose()
-        Catch ex As Exception
-            MessageBox.Show("" & ex.Message)
-        End Try
+        lbl_name.Text = studentName
     End Sub
 
     Private Sub funcDisplaySubject()

@@ -1,4 +1,7 @@
-﻿Public Class frm_StudentDashboard
+﻿Imports System.Security.Cryptography.X509Certificates
+Imports MySql.Data.MySqlClient
+
+Public Class frm_StudentDashboard
 
     Dim button As Integer = 1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -24,6 +27,10 @@
             .BringToFront()
             .Show()
         End With
+
+        funcInitializeUserInfo()
+
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -61,6 +68,7 @@
     Private Sub button5_click(sender As Object, e As EventArgs) Handles Button5.Click
         button = 4
         responsive()
+        currentDate = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss")
 
         With frm_sAssessment
             .TopLevel = False
@@ -101,13 +109,46 @@
     End Sub
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         userID = ""
+        studentName = ""
         frm_loginStudent.Show()
         Me.Dispose()
     End Sub
 
     Private Sub frm_StudentDashboard_Closed(sender As Object, e As EventArgs) Handles MyBase.Closed
         userID = ""
+        studentName = ""
         frm_loginStudent.Show()
+    End Sub
+
+
+    Private Sub funcInitializeUserInfo()
+
+        Try
+            sqlDBAdapter = New MySqlDataAdapter
+            dataTable = New DataTable
+
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcGetStudentInfo"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", userID)
+                sqlDBAdapter.SelectCommand = command
+                dataTable.Clear()
+                sqlDBAdapter.Fill(dataTable)
+
+                studentName = dataTable.Rows(0).Item("fullname").ToString
+                studentProgram = dataTable.Rows(0).Item("program").ToString
+                studentYearLevel = dataTable.Rows(0).Item("yearlevel").ToString
+
+            End With
+
+            sqlDBAdapter.Dispose()
+            dataTable.Dispose()
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+
     End Sub
 
 End Class
