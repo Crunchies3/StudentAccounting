@@ -22,15 +22,17 @@ Partial Class frm_sEnrollSubject
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.btn_search = New System.Windows.Forms.Button()
+        Me.txt_search = New System.Windows.Forms.TextBox()
         Me.btn_enlist = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.pnl_Datagrid = New System.Windows.Forms.Panel()
@@ -51,6 +53,7 @@ Partial Class frm_sEnrollSubject
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.lbl_name = New System.Windows.Forms.Label()
         Me.lbl_accountNumber = New System.Windows.Forms.Label()
+        Me.chk_autocomplete = New System.Windows.Forms.CheckBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel8.SuspendLayout()
@@ -121,6 +124,9 @@ Partial Class frm_sEnrollSubject
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel8.BackColor = System.Drawing.Color.White
+        Me.Panel8.Controls.Add(Me.chk_autocomplete)
+        Me.Panel8.Controls.Add(Me.btn_search)
+        Me.Panel8.Controls.Add(Me.txt_search)
         Me.Panel8.Controls.Add(Me.btn_enlist)
         Me.Panel8.Controls.Add(Me.Label10)
         Me.Panel8.Controls.Add(Me.pnl_Datagrid)
@@ -130,13 +136,36 @@ Partial Class frm_sEnrollSubject
         Me.Panel8.Size = New System.Drawing.Size(1319, 390)
         Me.Panel8.TabIndex = 3
         '
+        'btn_search
+        '
+        Me.btn_search.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_search.ForeColor = System.Drawing.Color.White
+        Me.btn_search.Location = New System.Drawing.Point(396, 59)
+        Me.btn_search.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_search.Name = "btn_search"
+        Me.btn_search.Size = New System.Drawing.Size(108, 27)
+        Me.btn_search.TabIndex = 10
+        Me.btn_search.Text = "Search"
+        Me.btn_search.UseVisualStyleBackColor = False
+        '
+        'txt_search
+        '
+        Me.txt_search.BackColor = System.Drawing.Color.White
+        Me.txt_search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_search.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txt_search.Location = New System.Drawing.Point(187, 62)
+        Me.txt_search.Name = "txt_search"
+        Me.txt_search.Size = New System.Drawing.Size(203, 22)
+        Me.txt_search.TabIndex = 9
+        '
         'btn_enlist
         '
         Me.btn_enlist.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.btn_enlist.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btn_enlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_enlist.ForeColor = System.Drawing.Color.White
-        Me.btn_enlist.Location = New System.Drawing.Point(184, 294)
+        Me.btn_enlist.Location = New System.Drawing.Point(186, 306)
         Me.btn_enlist.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_enlist.Name = "btn_enlist"
         Me.btn_enlist.Size = New System.Drawing.Size(108, 38)
@@ -162,11 +191,11 @@ Partial Class frm_sEnrollSubject
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnl_Datagrid.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.pnl_Datagrid.Controls.Add(Me.dgv_enrollSubject)
-        Me.pnl_Datagrid.Location = New System.Drawing.Point(186, 50)
+        Me.pnl_Datagrid.Location = New System.Drawing.Point(186, 128)
         Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnl_Datagrid.Name = "pnl_Datagrid"
         Me.pnl_Datagrid.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_Datagrid.Size = New System.Drawing.Size(967, 216)
+        Me.pnl_Datagrid.Size = New System.Drawing.Size(967, 164)
         Me.pnl_Datagrid.TabIndex = 6
         '
         'dgv_enrollSubject
@@ -176,42 +205,42 @@ Partial Class frm_sEnrollSubject
         Me.dgv_enrollSubject.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgv_enrollSubject.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.dgv_enrollSubject.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_enrollSubject.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_enrollSubject.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
         Me.dgv_enrollSubject.ColumnHeadersHeight = 35
         Me.dgv_enrollSubject.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column7, Me.Column6})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_enrollSubject.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_enrollSubject.DefaultCellStyle = DataGridViewCellStyle14
         Me.dgv_enrollSubject.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_enrollSubject.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgv_enrollSubject.Location = New System.Drawing.Point(1, 1)
         Me.dgv_enrollSubject.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dgv_enrollSubject.Name = "dgv_enrollSubject"
         Me.dgv_enrollSubject.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_enrollSubject.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_enrollSubject.RowHeadersDefaultCellStyle = DataGridViewCellStyle15
         Me.dgv_enrollSubject.RowHeadersWidth = 51
         Me.dgv_enrollSubject.RowTemplate.Height = 35
         Me.dgv_enrollSubject.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_enrollSubject.Size = New System.Drawing.Size(965, 214)
+        Me.dgv_enrollSubject.Size = New System.Drawing.Size(965, 162)
         Me.dgv_enrollSubject.TabIndex = 3
         '
         'Column1
@@ -365,6 +394,17 @@ Partial Class frm_sEnrollSubject
         Me.lbl_accountNumber.Text = "134563"
         Me.lbl_accountNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'chk_autocomplete
+        '
+        Me.chk_autocomplete.AutoSize = True
+        Me.chk_autocomplete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.chk_autocomplete.Location = New System.Drawing.Point(187, 94)
+        Me.chk_autocomplete.Name = "chk_autocomplete"
+        Me.chk_autocomplete.Size = New System.Drawing.Size(113, 20)
+        Me.chk_autocomplete.TabIndex = 11
+        Me.chk_autocomplete.Text = "Auto Complete"
+        Me.chk_autocomplete.UseVisualStyleBackColor = True
+        '
         'frm_sEnrollSubject
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -423,4 +463,7 @@ Partial Class frm_sEnrollSubject
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents btn_enlist As Button
+    Friend WithEvents btn_search As Button
+    Friend WithEvents txt_search As TextBox
+    Friend WithEvents chk_autocomplete As CheckBox
 End Class
