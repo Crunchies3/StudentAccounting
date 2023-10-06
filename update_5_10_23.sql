@@ -216,6 +216,61 @@ CREATE TABLE `tbltransaction` (
 
 /*Data for the table `tbltransaction` */
 
+/* Function  structure for function  `fncCheckStudentBalanceForEnrollment` */
+
+/*!50003 DROP FUNCTION IF EXISTS `fncCheckStudentBalanceForEnrollment` */;
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` FUNCTION `fncCheckStudentBalanceForEnrollment`(p_studentid varchar(10)) RETURNS tinyint(1)
+    READS SQL DATA
+    DETERMINISTIC
+BEGIN
+		DECLARE studentBalance DOUBLE;
+		declare AccessOrNot boolean;
+		SET studentBalance = (SELECT b.totalbalance
+				      FROM tblstudent a,
+					   tblbalance b
+				      WHERE a.id = b.stid AND a.studentid = p_studentid);
+				      
+		IF studentBalance <= -1000 THEN
+			SET AccessOrNot = true;
+		ELSE
+			SET AccessOrNot = false;
+		END IF;
+		return AccessOrNot;
+
+    END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `prcDisplaySubjectByYearLevel` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `prcDisplaySubjectByYearLevel` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `prcDisplaySubjectByYearLevel`(p_studentid varchar(15))
+BEGIN
+		select c.id, c.title, c.description, c.units, a.program, c.level
+		from tblstudent a, tblsubject c
+		where a.studentid = p_studentid and a.yearlevel = concat(left(c.level,1));
+	END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `prcEligibilityToEnlistSubject` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `prcEligibilityToEnlistSubject` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `prcEligibilityToEnlistSubject`(p_studentid varchar(10))
+BEGIN
+		declare TorF boolean;
+		set TorF =`fncCheckStudentBalanceForEnrollment`(p_studentid);
+		select TorF as 'Eligibility';
+
+	END */$$
+DELIMITER ;
+
 /* Procedure structure for procedure `prcGetName` */
 
 /*!50003 DROP PROCEDURE IF EXISTS  `prcGetName` */;
