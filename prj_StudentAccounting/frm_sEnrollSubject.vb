@@ -5,6 +5,7 @@ Public Class frm_sEnrollSubject
     Private Sub frm_sEnrollSubject_Load(sender As Object, e As EventArgs) Handles Me.Load
         checkDatabaseConnection()
         funcLoadLabels()
+        funcDisplaySubject()
     End Sub
 
     Private Sub funcLoadLabels()
