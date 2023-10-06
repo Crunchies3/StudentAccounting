@@ -234,25 +234,25 @@ Partial Class frm_sAssessment
         'lbl_dateTime
         '
         Me.lbl_dateTime.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_dateTime.AutoSize = True
         Me.lbl_dateTime.Font = New System.Drawing.Font("Segoe UI", 10.2!)
         Me.lbl_dateTime.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.lbl_dateTime.Location = New System.Drawing.Point(987, 35)
+        Me.lbl_dateTime.Location = New System.Drawing.Point(933, 35)
         Me.lbl_dateTime.Name = "lbl_dateTime"
-        Me.lbl_dateTime.Size = New System.Drawing.Size(163, 23)
+        Me.lbl_dateTime.Size = New System.Drawing.Size(220, 23)
         Me.lbl_dateTime.TabIndex = 8
         Me.lbl_dateTime.Text = "10/01/2023 13:37:20"
+        Me.lbl_dateTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lbl_accountNumber
         '
-        Me.lbl_accountNumber.AutoSize = True
         Me.lbl_accountNumber.Font = New System.Drawing.Font("Segoe UI", 10.2!)
         Me.lbl_accountNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.lbl_accountNumber.Location = New System.Drawing.Point(184, 35)
+        Me.lbl_accountNumber.Location = New System.Drawing.Point(186, 35)
         Me.lbl_accountNumber.Name = "lbl_accountNumber"
-        Me.lbl_accountNumber.Size = New System.Drawing.Size(168, 23)
+        Me.lbl_accountNumber.Size = New System.Drawing.Size(243, 23)
         Me.lbl_accountNumber.TabIndex = 8
         Me.lbl_accountNumber.Text = "Account No.: 134563"
+        Me.lbl_accountNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lbl_name
         '
@@ -369,7 +369,6 @@ Partial Class frm_sAssessment
         Me.pnl_Datagrid.ResumeLayout(False)
         CType(Me.dgv_assessment, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
-        Me.Panel8.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
         Me.ResumeLayout(False)
