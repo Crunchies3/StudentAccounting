@@ -22,29 +22,17 @@ Partial Class frm_aDashboard_v2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.btnAll = New System.Windows.Forms.Button()
-        Me.chk_autocomplete = New System.Windows.Forms.CheckBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.btn_search = New System.Windows.Forms.Button()
-        Me.txt_search = New System.Windows.Forms.TextBox()
-        Me.pnl_Datagrid = New System.Windows.Forms.Panel()
-        Me.dgv_transactionHistory = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
@@ -61,17 +49,36 @@ Partial Class frm_aDashboard_v2
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.lbl_perExam = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.btnAll = New System.Windows.Forms.Button()
+        Me.chk_autocomplete = New System.Windows.Forms.CheckBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btn_search = New System.Windows.Forms.Button()
+        Me.txt_search = New System.Windows.Forms.TextBox()
+        Me.pnl_Datagrid = New System.Windows.Forms.Panel()
+        Me.dgv_transactionHistory = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        Me.pnl_Datagrid.SuspendLayout()
-        CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
+        Me.TabControl1.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
         Me.Panel5.SuspendLayout()
+        Me.Panel11.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.Panel10.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.pnl_Datagrid.SuspendLayout()
+        CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -114,204 +121,52 @@ Partial Class frm_aDashboard_v2
         Me.Panel4.Size = New System.Drawing.Size(48, 792)
         Me.Panel4.TabIndex = 4
         '
-        'Panel6
+        'TabControl1
         '
-        Me.Panel6.Controls.Add(Me.btnAll)
-        Me.Panel6.Controls.Add(Me.chk_autocomplete)
-        Me.Panel6.Controls.Add(Me.Button1)
-        Me.Panel6.Controls.Add(Me.btn_search)
-        Me.Panel6.Controls.Add(Me.txt_search)
-        Me.Panel6.Controls.Add(Me.pnl_Datagrid)
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(0, 291)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1319, 501)
-        Me.Panel6.TabIndex = 1
-        '
-        'btnAll
-        '
-        Me.btnAll.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.btnAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAll.ForeColor = System.Drawing.Color.White
-        Me.btnAll.Location = New System.Drawing.Point(509, 12)
-        Me.btnAll.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnAll.Name = "btnAll"
-        Me.btnAll.Size = New System.Drawing.Size(108, 27)
-        Me.btnAll.TabIndex = 16
-        Me.btnAll.Text = "All"
-        Me.btnAll.UseVisualStyleBackColor = False
-        '
-        'chk_autocomplete
-        '
-        Me.chk_autocomplete.AutoSize = True
-        Me.chk_autocomplete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.chk_autocomplete.Location = New System.Drawing.Point(187, 48)
-        Me.chk_autocomplete.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.chk_autocomplete.Name = "chk_autocomplete"
-        Me.chk_autocomplete.Size = New System.Drawing.Size(113, 20)
-        Me.chk_autocomplete.TabIndex = 15
-        Me.chk_autocomplete.Text = "Auto Complete"
-        Me.chk_autocomplete.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(188, 379)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(147, 30)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "View Payment"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'btn_search
-        '
-        Me.btn_search.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_search.ForeColor = System.Drawing.Color.White
-        Me.btn_search.Location = New System.Drawing.Point(396, 13)
-        Me.btn_search.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btn_search.Name = "btn_search"
-        Me.btn_search.Size = New System.Drawing.Size(108, 27)
-        Me.btn_search.TabIndex = 14
-        Me.btn_search.Text = "Search"
-        Me.btn_search.UseVisualStyleBackColor = False
-        '
-        'txt_search
-        '
-        Me.txt_search.BackColor = System.Drawing.Color.White
-        Me.txt_search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_search.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txt_search.Location = New System.Drawing.Point(187, 16)
-        Me.txt_search.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txt_search.Name = "txt_search"
-        Me.txt_search.Size = New System.Drawing.Size(203, 22)
-        Me.txt_search.TabIndex = 13
-        '
-        'pnl_Datagrid
-        '
-        Me.pnl_Datagrid.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.TabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pnl_Datagrid.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.pnl_Datagrid.Controls.Add(Me.dgv_transactionHistory)
-        Me.pnl_Datagrid.Location = New System.Drawing.Point(187, 86)
-        Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.pnl_Datagrid.Name = "pnl_Datagrid"
-        Me.pnl_Datagrid.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_Datagrid.Size = New System.Drawing.Size(971, 278)
-        Me.pnl_Datagrid.TabIndex = 5
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.ItemSize = New System.Drawing.Size(77, 25)
+        Me.TabControl1.Location = New System.Drawing.Point(32, 59)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(1329, 796)
+        Me.TabControl1.TabIndex = 0
         '
-        'dgv_transactionHistory
+        'TabPage1
         '
-        Me.dgv_transactionHistory.AllowUserToResizeColumns = False
-        Me.dgv_transactionHistory.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.dgv_transactionHistory.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgv_transactionHistory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.dgv_transactionHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_transactionHistory.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
-        Me.dgv_transactionHistory.ColumnHeadersHeight = 35
-        Me.dgv_transactionHistory.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_transactionHistory.DefaultCellStyle = DataGridViewCellStyle8
-        Me.dgv_transactionHistory.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgv_transactionHistory.Location = New System.Drawing.Point(1, 1)
-        Me.dgv_transactionHistory.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.dgv_transactionHistory.Name = "dgv_transactionHistory"
-        Me.dgv_transactionHistory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_transactionHistory.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
-        Me.dgv_transactionHistory.RowHeadersWidth = 51
-        Me.dgv_transactionHistory.RowTemplate.Height = 35
-        Me.dgv_transactionHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_transactionHistory.Size = New System.Drawing.Size(969, 276)
-        Me.dgv_transactionHistory.TabIndex = 3
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "ID"
-        Me.Column1.MinimumWidth = 50
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 53
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Student ID"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 108
-        '
-        'Column3
-        '
-        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column3.HeaderText = "Fullname"
-        Me.Column3.MinimumWidth = 100
-        Me.Column3.Name = "Column3"
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Gender"
-        Me.Column4.MinimumWidth = 6
-        Me.Column4.Name = "Column4"
-        Me.Column4.Width = 125
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Program"
-        Me.Column5.MinimumWidth = 6
-        Me.Column5.Name = "Column5"
-        Me.Column5.Width = 125
-        '
-        'Column6
-        '
-        Me.Column6.HeaderText = "Year Level"
-        Me.Column6.MinimumWidth = 6
-        Me.Column6.Name = "Column6"
-        Me.Column6.Width = 125
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.White
-        Me.Panel2.Controls.Add(Me.Panel6)
-        Me.Panel2.Controls.Add(Me.Panel5)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(36, 54)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1319, 792)
-        Me.Panel2.TabIndex = 5
+        Me.TabPage1.Controls.Add(Me.Panel5)
+        Me.TabPage1.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage1.Location = New System.Drawing.Point(4, 29)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(1321, 763)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Dashboard"
         '
         'Panel5
         '
-        Me.Panel5.Controls.Add(Me.Label11)
-        Me.Panel5.Controls.Add(Me.Label8)
-        Me.Panel5.Controls.Add(Me.TableLayoutPanel2)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel5.Location = New System.Drawing.Point(0, 0)
+        Me.Panel5.BackColor = System.Drawing.Color.White
+        Me.Panel5.Controls.Add(Me.Panel11)
+        Me.Panel5.Controls.Add(Me.Panel6)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel5.Location = New System.Drawing.Point(3, 3)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1319, 291)
-        Me.Panel5.TabIndex = 0
+        Me.Panel5.Size = New System.Drawing.Size(1315, 757)
+        Me.Panel5.TabIndex = 6
+        '
+        'Panel11
+        '
+        Me.Panel11.Controls.Add(Me.Label11)
+        Me.Panel11.Controls.Add(Me.Label8)
+        Me.Panel11.Controls.Add(Me.TableLayoutPanel2)
+        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel11.Location = New System.Drawing.Point(0, 0)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(1315, 291)
+        Me.Panel11.TabIndex = 0
         '
         'Label11
         '
@@ -321,9 +176,9 @@ Partial Class frm_aDashboard_v2
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.Label11.Location = New System.Drawing.Point(182, 47)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(105, 31)
+        Me.Label11.Size = New System.Drawing.Size(129, 31)
         Me.Label11.TabIndex = 40
-        Me.Label11.Text = "Financial"
+        Me.Label11.Text = "Dashboard"
         '
         'Label8
         '
@@ -355,7 +210,7 @@ Partial Class frm_aDashboard_v2
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(971, 133)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(968, 133)
         Me.TableLayoutPanel2.TabIndex = 2
         '
         'Panel7
@@ -498,7 +353,7 @@ Partial Class frm_aDashboard_v2
         Me.Panel10.Location = New System.Drawing.Point(726, 0)
         Me.Panel10.Margin = New System.Windows.Forms.Padding(0, 0, 0, 8)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(245, 125)
+        Me.Panel10.Size = New System.Drawing.Size(242, 125)
         Me.Panel10.TabIndex = 1
         '
         'lbl_perExam
@@ -526,29 +381,224 @@ Partial Class frm_aDashboard_v2
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Total Payments Received"
         '
+        'Panel6
+        '
+        Me.Panel6.Controls.Add(Me.btnAll)
+        Me.Panel6.Controls.Add(Me.chk_autocomplete)
+        Me.Panel6.Controls.Add(Me.Button1)
+        Me.Panel6.Controls.Add(Me.btn_search)
+        Me.Panel6.Controls.Add(Me.txt_search)
+        Me.Panel6.Controls.Add(Me.pnl_Datagrid)
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel6.Location = New System.Drawing.Point(0, 0)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(1315, 757)
+        Me.Panel6.TabIndex = 1
+        '
+        'btnAll
+        '
+        Me.btnAll.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btnAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAll.ForeColor = System.Drawing.Color.White
+        Me.btnAll.Location = New System.Drawing.Point(509, 12)
+        Me.btnAll.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnAll.Name = "btnAll"
+        Me.btnAll.Size = New System.Drawing.Size(108, 27)
+        Me.btnAll.TabIndex = 16
+        Me.btnAll.Text = "All"
+        Me.btnAll.UseVisualStyleBackColor = False
+        '
+        'chk_autocomplete
+        '
+        Me.chk_autocomplete.AutoSize = True
+        Me.chk_autocomplete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.chk_autocomplete.Location = New System.Drawing.Point(187, 48)
+        Me.chk_autocomplete.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.chk_autocomplete.Name = "chk_autocomplete"
+        Me.chk_autocomplete.Size = New System.Drawing.Size(113, 21)
+        Me.chk_autocomplete.TabIndex = 15
+        Me.chk_autocomplete.Text = "Auto Complete"
+        Me.chk_autocomplete.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(188, 637)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(147, 30)
+        Me.Button1.TabIndex = 14
+        Me.Button1.Text = "View Payment"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'btn_search
+        '
+        Me.btn_search.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_search.ForeColor = System.Drawing.Color.White
+        Me.btn_search.Location = New System.Drawing.Point(396, 13)
+        Me.btn_search.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_search.Name = "btn_search"
+        Me.btn_search.Size = New System.Drawing.Size(108, 27)
+        Me.btn_search.TabIndex = 14
+        Me.btn_search.Text = "Search"
+        Me.btn_search.UseVisualStyleBackColor = False
+        '
+        'txt_search
+        '
+        Me.txt_search.BackColor = System.Drawing.Color.White
+        Me.txt_search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_search.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txt_search.Location = New System.Drawing.Point(187, 16)
+        Me.txt_search.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txt_search.Name = "txt_search"
+        Me.txt_search.Size = New System.Drawing.Size(203, 25)
+        Me.txt_search.TabIndex = 13
+        '
+        'pnl_Datagrid
+        '
+        Me.pnl_Datagrid.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pnl_Datagrid.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.pnl_Datagrid.Controls.Add(Me.dgv_transactionHistory)
+        Me.pnl_Datagrid.Location = New System.Drawing.Point(187, 296)
+        Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnl_Datagrid.Name = "pnl_Datagrid"
+        Me.pnl_Datagrid.Padding = New System.Windows.Forms.Padding(1)
+        Me.pnl_Datagrid.Size = New System.Drawing.Size(967, 326)
+        Me.pnl_Datagrid.TabIndex = 5
+        '
+        'dgv_transactionHistory
+        '
+        Me.dgv_transactionHistory.AllowUserToResizeColumns = False
+        Me.dgv_transactionHistory.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.dgv_transactionHistory.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgv_transactionHistory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.dgv_transactionHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_transactionHistory.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
+        Me.dgv_transactionHistory.ColumnHeadersHeight = 35
+        Me.dgv_transactionHistory.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_transactionHistory.DefaultCellStyle = DataGridViewCellStyle11
+        Me.dgv_transactionHistory.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgv_transactionHistory.Location = New System.Drawing.Point(1, 1)
+        Me.dgv_transactionHistory.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dgv_transactionHistory.Name = "dgv_transactionHistory"
+        Me.dgv_transactionHistory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_transactionHistory.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
+        Me.dgv_transactionHistory.RowHeadersWidth = 51
+        Me.dgv_transactionHistory.RowTemplate.Height = 35
+        Me.dgv_transactionHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_transactionHistory.Size = New System.Drawing.Size(965, 324)
+        Me.dgv_transactionHistory.TabIndex = 3
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "ID"
+        Me.Column1.MinimumWidth = 50
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 53
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Student ID"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 108
+        '
+        'Column3
+        '
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.HeaderText = "Fullname"
+        Me.Column3.MinimumWidth = 100
+        Me.Column3.Name = "Column3"
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Gender"
+        Me.Column4.MinimumWidth = 6
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 125
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Program"
+        Me.Column5.MinimumWidth = 6
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 125
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Year Level"
+        Me.Column6.MinimumWidth = 6
+        Me.Column6.Name = "Column6"
+        Me.Column6.Width = 125
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage2.Location = New System.Drawing.Point(4, 29)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(1321, 763)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Payment Transaction"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Panel2.Controls.Add(Me.TabControl1)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1403, 846)
+        Me.Panel2.TabIndex = 5
+        '
         'frm_aDashboard_v2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1403, 846)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frm_aDashboard_v2"
         Me.Text = "frm_aDashboard_v2"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
-        Me.pnl_Datagrid.ResumeLayout(False)
-        CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
+        Me.TabControl1.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
+        Me.Panel11.ResumeLayout(False)
+        Me.Panel11.PerformLayout()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
@@ -558,6 +608,11 @@ Partial Class frm_aDashboard_v2
         Me.Panel9.PerformLayout()
         Me.Panel10.ResumeLayout(False)
         Me.Panel10.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
+        Me.pnl_Datagrid.ResumeLayout(False)
+        CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -566,11 +621,24 @@ Partial Class frm_aDashboard_v2
     Friend WithEvents Label9 As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel4 As Panel
+    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel6 As Panel
+    Friend WithEvents btnAll As Button
+    Friend WithEvents chk_autocomplete As CheckBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents btn_search As Button
+    Friend WithEvents txt_search As TextBox
     Friend WithEvents pnl_Datagrid As Panel
     Friend WithEvents dgv_transactionHistory As DataGridView
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel5 As Panel
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Panel11 As Panel
     Friend WithEvents Label11 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
@@ -587,15 +655,6 @@ Partial Class frm_aDashboard_v2
     Friend WithEvents Panel10 As Panel
     Friend WithEvents lbl_perExam As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents btnAll As Button
-    Friend WithEvents chk_autocomplete As CheckBox
-    Friend WithEvents btn_search As Button
-    Friend WithEvents txt_search As TextBox
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Button1 As Button
+    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents Panel2 As Panel
 End Class
