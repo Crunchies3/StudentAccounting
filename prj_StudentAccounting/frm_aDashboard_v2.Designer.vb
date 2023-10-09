@@ -30,7 +30,6 @@ Partial Class frm_aDashboard_v2
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.pnl_Datagrid = New System.Windows.Forms.Panel()
         Me.dgv_transactionHistory = New System.Windows.Forms.DataGridView()
@@ -39,6 +38,9 @@ Partial Class frm_aDashboard_v2
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.lbl_totalAssessment = New System.Windows.Forms.Label()
@@ -52,13 +54,12 @@ Partial Class frm_aDashboard_v2
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.lbl_perExam = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.pnl_Datagrid.SuspendLayout()
         CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel5.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel8.SuspendLayout()
@@ -117,23 +118,13 @@ Partial Class frm_aDashboard_v2
         Me.Panel2.Size = New System.Drawing.Size(1319, 792)
         Me.Panel2.TabIndex = 5
         '
-        'Panel5
-        '
-        Me.Panel5.Controls.Add(Me.TableLayoutPanel2)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel5.Location = New System.Drawing.Point(0, 0)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1319, 303)
-        Me.Panel5.TabIndex = 0
-        '
         'Panel6
         '
-        Me.Panel6.Controls.Add(Me.Label10)
         Me.Panel6.Controls.Add(Me.pnl_Datagrid)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(0, 303)
+        Me.Panel6.Location = New System.Drawing.Point(0, 291)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1319, 489)
+        Me.Panel6.Size = New System.Drawing.Size(1319, 501)
         Me.Panel6.TabIndex = 1
         '
         'pnl_Datagrid
@@ -143,11 +134,11 @@ Partial Class frm_aDashboard_v2
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnl_Datagrid.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.pnl_Datagrid.Controls.Add(Me.dgv_transactionHistory)
-        Me.pnl_Datagrid.Location = New System.Drawing.Point(186, 89)
+        Me.pnl_Datagrid.Location = New System.Drawing.Point(187, 20)
         Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnl_Datagrid.Name = "pnl_Datagrid"
         Me.pnl_Datagrid.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_Datagrid.Size = New System.Drawing.Size(971, 287)
+        Me.pnl_Datagrid.Size = New System.Drawing.Size(971, 299)
         Me.pnl_Datagrid.TabIndex = 5
         '
         'dgv_transactionHistory
@@ -191,7 +182,7 @@ Partial Class frm_aDashboard_v2
         Me.dgv_transactionHistory.RowHeadersWidth = 51
         Me.dgv_transactionHistory.RowTemplate.Height = 35
         Me.dgv_transactionHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_transactionHistory.Size = New System.Drawing.Size(969, 285)
+        Me.dgv_transactionHistory.Size = New System.Drawing.Size(969, 297)
         Me.dgv_transactionHistory.TabIndex = 3
         '
         'Column1
@@ -230,6 +221,40 @@ Partial Class frm_aDashboard_v2
         Me.Column6.Name = "Column6"
         Me.Column6.Width = 150
         '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.Label11)
+        Me.Panel5.Controls.Add(Me.Label8)
+        Me.Panel5.Controls.Add(Me.TableLayoutPanel2)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel5.Location = New System.Drawing.Point(0, 0)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(1319, 291)
+        Me.Panel5.TabIndex = 0
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.Label11.Location = New System.Drawing.Point(182, 47)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(105, 31)
+        Me.Label11.TabIndex = 40
+        Me.Label11.Text = "Financial"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.Label8.Location = New System.Drawing.Point(181, 257)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(363, 31)
+        Me.Label8.TabIndex = 39
+        Me.Label8.Text = "List of Officially Enrolled Students"
+        '
         'TableLayoutPanel2
         '
         Me.TableLayoutPanel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -244,7 +269,7 @@ Partial Class frm_aDashboard_v2
         Me.TableLayoutPanel2.Controls.Add(Me.Panel8, 1, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel9, 2, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel10, 3, 0)
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(186, 119)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(188, 107)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
@@ -268,15 +293,15 @@ Partial Class frm_aDashboard_v2
         'lbl_totalAssessment
         '
         Me.lbl_totalAssessment.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lbl_totalAssessment.AutoSize = True
         Me.lbl_totalAssessment.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
         Me.lbl_totalAssessment.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(124, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.lbl_totalAssessment.Location = New System.Drawing.Point(144, 36)
+        Me.lbl_totalAssessment.Location = New System.Drawing.Point(11, 36)
         Me.lbl_totalAssessment.Name = "lbl_totalAssessment"
-        Me.lbl_totalAssessment.Size = New System.Drawing.Size(64, 45)
+        Me.lbl_totalAssessment.Size = New System.Drawing.Size(69, 45)
         Me.lbl_totalAssessment.TabIndex = 0
-        Me.lbl_totalAssessment.Text = "0.0"
+        Me.lbl_totalAssessment.Text = "100"
         '
         'Label1
         '
@@ -284,11 +309,11 @@ Partial Class frm_aDashboard_v2
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 10.2!)
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(124, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(15, 75)
+        Me.Label1.Location = New System.Drawing.Point(15, 90)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(139, 23)
+        Me.Label1.Size = New System.Drawing.Size(117, 23)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Total Assessment"
+        Me.Label1.Text = "Total Students"
         '
         'Panel8
         '
@@ -306,15 +331,15 @@ Partial Class frm_aDashboard_v2
         'lbl_totalPayment
         '
         Me.lbl_totalPayment.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lbl_totalPayment.AutoSize = True
         Me.lbl_totalPayment.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
         Me.lbl_totalPayment.ForeColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(113, Byte), Integer), CType(CType(154, Byte), Integer))
-        Me.lbl_totalPayment.Location = New System.Drawing.Point(144, 36)
+        Me.lbl_totalPayment.Location = New System.Drawing.Point(9, 36)
         Me.lbl_totalPayment.Name = "lbl_totalPayment"
-        Me.lbl_totalPayment.Size = New System.Drawing.Size(64, 45)
+        Me.lbl_totalPayment.Size = New System.Drawing.Size(57, 45)
         Me.lbl_totalPayment.TabIndex = 0
-        Me.lbl_totalPayment.Text = "0.0"
+        Me.lbl_totalPayment.Text = "45"
         '
         'Label2
         '
@@ -322,11 +347,11 @@ Partial Class frm_aDashboard_v2
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 10.2!)
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(113, Byte), Integer), CType(CType(154, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(13, 75)
+        Me.Label2.Location = New System.Drawing.Point(13, 90)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(117, 23)
+        Me.Label2.Size = New System.Drawing.Size(184, 23)
         Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Total Payment"
+        Me.Label2.Text = "Total Enrolled Students"
         '
         'Panel9
         '
@@ -344,15 +369,16 @@ Partial Class frm_aDashboard_v2
         'lbl_currentBalance
         '
         Me.lbl_currentBalance.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lbl_currentBalance.AutoSize = True
-        Me.lbl_currentBalance.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
+        Me.lbl_currentBalance.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold)
         Me.lbl_currentBalance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(172, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(4, Byte), Integer))
-        Me.lbl_currentBalance.Location = New System.Drawing.Point(144, 36)
+        Me.lbl_currentBalance.Location = New System.Drawing.Point(12, 17)
         Me.lbl_currentBalance.Name = "lbl_currentBalance"
-        Me.lbl_currentBalance.Size = New System.Drawing.Size(64, 45)
+        Me.lbl_currentBalance.Size = New System.Drawing.Size(175, 64)
         Me.lbl_currentBalance.TabIndex = 0
-        Me.lbl_currentBalance.Text = "0.0"
+        Me.lbl_currentBalance.Text = "First Semester " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "2023-24"
+        Me.lbl_currentBalance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label3
         '
@@ -360,11 +386,11 @@ Partial Class frm_aDashboard_v2
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 10.2!)
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(172, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(4, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(14, 75)
+        Me.Label3.Location = New System.Drawing.Point(14, 90)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(132, 23)
+        Me.Label3.Size = New System.Drawing.Size(149, 23)
         Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Current Balance"
+        Me.Label3.Text = "Active School Year"
         '
         'Panel10
         '
@@ -382,15 +408,15 @@ Partial Class frm_aDashboard_v2
         'lbl_perExam
         '
         Me.lbl_perExam.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lbl_perExam.AutoSize = True
         Me.lbl_perExam.Font = New System.Drawing.Font("Segoe UI Semibold", 19.8!, System.Drawing.FontStyle.Bold)
         Me.lbl_perExam.ForeColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.lbl_perExam.Location = New System.Drawing.Point(167, 36)
+        Me.lbl_perExam.Location = New System.Drawing.Point(12, 36)
         Me.lbl_perExam.Name = "lbl_perExam"
-        Me.lbl_perExam.Size = New System.Drawing.Size(64, 45)
+        Me.lbl_perExam.Size = New System.Drawing.Size(177, 45)
         Me.lbl_perExam.TabIndex = 0
-        Me.lbl_perExam.Text = "0.0"
+        Me.lbl_perExam.Text = "P14,200.00"
         '
         'Label4
         '
@@ -398,22 +424,11 @@ Partial Class frm_aDashboard_v2
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 10.2!)
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(16, 75)
+        Me.Label4.Location = New System.Drawing.Point(16, 90)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(80, 23)
+        Me.Label4.Size = New System.Drawing.Size(196, 23)
         Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Per Exam"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(181, 3)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(216, 31)
-        Me.Label10.TabIndex = 6
-        Me.Label10.Text = "Transaction History"
+        Me.Label4.Text = "Total Payments Received"
         '
         'frm_aDashboard_v2
         '
@@ -432,11 +447,11 @@ Partial Class frm_aDashboard_v2
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
         Me.pnl_Datagrid.ResumeLayout(False)
         CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
@@ -477,5 +492,6 @@ Partial Class frm_aDashboard_v2
     Friend WithEvents Panel10 As Panel
     Friend WithEvents lbl_perExam As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label10 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label11 As Label
 End Class
