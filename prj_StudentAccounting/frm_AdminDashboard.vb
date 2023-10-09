@@ -5,9 +5,9 @@
         button = 1
         responsive()
 
-        With frm_aDashBoard
+        With frm_aDashboard_v2
             .TopLevel = False
-            pnl_main.Controls.Add(frm_aDashBoard)
+            pnl_main.Controls.Add(frm_aDashboard_v2)
             .BringToFront()
             .Show()
         End With
@@ -16,9 +16,9 @@
     Private Sub responsive()
         Select Case button
             Case 1
-                frm_aDashBoard.Size = pnl_main.Size
-                frm_aDashBoard.Location = New Point(0, 0)
-                frm_aDashBoard.Show()
+                frm_aDashboard_v2.Size = pnl_main.Size
+                frm_aDashboard_v2.Location = New Point(0, 0)
+                frm_aDashboard_v2.Show()
             Case 2
                 frm_sSubjects.Size = pnl_main.Size
                 frm_sSubjects.Location = New Point(0, 0)
@@ -41,9 +41,9 @@
         button = 1
         responsive()
 
-        With frm_aDashBoard
+        With frm_aDashboard_v2
             .TopLevel = False
-            pnl_main.Controls.Add(frm_aDashBoard)
+            pnl_main.Controls.Add(frm_aDashboard_v2)
             .BringToFront()
             .Show()
         End With
@@ -52,6 +52,5 @@
 
     Private Sub frm_AdminDashboard_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         responsive()
-
     End Sub
 End Class

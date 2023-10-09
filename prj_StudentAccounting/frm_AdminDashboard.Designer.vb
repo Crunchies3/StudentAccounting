@@ -113,6 +113,7 @@ Partial Class frm_AdminDashboard
         Me.Controls.Add(Me.Panel1)
         Me.Name = "frm_AdminDashboard"
         Me.Text = "frm_AdminDashboard"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.pnl_buttons.ResumeLayout(False)
         Me.ResumeLayout(False)
