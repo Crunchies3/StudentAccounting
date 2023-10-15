@@ -49,7 +49,7 @@ Partial Class frm_AdminDashboard
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(190, 589)
+        Me.Panel1.Size = New System.Drawing.Size(250, 589)
         Me.Panel1.TabIndex = 0
         '
         'pnl_buttons
@@ -65,7 +65,7 @@ Partial Class frm_AdminDashboard
         Me.pnl_buttons.Location = New System.Drawing.Point(0, 179)
         Me.pnl_buttons.Margin = New System.Windows.Forms.Padding(2)
         Me.pnl_buttons.Name = "pnl_buttons"
-        Me.pnl_buttons.Size = New System.Drawing.Size(190, 410)
+        Me.pnl_buttons.Size = New System.Drawing.Size(250, 410)
         Me.pnl_buttons.TabIndex = 2
         '
         'Button7
@@ -172,7 +172,7 @@ Partial Class frm_AdminDashboard
         Me.pnl_logo.Location = New System.Drawing.Point(0, 43)
         Me.pnl_logo.Margin = New System.Windows.Forms.Padding(2)
         Me.pnl_logo.Name = "pnl_logo"
-        Me.pnl_logo.Size = New System.Drawing.Size(190, 136)
+        Me.pnl_logo.Size = New System.Drawing.Size(250, 136)
         Me.pnl_logo.TabIndex = 1
         '
         'Panel2
@@ -182,7 +182,7 @@ Partial Class frm_AdminDashboard
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(190, 43)
+        Me.Panel2.Size = New System.Drawing.Size(250, 43)
         Me.Panel2.TabIndex = 0
         '
         'Panel3
@@ -190,19 +190,19 @@ Partial Class frm_AdminDashboard
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.ForeColor = System.Drawing.Color.Black
-        Me.Panel3.Location = New System.Drawing.Point(190, 0)
+        Me.Panel3.Location = New System.Drawing.Point(250, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(807, 43)
+        Me.Panel3.Size = New System.Drawing.Size(747, 43)
         Me.Panel3.TabIndex = 1
         '
         'pnl_main
         '
         Me.pnl_main.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnl_main.Location = New System.Drawing.Point(190, 43)
+        Me.pnl_main.Location = New System.Drawing.Point(250, 43)
         Me.pnl_main.Margin = New System.Windows.Forms.Padding(2)
         Me.pnl_main.Name = "pnl_main"
-        Me.pnl_main.Size = New System.Drawing.Size(807, 546)
+        Me.pnl_main.Size = New System.Drawing.Size(747, 546)
         Me.pnl_main.TabIndex = 2
         '
         'frm_AdminDashboard

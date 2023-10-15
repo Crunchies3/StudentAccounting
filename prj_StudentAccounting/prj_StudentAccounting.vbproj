@@ -137,12 +137,6 @@
     <Compile Include="frm_aDashboard_v2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_aDashBoard.Designer.vb">
-      <DependentUpon>frm_aDashBoard.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frm_aDashBoard.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frm_AdminDashboard.Designer.vb">
       <DependentUpon>frm_AdminDashboard.vb</DependentUpon>
     </Compile>
@@ -214,9 +208,6 @@
   <ItemGroup>
     <EmbeddedResource Include="frm_aDashboard_v2.resx">
       <DependentUpon>frm_aDashboard_v2.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_aDashBoard.resx">
-      <DependentUpon>frm_aDashBoard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_AdminDashboard.resx">
       <DependentUpon>frm_AdminDashboard.vb</DependentUpon>

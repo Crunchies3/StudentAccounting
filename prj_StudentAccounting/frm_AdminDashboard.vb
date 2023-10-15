@@ -10,6 +10,7 @@
             pnl_main.Controls.Add(frm_aDashboard_v2)
             .BringToFront()
             .Show()
+            .TabControl1.SelectedIndex = 0
         End With
     End Sub
 
@@ -59,6 +60,7 @@
             pnl_main.Controls.Add(frm_aStudentsList)
             .BringToFront()
             .Show()
+            .TabControl1.SelectedIndex = 0
         End With
     End Sub
 End Class
