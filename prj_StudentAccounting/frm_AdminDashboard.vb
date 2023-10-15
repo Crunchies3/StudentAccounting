@@ -1,7 +1,7 @@
 ﻿Public Class frm_AdminDashboard
 
     Dim button As Integer = 1
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click, Button2.Click, Button4.Click, Button3.Click, Button5.Click, Button6.Click, Button7.Click
         button = 1
         responsive()
 
