@@ -152,7 +152,7 @@ Partial Class frm_aDashboard_v2
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1338, 44)
         Me.Panel1.TabIndex = 2
@@ -173,7 +173,7 @@ Partial Class frm_aDashboard_v2
         '
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel3.Location = New System.Drawing.Point(0, 44)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(27, 739)
         Me.Panel3.TabIndex = 3
@@ -182,7 +182,7 @@ Partial Class frm_aDashboard_v2
         '
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel4.Location = New System.Drawing.Point(1302, 44)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(36, 739)
         Me.Panel4.TabIndex = 4
@@ -196,7 +196,7 @@ Partial Class frm_aDashboard_v2
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.ItemSize = New System.Drawing.Size(77, 25)
         Me.TabControl1.Location = New System.Drawing.Point(24, 48)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(2)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(1283, 743)
@@ -207,10 +207,10 @@ Partial Class frm_aDashboard_v2
         Me.TabPage1.Controls.Add(Me.Panel5)
         Me.TabPage1.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage1.Location = New System.Drawing.Point(4, 29)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TabPage1.Size = New System.Drawing.Size(989, 614)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(2)
+        Me.TabPage1.Size = New System.Drawing.Size(1275, 710)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Dashboard"
         '
@@ -221,9 +221,9 @@ Partial Class frm_aDashboard_v2
         Me.Panel5.Controls.Add(Me.Panel11)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel5.Location = New System.Drawing.Point(2, 2)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(985, 610)
+        Me.Panel5.Size = New System.Drawing.Size(1271, 706)
         Me.Panel5.TabIndex = 6
         '
         'Panel6
@@ -236,9 +236,9 @@ Partial Class frm_aDashboard_v2
         Me.Panel6.Controls.Add(Me.pnl_Datagrid)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel6.Location = New System.Drawing.Point(0, 236)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(985, 374)
+        Me.Panel6.Size = New System.Drawing.Size(1271, 470)
         Me.Panel6.TabIndex = 1
         '
         'btnAll
@@ -247,7 +247,7 @@ Partial Class frm_aDashboard_v2
         Me.btnAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAll.ForeColor = System.Drawing.Color.White
         Me.btnAll.Location = New System.Drawing.Point(382, 10)
-        Me.btnAll.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAll.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAll.Name = "btnAll"
         Me.btnAll.Size = New System.Drawing.Size(81, 22)
         Me.btnAll.TabIndex = 16
@@ -259,7 +259,7 @@ Partial Class frm_aDashboard_v2
         Me.chk_autocomplete.AutoSize = True
         Me.chk_autocomplete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.chk_autocomplete.Location = New System.Drawing.Point(140, 39)
-        Me.chk_autocomplete.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.chk_autocomplete.Margin = New System.Windows.Forms.Padding(2)
         Me.chk_autocomplete.Name = "chk_autocomplete"
         Me.chk_autocomplete.Size = New System.Drawing.Size(100, 17)
         Me.chk_autocomplete.TabIndex = 15
@@ -272,8 +272,8 @@ Partial Class frm_aDashboard_v2
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(141, 276)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Location = New System.Drawing.Point(141, 372)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(110, 24)
         Me.Button1.TabIndex = 14
@@ -286,7 +286,7 @@ Partial Class frm_aDashboard_v2
         Me.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_search.ForeColor = System.Drawing.Color.White
         Me.btn_search.Location = New System.Drawing.Point(297, 11)
-        Me.btn_search.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn_search.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_search.Name = "btn_search"
         Me.btn_search.Size = New System.Drawing.Size(81, 22)
         Me.btn_search.TabIndex = 14
@@ -299,7 +299,7 @@ Partial Class frm_aDashboard_v2
         Me.txt_search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt_search.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.txt_search.Location = New System.Drawing.Point(140, 13)
-        Me.txt_search.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txt_search.Margin = New System.Windows.Forms.Padding(2)
         Me.txt_search.Name = "txt_search"
         Me.txt_search.Size = New System.Drawing.Size(153, 21)
         Me.txt_search.TabIndex = 13
@@ -311,11 +311,11 @@ Partial Class frm_aDashboard_v2
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnl_Datagrid.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.pnl_Datagrid.Controls.Add(Me.dgv_transactionHistory)
-        Me.pnl_Datagrid.Location = New System.Drawing.Point(140, 59)
-        Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnl_Datagrid.Location = New System.Drawing.Point(140, 60)
+        Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(2)
         Me.pnl_Datagrid.Name = "pnl_Datagrid"
         Me.pnl_Datagrid.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_Datagrid.Size = New System.Drawing.Size(725, 205)
+        Me.pnl_Datagrid.Size = New System.Drawing.Size(1011, 300)
         Me.pnl_Datagrid.TabIndex = 5
         '
         'dgv_transactionHistory
@@ -345,7 +345,7 @@ Partial Class frm_aDashboard_v2
         Me.dgv_transactionHistory.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgv_transactionHistory.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_transactionHistory.Location = New System.Drawing.Point(1, 1)
-        Me.dgv_transactionHistory.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dgv_transactionHistory.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv_transactionHistory.Name = "dgv_transactionHistory"
         Me.dgv_transactionHistory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -359,7 +359,7 @@ Partial Class frm_aDashboard_v2
         Me.dgv_transactionHistory.RowHeadersWidth = 51
         Me.dgv_transactionHistory.RowTemplate.Height = 35
         Me.dgv_transactionHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_transactionHistory.Size = New System.Drawing.Size(723, 203)
+        Me.dgv_transactionHistory.Size = New System.Drawing.Size(1009, 298)
         Me.dgv_transactionHistory.TabIndex = 3
         '
         'Column1
@@ -411,9 +411,9 @@ Partial Class frm_aDashboard_v2
         Me.Panel11.Controls.Add(Me.TableLayoutPanel2)
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel11.Location = New System.Drawing.Point(0, 0)
-        Me.Panel11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel11.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(985, 236)
+        Me.Panel11.Size = New System.Drawing.Size(1271, 236)
         Me.Panel11.TabIndex = 0
         '
         'Label11
@@ -456,11 +456,11 @@ Partial Class frm_aDashboard_v2
         Me.TableLayoutPanel2.Controls.Add(Me.Panel9, 2, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel10, 3, 0)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(140, 76)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(725, 108)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1011, 108)
         Me.TableLayoutPanel2.TabIndex = 2
         '
         'Panel7
@@ -473,7 +473,7 @@ Partial Class frm_aDashboard_v2
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(0, 0, 8, 6)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(173, 102)
+        Me.Panel7.Size = New System.Drawing.Size(244, 102)
         Me.Panel7.TabIndex = 0
         '
         'lbl_totalAssessment
@@ -510,10 +510,10 @@ Partial Class frm_aDashboard_v2
         Me.Panel8.Controls.Add(Me.lbl_totalPayment)
         Me.Panel8.Controls.Add(Me.Label2)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel8.Location = New System.Drawing.Point(181, 0)
+        Me.Panel8.Location = New System.Drawing.Point(252, 0)
         Me.Panel8.Margin = New System.Windows.Forms.Padding(0, 0, 8, 6)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(173, 102)
+        Me.Panel8.Size = New System.Drawing.Size(244, 102)
         Me.Panel8.TabIndex = 0
         '
         'lbl_totalPayment
@@ -551,10 +551,10 @@ Partial Class frm_aDashboard_v2
         Me.Panel9.Controls.Add(Me.lbl_currentBalance)
         Me.Panel9.Controls.Add(Me.Label3)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel9.Location = New System.Drawing.Point(362, 0)
+        Me.Panel9.Location = New System.Drawing.Point(504, 0)
         Me.Panel9.Margin = New System.Windows.Forms.Padding(0, 0, 8, 6)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(173, 102)
+        Me.Panel9.Size = New System.Drawing.Size(244, 102)
         Me.Panel9.TabIndex = 0
         '
         'Label5
@@ -607,10 +607,10 @@ Partial Class frm_aDashboard_v2
         Me.Panel10.Controls.Add(Me.lbl_perExam)
         Me.Panel10.Controls.Add(Me.Label4)
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel10.Location = New System.Drawing.Point(543, 0)
+        Me.Panel10.Location = New System.Drawing.Point(756, 0)
         Me.Panel10.Margin = New System.Windows.Forms.Padding(0, 0, 0, 6)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(182, 102)
+        Me.Panel10.Size = New System.Drawing.Size(255, 102)
         Me.Panel10.TabIndex = 1
         '
         'lbl_perExam
@@ -647,9 +647,9 @@ Partial Class frm_aDashboard_v2
         Me.TabPage2.Controls.Add(Me.Panel12)
         Me.TabPage2.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage2.Location = New System.Drawing.Point(4, 29)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPage2.Size = New System.Drawing.Size(1275, 710)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Payment Transaction"
@@ -662,7 +662,7 @@ Partial Class frm_aDashboard_v2
         Me.Panel17.Controls.Add(Me.Label7)
         Me.Panel17.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel17.Location = New System.Drawing.Point(2, 238)
-        Me.Panel17.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel17.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(1271, 470)
         Me.Panel17.TabIndex = 2
@@ -674,7 +674,7 @@ Partial Class frm_aDashboard_v2
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.ForeColor = System.Drawing.Color.White
         Me.Button2.Location = New System.Drawing.Point(141, 372)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(110, 24)
         Me.Button2.TabIndex = 40
@@ -688,7 +688,7 @@ Partial Class frm_aDashboard_v2
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.ForeColor = System.Drawing.Color.White
         Me.Button3.Location = New System.Drawing.Point(1041, -1)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(110, 24)
         Me.Button3.TabIndex = 14
@@ -703,7 +703,7 @@ Partial Class frm_aDashboard_v2
         Me.Panel18.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.Panel18.Controls.Add(Me.DataGridView1)
         Me.Panel18.Location = New System.Drawing.Point(140, 56)
-        Me.Panel18.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel18.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel18.Name = "Panel18"
         Me.Panel18.Padding = New System.Windows.Forms.Padding(1)
         Me.Panel18.Size = New System.Drawing.Size(1011, 304)
@@ -736,7 +736,7 @@ Partial Class frm_aDashboard_v2
         Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle5
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.Location = New System.Drawing.Point(1, 1)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -810,7 +810,7 @@ Partial Class frm_aDashboard_v2
         Me.Panel12.Controls.Add(Me.Label6)
         Me.Panel12.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel12.Location = New System.Drawing.Point(2, 2)
-        Me.Panel12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel12.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(1271, 236)
         Me.Panel12.TabIndex = 1
@@ -824,7 +824,7 @@ Partial Class frm_aDashboard_v2
         Me.Panel13.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel13.Controls.Add(Me.Panel16)
         Me.Panel13.Location = New System.Drawing.Point(544, 9)
-        Me.Panel13.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel13.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel13.Name = "Panel13"
         Me.Panel13.Size = New System.Drawing.Size(621, 223)
         Me.Panel13.TabIndex = 44
@@ -843,7 +843,7 @@ Partial Class frm_aDashboard_v2
         Me.TableLayoutPanel1.Controls.Add(Me.Panel15, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Panel19, 3, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(16, 76)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
@@ -975,7 +975,7 @@ Partial Class frm_aDashboard_v2
         Me.Panel16.Controls.Add(Me.TableLayoutPanel3)
         Me.Panel16.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel16.Location = New System.Drawing.Point(0, 142)
-        Me.Panel16.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel16.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel16.Name = "Panel16"
         Me.Panel16.Size = New System.Drawing.Size(621, 81)
         Me.Panel16.TabIndex = 4
@@ -989,7 +989,7 @@ Partial Class frm_aDashboard_v2
         Me.TableLayoutPanel3.Controls.Add(Me.Panel21, 1, 0)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 1
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -1004,7 +1004,7 @@ Partial Class frm_aDashboard_v2
         Me.Panel20.Controls.Add(Me.TextBox4)
         Me.Panel20.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel20.Location = New System.Drawing.Point(2, 2)
-        Me.Panel20.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel20.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(306, 77)
         Me.Panel20.TabIndex = 0
@@ -1020,7 +1020,7 @@ Partial Class frm_aDashboard_v2
         Me.ComboBox1.ItemHeight = 17
         Me.ComboBox1.Items.AddRange(New Object() {"Tuition Payment", "Others"})
         Me.ComboBox1.Location = New System.Drawing.Point(124, 45)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(173, 25)
         Me.ComboBox1.TabIndex = 43
@@ -1054,7 +1054,7 @@ Partial Class frm_aDashboard_v2
         Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(124, 16)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(172, 23)
         Me.TextBox4.TabIndex = 42
@@ -1067,7 +1067,7 @@ Partial Class frm_aDashboard_v2
         Me.Panel21.Controls.Add(Me.TextBox8)
         Me.Panel21.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel21.Location = New System.Drawing.Point(312, 2)
-        Me.Panel21.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel21.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel21.Name = "Panel21"
         Me.Panel21.Size = New System.Drawing.Size(307, 77)
         Me.Panel21.TabIndex = 1
@@ -1101,7 +1101,7 @@ Partial Class frm_aDashboard_v2
         Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox9.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox9.Location = New System.Drawing.Point(106, 44)
-        Me.TextBox9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox9.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(189, 23)
         Me.TextBox9.TabIndex = 42
@@ -1113,7 +1113,7 @@ Partial Class frm_aDashboard_v2
         Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox8.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox8.Location = New System.Drawing.Point(106, 16)
-        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(188, 23)
         Me.TextBox8.TabIndex = 42
@@ -1123,7 +1123,7 @@ Partial Class frm_aDashboard_v2
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(140, 85)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(112, 130)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1135,7 +1135,7 @@ Partial Class frm_aDashboard_v2
         Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox5.Location = New System.Drawing.Point(371, 197)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(168, 23)
         Me.TextBox5.TabIndex = 42
@@ -1145,7 +1145,7 @@ Partial Class frm_aDashboard_v2
         Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox6.Location = New System.Drawing.Point(371, 169)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(168, 23)
         Me.TextBox6.TabIndex = 42
@@ -1155,7 +1155,7 @@ Partial Class frm_aDashboard_v2
         Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(371, 141)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(168, 23)
         Me.TextBox3.TabIndex = 42
@@ -1165,7 +1165,7 @@ Partial Class frm_aDashboard_v2
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(371, 113)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(168, 23)
         Me.TextBox2.TabIndex = 42
@@ -1175,7 +1175,7 @@ Partial Class frm_aDashboard_v2
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(371, 85)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(168, 23)
         Me.TextBox1.TabIndex = 42
@@ -1254,7 +1254,7 @@ Partial Class frm_aDashboard_v2
         Me.Panel2.Controls.Add(Me.TabControl1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1338, 783)
         Me.Panel2.TabIndex = 5
@@ -1270,7 +1270,7 @@ Partial Class frm_aDashboard_v2
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frm_aDashboard_v2"
         Me.Text = "frm_aDashboard_v2"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
