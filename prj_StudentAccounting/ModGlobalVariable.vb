@@ -22,5 +22,7 @@ Module ModGlobalVariable
     Public studentProgram As String
     Public studentYearLevel As String
 
+    'Admin details'
+    Public adminUserID As String
 
 End Module

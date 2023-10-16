@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frm_aStudentsList
+Partial Class frm_aTeacher
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,10 +22,10 @@ Partial Class frm_aStudentsList
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_aStudentsList))
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_aTeacher))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -42,17 +42,9 @@ Partial Class frm_aStudentsList
         Me.btn_search = New System.Windows.Forms.Button()
         Me.txt_search = New System.Windows.Forms.TextBox()
         Me.pnl_Datagrid = New System.Windows.Forms.Panel()
-        Me.dgv_TotalStudents = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgv_transactionHistory = New System.Windows.Forms.DataGridView()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -67,8 +59,6 @@ Partial Class frm_aStudentsList
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -80,8 +70,6 @@ Partial Class frm_aStudentsList
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
         Me.ComboBox6 = New System.Windows.Forms.ComboBox()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -96,8 +84,6 @@ Partial Class frm_aStudentsList
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -107,13 +93,21 @@ Partial Class frm_aStudentsList
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.pnl_Datagrid.SuspendLayout()
-        CType(Me.dgv_TotalStudents, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         Me.Panel12.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -131,7 +125,7 @@ Partial Class frm_aStudentsList
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1338, 44)
-        Me.Panel1.TabIndex = 3
+        Me.Panel1.TabIndex = 4
         '
         'Label9
         '
@@ -141,9 +135,9 @@ Partial Class frm_aStudentsList
         Me.Label9.Location = New System.Drawing.Point(28, 11)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(118, 25)
+        Me.Label9.Size = New System.Drawing.Size(114, 25)
         Me.Label9.TabIndex = 0
-        Me.Label9.Text = "Student List"
+        Me.Label9.Text = "Teacher List"
         '
         'Panel3
         '
@@ -152,7 +146,7 @@ Partial Class frm_aStudentsList
         Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(27, 739)
-        Me.Panel3.TabIndex = 4
+        Me.Panel3.TabIndex = 5
         '
         'Panel4
         '
@@ -161,7 +155,7 @@ Partial Class frm_aStudentsList
         Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(36, 739)
-        Me.Panel4.TabIndex = 5
+        Me.Panel4.TabIndex = 6
         '
         'Panel5
         '
@@ -172,7 +166,7 @@ Partial Class frm_aStudentsList
         Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(1275, 739)
-        Me.Panel5.TabIndex = 7
+        Me.Panel5.TabIndex = 8
         '
         'TabControl1
         '
@@ -200,7 +194,7 @@ Partial Class frm_aStudentsList
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPage1.Size = New System.Drawing.Size(1275, 710)
         Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Student List"
+        Me.TabPage1.Text = "Teacher List"
         '
         'Panel6
         '
@@ -227,9 +221,9 @@ Partial Class frm_aStudentsList
         Me.Label8.Location = New System.Drawing.Point(135, 38)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(112, 25)
+        Me.Label8.Size = New System.Drawing.Size(111, 25)
         Me.Label8.TabIndex = 40
-        Me.Label8.Text = "Student List"
+        Me.Label8.Text = "Teacher List"
         '
         'btnAll
         '
@@ -267,7 +261,7 @@ Partial Class frm_aStudentsList
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(110, 24)
         Me.Button8.TabIndex = 14
-        Me.Button8.Text = "Edit Student"
+        Me.Button8.Text = "Edit Teacher"
         Me.Button8.UseVisualStyleBackColor = False
         '
         'Button1
@@ -281,7 +275,7 @@ Partial Class frm_aStudentsList
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(110, 24)
         Me.Button1.TabIndex = 14
-        Me.Button1.Text = "Add Student"
+        Me.Button1.Text = "Add Teacher"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'btn_search
@@ -314,7 +308,7 @@ Partial Class frm_aStudentsList
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnl_Datagrid.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.pnl_Datagrid.Controls.Add(Me.dgv_TotalStudents)
+        Me.pnl_Datagrid.Controls.Add(Me.dgv_transactionHistory)
         Me.pnl_Datagrid.Location = New System.Drawing.Point(140, 140)
         Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(2)
         Me.pnl_Datagrid.Name = "pnl_Datagrid"
@@ -322,91 +316,49 @@ Partial Class frm_aStudentsList
         Me.pnl_Datagrid.Size = New System.Drawing.Size(1011, 456)
         Me.pnl_Datagrid.TabIndex = 5
         '
-        'dgv_TotalStudents
+        'dgv_transactionHistory
         '
-        Me.dgv_TotalStudents.AllowUserToResizeColumns = False
-        Me.dgv_TotalStudents.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.dgv_TotalStudents.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgv_TotalStudents.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.dgv_TotalStudents.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_TotalStudents.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgv_TotalStudents.ColumnHeadersHeight = 35
-        Me.dgv_TotalStudents.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_TotalStudents.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgv_TotalStudents.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgv_TotalStudents.Location = New System.Drawing.Point(1, 1)
-        Me.dgv_TotalStudents.Margin = New System.Windows.Forms.Padding(2)
-        Me.dgv_TotalStudents.Name = "dgv_TotalStudents"
-        Me.dgv_TotalStudents.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_TotalStudents.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.dgv_TotalStudents.RowHeadersWidth = 51
-        Me.dgv_TotalStudents.RowTemplate.Height = 35
-        Me.dgv_TotalStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_TotalStudents.Size = New System.Drawing.Size(1009, 454)
-        Me.dgv_TotalStudents.TabIndex = 3
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "ID"
-        Me.Column1.MinimumWidth = 50
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 53
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Student ID"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 108
-        '
-        'Column3
-        '
-        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column3.HeaderText = "Fullname"
-        Me.Column3.MinimumWidth = 100
-        Me.Column3.Name = "Column3"
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Gender"
-        Me.Column4.MinimumWidth = 6
-        Me.Column4.Name = "Column4"
-        Me.Column4.Width = 125
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Program"
-        Me.Column5.MinimumWidth = 6
-        Me.Column5.Name = "Column5"
-        Me.Column5.Width = 125
-        '
-        'Column6
-        '
-        Me.Column6.HeaderText = "Year Level"
-        Me.Column6.MinimumWidth = 6
-        Me.Column6.Name = "Column6"
-        Me.Column6.Width = 125
+        Me.dgv_transactionHistory.AllowUserToResizeColumns = False
+        Me.dgv_transactionHistory.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.dgv_transactionHistory.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgv_transactionHistory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.dgv_transactionHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_transactionHistory.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
+        Me.dgv_transactionHistory.ColumnHeadersHeight = 35
+        Me.dgv_transactionHistory.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column7, Me.Column4, Me.Column5, Me.Column6, Me.Column8})
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_transactionHistory.DefaultCellStyle = DataGridViewCellStyle14
+        Me.dgv_transactionHistory.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgv_transactionHistory.Location = New System.Drawing.Point(1, 1)
+        Me.dgv_transactionHistory.Margin = New System.Windows.Forms.Padding(2)
+        Me.dgv_transactionHistory.Name = "dgv_transactionHistory"
+        Me.dgv_transactionHistory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_transactionHistory.RowHeadersDefaultCellStyle = DataGridViewCellStyle15
+        Me.dgv_transactionHistory.RowHeadersWidth = 51
+        Me.dgv_transactionHistory.RowTemplate.Height = 35
+        Me.dgv_transactionHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_transactionHistory.Size = New System.Drawing.Size(1009, 454)
+        Me.dgv_transactionHistory.TabIndex = 3
         '
         'TabPage2
         '
@@ -425,8 +377,6 @@ Partial Class frm_aStudentsList
         '
         Me.Panel12.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel12.Controls.Add(Me.ComboBox2)
-        Me.Panel12.Controls.Add(Me.ComboBox3)
         Me.Panel12.Controls.Add(Me.ComboBox1)
         Me.Panel12.Controls.Add(Me.DateTimePicker1)
         Me.Panel12.Controls.Add(Me.Button4)
@@ -441,8 +391,6 @@ Partial Class frm_aStudentsList
         Me.Panel12.Controls.Add(Me.TextBox2)
         Me.Panel12.Controls.Add(Me.TextBox1)
         Me.Panel12.Controls.Add(Me.Label14)
-        Me.Panel12.Controls.Add(Me.Label5)
-        Me.Panel12.Controls.Add(Me.Label4)
         Me.Panel12.Controls.Add(Me.Label3)
         Me.Panel12.Controls.Add(Me.Label2)
         Me.Panel12.Controls.Add(Me.Label1)
@@ -455,30 +403,8 @@ Partial Class frm_aStudentsList
         Me.Panel12.Location = New System.Drawing.Point(233, 57)
         Me.Panel12.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(776, 497)
+        Me.Panel12.Size = New System.Drawing.Size(776, 445)
         Me.Panel12.TabIndex = 1
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"BSCS", "BSIT"})
-        Me.ComboBox2.Location = New System.Drawing.Point(169, 396)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(284, 25)
-        Me.ComboBox2.TabIndex = 46
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"1st Year", "2nd Year", "3rd Year", "4th Year"})
-        Me.ComboBox3.Location = New System.Drawing.Point(169, 367)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(284, 25)
-        Me.ComboBox3.TabIndex = 46
         '
         'ComboBox1
         '
@@ -505,7 +431,7 @@ Partial Class frm_aStudentsList
         Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(185, 446)
+        Me.Button4.Location = New System.Drawing.Point(185, 394)
         Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(110, 24)
@@ -519,7 +445,7 @@ Partial Class frm_aStudentsList
         Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(66, 446)
+        Me.Button3.Location = New System.Drawing.Point(66, 394)
         Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(110, 24)
@@ -533,7 +459,7 @@ Partial Class frm_aStudentsList
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(506, 338)
+        Me.Button2.Location = New System.Drawing.Point(506, 333)
         Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(110, 24)
@@ -635,28 +561,6 @@ Partial Class frm_aStudentsList
         Me.Label14.TabIndex = 41
         Me.Label14.Text = "First Name"
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(63, 399)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(59, 17)
-        Me.Label5.TabIndex = 41
-        Me.Label5.Text = "Program"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(63, 370)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(66, 17)
-        Me.Label4.TabIndex = 41
-        Me.Label4.Text = "Year Level"
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -741,9 +645,9 @@ Partial Class frm_aStudentsList
         Me.Label10.Location = New System.Drawing.Point(63, 98)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(68, 17)
+        Me.Label10.Size = New System.Drawing.Size(69, 17)
         Me.Label10.TabIndex = 41
-        Me.Label10.Text = "Student ID"
+        Me.Label10.Text = "Teacher ID"
         '
         'Label6
         '
@@ -754,13 +658,14 @@ Partial Class frm_aStudentsList
         Me.Label6.Location = New System.Drawing.Point(61, 38)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(118, 25)
+        Me.Label6.Size = New System.Drawing.Size(117, 25)
         Me.Label6.TabIndex = 40
-        Me.Label6.Text = "Add Student"
+        Me.Label6.Text = "Add Teacher"
         '
         'TabPage3
         '
         Me.TabPage3.Controls.Add(Me.Panel2)
+        Me.TabPage3.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.TabPage3.Location = New System.Drawing.Point(4, 29)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
@@ -773,8 +678,6 @@ Partial Class frm_aStudentsList
         '
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.ComboBox4)
-        Me.Panel2.Controls.Add(Me.ComboBox5)
         Me.Panel2.Controls.Add(Me.ComboBox6)
         Me.Panel2.Controls.Add(Me.DateTimePicker2)
         Me.Panel2.Controls.Add(Me.Button5)
@@ -789,8 +692,6 @@ Partial Class frm_aStudentsList
         Me.Panel2.Controls.Add(Me.TextBox13)
         Me.Panel2.Controls.Add(Me.TextBox14)
         Me.Panel2.Controls.Add(Me.Label11)
-        Me.Panel2.Controls.Add(Me.Label16)
-        Me.Panel2.Controls.Add(Me.Label17)
         Me.Panel2.Controls.Add(Me.Label18)
         Me.Panel2.Controls.Add(Me.Label19)
         Me.Panel2.Controls.Add(Me.Label20)
@@ -803,30 +704,8 @@ Partial Class frm_aStudentsList
         Me.Panel2.Location = New System.Drawing.Point(233, 57)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(776, 497)
+        Me.Panel2.Size = New System.Drawing.Size(776, 445)
         Me.Panel2.TabIndex = 2
-        '
-        'ComboBox4
-        '
-        Me.ComboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox4.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Items.AddRange(New Object() {"BSCS", "BSIT"})
-        Me.ComboBox4.Location = New System.Drawing.Point(169, 396)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(284, 25)
-        Me.ComboBox4.TabIndex = 46
-        '
-        'ComboBox5
-        '
-        Me.ComboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox5.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Items.AddRange(New Object() {"1st Year", "2nd Year", "3rd Year", "4th Year"})
-        Me.ComboBox5.Location = New System.Drawing.Point(169, 367)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(284, 25)
-        Me.ComboBox5.TabIndex = 46
         '
         'ComboBox6
         '
@@ -853,7 +732,7 @@ Partial Class frm_aStudentsList
         Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(185, 446)
+        Me.Button5.Location = New System.Drawing.Point(185, 394)
         Me.Button5.Margin = New System.Windows.Forms.Padding(2)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(110, 24)
@@ -867,7 +746,7 @@ Partial Class frm_aStudentsList
         Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(66, 446)
+        Me.Button6.Location = New System.Drawing.Point(66, 394)
         Me.Button6.Margin = New System.Windows.Forms.Padding(2)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(110, 24)
@@ -881,7 +760,7 @@ Partial Class frm_aStudentsList
         Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.ForeColor = System.Drawing.Color.White
-        Me.Button7.Location = New System.Drawing.Point(506, 338)
+        Me.Button7.Location = New System.Drawing.Point(506, 333)
         Me.Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(110, 24)
@@ -983,28 +862,6 @@ Partial Class frm_aStudentsList
         Me.Label11.TabIndex = 41
         Me.Label11.Text = "First Name"
         '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(63, 399)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(59, 17)
-        Me.Label16.TabIndex = 41
-        Me.Label16.Text = "Program"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(63, 370)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(66, 17)
-        Me.Label17.TabIndex = 41
-        Me.Label17.Text = "Year Level"
-        '
         'Label18
         '
         Me.Label18.AutoSize = True
@@ -1089,9 +946,9 @@ Partial Class frm_aStudentsList
         Me.Label25.Location = New System.Drawing.Point(63, 98)
         Me.Label25.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(68, 17)
+        Me.Label25.Size = New System.Drawing.Size(69, 17)
         Me.Label25.TabIndex = 41
-        Me.Label25.Text = "Student ID"
+        Me.Label25.Text = "Teacher ID"
         '
         'Label26
         '
@@ -1102,11 +959,67 @@ Partial Class frm_aStudentsList
         Me.Label26.Location = New System.Drawing.Point(61, 38)
         Me.Label26.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(116, 25)
+        Me.Label26.Size = New System.Drawing.Size(115, 25)
         Me.Label26.TabIndex = 40
-        Me.Label26.Text = "Edit Student"
+        Me.Label26.Text = "Edit Teacher"
         '
-        'frm_aStudentsList
+        'Column1
+        '
+        Me.Column1.HeaderText = "ID"
+        Me.Column1.MinimumWidth = 50
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 53
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Teacher ID"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 108
+        '
+        'Column3
+        '
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.HeaderText = "Fullname"
+        Me.Column3.MinimumWidth = 100
+        Me.Column3.Name = "Column3"
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "Birthdate"
+        Me.Column7.MinimumWidth = 150
+        Me.Column7.Name = "Column7"
+        Me.Column7.Width = 150
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Gender"
+        Me.Column4.MinimumWidth = 100
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 125
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Mobile Number"
+        Me.Column5.MinimumWidth = 150
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 150
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Email Address"
+        Me.Column6.MinimumWidth = 150
+        Me.Column6.Name = "Column6"
+        Me.Column6.Width = 150
+        '
+        'Column8
+        '
+        Me.Column8.HeaderText = "Address"
+        Me.Column8.MinimumWidth = 150
+        Me.Column8.Name = "Column8"
+        Me.Column8.Width = 150
+        '
+        'frm_aTeacher
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -1117,8 +1030,8 @@ Partial Class frm_aStudentsList
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "frm_aStudentsList"
-        Me.Text = "frm_aStudentsList"
+        Me.Name = "frm_aTeacher"
+        Me.Text = "frm_aTeacher"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -1128,7 +1041,7 @@ Partial Class frm_aStudentsList
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.pnl_Datagrid.ResumeLayout(False)
-        CType(Me.dgv_TotalStudents, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.Panel12.ResumeLayout(False)
         Me.Panel12.PerformLayout()
@@ -1147,55 +1060,44 @@ Partial Class frm_aStudentsList
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel5 As Panel
     Friend WithEvents TabControl1 As TabControl
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents Panel12 As Panel
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents Panel6 As Panel
+    Friend WithEvents Label8 As Label
     Friend WithEvents btnAll As Button
     Friend WithEvents chk_autocomplete As CheckBox
+    Friend WithEvents Button8 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents btn_search As Button
     Friend WithEvents txt_search As TextBox
     Friend WithEvents pnl_Datagrid As Panel
-    Friend WithEvents dgv_TotalStudents As DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents dgv_transactionHistory As DataGridView
+    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label6 As Label
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents ComboBox5 As ComboBox
     Friend WithEvents ComboBox6 As ComboBox
     Friend WithEvents DateTimePicker2 As DateTimePicker
     Friend WithEvents Button5 As Button
@@ -1210,8 +1112,6 @@ Partial Class frm_aStudentsList
     Friend WithEvents TextBox13 As TextBox
     Friend WithEvents TextBox14 As TextBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label16 As Label
-    Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
@@ -1221,5 +1121,12 @@ Partial Class frm_aStudentsList
     Friend WithEvents Label24 As Label
     Friend WithEvents Label25 As Label
     Friend WithEvents Label26 As Label
-    Friend WithEvents Button8 As Button
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
 End Class

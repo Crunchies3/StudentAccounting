@@ -26,6 +26,9 @@
                 frm_aStudentsList.Show()
 
             Case 3
+                frm_aTeacher.Size = pnl_main.Size
+                frm_aTeacher.Location = New Point(0, 0)
+                frm_aTeacher.Show()
 
             Case 4
 
@@ -62,5 +65,22 @@
             .Show()
             .TabControl1.SelectedIndex = 0
         End With
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        button = 3
+        responsive()
+
+        With frm_aTeacher
+            .TopLevel = False
+            pnl_main.Controls.Add(frm_aTeacher)
+            .BringToFront()
+            .Show()
+            .TabControl1.SelectedIndex = 0
+        End With
+    End Sub
+
+    Private Sub frm_AdminDashboard_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        frm_adminLogin.Show()
     End Sub
 End Class

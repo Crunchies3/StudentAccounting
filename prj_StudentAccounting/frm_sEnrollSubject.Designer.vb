@@ -72,9 +72,9 @@ Partial Class frm_sEnrollSubject
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1754, 85)
+        Me.Panel1.Size = New System.Drawing.Size(1052, 69)
         Me.Panel1.TabIndex = 1
         '
         'Label9
@@ -82,28 +82,29 @@ Partial Class frm_sEnrollSubject
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(37, 14)
+        Me.Label9.Location = New System.Drawing.Point(28, 11)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(173, 31)
+        Me.Label9.Size = New System.Drawing.Size(143, 25)
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "Enroll Subjects"
         '
         'Panel3
         '
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel3.Location = New System.Drawing.Point(0, 106)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel3.Location = New System.Drawing.Point(0, 69)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(56, 951)
+        Me.Panel3.Size = New System.Drawing.Size(42, 618)
         Me.Panel3.TabIndex = 2
         '
         'Panel4
         '
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel4.Location = New System.Drawing.Point(1679, 106)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel4.Location = New System.Drawing.Point(996, 69)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(75, 951)
+        Me.Panel4.Size = New System.Drawing.Size(56, 618)
         Me.Panel4.TabIndex = 3
         '
         'Panel2
@@ -113,10 +114,10 @@ Partial Class frm_sEnrollSubject
         Me.Panel2.Controls.Add(Me.Panel7)
         Me.Panel2.Controls.Add(Me.Panel6)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(70, 106)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel2.Location = New System.Drawing.Point(42, 69)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1590, 951)
+        Me.Panel2.Size = New System.Drawing.Size(954, 618)
         Me.Panel2.TabIndex = 4
         '
         'Panel8
@@ -132,10 +133,10 @@ Partial Class frm_sEnrollSubject
         Me.Panel8.Controls.Add(Me.btn_enlist)
         Me.Panel8.Controls.Add(Me.Label10)
         Me.Panel8.Controls.Add(Me.pnl_Datagrid)
-        Me.Panel8.Location = New System.Drawing.Point(0, 233)
-        Me.Panel8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel8.Location = New System.Drawing.Point(0, 189)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(1590, 719)
+        Me.Panel8.Size = New System.Drawing.Size(954, 429)
         Me.Panel8.TabIndex = 3
         '
         'btnAll
@@ -143,10 +144,10 @@ Partial Class frm_sEnrollSubject
         Me.btnAll.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btnAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAll.ForeColor = System.Drawing.Color.White
-        Me.btnAll.Location = New System.Drawing.Point(509, 58)
-        Me.btnAll.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnAll.Location = New System.Drawing.Point(382, 47)
+        Me.btnAll.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAll.Name = "btnAll"
-        Me.btnAll.Size = New System.Drawing.Size(108, 27)
+        Me.btnAll.Size = New System.Drawing.Size(81, 22)
         Me.btnAll.TabIndex = 12
         Me.btnAll.Text = "All"
         Me.btnAll.UseVisualStyleBackColor = False
@@ -155,10 +156,10 @@ Partial Class frm_sEnrollSubject
         '
         Me.chk_autocomplete.AutoSize = True
         Me.chk_autocomplete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.chk_autocomplete.Location = New System.Drawing.Point(187, 94)
-        Me.chk_autocomplete.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.chk_autocomplete.Location = New System.Drawing.Point(140, 76)
+        Me.chk_autocomplete.Margin = New System.Windows.Forms.Padding(2)
         Me.chk_autocomplete.Name = "chk_autocomplete"
-        Me.chk_autocomplete.Size = New System.Drawing.Size(113, 20)
+        Me.chk_autocomplete.Size = New System.Drawing.Size(92, 17)
         Me.chk_autocomplete.TabIndex = 11
         Me.chk_autocomplete.Text = "Auto Complete"
         Me.chk_autocomplete.UseVisualStyleBackColor = True
@@ -168,10 +169,10 @@ Partial Class frm_sEnrollSubject
         Me.btn_search.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_search.ForeColor = System.Drawing.Color.White
-        Me.btn_search.Location = New System.Drawing.Point(396, 59)
-        Me.btn_search.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_search.Location = New System.Drawing.Point(297, 48)
+        Me.btn_search.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_search.Name = "btn_search"
-        Me.btn_search.Size = New System.Drawing.Size(108, 27)
+        Me.btn_search.Size = New System.Drawing.Size(81, 22)
         Me.btn_search.TabIndex = 10
         Me.btn_search.Text = "Search"
         Me.btn_search.UseVisualStyleBackColor = False
@@ -181,10 +182,10 @@ Partial Class frm_sEnrollSubject
         Me.txt_search.BackColor = System.Drawing.Color.White
         Me.txt_search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt_search.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txt_search.Location = New System.Drawing.Point(187, 62)
-        Me.txt_search.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txt_search.Location = New System.Drawing.Point(140, 50)
+        Me.txt_search.Margin = New System.Windows.Forms.Padding(2)
         Me.txt_search.Name = "txt_search"
-        Me.txt_search.Size = New System.Drawing.Size(203, 22)
+        Me.txt_search.Size = New System.Drawing.Size(153, 20)
         Me.txt_search.TabIndex = 9
         '
         'btn_enlist
@@ -193,10 +194,10 @@ Partial Class frm_sEnrollSubject
         Me.btn_enlist.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btn_enlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_enlist.ForeColor = System.Drawing.Color.White
-        Me.btn_enlist.Location = New System.Drawing.Point(187, 635)
-        Me.btn_enlist.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_enlist.Location = New System.Drawing.Point(140, 361)
+        Me.btn_enlist.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_enlist.Name = "btn_enlist"
-        Me.btn_enlist.Size = New System.Drawing.Size(108, 38)
+        Me.btn_enlist.Size = New System.Drawing.Size(81, 31)
         Me.btn_enlist.TabIndex = 8
         Me.btn_enlist.Text = "Enlist"
         Me.btn_enlist.UseVisualStyleBackColor = False
@@ -206,9 +207,10 @@ Partial Class frm_sEnrollSubject
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold)
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(185, 7)
+        Me.Label10.Location = New System.Drawing.Point(139, 6)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(502, 31)
+        Me.Label10.Size = New System.Drawing.Size(413, 25)
         Me.Label10.TabIndex = 7
         Me.Label10.Text = "Showing List of Subject Allowed for Enrollment"
         '
@@ -219,11 +221,11 @@ Partial Class frm_sEnrollSubject
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnl_Datagrid.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.pnl_Datagrid.Controls.Add(Me.dgv_enrollSubject)
-        Me.pnl_Datagrid.Location = New System.Drawing.Point(187, 128)
-        Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnl_Datagrid.Location = New System.Drawing.Point(140, 104)
+        Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(2)
         Me.pnl_Datagrid.Name = "pnl_Datagrid"
         Me.pnl_Datagrid.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_Datagrid.Size = New System.Drawing.Size(1238, 493)
+        Me.pnl_Datagrid.Size = New System.Drawing.Size(690, 246)
         Me.pnl_Datagrid.TabIndex = 6
         '
         'dgv_enrollSubject
@@ -245,7 +247,7 @@ Partial Class frm_sEnrollSubject
         Me.dgv_enrollSubject.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column7, Me.Column6})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
@@ -254,12 +256,12 @@ Partial Class frm_sEnrollSubject
         Me.dgv_enrollSubject.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_enrollSubject.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgv_enrollSubject.Location = New System.Drawing.Point(1, 1)
-        Me.dgv_enrollSubject.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dgv_enrollSubject.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv_enrollSubject.Name = "dgv_enrollSubject"
         Me.dgv_enrollSubject.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
@@ -268,7 +270,7 @@ Partial Class frm_sEnrollSubject
         Me.dgv_enrollSubject.RowHeadersWidth = 51
         Me.dgv_enrollSubject.RowTemplate.Height = 35
         Me.dgv_enrollSubject.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_enrollSubject.Size = New System.Drawing.Size(1236, 491)
+        Me.dgv_enrollSubject.Size = New System.Drawing.Size(688, 244)
         Me.dgv_enrollSubject.TabIndex = 3
         '
         'Column1
@@ -319,10 +321,10 @@ Partial Class frm_sEnrollSubject
         Me.Panel7.Controls.Add(Me.Panel9)
         Me.Panel7.Controls.Add(Me.Panel5)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel7.Location = New System.Drawing.Point(0, 122)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel7.Location = New System.Drawing.Point(0, 99)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1590, 111)
+        Me.Panel7.Size = New System.Drawing.Size(954, 90)
         Me.Panel7.TabIndex = 2
         '
         'Panel9
@@ -332,18 +334,19 @@ Partial Class frm_sEnrollSubject
         Me.Panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel9.Controls.Add(Me.lvl_studentType)
         Me.Panel9.Controls.Add(Me.Label4)
-        Me.Panel9.Location = New System.Drawing.Point(187, 47)
-        Me.Panel9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel9.Location = New System.Drawing.Point(140, 38)
+        Me.Panel9.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(1236, 39)
+        Me.Panel9.Size = New System.Drawing.Size(690, 32)
         Me.Panel9.TabIndex = 0
         '
         'lvl_studentType
         '
         Me.lvl_studentType.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.lvl_studentType.Location = New System.Drawing.Point(605, 10)
+        Me.lvl_studentType.Location = New System.Drawing.Point(454, 8)
+        Me.lvl_studentType.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lvl_studentType.Name = "lvl_studentType"
-        Me.lvl_studentType.Size = New System.Drawing.Size(199, 20)
+        Me.lvl_studentType.Size = New System.Drawing.Size(149, 16)
         Me.lvl_studentType.TabIndex = 0
         Me.lvl_studentType.Text = "Old Student"
         Me.lvl_studentType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -351,9 +354,10 @@ Partial Class frm_sEnrollSubject
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(35, 10)
+        Me.Label4.Location = New System.Drawing.Point(26, 8)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 16)
+        Me.Label4.Size = New System.Drawing.Size(31, 13)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Type"
         '
@@ -364,18 +368,19 @@ Partial Class frm_sEnrollSubject
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel5.Controls.Add(Me.lbl_programYear)
         Me.Panel5.Controls.Add(Me.Label3)
-        Me.Panel5.Location = New System.Drawing.Point(187, 12)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel5.Location = New System.Drawing.Point(140, 10)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1236, 39)
+        Me.Panel5.Size = New System.Drawing.Size(690, 32)
         Me.Panel5.TabIndex = 0
         '
         'lbl_programYear
         '
         Me.lbl_programYear.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.lbl_programYear.Location = New System.Drawing.Point(601, 10)
+        Me.lbl_programYear.Location = New System.Drawing.Point(451, 8)
+        Me.lbl_programYear.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_programYear.Name = "lbl_programYear"
-        Me.lbl_programYear.Size = New System.Drawing.Size(173, 20)
+        Me.lbl_programYear.Size = New System.Drawing.Size(130, 16)
         Me.lbl_programYear.TabIndex = 0
         Me.lbl_programYear.Text = "3rd Year"
         Me.lbl_programYear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -383,9 +388,10 @@ Partial Class frm_sEnrollSubject
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(35, 10)
+        Me.Label3.Location = New System.Drawing.Point(26, 8)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(59, 16)
+        Me.Label3.Size = New System.Drawing.Size(46, 13)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Program"
         '
@@ -395,18 +401,19 @@ Partial Class frm_sEnrollSubject
         Me.Panel6.Controls.Add(Me.lbl_accountNumber)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel6.Location = New System.Drawing.Point(0, 0)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1590, 122)
+        Me.Panel6.Size = New System.Drawing.Size(954, 99)
         Me.Panel6.TabIndex = 1
         '
         'lbl_name
         '
         Me.lbl_name.Font = New System.Drawing.Font("Segoe UI", 19.8!, System.Drawing.FontStyle.Bold)
         Me.lbl_name.ForeColor = System.Drawing.SystemColors.GrayText
-        Me.lbl_name.Location = New System.Drawing.Point(184, 66)
+        Me.lbl_name.Location = New System.Drawing.Point(138, 54)
+        Me.lbl_name.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_name.Name = "lbl_name"
-        Me.lbl_name.Size = New System.Drawing.Size(716, 46)
+        Me.lbl_name.Size = New System.Drawing.Size(537, 37)
         Me.lbl_name.TabIndex = 1
         Me.lbl_name.Text = "Alvez, Cyril Charles"
         Me.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -415,25 +422,26 @@ Partial Class frm_sEnrollSubject
         '
         Me.lbl_accountNumber.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold)
         Me.lbl_accountNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.lbl_accountNumber.Location = New System.Drawing.Point(187, 34)
+        Me.lbl_accountNumber.Location = New System.Drawing.Point(140, 28)
+        Me.lbl_accountNumber.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_accountNumber.Name = "lbl_accountNumber"
-        Me.lbl_accountNumber.Size = New System.Drawing.Size(167, 31)
+        Me.lbl_accountNumber.Size = New System.Drawing.Size(125, 25)
         Me.lbl_accountNumber.TabIndex = 0
         Me.lbl_accountNumber.Text = "134563"
         Me.lbl_accountNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'frm_sEnrollSubject
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1403, 846)
+        Me.ClientSize = New System.Drawing.Size(1052, 687)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frm_sEnrollSubject"
         Me.Text = "frm_sEnrollSubject"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
