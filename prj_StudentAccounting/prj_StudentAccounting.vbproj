@@ -216,6 +216,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Classes.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frm_aDashboard_v2.resx">
