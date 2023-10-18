@@ -137,16 +137,28 @@
     <Compile Include="frm_aDashboard_v2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_aDashBoard.Designer.vb">
-      <DependentUpon>frm_aDashBoard.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frm_aDashBoard.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frm_AdminDashboard.Designer.vb">
       <DependentUpon>frm_AdminDashboard.vb</DependentUpon>
     </Compile>
     <Compile Include="frm_AdminDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_adminLogin.Designer.vb">
+      <DependentUpon>frm_adminLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_adminLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_aStudentsList.Designer.vb">
+      <DependentUpon>frm_aStudentsList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_aStudentsList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_aTeacher.Designer.vb">
+      <DependentUpon>frm_aTeacher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_aTeacher.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_loginStudent.Designer.vb">
@@ -209,11 +221,17 @@
     <EmbeddedResource Include="frm_aDashboard_v2.resx">
       <DependentUpon>frm_aDashboard_v2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_aDashBoard.resx">
-      <DependentUpon>frm_aDashBoard.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_AdminDashboard.resx">
       <DependentUpon>frm_AdminDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_adminLogin.resx">
+      <DependentUpon>frm_adminLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_aStudentsList.resx">
+      <DependentUpon>frm_aStudentsList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_aTeacher.resx">
+      <DependentUpon>frm_aTeacher.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_loginStudent.resx">
       <DependentUpon>frm_loginStudent.vb</DependentUpon>
