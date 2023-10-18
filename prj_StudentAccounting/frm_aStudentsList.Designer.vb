@@ -22,9 +22,21 @@ Partial Class frm_aStudentsList
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_aStudentsList))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -35,7 +47,6 @@ Partial Class frm_aStudentsList
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.btnAll = New System.Windows.Forms.Button()
         Me.chk_autocomplete = New System.Windows.Forms.CheckBox()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -46,26 +57,33 @@ Partial Class frm_aStudentsList
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.cmbProgram = New System.Windows.Forms.ComboBox()
+        Me.cmbYearlevel = New System.Windows.Forms.ComboBox()
+        Me.cmbGender = New System.Windows.Forms.ComboBox()
+        Me.dtBirthdate = New System.Windows.Forms.DateTimePicker()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnAddStudent = New System.Windows.Forms.Button()
+        Me.btnBrowsePic = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
+        Me.txtEmailadd = New System.Windows.Forms.TextBox()
+        Me.txtMobileno = New System.Windows.Forms.TextBox()
+        Me.txtMiddlename = New System.Windows.Forms.TextBox()
+        Me.txtFirstname = New System.Windows.Forms.TextBox()
+        Me.txtLastname = New System.Windows.Forms.TextBox()
+        Me.txtStudentID = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -80,21 +98,21 @@ Partial Class frm_aStudentsList
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.cmbEprogram = New System.Windows.Forms.ComboBox()
+        Me.cmbEyearlevel = New System.Windows.Forms.ComboBox()
+        Me.cmbEgender = New System.Windows.Forms.ComboBox()
+        Me.dtEbirthdate = New System.Windows.Forms.DateTimePicker()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.btnSaveEdit = New System.Windows.Forms.Button()
+        Me.btnBrowsePic2 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.txtEaddress = New System.Windows.Forms.TextBox()
+        Me.txtEemailadd = New System.Windows.Forms.TextBox()
+        Me.txtEmobileno = New System.Windows.Forms.TextBox()
+        Me.txtEmiddlename = New System.Windows.Forms.TextBox()
+        Me.txtEfirstname = New System.Windows.Forms.TextBox()
+        Me.txtElastname = New System.Windows.Forms.TextBox()
+        Me.txtEstudentID = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
@@ -107,6 +125,8 @@ Partial Class frm_aStudentsList
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.btnAll = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -231,19 +251,6 @@ Partial Class frm_aStudentsList
         Me.Label8.TabIndex = 40
         Me.Label8.Text = "Student List"
         '
-        'btnAll
-        '
-        Me.btnAll.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.btnAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAll.ForeColor = System.Drawing.Color.White
-        Me.btnAll.Location = New System.Drawing.Point(382, 79)
-        Me.btnAll.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnAll.Name = "btnAll"
-        Me.btnAll.Size = New System.Drawing.Size(81, 22)
-        Me.btnAll.TabIndex = 16
-        Me.btnAll.Text = "All"
-        Me.btnAll.UseVisualStyleBackColor = False
-        '
         'chk_autocomplete
         '
         Me.chk_autocomplete.AutoSize = True
@@ -329,37 +336,38 @@ Partial Class frm_aStudentsList
         Me.dgv_TotalStudents.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgv_TotalStudents.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.dgv_TotalStudents.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_TotalStudents.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_TotalStudents.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle16
         Me.dgv_TotalStudents.ColumnHeadersHeight = 35
-        Me.dgv_TotalStudents.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_TotalStudents.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgv_TotalStudents.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column7, Me.Column8, Me.Column4, Me.Column5, Me.Column6, Me.Column9, Me.Column10, Me.Column11, Me.Column12, Me.Column13})
+        DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle29.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_TotalStudents.DefaultCellStyle = DataGridViewCellStyle29
         Me.dgv_TotalStudents.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgv_TotalStudents.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgv_TotalStudents.Location = New System.Drawing.Point(1, 1)
         Me.dgv_TotalStudents.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv_TotalStudents.Name = "dgv_TotalStudents"
         Me.dgv_TotalStudents.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_TotalStudents.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle30.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle30.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle30.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_TotalStudents.RowHeadersDefaultCellStyle = DataGridViewCellStyle30
         Me.dgv_TotalStudents.RowHeadersWidth = 51
         Me.dgv_TotalStudents.RowTemplate.Height = 35
         Me.dgv_TotalStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -368,13 +376,18 @@ Partial Class frm_aStudentsList
         '
         'Column1
         '
+        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.White
+        Me.Column1.DefaultCellStyle = DataGridViewCellStyle17
         Me.Column1.HeaderText = "ID"
-        Me.Column1.MinimumWidth = 50
+        Me.Column1.MinimumWidth = 100
         Me.Column1.Name = "Column1"
-        Me.Column1.Width = 53
         '
         'Column2
         '
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.White
+        Me.Column2.DefaultCellStyle = DataGridViewCellStyle18
         Me.Column2.HeaderText = "Student ID"
         Me.Column2.MinimumWidth = 6
         Me.Column2.Name = "Column2"
@@ -383,12 +396,38 @@ Partial Class frm_aStudentsList
         'Column3
         '
         Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column3.HeaderText = "Fullname"
-        Me.Column3.MinimumWidth = 100
+        DataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.White
+        Me.Column3.DefaultCellStyle = DataGridViewCellStyle19
+        Me.Column3.HeaderText = "Lastname"
+        Me.Column3.MinimumWidth = 50
         Me.Column3.Name = "Column3"
+        '
+        'Column7
+        '
+        Me.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.White
+        Me.Column7.DefaultCellStyle = DataGridViewCellStyle20
+        Me.Column7.HeaderText = "Firstname"
+        Me.Column7.MinimumWidth = 50
+        Me.Column7.Name = "Column7"
+        '
+        'Column8
+        '
+        Me.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        DataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.White
+        Me.Column8.DefaultCellStyle = DataGridViewCellStyle21
+        Me.Column8.HeaderText = "Middlename"
+        Me.Column8.MinimumWidth = 50
+        Me.Column8.Name = "Column8"
         '
         'Column4
         '
+        DataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.White
+        Me.Column4.DefaultCellStyle = DataGridViewCellStyle22
         Me.Column4.HeaderText = "Gender"
         Me.Column4.MinimumWidth = 6
         Me.Column4.Name = "Column4"
@@ -396,6 +435,9 @@ Partial Class frm_aStudentsList
         '
         'Column5
         '
+        DataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.White
+        Me.Column5.DefaultCellStyle = DataGridViewCellStyle23
         Me.Column5.HeaderText = "Program"
         Me.Column5.MinimumWidth = 6
         Me.Column5.Name = "Column5"
@@ -403,10 +445,60 @@ Partial Class frm_aStudentsList
         '
         'Column6
         '
+        DataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.White
+        Me.Column6.DefaultCellStyle = DataGridViewCellStyle24
         Me.Column6.HeaderText = "Year Level"
         Me.Column6.MinimumWidth = 6
         Me.Column6.Name = "Column6"
         Me.Column6.Width = 125
+        '
+        'Column9
+        '
+        DataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.White
+        Me.Column9.DefaultCellStyle = DataGridViewCellStyle25
+        Me.Column9.HeaderText = "Birthdate"
+        Me.Column9.MinimumWidth = 100
+        Me.Column9.Name = "Column9"
+        Me.Column9.Visible = False
+        '
+        'Column10
+        '
+        DataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.White
+        Me.Column10.DefaultCellStyle = DataGridViewCellStyle26
+        Me.Column10.HeaderText = "Mobile No."
+        Me.Column10.MinimumWidth = 100
+        Me.Column10.Name = "Column10"
+        Me.Column10.Visible = False
+        '
+        'Column11
+        '
+        DataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.White
+        Me.Column11.DefaultCellStyle = DataGridViewCellStyle27
+        Me.Column11.HeaderText = "Email Address"
+        Me.Column11.MinimumWidth = 100
+        Me.Column11.Name = "Column11"
+        Me.Column11.Visible = False
+        '
+        'Column12
+        '
+        Me.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        DataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.White
+        Me.Column12.DefaultCellStyle = DataGridViewCellStyle28
+        Me.Column12.HeaderText = "Address"
+        Me.Column12.MinimumWidth = 100
+        Me.Column12.Name = "Column12"
+        Me.Column12.Visible = False
+        '
+        'Column13
+        '
+        Me.Column13.HeaderText = "photoPath"
+        Me.Column13.Name = "Column13"
+        Me.Column13.Visible = False
         '
         'TabPage2
         '
@@ -425,21 +517,21 @@ Partial Class frm_aStudentsList
         '
         Me.Panel12.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel12.Controls.Add(Me.ComboBox2)
-        Me.Panel12.Controls.Add(Me.ComboBox3)
-        Me.Panel12.Controls.Add(Me.ComboBox1)
-        Me.Panel12.Controls.Add(Me.DateTimePicker1)
+        Me.Panel12.Controls.Add(Me.cmbProgram)
+        Me.Panel12.Controls.Add(Me.cmbYearlevel)
+        Me.Panel12.Controls.Add(Me.cmbGender)
+        Me.Panel12.Controls.Add(Me.dtBirthdate)
         Me.Panel12.Controls.Add(Me.Button4)
-        Me.Panel12.Controls.Add(Me.Button3)
-        Me.Panel12.Controls.Add(Me.Button2)
+        Me.Panel12.Controls.Add(Me.btnAddStudent)
+        Me.Panel12.Controls.Add(Me.btnBrowsePic)
         Me.Panel12.Controls.Add(Me.PictureBox1)
-        Me.Panel12.Controls.Add(Me.TextBox8)
-        Me.Panel12.Controls.Add(Me.TextBox7)
-        Me.Panel12.Controls.Add(Me.TextBox6)
-        Me.Panel12.Controls.Add(Me.TextBox4)
-        Me.Panel12.Controls.Add(Me.TextBox3)
-        Me.Panel12.Controls.Add(Me.TextBox2)
-        Me.Panel12.Controls.Add(Me.TextBox1)
+        Me.Panel12.Controls.Add(Me.txtAddress)
+        Me.Panel12.Controls.Add(Me.txtEmailadd)
+        Me.Panel12.Controls.Add(Me.txtMobileno)
+        Me.Panel12.Controls.Add(Me.txtMiddlename)
+        Me.Panel12.Controls.Add(Me.txtFirstname)
+        Me.Panel12.Controls.Add(Me.txtLastname)
+        Me.Panel12.Controls.Add(Me.txtStudentID)
         Me.Panel12.Controls.Add(Me.Label14)
         Me.Panel12.Controls.Add(Me.Label5)
         Me.Panel12.Controls.Add(Me.Label4)
@@ -458,46 +550,49 @@ Partial Class frm_aStudentsList
         Me.Panel12.Size = New System.Drawing.Size(776, 497)
         Me.Panel12.TabIndex = 1
         '
-        'ComboBox2
+        'cmbProgram
         '
-        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"BSCS", "BSIT"})
-        Me.ComboBox2.Location = New System.Drawing.Point(169, 396)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(284, 25)
-        Me.ComboBox2.TabIndex = 46
+        Me.cmbProgram.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbProgram.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmbProgram.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbProgram.FormattingEnabled = True
+        Me.cmbProgram.Items.AddRange(New Object() {"BSCS", "BSIT"})
+        Me.cmbProgram.Location = New System.Drawing.Point(169, 396)
+        Me.cmbProgram.Name = "cmbProgram"
+        Me.cmbProgram.Size = New System.Drawing.Size(284, 25)
+        Me.cmbProgram.TabIndex = 46
         '
-        'ComboBox3
+        'cmbYearlevel
         '
-        Me.ComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"1st Year", "2nd Year", "3rd Year", "4th Year"})
-        Me.ComboBox3.Location = New System.Drawing.Point(169, 367)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(284, 25)
-        Me.ComboBox3.TabIndex = 46
+        Me.cmbYearlevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbYearlevel.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmbYearlevel.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbYearlevel.FormattingEnabled = True
+        Me.cmbYearlevel.Items.AddRange(New Object() {"1st Year", "2nd Year", "3rd Year", "4th Year"})
+        Me.cmbYearlevel.Location = New System.Drawing.Point(169, 367)
+        Me.cmbYearlevel.Name = "cmbYearlevel"
+        Me.cmbYearlevel.Size = New System.Drawing.Size(284, 25)
+        Me.cmbYearlevel.TabIndex = 46
         '
-        'ComboBox1
+        'cmbGender
         '
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Male ", "Female"})
-        Me.ComboBox1.Location = New System.Drawing.Point(169, 216)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(284, 25)
-        Me.ComboBox1.TabIndex = 46
+        Me.cmbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbGender.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmbGender.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbGender.FormattingEnabled = True
+        Me.cmbGender.Items.AddRange(New Object() {"Male ", "Female"})
+        Me.cmbGender.Location = New System.Drawing.Point(169, 216)
+        Me.cmbGender.Name = "cmbGender"
+        Me.cmbGender.Size = New System.Drawing.Size(284, 25)
+        Me.cmbGender.TabIndex = 46
         '
-        'DateTimePicker1
+        'dtBirthdate
         '
-        Me.DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Location = New System.Drawing.Point(169, 247)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(285, 25)
-        Me.DateTimePicker1.TabIndex = 45
+        Me.dtBirthdate.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtBirthdate.Location = New System.Drawing.Point(169, 247)
+        Me.dtBirthdate.Name = "dtBirthdate"
+        Me.dtBirthdate.Size = New System.Drawing.Size(285, 25)
+        Me.dtBirthdate.TabIndex = 45
         '
         'Button4
         '
@@ -513,33 +608,33 @@ Partial Class frm_aStudentsList
         Me.Button4.Text = "Cancel"
         Me.Button4.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnAddStudent
         '
-        Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(66, 446)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(110, 24)
-        Me.Button3.TabIndex = 44
-        Me.Button3.Text = "Add"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnAddStudent.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnAddStudent.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btnAddStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAddStudent.ForeColor = System.Drawing.Color.White
+        Me.btnAddStudent.Location = New System.Drawing.Point(66, 446)
+        Me.btnAddStudent.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnAddStudent.Name = "btnAddStudent"
+        Me.btnAddStudent.Size = New System.Drawing.Size(110, 24)
+        Me.btnAddStudent.TabIndex = 44
+        Me.btnAddStudent.Text = "Add"
+        Me.btnAddStudent.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnBrowsePic
         '
-        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(506, 338)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(110, 24)
-        Me.Button2.TabIndex = 44
-        Me.Button2.Text = "Browse"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnBrowsePic.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnBrowsePic.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btnBrowsePic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBrowsePic.ForeColor = System.Drawing.Color.White
+        Me.btnBrowsePic.Location = New System.Drawing.Point(506, 338)
+        Me.btnBrowsePic.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnBrowsePic.Name = "btnBrowsePic"
+        Me.btnBrowsePic.Size = New System.Drawing.Size(110, 24)
+        Me.btnBrowsePic.TabIndex = 44
+        Me.btnBrowsePic.Text = "Browse"
+        Me.btnBrowsePic.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -554,75 +649,75 @@ Partial Class frm_aStudentsList
         Me.PictureBox1.TabIndex = 43
         Me.PictureBox1.TabStop = False
         '
-        'TextBox8
+        'txtAddress
         '
-        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox8.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(169, 336)
-        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(284, 25)
-        Me.TextBox8.TabIndex = 42
+        Me.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtAddress.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAddress.Location = New System.Drawing.Point(169, 336)
+        Me.txtAddress.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(284, 25)
+        Me.txtAddress.TabIndex = 42
         '
-        'TextBox7
+        'txtEmailadd
         '
-        Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox7.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(169, 306)
-        Me.TextBox7.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox7.TabIndex = 42
+        Me.txtEmailadd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtEmailadd.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmailadd.Location = New System.Drawing.Point(169, 306)
+        Me.txtEmailadd.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtEmailadd.Name = "txtEmailadd"
+        Me.txtEmailadd.Size = New System.Drawing.Size(285, 25)
+        Me.txtEmailadd.TabIndex = 42
         '
-        'TextBox6
+        'txtMobileno
         '
-        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox6.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(169, 276)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox6.TabIndex = 42
+        Me.txtMobileno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtMobileno.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMobileno.Location = New System.Drawing.Point(169, 276)
+        Me.txtMobileno.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtMobileno.Name = "txtMobileno"
+        Me.txtMobileno.Size = New System.Drawing.Size(285, 25)
+        Me.txtMobileno.TabIndex = 42
         '
-        'TextBox4
+        'txtMiddlename
         '
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(169, 186)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox4.TabIndex = 42
+        Me.txtMiddlename.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtMiddlename.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMiddlename.Location = New System.Drawing.Point(169, 186)
+        Me.txtMiddlename.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtMiddlename.Name = "txtMiddlename"
+        Me.txtMiddlename.Size = New System.Drawing.Size(285, 25)
+        Me.txtMiddlename.TabIndex = 42
         '
-        'TextBox3
+        'txtFirstname
         '
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(169, 156)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox3.TabIndex = 42
+        Me.txtFirstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtFirstname.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFirstname.Location = New System.Drawing.Point(169, 156)
+        Me.txtFirstname.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtFirstname.Name = "txtFirstname"
+        Me.txtFirstname.Size = New System.Drawing.Size(285, 25)
+        Me.txtFirstname.TabIndex = 42
         '
-        'TextBox2
+        'txtLastname
         '
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(169, 126)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox2.TabIndex = 42
+        Me.txtLastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtLastname.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtLastname.Location = New System.Drawing.Point(169, 126)
+        Me.txtLastname.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtLastname.Name = "txtLastname"
+        Me.txtLastname.Size = New System.Drawing.Size(285, 25)
+        Me.txtLastname.TabIndex = 42
         '
-        'TextBox1
+        'txtStudentID
         '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(169, 96)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox1.TabIndex = 42
+        Me.txtStudentID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtStudentID.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtStudentID.Location = New System.Drawing.Point(169, 96)
+        Me.txtStudentID.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtStudentID.Name = "txtStudentID"
+        Me.txtStudentID.Size = New System.Drawing.Size(285, 25)
+        Me.txtStudentID.TabIndex = 42
         '
         'Label14
         '
@@ -773,21 +868,21 @@ Partial Class frm_aStudentsList
         '
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.ComboBox4)
-        Me.Panel2.Controls.Add(Me.ComboBox5)
-        Me.Panel2.Controls.Add(Me.ComboBox6)
-        Me.Panel2.Controls.Add(Me.DateTimePicker2)
-        Me.Panel2.Controls.Add(Me.Button5)
-        Me.Panel2.Controls.Add(Me.Button6)
-        Me.Panel2.Controls.Add(Me.Button7)
+        Me.Panel2.Controls.Add(Me.cmbEprogram)
+        Me.Panel2.Controls.Add(Me.cmbEyearlevel)
+        Me.Panel2.Controls.Add(Me.cmbEgender)
+        Me.Panel2.Controls.Add(Me.dtEbirthdate)
+        Me.Panel2.Controls.Add(Me.btnCancel)
+        Me.Panel2.Controls.Add(Me.btnSaveEdit)
+        Me.Panel2.Controls.Add(Me.btnBrowsePic2)
         Me.Panel2.Controls.Add(Me.PictureBox2)
-        Me.Panel2.Controls.Add(Me.TextBox5)
-        Me.Panel2.Controls.Add(Me.TextBox9)
-        Me.Panel2.Controls.Add(Me.TextBox10)
-        Me.Panel2.Controls.Add(Me.TextBox11)
-        Me.Panel2.Controls.Add(Me.TextBox12)
-        Me.Panel2.Controls.Add(Me.TextBox13)
-        Me.Panel2.Controls.Add(Me.TextBox14)
+        Me.Panel2.Controls.Add(Me.txtEaddress)
+        Me.Panel2.Controls.Add(Me.txtEemailadd)
+        Me.Panel2.Controls.Add(Me.txtEmobileno)
+        Me.Panel2.Controls.Add(Me.txtEmiddlename)
+        Me.Panel2.Controls.Add(Me.txtEfirstname)
+        Me.Panel2.Controls.Add(Me.txtElastname)
+        Me.Panel2.Controls.Add(Me.txtEstudentID)
         Me.Panel2.Controls.Add(Me.Label11)
         Me.Panel2.Controls.Add(Me.Label16)
         Me.Panel2.Controls.Add(Me.Label17)
@@ -806,88 +901,88 @@ Partial Class frm_aStudentsList
         Me.Panel2.Size = New System.Drawing.Size(776, 497)
         Me.Panel2.TabIndex = 2
         '
-        'ComboBox4
+        'cmbEprogram
         '
-        Me.ComboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox4.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Items.AddRange(New Object() {"BSCS", "BSIT"})
-        Me.ComboBox4.Location = New System.Drawing.Point(169, 396)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(284, 25)
-        Me.ComboBox4.TabIndex = 46
+        Me.cmbEprogram.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmbEprogram.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbEprogram.FormattingEnabled = True
+        Me.cmbEprogram.Items.AddRange(New Object() {"BSCS", "BSIT"})
+        Me.cmbEprogram.Location = New System.Drawing.Point(169, 396)
+        Me.cmbEprogram.Name = "cmbEprogram"
+        Me.cmbEprogram.Size = New System.Drawing.Size(284, 25)
+        Me.cmbEprogram.TabIndex = 46
         '
-        'ComboBox5
+        'cmbEyearlevel
         '
-        Me.ComboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox5.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Items.AddRange(New Object() {"1st Year", "2nd Year", "3rd Year", "4th Year"})
-        Me.ComboBox5.Location = New System.Drawing.Point(169, 367)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(284, 25)
-        Me.ComboBox5.TabIndex = 46
+        Me.cmbEyearlevel.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmbEyearlevel.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbEyearlevel.FormattingEnabled = True
+        Me.cmbEyearlevel.Items.AddRange(New Object() {"1st Year", "2nd Year", "3rd Year", "4th Year"})
+        Me.cmbEyearlevel.Location = New System.Drawing.Point(169, 367)
+        Me.cmbEyearlevel.Name = "cmbEyearlevel"
+        Me.cmbEyearlevel.Size = New System.Drawing.Size(284, 25)
+        Me.cmbEyearlevel.TabIndex = 46
         '
-        'ComboBox6
+        'cmbEgender
         '
-        Me.ComboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox6.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Items.AddRange(New Object() {"Male ", "Female"})
-        Me.ComboBox6.Location = New System.Drawing.Point(169, 216)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(284, 25)
-        Me.ComboBox6.TabIndex = 46
+        Me.cmbEgender.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmbEgender.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbEgender.FormattingEnabled = True
+        Me.cmbEgender.Items.AddRange(New Object() {"Male ", "Female"})
+        Me.cmbEgender.Location = New System.Drawing.Point(169, 216)
+        Me.cmbEgender.Name = "cmbEgender"
+        Me.cmbEgender.Size = New System.Drawing.Size(284, 25)
+        Me.cmbEgender.TabIndex = 46
         '
-        'DateTimePicker2
+        'dtEbirthdate
         '
-        Me.DateTimePicker2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker2.Location = New System.Drawing.Point(169, 247)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(285, 25)
-        Me.DateTimePicker2.TabIndex = 45
+        Me.dtEbirthdate.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtEbirthdate.Location = New System.Drawing.Point(169, 247)
+        Me.dtEbirthdate.Name = "dtEbirthdate"
+        Me.dtEbirthdate.Size = New System.Drawing.Size(285, 25)
+        Me.dtEbirthdate.TabIndex = 45
         '
-        'Button5
+        'btnCancel
         '
-        Me.Button5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(185, 446)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(110, 24)
-        Me.Button5.TabIndex = 44
-        Me.Button5.Text = "Cancel"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btnCancel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnCancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancel.ForeColor = System.Drawing.Color.White
+        Me.btnCancel.Location = New System.Drawing.Point(185, 446)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(110, 24)
+        Me.btnCancel.TabIndex = 44
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseVisualStyleBackColor = False
         '
-        'Button6
+        'btnSaveEdit
         '
-        Me.Button6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(66, 446)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(110, 24)
-        Me.Button6.TabIndex = 44
-        Me.Button6.Text = "Save"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.btnSaveEdit.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnSaveEdit.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btnSaveEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSaveEdit.ForeColor = System.Drawing.Color.White
+        Me.btnSaveEdit.Location = New System.Drawing.Point(66, 446)
+        Me.btnSaveEdit.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnSaveEdit.Name = "btnSaveEdit"
+        Me.btnSaveEdit.Size = New System.Drawing.Size(110, 24)
+        Me.btnSaveEdit.TabIndex = 44
+        Me.btnSaveEdit.Text = "Save"
+        Me.btnSaveEdit.UseVisualStyleBackColor = False
         '
-        'Button7
+        'btnBrowsePic2
         '
-        Me.Button7.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.ForeColor = System.Drawing.Color.White
-        Me.Button7.Location = New System.Drawing.Point(506, 338)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(110, 24)
-        Me.Button7.TabIndex = 44
-        Me.Button7.Text = "Browse"
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.btnBrowsePic2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnBrowsePic2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btnBrowsePic2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBrowsePic2.ForeColor = System.Drawing.Color.White
+        Me.btnBrowsePic2.Location = New System.Drawing.Point(506, 338)
+        Me.btnBrowsePic2.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnBrowsePic2.Name = "btnBrowsePic2"
+        Me.btnBrowsePic2.Size = New System.Drawing.Size(110, 24)
+        Me.btnBrowsePic2.TabIndex = 44
+        Me.btnBrowsePic2.Text = "Browse"
+        Me.btnBrowsePic2.UseVisualStyleBackColor = False
         '
         'PictureBox2
         '
@@ -902,75 +997,75 @@ Partial Class frm_aStudentsList
         Me.PictureBox2.TabIndex = 43
         Me.PictureBox2.TabStop = False
         '
-        'TextBox5
+        'txtEaddress
         '
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox5.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(169, 336)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(284, 25)
-        Me.TextBox5.TabIndex = 42
+        Me.txtEaddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtEaddress.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEaddress.Location = New System.Drawing.Point(169, 336)
+        Me.txtEaddress.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtEaddress.Name = "txtEaddress"
+        Me.txtEaddress.Size = New System.Drawing.Size(284, 25)
+        Me.txtEaddress.TabIndex = 42
         '
-        'TextBox9
+        'txtEemailadd
         '
-        Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox9.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(169, 306)
-        Me.TextBox9.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox9.TabIndex = 42
+        Me.txtEemailadd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtEemailadd.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEemailadd.Location = New System.Drawing.Point(169, 306)
+        Me.txtEemailadd.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtEemailadd.Name = "txtEemailadd"
+        Me.txtEemailadd.Size = New System.Drawing.Size(285, 25)
+        Me.txtEemailadd.TabIndex = 42
         '
-        'TextBox10
+        'txtEmobileno
         '
-        Me.TextBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox10.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(169, 276)
-        Me.TextBox10.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox10.TabIndex = 42
+        Me.txtEmobileno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtEmobileno.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmobileno.Location = New System.Drawing.Point(169, 276)
+        Me.txtEmobileno.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtEmobileno.Name = "txtEmobileno"
+        Me.txtEmobileno.Size = New System.Drawing.Size(285, 25)
+        Me.txtEmobileno.TabIndex = 42
         '
-        'TextBox11
+        'txtEmiddlename
         '
-        Me.TextBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox11.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox11.Location = New System.Drawing.Point(169, 186)
-        Me.TextBox11.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox11.TabIndex = 42
+        Me.txtEmiddlename.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtEmiddlename.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmiddlename.Location = New System.Drawing.Point(169, 186)
+        Me.txtEmiddlename.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtEmiddlename.Name = "txtEmiddlename"
+        Me.txtEmiddlename.Size = New System.Drawing.Size(285, 25)
+        Me.txtEmiddlename.TabIndex = 42
         '
-        'TextBox12
+        'txtEfirstname
         '
-        Me.TextBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox12.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox12.Location = New System.Drawing.Point(169, 156)
-        Me.TextBox12.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox12.TabIndex = 42
+        Me.txtEfirstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtEfirstname.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEfirstname.Location = New System.Drawing.Point(169, 156)
+        Me.txtEfirstname.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtEfirstname.Name = "txtEfirstname"
+        Me.txtEfirstname.Size = New System.Drawing.Size(285, 25)
+        Me.txtEfirstname.TabIndex = 42
         '
-        'TextBox13
+        'txtElastname
         '
-        Me.TextBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox13.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox13.Location = New System.Drawing.Point(169, 126)
-        Me.TextBox13.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox13.TabIndex = 42
+        Me.txtElastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtElastname.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtElastname.Location = New System.Drawing.Point(169, 126)
+        Me.txtElastname.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtElastname.Name = "txtElastname"
+        Me.txtElastname.Size = New System.Drawing.Size(285, 25)
+        Me.txtElastname.TabIndex = 42
         '
-        'TextBox14
+        'txtEstudentID
         '
-        Me.TextBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox14.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox14.Location = New System.Drawing.Point(169, 96)
-        Me.TextBox14.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox14.TabIndex = 42
+        Me.txtEstudentID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtEstudentID.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEstudentID.Location = New System.Drawing.Point(169, 96)
+        Me.txtEstudentID.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtEstudentID.Name = "txtEstudentID"
+        Me.txtEstudentID.Size = New System.Drawing.Size(285, 25)
+        Me.txtEstudentID.TabIndex = 42
         '
         'Label11
         '
@@ -1106,6 +1201,23 @@ Partial Class frm_aStudentsList
         Me.Label26.TabIndex = 40
         Me.Label26.Text = "Edit Student"
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'btnAll
+        '
+        Me.btnAll.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btnAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAll.ForeColor = System.Drawing.Color.White
+        Me.btnAll.Location = New System.Drawing.Point(382, 79)
+        Me.btnAll.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnAll.Name = "btnAll"
+        Me.btnAll.Size = New System.Drawing.Size(81, 22)
+        Me.btnAll.TabIndex = 16
+        Me.btnAll.Text = "All"
+        Me.btnAll.UseVisualStyleBackColor = False
+        '
         'frm_aStudentsList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1150,8 +1262,8 @@ Partial Class frm_aStudentsList
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents Panel12 As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtLastname As TextBox
+    Friend WithEvents txtStudentID As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label13 As Label
@@ -1160,55 +1272,48 @@ Partial Class frm_aStudentsList
     Friend WithEvents Label6 As Label
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents btnAll As Button
     Friend WithEvents chk_autocomplete As CheckBox
     Friend WithEvents Button1 As Button
     Friend WithEvents btn_search As Button
     Friend WithEvents txt_search As TextBox
     Friend WithEvents pnl_Datagrid As Panel
     Friend WithEvents dgv_TotalStudents As DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Label8 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents txtAddress As TextBox
+    Friend WithEvents txtEmailadd As TextBox
+    Friend WithEvents txtMobileno As TextBox
+    Friend WithEvents txtMiddlename As TextBox
+    Friend WithEvents txtFirstname As TextBox
+    Friend WithEvents btnBrowsePic As Button
+    Friend WithEvents btnAddStudent As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents dtBirthdate As DateTimePicker
     Friend WithEvents Label7 As Label
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents cmbProgram As ComboBox
+    Friend WithEvents cmbGender As ComboBox
+    Friend WithEvents cmbYearlevel As ComboBox
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents ComboBox6 As ComboBox
-    Friend WithEvents DateTimePicker2 As DateTimePicker
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
+    Friend WithEvents cmbEprogram As ComboBox
+    Friend WithEvents cmbEyearlevel As ComboBox
+    Friend WithEvents cmbEgender As ComboBox
+    Friend WithEvents dtEbirthdate As DateTimePicker
+    Friend WithEvents btnCancel As Button
+    Friend WithEvents btnSaveEdit As Button
+    Friend WithEvents btnBrowsePic2 As Button
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents txtEaddress As TextBox
+    Friend WithEvents txtEemailadd As TextBox
+    Friend WithEvents txtEmobileno As TextBox
+    Friend WithEvents txtEmiddlename As TextBox
+    Friend WithEvents txtEfirstname As TextBox
+    Friend WithEvents txtElastname As TextBox
+    Friend WithEvents txtEstudentID As TextBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
@@ -1222,4 +1327,19 @@ Partial Class frm_aStudentsList
     Friend WithEvents Label25 As Label
     Friend WithEvents Label26 As Label
     Friend WithEvents Button8 As Button
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column9 As DataGridViewTextBoxColumn
+    Friend WithEvents Column10 As DataGridViewTextBoxColumn
+    Friend WithEvents Column11 As DataGridViewTextBoxColumn
+    Friend WithEvents Column12 As DataGridViewTextBoxColumn
+    Friend WithEvents Column13 As DataGridViewTextBoxColumn
+    Friend WithEvents btnAll As Button
 End Class
