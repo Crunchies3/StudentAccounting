@@ -22,9 +22,9 @@ Partial Class frm_aTeacher
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_aTeacher))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -37,27 +37,27 @@ Partial Class frm_aTeacher
         Me.Label8 = New System.Windows.Forms.Label()
         Me.btnAll = New System.Windows.Forms.Button()
         Me.chk_autocomplete = New System.Windows.Forms.CheckBox()
-        Me.Button8 = New System.Windows.Forms.Button()
+        Me.btnEditTeacher = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btn_search = New System.Windows.Forms.Button()
         Me.txt_search = New System.Windows.Forms.TextBox()
         Me.pnl_Datagrid = New System.Windows.Forms.Panel()
-        Me.dgv_transactionHistory = New System.Windows.Forms.DataGridView()
+        Me.dgv_teacherTable = New System.Windows.Forms.DataGridView()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.cmbTgender = New System.Windows.Forms.ComboBox()
+        Me.dtTbirthdate = New System.Windows.Forms.DateTimePicker()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnAddTeacher = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtTaddress = New System.Windows.Forms.TextBox()
+        Me.txtTemailadd = New System.Windows.Forms.TextBox()
+        Me.txtTmobileno = New System.Windows.Forms.TextBox()
+        Me.txtTmiddlename = New System.Windows.Forms.TextBox()
+        Me.txtTfirstname = New System.Windows.Forms.TextBox()
+        Me.txtTlastname = New System.Windows.Forms.TextBox()
+        Me.txtTeacherID = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -70,19 +70,19 @@ Partial Class frm_aTeacher
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.EcmbTgender = New System.Windows.Forms.ComboBox()
+        Me.EdtTbirthdate = New System.Windows.Forms.DateTimePicker()
+        Me.btnCancelEdit = New System.Windows.Forms.Button()
+        Me.btnSaveEditTeacher = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.EtxtTaddress = New System.Windows.Forms.TextBox()
+        Me.EtxtTemailadd = New System.Windows.Forms.TextBox()
+        Me.EtxtTmobileno = New System.Windows.Forms.TextBox()
+        Me.EtxtTmiddlename = New System.Windows.Forms.TextBox()
+        Me.EtxtTfirstname = New System.Windows.Forms.TextBox()
+        Me.EtxtTlastname = New System.Windows.Forms.TextBox()
+        Me.EtxtTeacherID = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
@@ -93,6 +93,7 @@ Partial Class frm_aTeacher
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -101,13 +102,14 @@ Partial Class frm_aTeacher
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.pnl_Datagrid.SuspendLayout()
-        CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgv_teacherTable, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         Me.Panel12.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -201,7 +203,7 @@ Partial Class frm_aTeacher
         Me.Panel6.Controls.Add(Me.Label8)
         Me.Panel6.Controls.Add(Me.btnAll)
         Me.Panel6.Controls.Add(Me.chk_autocomplete)
-        Me.Panel6.Controls.Add(Me.Button8)
+        Me.Panel6.Controls.Add(Me.btnEditTeacher)
         Me.Panel6.Controls.Add(Me.Button1)
         Me.Panel6.Controls.Add(Me.btn_search)
         Me.Panel6.Controls.Add(Me.txt_search)
@@ -250,19 +252,19 @@ Partial Class frm_aTeacher
         Me.chk_autocomplete.Text = "Auto Complete"
         Me.chk_autocomplete.UseVisualStyleBackColor = True
         '
-        'Button8
+        'btnEditTeacher
         '
-        Me.Button8.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.ForeColor = System.Drawing.Color.White
-        Me.Button8.Location = New System.Drawing.Point(258, 608)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(110, 24)
-        Me.Button8.TabIndex = 14
-        Me.Button8.Text = "Edit Teacher"
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.btnEditTeacher.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnEditTeacher.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btnEditTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEditTeacher.ForeColor = System.Drawing.Color.White
+        Me.btnEditTeacher.Location = New System.Drawing.Point(258, 608)
+        Me.btnEditTeacher.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnEditTeacher.Name = "btnEditTeacher"
+        Me.btnEditTeacher.Size = New System.Drawing.Size(110, 24)
+        Me.btnEditTeacher.TabIndex = 14
+        Me.btnEditTeacher.Text = "Edit Teacher"
+        Me.btnEditTeacher.UseVisualStyleBackColor = False
         '
         'Button1
         '
@@ -308,7 +310,7 @@ Partial Class frm_aTeacher
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnl_Datagrid.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.pnl_Datagrid.Controls.Add(Me.dgv_transactionHistory)
+        Me.pnl_Datagrid.Controls.Add(Me.dgv_teacherTable)
         Me.pnl_Datagrid.Location = New System.Drawing.Point(140, 140)
         Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(2)
         Me.pnl_Datagrid.Name = "pnl_Datagrid"
@@ -316,49 +318,49 @@ Partial Class frm_aTeacher
         Me.pnl_Datagrid.Size = New System.Drawing.Size(1011, 456)
         Me.pnl_Datagrid.TabIndex = 5
         '
-        'dgv_transactionHistory
+        'dgv_teacherTable
         '
-        Me.dgv_transactionHistory.AllowUserToResizeColumns = False
-        Me.dgv_transactionHistory.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.dgv_transactionHistory.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgv_transactionHistory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.dgv_transactionHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_transactionHistory.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
-        Me.dgv_transactionHistory.ColumnHeadersHeight = 35
-        Me.dgv_transactionHistory.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column7, Me.Column4, Me.Column5, Me.Column6, Me.Column8})
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_transactionHistory.DefaultCellStyle = DataGridViewCellStyle14
-        Me.dgv_transactionHistory.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgv_transactionHistory.Location = New System.Drawing.Point(1, 1)
-        Me.dgv_transactionHistory.Margin = New System.Windows.Forms.Padding(2)
-        Me.dgv_transactionHistory.Name = "dgv_transactionHistory"
-        Me.dgv_transactionHistory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_transactionHistory.RowHeadersDefaultCellStyle = DataGridViewCellStyle15
-        Me.dgv_transactionHistory.RowHeadersWidth = 51
-        Me.dgv_transactionHistory.RowTemplate.Height = 35
-        Me.dgv_transactionHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_transactionHistory.Size = New System.Drawing.Size(1009, 454)
-        Me.dgv_transactionHistory.TabIndex = 3
+        Me.dgv_teacherTable.AllowUserToResizeColumns = False
+        Me.dgv_teacherTable.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.dgv_teacherTable.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgv_teacherTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.dgv_teacherTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_teacherTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgv_teacherTable.ColumnHeadersHeight = 35
+        Me.dgv_teacherTable.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column7, Me.Column4, Me.Column5, Me.Column6, Me.Column8, Me.Column9})
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_teacherTable.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgv_teacherTable.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgv_teacherTable.Location = New System.Drawing.Point(1, 1)
+        Me.dgv_teacherTable.Margin = New System.Windows.Forms.Padding(2)
+        Me.dgv_teacherTable.Name = "dgv_teacherTable"
+        Me.dgv_teacherTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_teacherTable.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgv_teacherTable.RowHeadersWidth = 51
+        Me.dgv_teacherTable.RowTemplate.Height = 35
+        Me.dgv_teacherTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_teacherTable.Size = New System.Drawing.Size(1009, 454)
+        Me.dgv_teacherTable.TabIndex = 3
         '
         'TabPage2
         '
@@ -377,19 +379,19 @@ Partial Class frm_aTeacher
         '
         Me.Panel12.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel12.Controls.Add(Me.ComboBox1)
-        Me.Panel12.Controls.Add(Me.DateTimePicker1)
+        Me.Panel12.Controls.Add(Me.cmbTgender)
+        Me.Panel12.Controls.Add(Me.dtTbirthdate)
         Me.Panel12.Controls.Add(Me.Button4)
-        Me.Panel12.Controls.Add(Me.Button3)
+        Me.Panel12.Controls.Add(Me.btnAddTeacher)
         Me.Panel12.Controls.Add(Me.Button2)
         Me.Panel12.Controls.Add(Me.PictureBox1)
-        Me.Panel12.Controls.Add(Me.TextBox8)
-        Me.Panel12.Controls.Add(Me.TextBox7)
-        Me.Panel12.Controls.Add(Me.TextBox6)
-        Me.Panel12.Controls.Add(Me.TextBox4)
-        Me.Panel12.Controls.Add(Me.TextBox3)
-        Me.Panel12.Controls.Add(Me.TextBox2)
-        Me.Panel12.Controls.Add(Me.TextBox1)
+        Me.Panel12.Controls.Add(Me.txtTaddress)
+        Me.Panel12.Controls.Add(Me.txtTemailadd)
+        Me.Panel12.Controls.Add(Me.txtTmobileno)
+        Me.Panel12.Controls.Add(Me.txtTmiddlename)
+        Me.Panel12.Controls.Add(Me.txtTfirstname)
+        Me.Panel12.Controls.Add(Me.txtTlastname)
+        Me.Panel12.Controls.Add(Me.txtTeacherID)
         Me.Panel12.Controls.Add(Me.Label14)
         Me.Panel12.Controls.Add(Me.Label3)
         Me.Panel12.Controls.Add(Me.Label2)
@@ -406,24 +408,24 @@ Partial Class frm_aTeacher
         Me.Panel12.Size = New System.Drawing.Size(776, 445)
         Me.Panel12.TabIndex = 1
         '
-        'ComboBox1
+        'cmbTgender
         '
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Male ", "Female"})
-        Me.ComboBox1.Location = New System.Drawing.Point(169, 216)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(284, 25)
-        Me.ComboBox1.TabIndex = 46
+        Me.cmbTgender.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmbTgender.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbTgender.FormattingEnabled = True
+        Me.cmbTgender.Items.AddRange(New Object() {"Male ", "Female"})
+        Me.cmbTgender.Location = New System.Drawing.Point(169, 216)
+        Me.cmbTgender.Name = "cmbTgender"
+        Me.cmbTgender.Size = New System.Drawing.Size(284, 25)
+        Me.cmbTgender.TabIndex = 46
         '
-        'DateTimePicker1
+        'dtTbirthdate
         '
-        Me.DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Location = New System.Drawing.Point(169, 247)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(285, 25)
-        Me.DateTimePicker1.TabIndex = 45
+        Me.dtTbirthdate.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtTbirthdate.Location = New System.Drawing.Point(169, 247)
+        Me.dtTbirthdate.Name = "dtTbirthdate"
+        Me.dtTbirthdate.Size = New System.Drawing.Size(285, 25)
+        Me.dtTbirthdate.TabIndex = 45
         '
         'Button4
         '
@@ -439,19 +441,19 @@ Partial Class frm_aTeacher
         Me.Button4.Text = "Cancel"
         Me.Button4.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnAddTeacher
         '
-        Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(66, 394)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(110, 24)
-        Me.Button3.TabIndex = 44
-        Me.Button3.Text = "Add"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnAddTeacher.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnAddTeacher.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btnAddTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAddTeacher.ForeColor = System.Drawing.Color.White
+        Me.btnAddTeacher.Location = New System.Drawing.Point(66, 394)
+        Me.btnAddTeacher.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnAddTeacher.Name = "btnAddTeacher"
+        Me.btnAddTeacher.Size = New System.Drawing.Size(110, 24)
+        Me.btnAddTeacher.TabIndex = 44
+        Me.btnAddTeacher.Text = "Add"
+        Me.btnAddTeacher.UseVisualStyleBackColor = False
         '
         'Button2
         '
@@ -480,75 +482,75 @@ Partial Class frm_aTeacher
         Me.PictureBox1.TabIndex = 43
         Me.PictureBox1.TabStop = False
         '
-        'TextBox8
+        'txtTaddress
         '
-        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox8.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(169, 336)
-        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(284, 25)
-        Me.TextBox8.TabIndex = 42
+        Me.txtTaddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtTaddress.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTaddress.Location = New System.Drawing.Point(169, 336)
+        Me.txtTaddress.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtTaddress.Name = "txtTaddress"
+        Me.txtTaddress.Size = New System.Drawing.Size(284, 25)
+        Me.txtTaddress.TabIndex = 42
         '
-        'TextBox7
+        'txtTemailadd
         '
-        Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox7.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(169, 306)
-        Me.TextBox7.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox7.TabIndex = 42
+        Me.txtTemailadd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtTemailadd.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTemailadd.Location = New System.Drawing.Point(169, 306)
+        Me.txtTemailadd.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtTemailadd.Name = "txtTemailadd"
+        Me.txtTemailadd.Size = New System.Drawing.Size(285, 25)
+        Me.txtTemailadd.TabIndex = 42
         '
-        'TextBox6
+        'txtTmobileno
         '
-        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox6.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(169, 276)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox6.TabIndex = 42
+        Me.txtTmobileno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtTmobileno.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTmobileno.Location = New System.Drawing.Point(169, 276)
+        Me.txtTmobileno.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtTmobileno.Name = "txtTmobileno"
+        Me.txtTmobileno.Size = New System.Drawing.Size(285, 25)
+        Me.txtTmobileno.TabIndex = 42
         '
-        'TextBox4
+        'txtTmiddlename
         '
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(169, 186)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox4.TabIndex = 42
+        Me.txtTmiddlename.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtTmiddlename.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTmiddlename.Location = New System.Drawing.Point(169, 186)
+        Me.txtTmiddlename.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtTmiddlename.Name = "txtTmiddlename"
+        Me.txtTmiddlename.Size = New System.Drawing.Size(285, 25)
+        Me.txtTmiddlename.TabIndex = 42
         '
-        'TextBox3
+        'txtTfirstname
         '
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(169, 156)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox3.TabIndex = 42
+        Me.txtTfirstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtTfirstname.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTfirstname.Location = New System.Drawing.Point(169, 156)
+        Me.txtTfirstname.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtTfirstname.Name = "txtTfirstname"
+        Me.txtTfirstname.Size = New System.Drawing.Size(285, 25)
+        Me.txtTfirstname.TabIndex = 42
         '
-        'TextBox2
+        'txtTlastname
         '
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(169, 126)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox2.TabIndex = 42
+        Me.txtTlastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtTlastname.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTlastname.Location = New System.Drawing.Point(169, 126)
+        Me.txtTlastname.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtTlastname.Name = "txtTlastname"
+        Me.txtTlastname.Size = New System.Drawing.Size(285, 25)
+        Me.txtTlastname.TabIndex = 42
         '
-        'TextBox1
+        'txtTeacherID
         '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(169, 96)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox1.TabIndex = 42
+        Me.txtTeacherID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtTeacherID.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTeacherID.Location = New System.Drawing.Point(169, 96)
+        Me.txtTeacherID.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtTeacherID.Name = "txtTeacherID"
+        Me.txtTeacherID.Size = New System.Drawing.Size(285, 25)
+        Me.txtTeacherID.TabIndex = 42
         '
         'Label14
         '
@@ -678,19 +680,19 @@ Partial Class frm_aTeacher
         '
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.ComboBox6)
-        Me.Panel2.Controls.Add(Me.DateTimePicker2)
-        Me.Panel2.Controls.Add(Me.Button5)
-        Me.Panel2.Controls.Add(Me.Button6)
+        Me.Panel2.Controls.Add(Me.EcmbTgender)
+        Me.Panel2.Controls.Add(Me.EdtTbirthdate)
+        Me.Panel2.Controls.Add(Me.btnCancelEdit)
+        Me.Panel2.Controls.Add(Me.btnSaveEditTeacher)
         Me.Panel2.Controls.Add(Me.Button7)
         Me.Panel2.Controls.Add(Me.PictureBox2)
-        Me.Panel2.Controls.Add(Me.TextBox5)
-        Me.Panel2.Controls.Add(Me.TextBox9)
-        Me.Panel2.Controls.Add(Me.TextBox10)
-        Me.Panel2.Controls.Add(Me.TextBox11)
-        Me.Panel2.Controls.Add(Me.TextBox12)
-        Me.Panel2.Controls.Add(Me.TextBox13)
-        Me.Panel2.Controls.Add(Me.TextBox14)
+        Me.Panel2.Controls.Add(Me.EtxtTaddress)
+        Me.Panel2.Controls.Add(Me.EtxtTemailadd)
+        Me.Panel2.Controls.Add(Me.EtxtTmobileno)
+        Me.Panel2.Controls.Add(Me.EtxtTmiddlename)
+        Me.Panel2.Controls.Add(Me.EtxtTfirstname)
+        Me.Panel2.Controls.Add(Me.EtxtTlastname)
+        Me.Panel2.Controls.Add(Me.EtxtTeacherID)
         Me.Panel2.Controls.Add(Me.Label11)
         Me.Panel2.Controls.Add(Me.Label18)
         Me.Panel2.Controls.Add(Me.Label19)
@@ -707,52 +709,52 @@ Partial Class frm_aTeacher
         Me.Panel2.Size = New System.Drawing.Size(776, 445)
         Me.Panel2.TabIndex = 2
         '
-        'ComboBox6
+        'EcmbTgender
         '
-        Me.ComboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox6.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Items.AddRange(New Object() {"Male ", "Female"})
-        Me.ComboBox6.Location = New System.Drawing.Point(169, 216)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(284, 25)
-        Me.ComboBox6.TabIndex = 46
+        Me.EcmbTgender.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.EcmbTgender.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EcmbTgender.FormattingEnabled = True
+        Me.EcmbTgender.Items.AddRange(New Object() {"Male ", "Female"})
+        Me.EcmbTgender.Location = New System.Drawing.Point(169, 216)
+        Me.EcmbTgender.Name = "EcmbTgender"
+        Me.EcmbTgender.Size = New System.Drawing.Size(284, 25)
+        Me.EcmbTgender.TabIndex = 46
         '
-        'DateTimePicker2
+        'EdtTbirthdate
         '
-        Me.DateTimePicker2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker2.Location = New System.Drawing.Point(169, 247)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(285, 25)
-        Me.DateTimePicker2.TabIndex = 45
+        Me.EdtTbirthdate.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EdtTbirthdate.Location = New System.Drawing.Point(169, 247)
+        Me.EdtTbirthdate.Name = "EdtTbirthdate"
+        Me.EdtTbirthdate.Size = New System.Drawing.Size(285, 25)
+        Me.EdtTbirthdate.TabIndex = 45
         '
-        'Button5
+        'btnCancelEdit
         '
-        Me.Button5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(185, 394)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(110, 24)
-        Me.Button5.TabIndex = 44
-        Me.Button5.Text = "Cancel"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btnCancelEdit.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnCancelEdit.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btnCancelEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelEdit.ForeColor = System.Drawing.Color.White
+        Me.btnCancelEdit.Location = New System.Drawing.Point(185, 394)
+        Me.btnCancelEdit.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnCancelEdit.Name = "btnCancelEdit"
+        Me.btnCancelEdit.Size = New System.Drawing.Size(110, 24)
+        Me.btnCancelEdit.TabIndex = 44
+        Me.btnCancelEdit.Text = "Cancel"
+        Me.btnCancelEdit.UseVisualStyleBackColor = False
         '
-        'Button6
+        'btnSaveEditTeacher
         '
-        Me.Button6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(66, 394)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(110, 24)
-        Me.Button6.TabIndex = 44
-        Me.Button6.Text = "Save"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.btnSaveEditTeacher.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnSaveEditTeacher.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btnSaveEditTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSaveEditTeacher.ForeColor = System.Drawing.Color.White
+        Me.btnSaveEditTeacher.Location = New System.Drawing.Point(66, 394)
+        Me.btnSaveEditTeacher.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnSaveEditTeacher.Name = "btnSaveEditTeacher"
+        Me.btnSaveEditTeacher.Size = New System.Drawing.Size(110, 24)
+        Me.btnSaveEditTeacher.TabIndex = 44
+        Me.btnSaveEditTeacher.Text = "Save"
+        Me.btnSaveEditTeacher.UseVisualStyleBackColor = False
         '
         'Button7
         '
@@ -781,75 +783,75 @@ Partial Class frm_aTeacher
         Me.PictureBox2.TabIndex = 43
         Me.PictureBox2.TabStop = False
         '
-        'TextBox5
+        'EtxtTaddress
         '
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox5.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(169, 336)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(284, 25)
-        Me.TextBox5.TabIndex = 42
+        Me.EtxtTaddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.EtxtTaddress.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EtxtTaddress.Location = New System.Drawing.Point(169, 336)
+        Me.EtxtTaddress.Margin = New System.Windows.Forms.Padding(2)
+        Me.EtxtTaddress.Name = "EtxtTaddress"
+        Me.EtxtTaddress.Size = New System.Drawing.Size(284, 25)
+        Me.EtxtTaddress.TabIndex = 42
         '
-        'TextBox9
+        'EtxtTemailadd
         '
-        Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox9.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(169, 306)
-        Me.TextBox9.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox9.TabIndex = 42
+        Me.EtxtTemailadd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.EtxtTemailadd.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EtxtTemailadd.Location = New System.Drawing.Point(169, 306)
+        Me.EtxtTemailadd.Margin = New System.Windows.Forms.Padding(2)
+        Me.EtxtTemailadd.Name = "EtxtTemailadd"
+        Me.EtxtTemailadd.Size = New System.Drawing.Size(285, 25)
+        Me.EtxtTemailadd.TabIndex = 42
         '
-        'TextBox10
+        'EtxtTmobileno
         '
-        Me.TextBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox10.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(169, 276)
-        Me.TextBox10.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox10.TabIndex = 42
+        Me.EtxtTmobileno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.EtxtTmobileno.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EtxtTmobileno.Location = New System.Drawing.Point(169, 276)
+        Me.EtxtTmobileno.Margin = New System.Windows.Forms.Padding(2)
+        Me.EtxtTmobileno.Name = "EtxtTmobileno"
+        Me.EtxtTmobileno.Size = New System.Drawing.Size(285, 25)
+        Me.EtxtTmobileno.TabIndex = 42
         '
-        'TextBox11
+        'EtxtTmiddlename
         '
-        Me.TextBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox11.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox11.Location = New System.Drawing.Point(169, 186)
-        Me.TextBox11.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox11.TabIndex = 42
+        Me.EtxtTmiddlename.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.EtxtTmiddlename.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EtxtTmiddlename.Location = New System.Drawing.Point(169, 186)
+        Me.EtxtTmiddlename.Margin = New System.Windows.Forms.Padding(2)
+        Me.EtxtTmiddlename.Name = "EtxtTmiddlename"
+        Me.EtxtTmiddlename.Size = New System.Drawing.Size(285, 25)
+        Me.EtxtTmiddlename.TabIndex = 42
         '
-        'TextBox12
+        'EtxtTfirstname
         '
-        Me.TextBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox12.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox12.Location = New System.Drawing.Point(169, 156)
-        Me.TextBox12.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox12.TabIndex = 42
+        Me.EtxtTfirstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.EtxtTfirstname.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EtxtTfirstname.Location = New System.Drawing.Point(169, 156)
+        Me.EtxtTfirstname.Margin = New System.Windows.Forms.Padding(2)
+        Me.EtxtTfirstname.Name = "EtxtTfirstname"
+        Me.EtxtTfirstname.Size = New System.Drawing.Size(285, 25)
+        Me.EtxtTfirstname.TabIndex = 42
         '
-        'TextBox13
+        'EtxtTlastname
         '
-        Me.TextBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox13.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox13.Location = New System.Drawing.Point(169, 126)
-        Me.TextBox13.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox13.TabIndex = 42
+        Me.EtxtTlastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.EtxtTlastname.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EtxtTlastname.Location = New System.Drawing.Point(169, 126)
+        Me.EtxtTlastname.Margin = New System.Windows.Forms.Padding(2)
+        Me.EtxtTlastname.Name = "EtxtTlastname"
+        Me.EtxtTlastname.Size = New System.Drawing.Size(285, 25)
+        Me.EtxtTlastname.TabIndex = 42
         '
-        'TextBox14
+        'EtxtTeacherID
         '
-        Me.TextBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox14.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox14.Location = New System.Drawing.Point(169, 96)
-        Me.TextBox14.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox14.TabIndex = 42
+        Me.EtxtTeacherID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.EtxtTeacherID.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EtxtTeacherID.Location = New System.Drawing.Point(169, 96)
+        Me.EtxtTeacherID.Margin = New System.Windows.Forms.Padding(2)
+        Me.EtxtTeacherID.Name = "EtxtTeacherID"
+        Me.EtxtTeacherID.Size = New System.Drawing.Size(285, 25)
+        Me.EtxtTeacherID.TabIndex = 42
         '
         'Label11
         '
@@ -963,6 +965,10 @@ Partial Class frm_aTeacher
         Me.Label26.TabIndex = 40
         Me.Label26.Text = "Edit Teacher"
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'Column1
         '
         Me.Column1.HeaderText = "ID"
@@ -1019,6 +1025,12 @@ Partial Class frm_aTeacher
         Me.Column8.Name = "Column8"
         Me.Column8.Width = 150
         '
+        'Column9
+        '
+        Me.Column9.HeaderText = "teacherPhotoPath"
+        Me.Column9.Name = "Column9"
+        Me.Column9.Visible = False
+        '
         'frm_aTeacher
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1041,7 +1053,7 @@ Partial Class frm_aTeacher
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.pnl_Datagrid.ResumeLayout(False)
-        CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv_teacherTable, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.Panel12.ResumeLayout(False)
         Me.Panel12.PerformLayout()
@@ -1065,27 +1077,27 @@ Partial Class frm_aTeacher
     Friend WithEvents Label8 As Label
     Friend WithEvents btnAll As Button
     Friend WithEvents chk_autocomplete As CheckBox
-    Friend WithEvents Button8 As Button
+    Friend WithEvents btnEditTeacher As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents btn_search As Button
     Friend WithEvents txt_search As TextBox
     Friend WithEvents pnl_Datagrid As Panel
-    Friend WithEvents dgv_transactionHistory As DataGridView
+    Friend WithEvents dgv_teacherTable As DataGridView
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents Panel12 As Panel
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents cmbTgender As ComboBox
+    Friend WithEvents dtTbirthdate As DateTimePicker
     Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnAddTeacher As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtTaddress As TextBox
+    Friend WithEvents txtTemailadd As TextBox
+    Friend WithEvents txtTmobileno As TextBox
+    Friend WithEvents txtTmiddlename As TextBox
+    Friend WithEvents txtTfirstname As TextBox
+    Friend WithEvents txtTlastname As TextBox
+    Friend WithEvents txtTeacherID As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
@@ -1098,19 +1110,19 @@ Partial Class frm_aTeacher
     Friend WithEvents Label6 As Label
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents ComboBox6 As ComboBox
-    Friend WithEvents DateTimePicker2 As DateTimePicker
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
+    Friend WithEvents EcmbTgender As ComboBox
+    Friend WithEvents EdtTbirthdate As DateTimePicker
+    Friend WithEvents btnCancelEdit As Button
+    Friend WithEvents btnSaveEditTeacher As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents EtxtTaddress As TextBox
+    Friend WithEvents EtxtTemailadd As TextBox
+    Friend WithEvents EtxtTmobileno As TextBox
+    Friend WithEvents EtxtTmiddlename As TextBox
+    Friend WithEvents EtxtTfirstname As TextBox
+    Friend WithEvents EtxtTlastname As TextBox
+    Friend WithEvents EtxtTeacherID As TextBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents Label19 As Label
@@ -1121,6 +1133,7 @@ Partial Class frm_aTeacher
     Friend WithEvents Label24 As Label
     Friend WithEvents Label25 As Label
     Friend WithEvents Label26 As Label
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
@@ -1129,4 +1142,5 @@ Partial Class frm_aTeacher
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents Column9 As DataGridViewTextBoxColumn
 End Class

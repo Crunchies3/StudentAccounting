@@ -11,6 +11,7 @@ Module ModGlobalVariable
     Public DB_pass As String
     Public port As String
     Public studentPhotoPath As String
+    Public teacherPhotoPath As String
     Public sqlDBAdapter As New MySqlDataAdapter
     Public dataTable As New DataTable
     Public row As Integer

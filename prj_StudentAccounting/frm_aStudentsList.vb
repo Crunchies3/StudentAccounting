@@ -25,58 +25,75 @@ Public Class frm_aStudentsList
     End Sub
 
     Private Sub btnAddStudent_Click(sender As Object, e As EventArgs) Handles btnAddStudent.Click
-        TabControl1.SelectedIndex = 0
 
         Dim yrno As Integer
-        If cmbYearlevel.Text = "1st Year" Then
-            yrno = 1
-        ElseIf cmbYearlevel.Text = "2nd Year" Then
-            yrno = 2
-        ElseIf cmbYearlevel.Text = "3rd Year" Then
-            yrno = 3
-        ElseIf cmbYearlevel.Text = "4th Year" Then
-            yrno = 4
+        'Constraints to stop the user from submitting with empty fields or STUDENT ID not 6 digit'
+        If String.IsNullOrEmpty(txtStudentID.Text) OrElse
+           String.IsNullOrEmpty(txtLastname.Text) OrElse
+           String.IsNullOrEmpty(txtFirstname.Text) OrElse
+           String.IsNullOrEmpty(txtMobileno.Text) OrElse
+           String.IsNullOrEmpty(txtEmailadd.Text) OrElse
+           String.IsNullOrEmpty(txtAddress.Text) OrElse
+            cmbGender.SelectedIndex = -1 OrElse
+            cmbYearlevel.SelectedIndex = -1 OrElse
+            cmbProgram.SelectedIndex = -1 Then
+            MessageBox.Show("Please fill in all required fields before submitting.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        ElseIf txtStudentID.Text.Length <> 6 Then
+            MessageBox.Show("Student ID must contain 6 digit.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        Else
+            TabControl1.SelectedIndex = 0
+            If cmbYearlevel.Text = "1st Year" Then
+                yrno = 1
+            ElseIf cmbYearlevel.Text = "2nd Year" Then
+                yrno = 2
+            ElseIf cmbYearlevel.Text = "3rd Year" Then
+                yrno = 3
+            ElseIf cmbYearlevel.Text = "4th Year" Then
+                yrno = 4
+            End If
+
+            Try
+                With command
+                    .Parameters.Clear()
+                    .CommandText = "prcAdminAddStudent"
+                    .CommandType = CommandType.StoredProcedure
+                    .Parameters.AddWithValue("@p_studentid", txtStudentID.Text)
+                    .Parameters.AddWithValue("@p_lastname", txtLastname.Text)
+                    .Parameters.AddWithValue("@p_firstname", txtFirstname.Text)
+                    .Parameters.AddWithValue("@p_middlename", txtMiddlename.Text)
+                    .Parameters.AddWithValue("@p_gender", cmbGender.Text)
+                    .Parameters.AddWithValue("@p_birthdate", dtBirthdate.Value)
+                    .Parameters.AddWithValue("@p_mobileno", txtMobileno.Text)
+                    .Parameters.AddWithValue("@p_emailadd", txtEmailadd.Text)
+                    .Parameters.AddWithValue("@p_address", txtAddress.Text)
+                    .Parameters.AddWithValue("@p_yearlevel", yrno)
+                    .Parameters.AddWithValue("@p_program", cmbProgram.Text)
+                    .Parameters.AddWithValue("@p_photoPath", studentPhotoPath)
+                    .ExecuteNonQuery()
+
+                End With
+                MessageBox.Show("Student Successfully Added", "Add Student", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+                txtStudentID.Clear()
+                txtLastname.Clear()
+                txtFirstname.Clear()
+                txtMiddlename.Clear()
+                txtMobileno.Clear()
+                txtEmailadd.Clear()
+                txtAddress.Clear()
+                dtBirthdate.Value = Now()
+                cmbGender.SelectedIndex = -1
+                cmbProgram.SelectedIndex = -1
+                cmbYearlevel.SelectedIndex = -1
+
+                funcDisplayAllStudents()
+
+            Catch ex As Exception
+                MessageBox.Show("" & ex.Message)
+            End Try
         End If
-
-        Try
-            With command
-                .Parameters.Clear()
-                .CommandText = "prcAdminAddStudent"
-                .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@p_studentid", txtStudentID.Text)
-                .Parameters.AddWithValue("@p_lastname", txtLastname.Text)
-                .Parameters.AddWithValue("@p_firstname", txtFirstname.Text)
-                .Parameters.AddWithValue("@p_middlename", txtMiddlename.Text)
-                .Parameters.AddWithValue("@p_gender", cmbGender.Text)
-                .Parameters.AddWithValue("@p_birthdate", dtBirthdate.Value)
-                .Parameters.AddWithValue("@p_mobileno", txtMobileno.Text)
-                .Parameters.AddWithValue("@p_emailadd", txtEmailadd.Text)
-                .Parameters.AddWithValue("@p_address", txtAddress.Text)
-                .Parameters.AddWithValue("@p_yearlevel", yrno)
-                .Parameters.AddWithValue("@p_program", cmbProgram.Text)
-                .Parameters.AddWithValue("@p_photoPath", studentPhotoPath)
-                .ExecuteNonQuery()
-
-            End With
-            MessageBox.Show("Student Successfully Added", "Add Student", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
-            txtStudentID.Clear()
-            txtLastname.Clear()
-            txtFirstname.Clear()
-            txtMiddlename.Clear()
-            txtMobileno.Clear()
-            txtEmailadd.Clear()
-            txtAddress.Clear()
-            dtBirthdate.Value = Now()
-            cmbGender.SelectedIndex = -1
-            cmbProgram.SelectedIndex = -1
-            cmbYearlevel.SelectedIndex = -1
-
-            funcDisplayAllStudents()
-
-        Catch ex As Exception
-            MessageBox.Show("" & ex.Message)
-        End Try
 
     End Sub
 
@@ -85,48 +102,65 @@ Public Class frm_aStudentsList
     End Sub
 
     Private Sub btnSaveEdit_Click(sender As Object, e As EventArgs) Handles btnSaveEdit.Click
-        TabControl1.SelectedIndex = 0
-
         Dim yrno As Integer
-        If cmbEyearlevel.Text = "1st Year" Then
-            yrno = 1
-        ElseIf cmbEyearlevel.Text = "2nd Year" Then
-            yrno = 2
-        ElseIf cmbEyearlevel.Text = "3rd Year" Then
-            yrno = 3
-        ElseIf cmbEyearlevel.Text = "4th Year" Then
-            yrno = 4
+        'Constraints to stop the user from submitting with empty fields or STUDENT ID not 6 digit'
+        If String.IsNullOrEmpty(txtEstudentID.Text) OrElse
+           String.IsNullOrEmpty(txtElastname.Text) OrElse
+           String.IsNullOrEmpty(txtEfirstname.Text) OrElse
+           String.IsNullOrEmpty(txtEmobileno.Text) OrElse
+           String.IsNullOrEmpty(txtEemailadd.Text) OrElse
+           String.IsNullOrEmpty(txtEaddress.Text) OrElse
+            cmbEgender.SelectedIndex = -1 OrElse
+            cmbEyearlevel.SelectedIndex = -1 OrElse
+            cmbEprogram.SelectedIndex = -1 Then
+            MessageBox.Show("Please fill in all required fields before submitting.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        ElseIf txtStudentID.Text.Length <> 6 Then
+            MessageBox.Show("Student ID must contain 6 digit.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
         Else
-            yrno = CInt(cmbEyearlevel.Text)
+            TabControl1.SelectedIndex = 0
+            If cmbEyearlevel.Text = "1st Year" Then
+                yrno = 1
+            ElseIf cmbEyearlevel.Text = "2nd Year" Then
+                yrno = 2
+            ElseIf cmbEyearlevel.Text = "3rd Year" Then
+                yrno = 3
+            ElseIf cmbEyearlevel.Text = "4th Year" Then
+                yrno = 4
+            Else
+                yrno = CInt(cmbEyearlevel.Text)
+            End If
+
+            Try
+                With command
+                    .Parameters.Clear()
+                    .CommandText = "prcAdminEditStudent"
+                    .CommandType = CommandType.StoredProcedure
+                    .Parameters.AddWithValue("@p_id", id)
+                    .Parameters.AddWithValue("@p_studentid", txtEstudentID.Text)
+                    .Parameters.AddWithValue("@p_lastname", txtElastname.Text)
+                    .Parameters.AddWithValue("@p_firstname", txtEfirstname.Text)
+                    .Parameters.AddWithValue("@p_middlename", txtEmiddlename.Text)
+                    .Parameters.AddWithValue("@p_gender", cmbEgender.Text)
+                    .Parameters.AddWithValue("@p_birthdate", dtEbirthdate.Value)
+                    .Parameters.AddWithValue("@p_mobileno", txtEmobileno.Text)
+                    .Parameters.AddWithValue("@p_emailadd", txtEemailadd.Text)
+                    .Parameters.AddWithValue("@p_address", txtEaddress.Text)
+                    .Parameters.AddWithValue("@p_yearlevel", yrno)
+                    .Parameters.AddWithValue("@p_program", cmbEprogram.Text)
+                    .Parameters.AddWithValue("@p_photoPath", studentPhotoPath)
+                    .ExecuteNonQuery()
+
+                End With
+                MessageBox.Show("Student Info Updated", "Edit Student", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+                funcDisplayAllStudents()
+
+            Catch ex As Exception
+                MessageBox.Show("" & ex.Message)
+            End Try
         End If
-
-        Try
-            With command
-                .Parameters.Clear()
-                .CommandText = "prcAdminEditStudent"
-                .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@p_id", id)
-                .Parameters.AddWithValue("@p_studentid", txtEstudentID.Text)
-                .Parameters.AddWithValue("@p_lastname", txtElastname.Text)
-                .Parameters.AddWithValue("@p_firstname", txtEfirstname.Text)
-                .Parameters.AddWithValue("@p_middlename", txtEmiddlename.Text)
-                .Parameters.AddWithValue("@p_gender", cmbEgender.Text)
-                .Parameters.AddWithValue("@p_birthdate", dtEbirthdate.Value)
-                .Parameters.AddWithValue("@p_mobileno", txtEmobileno.Text)
-                .Parameters.AddWithValue("@p_emailadd", txtEemailadd.Text)
-                .Parameters.AddWithValue("@p_address", txtEaddress.Text)
-                .Parameters.AddWithValue("@p_yearlevel", yrno)
-                .Parameters.AddWithValue("@p_program", cmbEprogram.Text)
-                .Parameters.AddWithValue("@p_photoPath", studentPhotoPath)
-                .ExecuteNonQuery()
-
-            End With
-            MessageBox.Show("Student Info Updated", "Edit Student", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            funcDisplayAllStudents()
-
-        Catch ex As Exception
-            MessageBox.Show("" & ex.Message)
-        End Try
 
     End Sub
 
