@@ -60,7 +60,7 @@ Public Class frm_aDashboard_v2
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
-                lbl_TotalAssessment.Text = dataTable.Rows(0).Item("studentTotalAssessment").ToString
+                lbl_TotalAssessment.Text = dataTable.Rows(0).Item("totalAssessment").ToString
             End With
 
             With command
@@ -101,7 +101,6 @@ Public Class frm_aDashboard_v2
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
-                lbl_TotalEnrolledStudents.Text = dataTable.Rows.Count
                 If dataTable.Rows.Count > 0 Then
                     dgv_enrolledStudents.RowCount = dataTable.Rows.Count
                     row = 0
