@@ -132,7 +132,6 @@ Public Class frm_aStudentsList
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         TabControl1.SelectedIndex = 0
-        PictureBox2.Image = Nothing
     End Sub
 
     Private Sub funcDisplayAllStudents()
