@@ -32,7 +32,7 @@ Public Class frm_aDashboard_v2
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
-                lbl_TotalEnrolledStudents.Text = dataTable.Rows.Count
+
                 If dataTable.Rows.Count > 0 Then
                     dgv_transactionHistory.RowCount = dataTable.Rows.Count
                     row = 0
@@ -101,6 +101,7 @@ Public Class frm_aDashboard_v2
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
+
                 If dataTable.Rows.Count > 0 Then
                     dgv_enrolledStudents.RowCount = dataTable.Rows.Count
                     row = 0
@@ -140,6 +141,30 @@ Public Class frm_aDashboard_v2
                 lbl_totalPaymentsReceived.Text = "₱" & dataTable.Rows(0).Item("totalPaymentsReceived").ToString
             End With
 
+
+            sqlDBAdapter.Dispose()
+            dataTable.Dispose()
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+
+
+        Try
+            sqlDBAdapter = New MySqlDataAdapter
+            dataTable = New DataTable
+
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcGetTotalEnrolledStudent"
+                .CommandType = CommandType.StoredProcedure
+                sqlDBAdapter.SelectCommand = command
+                dataTable.Clear()
+                sqlDBAdapter.Fill(dataTable)
+                lbl_TotalEnrolledStudents.Text = dataTable.Rows(0).Item("total").ToString
+
+
+            End With
 
             sqlDBAdapter.Dispose()
             dataTable.Dispose()
