@@ -76,7 +76,7 @@ Public Class frm_aStudentsList
                 End With
                 MessageBox.Show("Student Successfully Added", "Add Student", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-                txtStudentID.Clear()
+
                 txtLastname.Clear()
                 txtFirstname.Clear()
                 txtMiddlename.Clear()
@@ -95,6 +95,26 @@ Public Class frm_aStudentsList
             End Try
         End If
 
+
+        Try
+            sqlDBAdapter = New MySqlDataAdapter
+            dataTable = New DataTable
+
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcCreateStudentAccount"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", txtStudentID.Text)
+                .ExecuteNonQuery()
+            End With
+
+            sqlDBAdapter.Dispose()
+            dataTable.Dispose()
+
+            txtStudentID.Clear()
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click

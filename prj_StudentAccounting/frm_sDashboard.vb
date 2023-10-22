@@ -19,11 +19,22 @@ Public Class frm_sDashboard
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
 
-                lbl_totalAssessment.Text = "P " & dataTable.Rows(0).Item("totalassessment").ToString
+
                 lbl_totalPayment.Text = "P " & dataTable.Rows(0).Item("totalpayment").ToString
                 lbl_currentBalance.Text = "P " & dataTable.Rows(0).Item("totalbalance").ToString
-                lbl_perExam.Text = "P " & dataTable.Rows(0).Item("totalassessment") / 8
+                lbl_perExam.Text = "P " & dataTable.Rows(0).Item("totalassessment") / 8.0
 
+            End With
+
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcGetStudentTotalAssessment"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", userID)
+                sqlDBAdapter.SelectCommand = command
+                dataTable.Clear()
+                sqlDBAdapter.Fill(dataTable)
+                lbl_totalAssessment.Text = dataTable.Rows(0).Item("studentTotalAssessment").ToString
             End With
 
             sqlDBAdapter.Dispose()
