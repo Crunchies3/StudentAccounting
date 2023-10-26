@@ -8,8 +8,8 @@ Public Class frm_sDashboard
 
     End Sub
     Private Sub displayTransactionHistory()
-        Try
-            sqlDBAdapter = New MySqlDataAdapter
+
+        sqlDBAdapter = New MySqlDataAdapter
             dataTable = New DataTable
 
             With command
@@ -38,7 +38,7 @@ Public Class frm_sDashboard
             sqlDBAdapter.Dispose()
             dataTable.Dispose()
 
-        End Try
+
     End Sub
 
     Private Sub displayLabels()
