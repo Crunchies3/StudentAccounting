@@ -38,8 +38,6 @@ Public Class frm_sDashboard
             sqlDBAdapter.Dispose()
             dataTable.Dispose()
 
-        Catch ex As Exception
-            MessageBox.Show("" & ex.Message)
         End Try
     End Sub
 
