@@ -56,7 +56,7 @@ Public Class frm_sDashboard
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
-                lbl_totalAssessment.Text = dataTable.Rows(0).Item("totalAssessment").ToString
+                lbl_totalAssessment.Text = "₱ " & dataTable.Rows(0).Item("totalAssessment").ToString
             End With
 
             With command
@@ -69,9 +69,9 @@ Public Class frm_sDashboard
                 sqlDBAdapter.Fill(dataTable)
 
 
-                lbl_totalPayment.Text = "P " & dataTable.Rows(0).Item("totalpayment").ToString
-                lbl_currentBalance.Text = "P " & dataTable.Rows(0).Item("totalbalance").ToString
-                lbl_perExam.Text = "P " & dataTable.Rows(0).Item("totalassessment") / 8.0
+                lbl_totalPayment.Text = "₱ " & dataTable.Rows(0).Item("totalpayment").ToString
+                lbl_currentBalance.Text = "₱ " & dataTable.Rows(0).Item("totalbalance").ToString
+                lbl_perExam.Text = "₱ " & dataTable.Rows(0).Item("totalassessment") / 8.0
 
             End With
 
