@@ -1228,6 +1228,7 @@ Partial Class frm_aStudentsList
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frm_aStudentsList"
         Me.Text = "frm_aStudentsList"

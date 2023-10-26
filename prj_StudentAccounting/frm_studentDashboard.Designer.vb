@@ -44,9 +44,9 @@ Partial Class frm_StudentDashboard
         Me.pnl_menu.Controls.Add(Me.pnl_menuicon)
         Me.pnl_menu.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnl_menu.Location = New System.Drawing.Point(0, 0)
-        Me.pnl_menu.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnl_menu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnl_menu.Name = "pnl_menu"
-        Me.pnl_menu.Size = New System.Drawing.Size(265, 679)
+        Me.pnl_menu.Size = New System.Drawing.Size(199, 552)
         Me.pnl_menu.TabIndex = 0
         '
         'pnl_buttons
@@ -58,10 +58,10 @@ Partial Class frm_StudentDashboard
         Me.pnl_buttons.Controls.Add(Me.Button2)
         Me.pnl_buttons.Controls.Add(Me.Button1)
         Me.pnl_buttons.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnl_buttons.Location = New System.Drawing.Point(0, 162)
-        Me.pnl_buttons.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnl_buttons.Location = New System.Drawing.Point(0, 132)
+        Me.pnl_buttons.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnl_buttons.Name = "pnl_buttons"
-        Me.pnl_buttons.Size = New System.Drawing.Size(265, 517)
+        Me.pnl_buttons.Size = New System.Drawing.Size(199, 420)
         Me.pnl_buttons.TabIndex = 3
         '
         'Button6
@@ -70,10 +70,10 @@ Partial Class frm_StudentDashboard
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(37, 442)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button6.Location = New System.Drawing.Point(28, 359)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(182, 31)
+        Me.Button6.Size = New System.Drawing.Size(136, 25)
         Me.Button6.TabIndex = 0
         Me.Button6.Text = "LOGOUT"
         Me.Button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -84,10 +84,10 @@ Partial Class frm_StudentDashboard
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(37, 136)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button5.Location = New System.Drawing.Point(28, 110)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(182, 31)
+        Me.Button5.Size = New System.Drawing.Size(136, 25)
         Me.Button5.TabIndex = 0
         Me.Button5.Text = "ASSESSMENT"
         Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -98,10 +98,10 @@ Partial Class frm_StudentDashboard
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(37, 100)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button3.Location = New System.Drawing.Point(28, 81)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(182, 31)
+        Me.Button3.Size = New System.Drawing.Size(136, 25)
         Me.Button3.TabIndex = 0
         Me.Button3.Text = "ENROLL SUBJECT"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -113,10 +113,10 @@ Partial Class frm_StudentDashboard
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.ForeColor = System.Drawing.Color.White
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.Location = New System.Drawing.Point(37, 64)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button2.Location = New System.Drawing.Point(28, 52)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(182, 31)
+        Me.Button2.Size = New System.Drawing.Size(136, 25)
         Me.Button2.TabIndex = 0
         Me.Button2.Text = "SUBJECTS"
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -127,10 +127,10 @@ Partial Class frm_StudentDashboard
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(37, 28)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button1.Location = New System.Drawing.Point(28, 23)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(182, 31)
+        Me.Button1.Size = New System.Drawing.Size(136, 25)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "DASHBOARD"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -140,10 +140,10 @@ Partial Class frm_StudentDashboard
         '
         Me.pnl_studentname.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.pnl_studentname.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnl_studentname.Location = New System.Drawing.Point(0, 39)
-        Me.pnl_studentname.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnl_studentname.Location = New System.Drawing.Point(0, 32)
+        Me.pnl_studentname.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnl_studentname.Name = "pnl_studentname"
-        Me.pnl_studentname.Size = New System.Drawing.Size(265, 123)
+        Me.pnl_studentname.Size = New System.Drawing.Size(199, 100)
         Me.pnl_studentname.TabIndex = 2
         '
         'pnl_menuicon
@@ -151,40 +151,41 @@ Partial Class frm_StudentDashboard
         Me.pnl_menuicon.BackColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.pnl_menuicon.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnl_menuicon.Location = New System.Drawing.Point(0, 0)
-        Me.pnl_menuicon.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnl_menuicon.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnl_menuicon.Name = "pnl_menuicon"
-        Me.pnl_menuicon.Size = New System.Drawing.Size(265, 39)
+        Me.pnl_menuicon.Size = New System.Drawing.Size(199, 32)
         Me.pnl_menuicon.TabIndex = 1
         '
         'pnl_header
         '
         Me.pnl_header.BackColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.pnl_header.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnl_header.Location = New System.Drawing.Point(265, 0)
-        Me.pnl_header.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnl_header.Location = New System.Drawing.Point(199, 0)
+        Me.pnl_header.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnl_header.Name = "pnl_header"
-        Me.pnl_header.Size = New System.Drawing.Size(1179, 39)
+        Me.pnl_header.Size = New System.Drawing.Size(884, 32)
         Me.pnl_header.TabIndex = 2
         '
         'pnl_main
         '
         Me.pnl_main.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnl_main.Location = New System.Drawing.Point(265, 39)
-        Me.pnl_main.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnl_main.Location = New System.Drawing.Point(199, 32)
+        Me.pnl_main.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnl_main.Name = "pnl_main"
-        Me.pnl_main.Size = New System.Drawing.Size(1179, 640)
+        Me.pnl_main.Size = New System.Drawing.Size(884, 520)
         Me.pnl_main.TabIndex = 4
         '
         'frm_StudentDashboard
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1444, 679)
+        Me.ClientSize = New System.Drawing.Size(1083, 552)
         Me.Controls.Add(Me.pnl_main)
         Me.Controls.Add(Me.pnl_header)
         Me.Controls.Add(Me.pnl_menu)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DoubleBuffered = True
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frm_StudentDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Student Portal"

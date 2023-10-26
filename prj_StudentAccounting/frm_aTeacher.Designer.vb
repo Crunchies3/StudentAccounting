@@ -43,6 +43,15 @@ Partial Class frm_aTeacher
         Me.txt_search = New System.Windows.Forms.TextBox()
         Me.pnl_Datagrid = New System.Windows.Forms.Panel()
         Me.dgv_teacherTable = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.cmbTgender = New System.Windows.Forms.ComboBox()
@@ -94,15 +103,6 @@ Partial Class frm_aTeacher
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -361,6 +361,68 @@ Partial Class frm_aTeacher
         Me.dgv_teacherTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgv_teacherTable.Size = New System.Drawing.Size(1009, 454)
         Me.dgv_teacherTable.TabIndex = 3
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "ID"
+        Me.Column1.MinimumWidth = 50
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 53
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Teacher ID"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 108
+        '
+        'Column3
+        '
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.HeaderText = "Fullname"
+        Me.Column3.MinimumWidth = 100
+        Me.Column3.Name = "Column3"
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "Birthdate"
+        Me.Column7.MinimumWidth = 150
+        Me.Column7.Name = "Column7"
+        Me.Column7.Width = 150
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Gender"
+        Me.Column4.MinimumWidth = 100
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 125
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Mobile Number"
+        Me.Column5.MinimumWidth = 150
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 150
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Email Address"
+        Me.Column6.MinimumWidth = 150
+        Me.Column6.Name = "Column6"
+        Me.Column6.Width = 150
+        '
+        'Column8
+        '
+        Me.Column8.HeaderText = "Address"
+        Me.Column8.MinimumWidth = 150
+        Me.Column8.Name = "Column8"
+        Me.Column8.Width = 150
+        '
+        'Column9
+        '
+        Me.Column9.HeaderText = "teacherPhotoPath"
+        Me.Column9.Name = "Column9"
+        Me.Column9.Visible = False
         '
         'TabPage2
         '
@@ -969,68 +1031,6 @@ Partial Class frm_aTeacher
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
-        'Column1
-        '
-        Me.Column1.HeaderText = "ID"
-        Me.Column1.MinimumWidth = 50
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 53
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Teacher ID"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 108
-        '
-        'Column3
-        '
-        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column3.HeaderText = "Fullname"
-        Me.Column3.MinimumWidth = 100
-        Me.Column3.Name = "Column3"
-        '
-        'Column7
-        '
-        Me.Column7.HeaderText = "Birthdate"
-        Me.Column7.MinimumWidth = 150
-        Me.Column7.Name = "Column7"
-        Me.Column7.Width = 150
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Gender"
-        Me.Column4.MinimumWidth = 100
-        Me.Column4.Name = "Column4"
-        Me.Column4.Width = 125
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Mobile Number"
-        Me.Column5.MinimumWidth = 150
-        Me.Column5.Name = "Column5"
-        Me.Column5.Width = 150
-        '
-        'Column6
-        '
-        Me.Column6.HeaderText = "Email Address"
-        Me.Column6.MinimumWidth = 150
-        Me.Column6.Name = "Column6"
-        Me.Column6.Width = 150
-        '
-        'Column8
-        '
-        Me.Column8.HeaderText = "Address"
-        Me.Column8.MinimumWidth = 150
-        Me.Column8.Name = "Column8"
-        Me.Column8.Width = 150
-        '
-        'Column9
-        '
-        Me.Column9.HeaderText = "teacherPhotoPath"
-        Me.Column9.Name = "Column9"
-        Me.Column9.Visible = False
-        '
         'frm_aTeacher
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1041,6 +1041,7 @@ Partial Class frm_aTeacher
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frm_aTeacher"
         Me.Text = "frm_aTeacher"
