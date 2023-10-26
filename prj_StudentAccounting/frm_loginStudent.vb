@@ -23,6 +23,7 @@ Public Class frm_loginStudent
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
+                studID = CInt(dataTable.Rows(0).Item("id").ToString)
             End With
 
             If dataTable.Rows.Count = 0 Then

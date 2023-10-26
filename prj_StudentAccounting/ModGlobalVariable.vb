@@ -18,6 +18,7 @@ Module ModGlobalVariable
     Public currentDate As String
 
     'User details'
+    Public studID As Integer
     Public userID As String
     Public studentName As String
     Public studentProgram As String

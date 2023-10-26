@@ -5,12 +5,14 @@ Public Class frm_aDashboard_v2
 
     Dim access As Boolean = False
     Dim id As Integer
+    Dim studID As String
     Private Shared random As New Random()
     Dim referenceNo As Integer
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btn_viewPayment.Click
         TabControl1.SelectedIndex = 1
         id = CInt(dgv_enrolledStudents.CurrentRow.Cells(0).Value)
+        studID = dgv_enrolledStudents.CurrentRow.Cells(1).Value
         txtStudentid.Text = dgv_enrolledStudents.CurrentRow.Cells(1).Value
         txtStudentname.Text = dgv_enrolledStudents.CurrentRow.Cells(2).Value
         txtProgram.Text = dgv_enrolledStudents.CurrentRow.Cells(4).Value
@@ -32,7 +34,7 @@ Public Class frm_aDashboard_v2
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
-                lbl_TotalEnrolledStudents.Text = dataTable.Rows.Count
+
                 If dataTable.Rows.Count > 0 Then
                     dgv_transactionHistory.RowCount = dataTable.Rows.Count
                     row = 0
@@ -43,8 +45,6 @@ Public Class frm_aDashboard_v2
                         dgv_transactionHistory.Rows(row).Cells(3).Value = dataTable.Rows(row).Item("amount").ToString
                         row = row + 1
                     End While
-                Else
-                    MessageBox.Show("No Available Records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Question)
                 End If
 
             End With
@@ -56,11 +56,11 @@ Public Class frm_aDashboard_v2
                 .Parameters.Clear()
                 .CommandText = "prcGetStudentTotalAssessment"
                 .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@p_id", id)
+                .Parameters.AddWithValue("@p_id", studID)
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
-                lbl_TotalAssessment.Text = dataTable.Rows(0).Item("studentTotalAssessment").ToString
+                lbl_TotalAssessment.Text = dataTable.Rows(0).Item("totalAssessment").ToString
             End With
 
             With command
@@ -101,7 +101,7 @@ Public Class frm_aDashboard_v2
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
-                lbl_TotalEnrolledStudents.Text = dataTable.Rows.Count
+
                 If dataTable.Rows.Count > 0 Then
                     dgv_enrolledStudents.RowCount = dataTable.Rows.Count
                     row = 0
@@ -141,6 +141,30 @@ Public Class frm_aDashboard_v2
                 lbl_totalPaymentsReceived.Text = "₱" & dataTable.Rows(0).Item("totalPaymentsReceived").ToString
             End With
 
+
+            sqlDBAdapter.Dispose()
+            dataTable.Dispose()
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+
+
+        Try
+            sqlDBAdapter = New MySqlDataAdapter
+            dataTable = New DataTable
+
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcGetTotalEnrolledStudent"
+                .CommandType = CommandType.StoredProcedure
+                sqlDBAdapter.SelectCommand = command
+                dataTable.Clear()
+                sqlDBAdapter.Fill(dataTable)
+                lbl_TotalEnrolledStudents.Text = dataTable.Rows(0).Item("total").ToString
+
+
+            End With
 
             sqlDBAdapter.Dispose()
             dataTable.Dispose()
