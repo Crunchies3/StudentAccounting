@@ -63,7 +63,7 @@ Partial Class frm_sAssessment
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1052, 44)
         Me.Panel1.TabIndex = 2
@@ -84,7 +84,7 @@ Partial Class frm_sAssessment
         '
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel3.Location = New System.Drawing.Point(0, 44)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(27, 505)
         Me.Panel3.TabIndex = 3
@@ -93,7 +93,7 @@ Partial Class frm_sAssessment
         '
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel4.Location = New System.Drawing.Point(1016, 44)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(36, 505)
         Me.Panel4.TabIndex = 4
@@ -106,7 +106,7 @@ Partial Class frm_sAssessment
         Me.Panel2.Controls.Add(Me.Panel6)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(27, 44)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(989, 505)
         Me.Panel2.TabIndex = 5
@@ -119,7 +119,7 @@ Partial Class frm_sAssessment
         Me.Panel7.Controls.Add(Me.Panel8)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(0, 167)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(989, 338)
         Me.Panel7.TabIndex = 3
@@ -127,15 +127,15 @@ Partial Class frm_sAssessment
         'lbl_totalAssessment
         '
         Me.lbl_totalAssessment.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_totalAssessment.AutoSize = True
         Me.lbl_totalAssessment.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.lbl_totalAssessment.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.lbl_totalAssessment.Location = New System.Drawing.Point(805, 265)
+        Me.lbl_totalAssessment.Location = New System.Drawing.Point(732, 265)
         Me.lbl_totalAssessment.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_totalAssessment.Name = "lbl_totalAssessment"
-        Me.lbl_totalAssessment.Size = New System.Drawing.Size(62, 15)
+        Me.lbl_totalAssessment.Size = New System.Drawing.Size(133, 15)
         Me.lbl_totalAssessment.TabIndex = 11
         Me.lbl_totalAssessment.Text = "20,949.00"
+        Me.lbl_totalAssessment.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label5
         '
@@ -158,7 +158,7 @@ Partial Class frm_sAssessment
         Me.pnl_Datagrid.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.pnl_Datagrid.Controls.Add(Me.dgv_assessment)
         Me.pnl_Datagrid.Location = New System.Drawing.Point(140, 62)
-        Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(2)
         Me.pnl_Datagrid.Name = "pnl_Datagrid"
         Me.pnl_Datagrid.Padding = New System.Windows.Forms.Padding(1)
         Me.pnl_Datagrid.Size = New System.Drawing.Size(725, 189)
@@ -191,7 +191,7 @@ Partial Class frm_sAssessment
         Me.dgv_assessment.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgv_assessment.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_assessment.Location = New System.Drawing.Point(1, 1)
-        Me.dgv_assessment.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dgv_assessment.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv_assessment.Name = "dgv_assessment"
         Me.dgv_assessment.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -229,7 +229,7 @@ Partial Class frm_sAssessment
         Me.Panel8.Controls.Add(Me.lbl_name)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel8.Location = New System.Drawing.Point(0, 0)
-        Me.Panel8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(989, 54)
         Me.Panel8.TabIndex = 9
@@ -280,7 +280,7 @@ Partial Class frm_sAssessment
         Me.Panel5.Controls.Add(Me.Label2)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel5.Location = New System.Drawing.Point(0, 93)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(989, 74)
         Me.Panel5.TabIndex = 2
@@ -321,7 +321,7 @@ Partial Class frm_sAssessment
         Me.Panel6.Controls.Add(Me.lbl_program)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel6.Location = New System.Drawing.Point(0, 0)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(989, 93)
         Me.Panel6.TabIndex = 1
@@ -368,7 +368,7 @@ Partial Class frm_sAssessment
         Me.Controls.Add(Me.Panel1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frm_sAssessment"
         Me.Text = "frm_sAssessment"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
