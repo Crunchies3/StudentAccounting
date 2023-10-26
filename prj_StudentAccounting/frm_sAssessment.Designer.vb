@@ -63,9 +63,9 @@ Partial Class frm_sAssessment
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1403, 54)
+        Me.Panel1.Size = New System.Drawing.Size(1052, 44)
         Me.Panel1.TabIndex = 2
         '
         'Label9
@@ -73,28 +73,29 @@ Partial Class frm_sAssessment
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold)
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(37, 14)
+        Me.Label9.Location = New System.Drawing.Point(28, 11)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(173, 31)
+        Me.Label9.Size = New System.Drawing.Size(143, 25)
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "Enroll Subjects"
         '
         'Panel3
         '
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel3.Location = New System.Drawing.Point(0, 54)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel3.Location = New System.Drawing.Point(0, 44)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(36, 622)
+        Me.Panel3.Size = New System.Drawing.Size(27, 505)
         Me.Panel3.TabIndex = 3
         '
         'Panel4
         '
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel4.Location = New System.Drawing.Point(1355, 54)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel4.Location = New System.Drawing.Point(1016, 44)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(48, 622)
+        Me.Panel4.Size = New System.Drawing.Size(36, 505)
         Me.Panel4.TabIndex = 4
         '
         'Panel2
@@ -104,10 +105,10 @@ Partial Class frm_sAssessment
         Me.Panel2.Controls.Add(Me.Panel5)
         Me.Panel2.Controls.Add(Me.Panel6)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(36, 54)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel2.Location = New System.Drawing.Point(27, 44)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1319, 622)
+        Me.Panel2.Size = New System.Drawing.Size(989, 505)
         Me.Panel2.TabIndex = 5
         '
         'Panel7
@@ -117,23 +118,24 @@ Partial Class frm_sAssessment
         Me.Panel7.Controls.Add(Me.pnl_Datagrid)
         Me.Panel7.Controls.Add(Me.Panel8)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel7.Location = New System.Drawing.Point(0, 205)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel7.Location = New System.Drawing.Point(0, 167)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1319, 417)
+        Me.Panel7.Size = New System.Drawing.Size(989, 338)
         Me.Panel7.TabIndex = 3
         '
         'lbl_totalAssessment
         '
         Me.lbl_totalAssessment.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_totalAssessment.AutoSize = True
         Me.lbl_totalAssessment.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.lbl_totalAssessment.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.lbl_totalAssessment.Location = New System.Drawing.Point(1073, 327)
+        Me.lbl_totalAssessment.Location = New System.Drawing.Point(732, 265)
+        Me.lbl_totalAssessment.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_totalAssessment.Name = "lbl_totalAssessment"
-        Me.lbl_totalAssessment.Size = New System.Drawing.Size(80, 20)
+        Me.lbl_totalAssessment.Size = New System.Drawing.Size(133, 15)
         Me.lbl_totalAssessment.TabIndex = 11
         Me.lbl_totalAssessment.Text = "20,949.00"
+        Me.lbl_totalAssessment.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label5
         '
@@ -141,9 +143,10 @@ Partial Class frm_sAssessment
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(185, 327)
+        Me.Label5.Location = New System.Drawing.Point(139, 265)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(132, 20)
+        Me.Label5.Size = New System.Drawing.Size(102, 15)
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "Total Assessment"
         '
@@ -154,11 +157,11 @@ Partial Class frm_sAssessment
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnl_Datagrid.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.pnl_Datagrid.Controls.Add(Me.dgv_assessment)
-        Me.pnl_Datagrid.Location = New System.Drawing.Point(186, 76)
-        Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnl_Datagrid.Location = New System.Drawing.Point(140, 62)
+        Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(2)
         Me.pnl_Datagrid.Name = "pnl_Datagrid"
         Me.pnl_Datagrid.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_Datagrid.Size = New System.Drawing.Size(967, 234)
+        Me.pnl_Datagrid.Size = New System.Drawing.Size(725, 189)
         Me.pnl_Datagrid.TabIndex = 10
         '
         'dgv_assessment
@@ -188,7 +191,7 @@ Partial Class frm_sAssessment
         Me.dgv_assessment.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgv_assessment.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_assessment.Location = New System.Drawing.Point(1, 1)
-        Me.dgv_assessment.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dgv_assessment.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv_assessment.Name = "dgv_assessment"
         Me.dgv_assessment.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -202,7 +205,7 @@ Partial Class frm_sAssessment
         Me.dgv_assessment.RowHeadersWidth = 51
         Me.dgv_assessment.RowTemplate.Height = 35
         Me.dgv_assessment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_assessment.Size = New System.Drawing.Size(965, 232)
+        Me.dgv_assessment.Size = New System.Drawing.Size(723, 187)
         Me.dgv_assessment.TabIndex = 3
         '
         'Column3
@@ -226,9 +229,9 @@ Partial Class frm_sAssessment
         Me.Panel8.Controls.Add(Me.lbl_name)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel8.Location = New System.Drawing.Point(0, 0)
-        Me.Panel8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(1319, 66)
+        Me.Panel8.Size = New System.Drawing.Size(989, 54)
         Me.Panel8.TabIndex = 9
         '
         'lbl_dateTime
@@ -236,9 +239,10 @@ Partial Class frm_sAssessment
         Me.lbl_dateTime.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_dateTime.Font = New System.Drawing.Font("Segoe UI", 10.2!)
         Me.lbl_dateTime.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.lbl_dateTime.Location = New System.Drawing.Point(933, 35)
+        Me.lbl_dateTime.Location = New System.Drawing.Point(700, 28)
+        Me.lbl_dateTime.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_dateTime.Name = "lbl_dateTime"
-        Me.lbl_dateTime.Size = New System.Drawing.Size(220, 23)
+        Me.lbl_dateTime.Size = New System.Drawing.Size(165, 19)
         Me.lbl_dateTime.TabIndex = 8
         Me.lbl_dateTime.Text = "10/01/2023 13:37:20"
         Me.lbl_dateTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -247,9 +251,10 @@ Partial Class frm_sAssessment
         '
         Me.lbl_accountNumber.Font = New System.Drawing.Font("Segoe UI", 10.2!)
         Me.lbl_accountNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.lbl_accountNumber.Location = New System.Drawing.Point(186, 35)
+        Me.lbl_accountNumber.Location = New System.Drawing.Point(140, 28)
+        Me.lbl_accountNumber.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_accountNumber.Name = "lbl_accountNumber"
-        Me.lbl_accountNumber.Size = New System.Drawing.Size(243, 23)
+        Me.lbl_accountNumber.Size = New System.Drawing.Size(182, 19)
         Me.lbl_accountNumber.TabIndex = 8
         Me.lbl_accountNumber.Text = "Account No.: 134563"
         Me.lbl_accountNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -261,9 +266,10 @@ Partial Class frm_sAssessment
         Me.lbl_name.BackColor = System.Drawing.Color.Transparent
         Me.lbl_name.Font = New System.Drawing.Font("Segoe UI", 10.2!)
         Me.lbl_name.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.lbl_name.Location = New System.Drawing.Point(0, 36)
+        Me.lbl_name.Location = New System.Drawing.Point(0, 29)
+        Me.lbl_name.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_name.Name = "lbl_name"
-        Me.lbl_name.Size = New System.Drawing.Size(1319, 25)
+        Me.lbl_name.Size = New System.Drawing.Size(989, 20)
         Me.lbl_name.TabIndex = 9
         Me.lbl_name.Text = "Name: Alvez, Cyril Charles"
         Me.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -273,10 +279,10 @@ Partial Class frm_sAssessment
         Me.Panel5.Controls.Add(Me.lbl_smallSemester)
         Me.Panel5.Controls.Add(Me.Label2)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel5.Location = New System.Drawing.Point(0, 114)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel5.Location = New System.Drawing.Point(0, 93)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1319, 91)
+        Me.Panel5.Size = New System.Drawing.Size(989, 74)
         Me.Panel5.TabIndex = 2
         '
         'lbl_smallSemester
@@ -286,9 +292,10 @@ Partial Class frm_sAssessment
         Me.lbl_smallSemester.BackColor = System.Drawing.Color.Transparent
         Me.lbl_smallSemester.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
         Me.lbl_smallSemester.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.lbl_smallSemester.Location = New System.Drawing.Point(0, 56)
+        Me.lbl_smallSemester.Location = New System.Drawing.Point(0, 46)
+        Me.lbl_smallSemester.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_smallSemester.Name = "lbl_smallSemester"
-        Me.lbl_smallSemester.Size = New System.Drawing.Size(1319, 25)
+        Me.lbl_smallSemester.Size = New System.Drawing.Size(989, 20)
         Me.lbl_smallSemester.TabIndex = 9
         Me.lbl_smallSemester.Text = "FIRST SEMESTER 2023-24"
         Me.lbl_smallSemester.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -300,9 +307,10 @@ Partial Class frm_sAssessment
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold)
         Me.Label2.ForeColor = System.Drawing.SystemColors.GrayText
-        Me.Label2.Location = New System.Drawing.Point(0, 22)
+        Me.Label2.Location = New System.Drawing.Point(0, 18)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(1319, 34)
+        Me.Label2.Size = New System.Drawing.Size(989, 28)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "Student Assessment"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -313,9 +321,9 @@ Partial Class frm_sAssessment
         Me.Panel6.Controls.Add(Me.lbl_program)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel6.Location = New System.Drawing.Point(0, 0)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1319, 114)
+        Me.Panel6.Size = New System.Drawing.Size(989, 93)
         Me.Panel6.TabIndex = 1
         '
         'lbl_semester
@@ -325,9 +333,10 @@ Partial Class frm_sAssessment
         Me.lbl_semester.BackColor = System.Drawing.Color.Transparent
         Me.lbl_semester.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold)
         Me.lbl_semester.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.lbl_semester.Location = New System.Drawing.Point(0, 63)
+        Me.lbl_semester.Location = New System.Drawing.Point(0, 51)
+        Me.lbl_semester.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_semester.Name = "lbl_semester"
-        Me.lbl_semester.Size = New System.Drawing.Size(1319, 33)
+        Me.lbl_semester.Size = New System.Drawing.Size(989, 27)
         Me.lbl_semester.TabIndex = 13
         Me.lbl_semester.Text = "First Semester 2023-24"
         Me.lbl_semester.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -339,25 +348,27 @@ Partial Class frm_sAssessment
         Me.lbl_program.BackColor = System.Drawing.Color.Transparent
         Me.lbl_program.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold)
         Me.lbl_program.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.lbl_program.Location = New System.Drawing.Point(0, 33)
+        Me.lbl_program.Location = New System.Drawing.Point(0, 27)
+        Me.lbl_program.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_program.Name = "lbl_program"
-        Me.lbl_program.Size = New System.Drawing.Size(1319, 25)
+        Me.lbl_program.Size = New System.Drawing.Size(989, 20)
         Me.lbl_program.TabIndex = 12
         Me.lbl_program.Text = "Bachelor Of Science In Computer Science"
         Me.lbl_program.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frm_sAssessment
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1403, 676)
+        Me.ClientSize = New System.Drawing.Size(1052, 549)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frm_sAssessment"
         Me.Text = "frm_sAssessment"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

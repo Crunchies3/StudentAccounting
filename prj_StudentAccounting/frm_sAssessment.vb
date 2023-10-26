@@ -18,24 +18,55 @@ Public Class frm_sAssessment
         dataTable = New DataTable
 
         With command
+
+            Dim totalUnits As Integer = 0
+            Dim totalAss As Double = 0
+            Dim perUnitFee As Double = 0
+
+            .Parameters.Clear()
+            .CommandText = "prcGetTotalUnits"
+            .CommandType = CommandType.StoredProcedure
+            .Parameters.AddWithValue("@p_id", userID)
+            sqlDBAdapter.SelectCommand = command
+            dataTable.Clear()
+            sqlDBAdapter.Fill(dataTable)
+
+            totalUnits = dataTable.Rows(0).Item("totalunits")
+
+
             .Parameters.Clear()
             .CommandText = "prcDisplayStudentAssessment"
             .CommandType = CommandType.StoredProcedure
             .Parameters.AddWithValue("@p_id", studID)
             sqlDBAdapter.SelectCommand = command
-            dataTable.Clear()
             sqlDBAdapter.Fill(dataTable)
 
+            perUnitFee = dataTable.Rows(1).Item("amount")
+
+            dataTable.Rows(1)("amount") = totalUnits * (dataTable.Rows(1).Item("amount"))
+
             If dataTable.Rows.Count > 0 Then
-                dgv_assessment.RowCount = dataTable.Rows.Count
-                row = 0
+                dgv_assessment.RowCount = dataTable.Rows.Count - 1
+                row = 1
+
                 While Not dataTable.Rows.Count - 1 < row
-                    dgv_assessment.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("referenceno").ToString
-                    dgv_assessment.Rows(row).Cells(1).Value = "#" & dataTable.Rows(row).Item("description").ToString
-                    dgv_assessment.Rows(row).Cells(2).Value = dataTable.Rows(row).Item("amount").ToString
-                    row = row + 1
+
+                    If row = 1 Then
+                        totalAss = totalAss + dataTable.Rows(row).Item("amount")
+                        dgv_assessment.Rows(row - 1).Cells(0).Value = dataTable.Rows(row).Item("description") & " (" & perUnitFee & " X " & totalUnits & ")".ToString
+                        dgv_assessment.Rows(row - 1).Cells(1).Value = "₱ " & dataTable.Rows(row).Item("amount").ToString
+                        row = row + 1
+                    Else
+                        totalAss = totalAss + dataTable.Rows(row).Item("amount")
+                        dgv_assessment.Rows(row - 1).Cells(0).Value = dataTable.Rows(row).Item("description").ToString
+                        dgv_assessment.Rows(row - 1).Cells(1).Value = "₱ " & dataTable.Rows(row).Item("amount").ToString
+                        row = row + 1
+                    End If
+
                 End While
             End If
+
+            lbl_totalAssessment.Text = "₱ " & totalAss
 
         End With
 
