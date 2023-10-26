@@ -15,7 +15,6 @@ Module ModGlobalVariable
     Public sqlDBAdapter As New MySqlDataAdapter
     Public dataTable As New DataTable
     Public row As Integer
-    Public currentDate As String
 
     'User details'
     Public studID As Integer

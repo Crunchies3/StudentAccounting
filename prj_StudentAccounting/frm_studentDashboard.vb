@@ -93,8 +93,6 @@ Public Class frm_StudentDashboard
     Private Sub button5_click(sender As Object, e As EventArgs) Handles Button5.Click
         button = 4
         responsive()
-        currentDate = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss")
-
         With frm_sAssessment
             .TopLevel = False
             pnl_main.Controls.Add(frm_sAssessment)
