@@ -5,12 +5,14 @@ Public Class frm_aDashboard_v2
 
     Dim access As Boolean = False
     Dim id As Integer
+    Dim studID As String
     Private Shared random As New Random()
     Dim referenceNo As Integer
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btn_viewPayment.Click
         TabControl1.SelectedIndex = 1
         id = CInt(dgv_enrolledStudents.CurrentRow.Cells(0).Value)
+        studID = dgv_enrolledStudents.CurrentRow.Cells(1).Value
         txtStudentid.Text = dgv_enrolledStudents.CurrentRow.Cells(1).Value
         txtStudentname.Text = dgv_enrolledStudents.CurrentRow.Cells(2).Value
         txtProgram.Text = dgv_enrolledStudents.CurrentRow.Cells(4).Value
@@ -54,7 +56,7 @@ Public Class frm_aDashboard_v2
                 .Parameters.Clear()
                 .CommandText = "prcGetStudentTotalAssessment"
                 .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@p_id", id)
+                .Parameters.AddWithValue("@p_id", studID)
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
