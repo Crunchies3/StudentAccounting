@@ -39,7 +39,6 @@ Public Class frm_aDashboard_v2
                     dgv_transactionHistory.RowCount = dataTable.Rows.Count
                     row = 0
                     While Not dataTable.Rows.Count - 1 < row
-                        dgv_transactionHistory.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
                         dgv_transactionHistory.Rows(row).Cells(1).Value = "#" & dataTable.Rows(row).Item("referenceno").ToString
                         dgv_transactionHistory.Rows(row).Cells(2).Value = dataTable.Rows(row).Item("description").ToString
                         dgv_transactionHistory.Rows(row).Cells(3).Value = dataTable.Rows(row).Item("amount").ToString

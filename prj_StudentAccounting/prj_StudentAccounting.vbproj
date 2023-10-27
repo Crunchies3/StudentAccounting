@@ -149,10 +149,28 @@
     <Compile Include="frm_adminLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_aFees.Designer.vb">
+      <DependentUpon>frm_aFees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_aFees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_aRecords.Designer.vb">
+      <DependentUpon>frm_aRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_aRecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_aStudentsList.Designer.vb">
       <DependentUpon>frm_aStudentsList.vb</DependentUpon>
     </Compile>
     <Compile Include="frm_aStudentsList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_aSubjects.Designer.vb">
+      <DependentUpon>frm_aSubjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_aSubjects.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_aTeacher.Designer.vb">
@@ -228,8 +246,17 @@
     <EmbeddedResource Include="frm_adminLogin.resx">
       <DependentUpon>frm_adminLogin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_aFees.resx">
+      <DependentUpon>frm_aFees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_aRecords.resx">
+      <DependentUpon>frm_aRecords.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_aStudentsList.resx">
       <DependentUpon>frm_aStudentsList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_aSubjects.resx">
+      <DependentUpon>frm_aSubjects.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_aTeacher.resx">
       <DependentUpon>frm_aTeacher.vb</DependentUpon>

@@ -435,7 +435,7 @@ Partial Class frm_aTeacher
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPage2.Size = New System.Drawing.Size(1275, 710)
         Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Add Student"
+        Me.TabPage2.Text = "Add Teacher"
         '
         'Panel12
         '
@@ -735,7 +735,7 @@ Partial Class frm_aTeacher
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage3.Size = New System.Drawing.Size(1275, 710)
         Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Edit Student"
+        Me.TabPage3.Text = "Edit Teacher"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
         'Panel2

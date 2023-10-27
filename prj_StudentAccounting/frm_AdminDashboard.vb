@@ -31,6 +31,17 @@
                 frm_aTeacher.Show()
 
             Case 4
+                frm_aSubjects.Size = pnl_main.Size
+                frm_aSubjects.Location = New Point(0, 0)
+                frm_aSubjects.Show()
+            Case 5
+                frm_aFees.Size = pnl_main.Size
+                frm_aFees.Location = New Point(0, 0)
+                frm_aFees.Show()
+            Case 6
+                frm_aRecords.Size = pnl_main.Size
+                frm_aRecords.Location = New Point(0, 0)
+                frm_aRecords.Show()
 
 
         End Select
@@ -82,5 +93,43 @@
 
     Private Sub frm_AdminDashboard_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         frm_adminLogin.Show()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        button = 4
+        responsive()
+
+        With frm_aSubjects
+            .TopLevel = False
+            pnl_main.Controls.Add(frm_aSubjects)
+            .BringToFront()
+            .Show()
+            .TabControl1.SelectedIndex = 0
+        End With
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        button = 5
+        responsive()
+
+        With frm_aFees
+            .TopLevel = False
+            pnl_main.Controls.Add(frm_aFees)
+            .BringToFront()
+            .Show()
+            .TabControl1.SelectedIndex = 0
+        End With
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        button = 6
+        responsive()
+
+        With frm_aRecords
+            .TopLevel = False
+            pnl_main.Controls.Add(frm_aRecords)
+            .BringToFront()
+            .Show()
+        End With
     End Sub
 End Class
