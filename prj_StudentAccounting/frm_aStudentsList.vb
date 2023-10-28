@@ -201,7 +201,7 @@ Public Class frm_aStudentsList
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
                 If dataTable.Rows.Count > 0 Then
-                    dgv_TotalStudents.RowCount = dataTable.Rows.Count
+                    dgv_TotalStudents.RowCount = dataTable.Rows.Count + 1
                     row = 0
                     While Not dataTable.Rows.Count - 1 < row
                         dgv_TotalStudents.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString

@@ -36,7 +36,7 @@ Public Class frm_aDashboard_v2
                 sqlDBAdapter.Fill(dataTable)
 
                 If dataTable.Rows.Count > 0 Then
-                    dgv_transactionHistory.RowCount = dataTable.Rows.Count
+                    dgv_transactionHistory.RowCount = dataTable.Rows.Count + 1
                     row = 0
                     While Not dataTable.Rows.Count - 1 < row
                         dgv_transactionHistory.Rows(row).Cells(1).Value = "#" & dataTable.Rows(row).Item("referenceno").ToString
@@ -102,7 +102,7 @@ Public Class frm_aDashboard_v2
                 sqlDBAdapter.Fill(dataTable)
 
                 If dataTable.Rows.Count > 0 Then
-                    dgv_enrolledStudents.RowCount = dataTable.Rows.Count
+                    dgv_enrolledStudents.RowCount = dataTable.Rows.Count + 1
                     row = 0
                     While Not dataTable.Rows.Count - 1 < row
                         dgv_enrolledStudents.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
@@ -114,8 +114,6 @@ Public Class frm_aDashboard_v2
                         dgv_enrolledStudents.Rows(row).Cells(6).Value = dataTable.Rows(row).Item("semester").ToString
                         row = row + 1
                     End While
-                Else
-                    MessageBox.Show("No Available Records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Question)
                 End If
 
             End With
@@ -225,7 +223,7 @@ Public Class frm_aDashboard_v2
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
                 If dataTable.Rows.Count > 0 Then
-                    dgv_enrolledStudents.RowCount = dataTable.Rows.Count
+                    dgv_enrolledStudents.RowCount = dataTable.Rows.Count + 1
                     row = 0
                     While Not dataTable.Rows.Count - 1 < row
                         dgv_enrolledStudents.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString

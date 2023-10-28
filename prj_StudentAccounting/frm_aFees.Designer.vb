@@ -22,12 +22,12 @@ Partial Class frm_aFees
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle49 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle53 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle54 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle50 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle51 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle52 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -44,7 +44,7 @@ Partial Class frm_aFees
         Me.btn_search = New System.Windows.Forms.Button()
         Me.txt_search = New System.Windows.Forms.TextBox()
         Me.pnl_Datagrid = New System.Windows.Forms.Panel()
-        Me.dgv_TotalStudents = New System.Windows.Forms.DataGridView()
+        Me.dgv_Fees = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -72,7 +72,7 @@ Partial Class frm_aFees
         Me.TabPage1.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.pnl_Datagrid.SuspendLayout()
-        CType(Me.dgv_TotalStudents, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgv_Fees, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         Me.Panel12.SuspendLayout()
         Me.TabPage3.SuspendLayout()
@@ -270,7 +270,7 @@ Partial Class frm_aFees
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnl_Datagrid.BackColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.pnl_Datagrid.Controls.Add(Me.dgv_TotalStudents)
+        Me.pnl_Datagrid.Controls.Add(Me.dgv_Fees)
         Me.pnl_Datagrid.Location = New System.Drawing.Point(140, 140)
         Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(2)
         Me.pnl_Datagrid.Name = "pnl_Datagrid"
@@ -278,56 +278,56 @@ Partial Class frm_aFees
         Me.pnl_Datagrid.Size = New System.Drawing.Size(1011, 447)
         Me.pnl_Datagrid.TabIndex = 5
         '
-        'dgv_TotalStudents
+        'dgv_Fees
         '
-        Me.dgv_TotalStudents.AllowUserToResizeColumns = False
-        Me.dgv_TotalStudents.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.dgv_TotalStudents.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgv_TotalStudents.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.dgv_TotalStudents.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle49.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle49.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle49.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle49.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle49.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle49.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_TotalStudents.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle49
-        Me.dgv_TotalStudents.ColumnHeadersHeight = 35
-        Me.dgv_TotalStudents.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column7, Me.Column6})
-        DataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle53.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle53.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle53.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle53.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle53.SelectionForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_TotalStudents.DefaultCellStyle = DataGridViewCellStyle53
-        Me.dgv_TotalStudents.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgv_TotalStudents.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.dgv_TotalStudents.Location = New System.Drawing.Point(1, 1)
-        Me.dgv_TotalStudents.Margin = New System.Windows.Forms.Padding(2)
-        Me.dgv_TotalStudents.Name = "dgv_TotalStudents"
-        Me.dgv_TotalStudents.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle54.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle54.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle54.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle54.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_TotalStudents.RowHeadersDefaultCellStyle = DataGridViewCellStyle54
-        Me.dgv_TotalStudents.RowHeadersWidth = 51
-        Me.dgv_TotalStudents.RowTemplate.Height = 35
-        Me.dgv_TotalStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_TotalStudents.Size = New System.Drawing.Size(1009, 445)
-        Me.dgv_TotalStudents.TabIndex = 3
+        Me.dgv_Fees.AllowUserToResizeColumns = False
+        Me.dgv_Fees.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.dgv_Fees.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgv_Fees.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.dgv_Fees.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_Fees.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgv_Fees.ColumnHeadersHeight = 35
+        Me.dgv_Fees.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column7, Me.Column6})
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_Fees.DefaultCellStyle = DataGridViewCellStyle5
+        Me.dgv_Fees.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgv_Fees.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
+        Me.dgv_Fees.Location = New System.Drawing.Point(1, 1)
+        Me.dgv_Fees.Margin = New System.Windows.Forms.Padding(2)
+        Me.dgv_Fees.Name = "dgv_Fees"
+        Me.dgv_Fees.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_Fees.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
+        Me.dgv_Fees.RowHeadersWidth = 51
+        Me.dgv_Fees.RowTemplate.Height = 35
+        Me.dgv_Fees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_Fees.Size = New System.Drawing.Size(1009, 445)
+        Me.dgv_Fees.TabIndex = 3
         '
         'Column1
         '
-        DataGridViewCellStyle50.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle50.SelectionForeColor = System.Drawing.Color.White
-        Me.Column1.DefaultCellStyle = DataGridViewCellStyle50
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
+        Me.Column1.DefaultCellStyle = DataGridViewCellStyle2
         Me.Column1.HeaderText = "ID"
         Me.Column1.MinimumWidth = 50
         Me.Column1.Name = "Column1"
@@ -336,18 +336,18 @@ Partial Class frm_aFees
         'Column7
         '
         Me.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle51.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle51.SelectionForeColor = System.Drawing.Color.White
-        Me.Column7.DefaultCellStyle = DataGridViewCellStyle51
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
+        Me.Column7.DefaultCellStyle = DataGridViewCellStyle3
         Me.Column7.HeaderText = "Description"
         Me.Column7.MinimumWidth = 50
         Me.Column7.Name = "Column7"
         '
         'Column6
         '
-        DataGridViewCellStyle52.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle52.SelectionForeColor = System.Drawing.Color.White
-        Me.Column6.DefaultCellStyle = DataGridViewCellStyle52
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White
+        Me.Column6.DefaultCellStyle = DataGridViewCellStyle4
         Me.Column6.HeaderText = "Amount"
         Me.Column6.MinimumWidth = 6
         Me.Column6.Name = "Column6"
@@ -599,7 +599,7 @@ Partial Class frm_aFees
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.pnl_Datagrid.ResumeLayout(False)
-        CType(Me.dgv_TotalStudents, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv_Fees, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.Panel12.ResumeLayout(False)
         Me.Panel12.PerformLayout()
@@ -626,7 +626,7 @@ Partial Class frm_aFees
     Friend WithEvents btn_search As Button
     Friend WithEvents txt_search As TextBox
     Friend WithEvents pnl_Datagrid As Panel
-    Friend WithEvents dgv_TotalStudents As DataGridView
+    Friend WithEvents dgv_Fees As DataGridView
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
