@@ -1,1 +1,1 @@
-# prj_StudentAccounting
+# Student Accounting and Record Management System
