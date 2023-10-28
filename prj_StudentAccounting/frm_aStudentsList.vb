@@ -119,6 +119,16 @@ Public Class frm_aStudentsList
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         TabControl1.SelectedIndex = 0
+        txtLastname.Clear()
+        txtFirstname.Clear()
+        txtMiddlename.Clear()
+        txtMobileno.Clear()
+        txtEmailadd.Clear()
+        txtAddress.Clear()
+        dtBirthdate.Value = Now()
+        cmbGender.SelectedIndex = -1
+        cmbProgram.SelectedIndex = -1
+        cmbYearlevel.SelectedIndex = -1
     End Sub
 
     Private Sub btnSaveEdit_Click(sender As Object, e As EventArgs) Handles btnSaveEdit.Click
@@ -186,6 +196,16 @@ Public Class frm_aStudentsList
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         TabControl1.SelectedIndex = 0
+        txtLastname.Clear()
+        txtFirstname.Clear()
+        txtMiddlename.Clear()
+        txtMobileno.Clear()
+        txtEmailadd.Clear()
+        txtAddress.Clear()
+        dtBirthdate.Value = Now()
+        cmbGender.SelectedIndex = -1
+        cmbProgram.SelectedIndex = -1
+        cmbYearlevel.SelectedIndex = -1
     End Sub
 
     Private Sub funcDisplayAllStudents()

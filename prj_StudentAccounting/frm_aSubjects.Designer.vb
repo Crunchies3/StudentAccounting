@@ -52,15 +52,15 @@ Partial Class frm_aSubjects
         Me.dgv_subjects = New System.Windows.Forms.DataGridView()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.cmbTransactionType = New System.Windows.Forms.ComboBox()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.btnAddStudent = New System.Windows.Forms.Button()
-        Me.txtMiddlename = New System.Windows.Forms.TextBox()
-        Me.txtFirstname = New System.Windows.Forms.TextBox()
-        Me.txtLastname = New System.Windows.Forms.TextBox()
-        Me.txtStudentID = New System.Windows.Forms.TextBox()
+        Me.cmb_sem = New System.Windows.Forms.ComboBox()
+        Me.cmb_program = New System.Windows.Forms.ComboBox()
+        Me.cmb_lvl = New System.Windows.Forms.ComboBox()
+        Me.btn_cancelAdd = New System.Windows.Forms.Button()
+        Me.btn_addSub = New System.Windows.Forms.Button()
+        Me.txt_unit = New System.Windows.Forms.TextBox()
+        Me.txt_desc = New System.Windows.Forms.TextBox()
+        Me.txt_title = New System.Windows.Forms.TextBox()
+        Me.txt_code = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -71,15 +71,15 @@ Partial Class frm_aSubjects
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.cmb_eSem = New System.Windows.Forms.ComboBox()
+        Me.cmb_eProgram = New System.Windows.Forms.ComboBox()
+        Me.cmb_eLevel = New System.Windows.Forms.ComboBox()
+        Me.btn_cancelEdit = New System.Windows.Forms.Button()
+        Me.btn_saveEdit = New System.Windows.Forms.Button()
+        Me.txt_eUnit = New System.Windows.Forms.TextBox()
+        Me.txt_eDesc = New System.Windows.Forms.TextBox()
+        Me.txt_eTitle = New System.Windows.Forms.TextBox()
+        Me.txt_eCode = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -370,15 +370,15 @@ Partial Class frm_aSubjects
         '
         Me.Panel12.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel12.Controls.Add(Me.ComboBox2)
-        Me.Panel12.Controls.Add(Me.ComboBox1)
-        Me.Panel12.Controls.Add(Me.cmbTransactionType)
-        Me.Panel12.Controls.Add(Me.Button4)
-        Me.Panel12.Controls.Add(Me.btnAddStudent)
-        Me.Panel12.Controls.Add(Me.txtMiddlename)
-        Me.Panel12.Controls.Add(Me.txtFirstname)
-        Me.Panel12.Controls.Add(Me.txtLastname)
-        Me.Panel12.Controls.Add(Me.txtStudentID)
+        Me.Panel12.Controls.Add(Me.cmb_sem)
+        Me.Panel12.Controls.Add(Me.cmb_program)
+        Me.Panel12.Controls.Add(Me.cmb_lvl)
+        Me.Panel12.Controls.Add(Me.btn_cancelAdd)
+        Me.Panel12.Controls.Add(Me.btn_addSub)
+        Me.Panel12.Controls.Add(Me.txt_unit)
+        Me.Panel12.Controls.Add(Me.txt_desc)
+        Me.Panel12.Controls.Add(Me.txt_title)
+        Me.Panel12.Controls.Add(Me.txt_code)
         Me.Panel12.Controls.Add(Me.Label14)
         Me.Panel12.Controls.Add(Me.Label1)
         Me.Panel12.Controls.Add(Me.Label7)
@@ -393,121 +393,121 @@ Partial Class frm_aSubjects
         Me.Panel12.Size = New System.Drawing.Size(776, 467)
         Me.Panel12.TabIndex = 1
         '
-        'ComboBox2
+        'cmb_sem
         '
-        Me.ComboBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.cmb_sem.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ComboBox2.BackColor = System.Drawing.Color.Gainsboro
-        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.ItemHeight = 17
-        Me.ComboBox2.Items.AddRange(New Object() {"1", "2"})
-        Me.ComboBox2.Location = New System.Drawing.Point(298, 320)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(285, 25)
-        Me.ComboBox2.TabIndex = 46
+        Me.cmb_sem.BackColor = System.Drawing.Color.Gainsboro
+        Me.cmb_sem.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmb_sem.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmb_sem.FormattingEnabled = True
+        Me.cmb_sem.ItemHeight = 17
+        Me.cmb_sem.Items.AddRange(New Object() {"1", "2"})
+        Me.cmb_sem.Location = New System.Drawing.Point(298, 320)
+        Me.cmb_sem.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_sem.Name = "cmb_sem"
+        Me.cmb_sem.Size = New System.Drawing.Size(285, 25)
+        Me.cmb_sem.TabIndex = 46
         '
-        'ComboBox1
+        'cmb_program
         '
-        Me.ComboBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.cmb_program.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ComboBox1.BackColor = System.Drawing.Color.Gainsboro
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.ItemHeight = 17
-        Me.ComboBox1.Items.AddRange(New Object() {"BSCS", "BSIT"})
-        Me.ComboBox1.Location = New System.Drawing.Point(298, 288)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(285, 25)
-        Me.ComboBox1.TabIndex = 46
+        Me.cmb_program.BackColor = System.Drawing.Color.Gainsboro
+        Me.cmb_program.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmb_program.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmb_program.FormattingEnabled = True
+        Me.cmb_program.ItemHeight = 17
+        Me.cmb_program.Items.AddRange(New Object() {"BSCS", "BSIT"})
+        Me.cmb_program.Location = New System.Drawing.Point(298, 288)
+        Me.cmb_program.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_program.Name = "cmb_program"
+        Me.cmb_program.Size = New System.Drawing.Size(285, 25)
+        Me.cmb_program.TabIndex = 46
         '
-        'cmbTransactionType
+        'cmb_lvl
         '
-        Me.cmbTransactionType.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.cmb_lvl.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cmbTransactionType.BackColor = System.Drawing.Color.Gainsboro
-        Me.cmbTransactionType.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmbTransactionType.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbTransactionType.FormattingEnabled = True
-        Me.cmbTransactionType.ItemHeight = 17
-        Me.cmbTransactionType.Items.AddRange(New Object() {"1", "2", "3", "4"})
-        Me.cmbTransactionType.Location = New System.Drawing.Point(298, 255)
-        Me.cmbTransactionType.Margin = New System.Windows.Forms.Padding(2)
-        Me.cmbTransactionType.Name = "cmbTransactionType"
-        Me.cmbTransactionType.Size = New System.Drawing.Size(285, 25)
-        Me.cmbTransactionType.TabIndex = 46
+        Me.cmb_lvl.BackColor = System.Drawing.Color.Gainsboro
+        Me.cmb_lvl.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmb_lvl.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmb_lvl.FormattingEnabled = True
+        Me.cmb_lvl.ItemHeight = 17
+        Me.cmb_lvl.Items.AddRange(New Object() {"1", "2", "3", "4"})
+        Me.cmb_lvl.Location = New System.Drawing.Point(298, 255)
+        Me.cmb_lvl.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_lvl.Name = "cmb_lvl"
+        Me.cmb_lvl.Size = New System.Drawing.Size(285, 25)
+        Me.cmb_lvl.TabIndex = 46
         '
-        'Button4
+        'btn_cancelAdd
         '
-        Me.Button4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(314, 375)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(110, 24)
-        Me.Button4.TabIndex = 44
-        Me.Button4.Text = "Cancel"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btn_cancelAdd.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btn_cancelAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btn_cancelAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_cancelAdd.ForeColor = System.Drawing.Color.White
+        Me.btn_cancelAdd.Location = New System.Drawing.Point(314, 375)
+        Me.btn_cancelAdd.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_cancelAdd.Name = "btn_cancelAdd"
+        Me.btn_cancelAdd.Size = New System.Drawing.Size(110, 24)
+        Me.btn_cancelAdd.TabIndex = 44
+        Me.btn_cancelAdd.Text = "Cancel"
+        Me.btn_cancelAdd.UseVisualStyleBackColor = False
         '
-        'btnAddStudent
+        'btn_addSub
         '
-        Me.btnAddStudent.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnAddStudent.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.btnAddStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAddStudent.ForeColor = System.Drawing.Color.White
-        Me.btnAddStudent.Location = New System.Drawing.Point(195, 375)
-        Me.btnAddStudent.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnAddStudent.Name = "btnAddStudent"
-        Me.btnAddStudent.Size = New System.Drawing.Size(110, 24)
-        Me.btnAddStudent.TabIndex = 44
-        Me.btnAddStudent.Text = "Add"
-        Me.btnAddStudent.UseVisualStyleBackColor = False
+        Me.btn_addSub.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btn_addSub.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btn_addSub.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_addSub.ForeColor = System.Drawing.Color.White
+        Me.btn_addSub.Location = New System.Drawing.Point(195, 375)
+        Me.btn_addSub.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_addSub.Name = "btn_addSub"
+        Me.btn_addSub.Size = New System.Drawing.Size(110, 24)
+        Me.btn_addSub.TabIndex = 44
+        Me.btn_addSub.Text = "Add"
+        Me.btn_addSub.UseVisualStyleBackColor = False
         '
-        'txtMiddlename
+        'txt_unit
         '
-        Me.txtMiddlename.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtMiddlename.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMiddlename.Location = New System.Drawing.Point(298, 223)
-        Me.txtMiddlename.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtMiddlename.Name = "txtMiddlename"
-        Me.txtMiddlename.Size = New System.Drawing.Size(285, 25)
-        Me.txtMiddlename.TabIndex = 42
+        Me.txt_unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_unit.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_unit.Location = New System.Drawing.Point(298, 223)
+        Me.txt_unit.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_unit.Name = "txt_unit"
+        Me.txt_unit.Size = New System.Drawing.Size(285, 25)
+        Me.txt_unit.TabIndex = 42
         '
-        'txtFirstname
+        'txt_desc
         '
-        Me.txtFirstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtFirstname.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFirstname.Location = New System.Drawing.Point(298, 193)
-        Me.txtFirstname.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtFirstname.Name = "txtFirstname"
-        Me.txtFirstname.Size = New System.Drawing.Size(285, 25)
-        Me.txtFirstname.TabIndex = 42
+        Me.txt_desc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_desc.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_desc.Location = New System.Drawing.Point(298, 193)
+        Me.txt_desc.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_desc.Name = "txt_desc"
+        Me.txt_desc.Size = New System.Drawing.Size(285, 25)
+        Me.txt_desc.TabIndex = 42
         '
-        'txtLastname
+        'txt_title
         '
-        Me.txtLastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtLastname.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtLastname.Location = New System.Drawing.Point(298, 163)
-        Me.txtLastname.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtLastname.Name = "txtLastname"
-        Me.txtLastname.Size = New System.Drawing.Size(285, 25)
-        Me.txtLastname.TabIndex = 42
+        Me.txt_title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_title.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_title.Location = New System.Drawing.Point(298, 163)
+        Me.txt_title.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_title.Name = "txt_title"
+        Me.txt_title.Size = New System.Drawing.Size(285, 25)
+        Me.txt_title.TabIndex = 42
         '
-        'txtStudentID
+        'txt_code
         '
-        Me.txtStudentID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtStudentID.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtStudentID.Location = New System.Drawing.Point(298, 133)
-        Me.txtStudentID.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtStudentID.Name = "txtStudentID"
-        Me.txtStudentID.Size = New System.Drawing.Size(285, 25)
-        Me.txtStudentID.TabIndex = 42
+        Me.txt_code.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_code.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_code.Location = New System.Drawing.Point(298, 133)
+        Me.txt_code.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_code.Name = "txt_code"
+        Me.txt_code.Size = New System.Drawing.Size(285, 25)
+        Me.txt_code.TabIndex = 42
         '
         'Label14
         '
@@ -614,15 +614,15 @@ Partial Class frm_aSubjects
         '
         Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel5.Controls.Add(Me.ComboBox3)
-        Me.Panel5.Controls.Add(Me.ComboBox4)
-        Me.Panel5.Controls.Add(Me.ComboBox5)
-        Me.Panel5.Controls.Add(Me.Button2)
-        Me.Panel5.Controls.Add(Me.Button3)
-        Me.Panel5.Controls.Add(Me.TextBox1)
-        Me.Panel5.Controls.Add(Me.TextBox2)
-        Me.Panel5.Controls.Add(Me.TextBox3)
-        Me.Panel5.Controls.Add(Me.TextBox4)
+        Me.Panel5.Controls.Add(Me.cmb_eSem)
+        Me.Panel5.Controls.Add(Me.cmb_eProgram)
+        Me.Panel5.Controls.Add(Me.cmb_eLevel)
+        Me.Panel5.Controls.Add(Me.btn_cancelEdit)
+        Me.Panel5.Controls.Add(Me.btn_saveEdit)
+        Me.Panel5.Controls.Add(Me.txt_eUnit)
+        Me.Panel5.Controls.Add(Me.txt_eDesc)
+        Me.Panel5.Controls.Add(Me.txt_eTitle)
+        Me.Panel5.Controls.Add(Me.txt_eCode)
         Me.Panel5.Controls.Add(Me.Label2)
         Me.Panel5.Controls.Add(Me.Label3)
         Me.Panel5.Controls.Add(Me.Label4)
@@ -637,121 +637,121 @@ Partial Class frm_aSubjects
         Me.Panel5.Size = New System.Drawing.Size(776, 467)
         Me.Panel5.TabIndex = 2
         '
-        'ComboBox3
+        'cmb_eSem
         '
-        Me.ComboBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.cmb_eSem.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ComboBox3.BackColor = System.Drawing.Color.Gainsboro
-        Me.ComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.ItemHeight = 17
-        Me.ComboBox3.Items.AddRange(New Object() {"1", "2"})
-        Me.ComboBox3.Location = New System.Drawing.Point(298, 320)
-        Me.ComboBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(285, 25)
-        Me.ComboBox3.TabIndex = 46
+        Me.cmb_eSem.BackColor = System.Drawing.Color.Gainsboro
+        Me.cmb_eSem.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmb_eSem.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmb_eSem.FormattingEnabled = True
+        Me.cmb_eSem.ItemHeight = 17
+        Me.cmb_eSem.Items.AddRange(New Object() {"1", "2"})
+        Me.cmb_eSem.Location = New System.Drawing.Point(298, 320)
+        Me.cmb_eSem.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_eSem.Name = "cmb_eSem"
+        Me.cmb_eSem.Size = New System.Drawing.Size(285, 25)
+        Me.cmb_eSem.TabIndex = 46
         '
-        'ComboBox4
+        'cmb_eProgram
         '
-        Me.ComboBox4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.cmb_eProgram.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ComboBox4.BackColor = System.Drawing.Color.Gainsboro
-        Me.ComboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox4.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.ItemHeight = 17
-        Me.ComboBox4.Items.AddRange(New Object() {"BSCS", "BSIT"})
-        Me.ComboBox4.Location = New System.Drawing.Point(298, 288)
-        Me.ComboBox4.Margin = New System.Windows.Forms.Padding(2)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(285, 25)
-        Me.ComboBox4.TabIndex = 46
+        Me.cmb_eProgram.BackColor = System.Drawing.Color.Gainsboro
+        Me.cmb_eProgram.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmb_eProgram.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmb_eProgram.FormattingEnabled = True
+        Me.cmb_eProgram.ItemHeight = 17
+        Me.cmb_eProgram.Items.AddRange(New Object() {"BSCS", "BSIT"})
+        Me.cmb_eProgram.Location = New System.Drawing.Point(298, 288)
+        Me.cmb_eProgram.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_eProgram.Name = "cmb_eProgram"
+        Me.cmb_eProgram.Size = New System.Drawing.Size(285, 25)
+        Me.cmb_eProgram.TabIndex = 46
         '
-        'ComboBox5
+        'cmb_eLevel
         '
-        Me.ComboBox5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.cmb_eLevel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ComboBox5.BackColor = System.Drawing.Color.Gainsboro
-        Me.ComboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox5.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.ItemHeight = 17
-        Me.ComboBox5.Items.AddRange(New Object() {"1", "2", "3", "4"})
-        Me.ComboBox5.Location = New System.Drawing.Point(298, 255)
-        Me.ComboBox5.Margin = New System.Windows.Forms.Padding(2)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(285, 25)
-        Me.ComboBox5.TabIndex = 46
+        Me.cmb_eLevel.BackColor = System.Drawing.Color.Gainsboro
+        Me.cmb_eLevel.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmb_eLevel.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmb_eLevel.FormattingEnabled = True
+        Me.cmb_eLevel.ItemHeight = 17
+        Me.cmb_eLevel.Items.AddRange(New Object() {"1", "2", "3", "4"})
+        Me.cmb_eLevel.Location = New System.Drawing.Point(298, 255)
+        Me.cmb_eLevel.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_eLevel.Name = "cmb_eLevel"
+        Me.cmb_eLevel.Size = New System.Drawing.Size(285, 25)
+        Me.cmb_eLevel.TabIndex = 46
         '
-        'Button2
+        'btn_cancelEdit
         '
-        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(314, 375)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(110, 24)
-        Me.Button2.TabIndex = 44
-        Me.Button2.Text = "Cancel"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btn_cancelEdit.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btn_cancelEdit.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btn_cancelEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_cancelEdit.ForeColor = System.Drawing.Color.White
+        Me.btn_cancelEdit.Location = New System.Drawing.Point(314, 375)
+        Me.btn_cancelEdit.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_cancelEdit.Name = "btn_cancelEdit"
+        Me.btn_cancelEdit.Size = New System.Drawing.Size(110, 24)
+        Me.btn_cancelEdit.TabIndex = 44
+        Me.btn_cancelEdit.Text = "Cancel"
+        Me.btn_cancelEdit.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btn_saveEdit
         '
-        Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(195, 375)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(110, 24)
-        Me.Button3.TabIndex = 44
-        Me.Button3.Text = "Save"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btn_saveEdit.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btn_saveEdit.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btn_saveEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_saveEdit.ForeColor = System.Drawing.Color.White
+        Me.btn_saveEdit.Location = New System.Drawing.Point(195, 375)
+        Me.btn_saveEdit.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_saveEdit.Name = "btn_saveEdit"
+        Me.btn_saveEdit.Size = New System.Drawing.Size(110, 24)
+        Me.btn_saveEdit.TabIndex = 44
+        Me.btn_saveEdit.Text = "Save"
+        Me.btn_saveEdit.UseVisualStyleBackColor = False
         '
-        'TextBox1
+        'txt_eUnit
         '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(298, 223)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox1.TabIndex = 42
+        Me.txt_eUnit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_eUnit.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_eUnit.Location = New System.Drawing.Point(298, 223)
+        Me.txt_eUnit.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_eUnit.Name = "txt_eUnit"
+        Me.txt_eUnit.Size = New System.Drawing.Size(285, 25)
+        Me.txt_eUnit.TabIndex = 42
         '
-        'TextBox2
+        'txt_eDesc
         '
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(298, 193)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox2.TabIndex = 42
+        Me.txt_eDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_eDesc.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_eDesc.Location = New System.Drawing.Point(298, 193)
+        Me.txt_eDesc.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_eDesc.Name = "txt_eDesc"
+        Me.txt_eDesc.Size = New System.Drawing.Size(285, 25)
+        Me.txt_eDesc.TabIndex = 42
         '
-        'TextBox3
+        'txt_eTitle
         '
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(298, 163)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox3.TabIndex = 42
+        Me.txt_eTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_eTitle.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_eTitle.Location = New System.Drawing.Point(298, 163)
+        Me.txt_eTitle.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_eTitle.Name = "txt_eTitle"
+        Me.txt_eTitle.Size = New System.Drawing.Size(285, 25)
+        Me.txt_eTitle.TabIndex = 42
         '
-        'TextBox4
+        'txt_eCode
         '
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(298, 133)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(285, 25)
-        Me.TextBox4.TabIndex = 42
+        Me.txt_eCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_eCode.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_eCode.Location = New System.Drawing.Point(298, 133)
+        Me.txt_eCode.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_eCode.Name = "txt_eCode"
+        Me.txt_eCode.Size = New System.Drawing.Size(285, 25)
+        Me.txt_eCode.TabIndex = 42
         '
         'Label2
         '
@@ -976,12 +976,12 @@ Partial Class frm_aSubjects
     Friend WithEvents dgv_subjects As DataGridView
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents Panel12 As Panel
-    Friend WithEvents Button4 As Button
-    Friend WithEvents btnAddStudent As Button
-    Friend WithEvents txtMiddlename As TextBox
-    Friend WithEvents txtFirstname As TextBox
-    Friend WithEvents txtLastname As TextBox
-    Friend WithEvents txtStudentID As TextBox
+    Friend WithEvents btn_cancelAdd As Button
+    Friend WithEvents btn_addSub As Button
+    Friend WithEvents txt_unit As TextBox
+    Friend WithEvents txt_desc As TextBox
+    Friend WithEvents txt_title As TextBox
+    Friend WithEvents txt_code As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label7 As Label
@@ -991,19 +991,19 @@ Partial Class frm_aSubjects
     Friend WithEvents Label10 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents TabPage3 As TabPage
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents cmbTransactionType As ComboBox
+    Friend WithEvents cmb_sem As ComboBox
+    Friend WithEvents cmb_program As ComboBox
+    Friend WithEvents cmb_lvl As ComboBox
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents cmb_eSem As ComboBox
+    Friend WithEvents cmb_eProgram As ComboBox
+    Friend WithEvents cmb_eLevel As ComboBox
+    Friend WithEvents btn_cancelEdit As Button
+    Friend WithEvents btn_saveEdit As Button
+    Friend WithEvents txt_eUnit As TextBox
+    Friend WithEvents txt_eDesc As TextBox
+    Friend WithEvents txt_eTitle As TextBox
+    Friend WithEvents txt_eCode As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
