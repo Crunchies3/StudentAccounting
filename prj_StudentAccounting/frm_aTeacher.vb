@@ -161,7 +161,7 @@ Public Class frm_aTeacher
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
                 If dataTable.Rows.Count > 0 Then
-                    dgv_teacherTable.RowCount = dataTable.Rows.Count
+                    dgv_teacherTable.RowCount = dataTable.Rows.Count + 1
                     row = 0
                     While Not dataTable.Rows.Count - 1 < row
                         dgv_teacherTable.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
@@ -280,6 +280,7 @@ Public Class frm_aTeacher
     End Sub
 
     Private Sub frm_aTeacher_Load(sender As Object, e As EventArgs) Handles Me.Load
+        checkDatabaseConnection()
         funcDisplayAllTeachers()
     End Sub
 
