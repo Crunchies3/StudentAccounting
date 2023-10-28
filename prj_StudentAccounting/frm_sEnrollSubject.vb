@@ -197,6 +197,8 @@ Public Class frm_sEnrollSubject
         Catch ex As Exception
             MessageBox.Show("" & ex.Message)
         End Try
+        Dim refreshList As frm_sSubjects = DirectCast(Application.OpenForms("frm_sSubjects"), frm_sSubjects)
+        refreshList.prcDisplaySubject()
     End Sub
 
     Private Function fncCheckDuplicateSubject(p_studentid As String, p_title As String) As Boolean
