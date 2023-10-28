@@ -50,14 +50,6 @@ Partial Class frm_aSubjects
         Me.txt_search = New System.Windows.Forms.TextBox()
         Me.pnl_Datagrid = New System.Windows.Forms.Panel()
         Me.dgv_subjects = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
@@ -96,6 +88,14 @@ Partial Class frm_aSubjects
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -352,86 +352,6 @@ Partial Class frm_aSubjects
         Me.dgv_subjects.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgv_subjects.Size = New System.Drawing.Size(1009, 448)
         Me.dgv_subjects.TabIndex = 3
-        '
-        'Column1
-        '
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
-        Me.Column1.DefaultCellStyle = DataGridViewCellStyle2
-        Me.Column1.HeaderText = "ID"
-        Me.Column1.MinimumWidth = 50
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 50
-        '
-        'Column2
-        '
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
-        Me.Column2.DefaultCellStyle = DataGridViewCellStyle3
-        Me.Column2.HeaderText = "Code"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 108
-        '
-        'Column3
-        '
-        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White
-        Me.Column3.DefaultCellStyle = DataGridViewCellStyle4
-        Me.Column3.HeaderText = "Title"
-        Me.Column3.MinimumWidth = 50
-        Me.Column3.Name = "Column3"
-        '
-        'Column7
-        '
-        Me.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White
-        Me.Column7.DefaultCellStyle = DataGridViewCellStyle5
-        Me.Column7.HeaderText = "Description"
-        Me.Column7.MinimumWidth = 50
-        Me.Column7.Name = "Column7"
-        '
-        'Column8
-        '
-        Me.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
-        Me.Column8.DefaultCellStyle = DataGridViewCellStyle6
-        Me.Column8.HeaderText = "Units"
-        Me.Column8.MinimumWidth = 50
-        Me.Column8.Name = "Column8"
-        '
-        'Column4
-        '
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White
-        Me.Column4.DefaultCellStyle = DataGridViewCellStyle7
-        Me.Column4.HeaderText = "Level"
-        Me.Column4.MinimumWidth = 6
-        Me.Column4.Name = "Column4"
-        Me.Column4.Width = 125
-        '
-        'Column5
-        '
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White
-        Me.Column5.DefaultCellStyle = DataGridViewCellStyle8
-        Me.Column5.HeaderText = "Program"
-        Me.Column5.MinimumWidth = 6
-        Me.Column5.Name = "Column5"
-        Me.Column5.Width = 125
-        '
-        'Column6
-        '
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White
-        Me.Column6.DefaultCellStyle = DataGridViewCellStyle9
-        Me.Column6.HeaderText = "Semester"
-        Me.Column6.MinimumWidth = 6
-        Me.Column6.Name = "Column6"
-        Me.Column6.Width = 125
         '
         'TabPage2
         '
@@ -923,6 +843,86 @@ Partial Class frm_aSubjects
         Me.Label18.TabIndex = 40
         Me.Label18.Text = "Edit Subject"
         '
+        'Column1
+        '
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
+        Me.Column1.DefaultCellStyle = DataGridViewCellStyle2
+        Me.Column1.HeaderText = "ID"
+        Me.Column1.MinimumWidth = 50
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 50
+        '
+        'Column2
+        '
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
+        Me.Column2.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Column2.HeaderText = "Code"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 108
+        '
+        'Column3
+        '
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White
+        Me.Column3.DefaultCellStyle = DataGridViewCellStyle4
+        Me.Column3.HeaderText = "Title"
+        Me.Column3.MinimumWidth = 50
+        Me.Column3.Name = "Column3"
+        '
+        'Column7
+        '
+        Me.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White
+        Me.Column7.DefaultCellStyle = DataGridViewCellStyle5
+        Me.Column7.HeaderText = "Description"
+        Me.Column7.MinimumWidth = 50
+        Me.Column7.Name = "Column7"
+        '
+        'Column8
+        '
+        Me.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
+        Me.Column8.DefaultCellStyle = DataGridViewCellStyle6
+        Me.Column8.HeaderText = "Units"
+        Me.Column8.MinimumWidth = 50
+        Me.Column8.Name = "Column8"
+        Me.Column8.Width = 50
+        '
+        'Column4
+        '
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White
+        Me.Column4.DefaultCellStyle = DataGridViewCellStyle7
+        Me.Column4.HeaderText = "Level"
+        Me.Column4.MinimumWidth = 50
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 50
+        '
+        'Column5
+        '
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White
+        Me.Column5.DefaultCellStyle = DataGridViewCellStyle8
+        Me.Column5.HeaderText = "Program"
+        Me.Column5.MinimumWidth = 6
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 125
+        '
+        'Column6
+        '
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White
+        Me.Column6.DefaultCellStyle = DataGridViewCellStyle9
+        Me.Column6.HeaderText = "Semester"
+        Me.Column6.MinimumWidth = 6
+        Me.Column6.Name = "Column6"
+        Me.Column6.Width = 125
+        '
         'frm_aSubjects
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -991,14 +991,6 @@ Partial Class frm_aSubjects
     Friend WithEvents Label10 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents TabPage3 As TabPage
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
-    Friend WithEvents Column8 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents cmbTransactionType As ComboBox
@@ -1020,4 +1012,12 @@ Partial Class frm_aSubjects
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
 End Class

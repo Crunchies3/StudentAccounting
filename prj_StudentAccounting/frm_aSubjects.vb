@@ -25,6 +25,7 @@ Public Class frm_aSubjects
     End Sub
 
     Private Sub frm_aSubjects_Load(sender As Object, e As EventArgs) Handles Me.Load
+        checkDatabaseConnection()
         DisplaySubject()
     End Sub
 

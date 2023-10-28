@@ -234,8 +234,8 @@ Public Class frm_aStudentsList
     End Sub
 
     Private Sub frm_aStudentsList_Load(sender As Object, e As EventArgs) Handles Me.Load
-        funcDisplayAllStudents()
         checkDatabaseConnection()
+        funcDisplayAllStudents()
     End Sub
 
     Private Sub btnBrowsePic_Click(sender As Object, e As EventArgs) Handles btnBrowsePic.Click

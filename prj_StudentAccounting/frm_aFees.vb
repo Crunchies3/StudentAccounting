@@ -25,6 +25,8 @@ Public Class frm_aFees
     End Sub
 
     Private Sub frm_aFees_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+        checkDatabaseConnection()
         DisplayFees()
 
     End Sub

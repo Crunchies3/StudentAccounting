@@ -280,6 +280,7 @@ Public Class frm_aTeacher
     End Sub
 
     Private Sub frm_aTeacher_Load(sender As Object, e As EventArgs) Handles Me.Load
+        checkDatabaseConnection()
         funcDisplayAllTeachers()
     End Sub
 
