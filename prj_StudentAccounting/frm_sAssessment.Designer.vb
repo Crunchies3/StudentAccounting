@@ -134,7 +134,7 @@ Partial Class frm_sAssessment
         Me.lbl_totalAssessment.Name = "lbl_totalAssessment"
         Me.lbl_totalAssessment.Size = New System.Drawing.Size(133, 15)
         Me.lbl_totalAssessment.TabIndex = 11
-        Me.lbl_totalAssessment.Text = "20,949.00"
+        Me.lbl_totalAssessment.Text = "0.00"
         Me.lbl_totalAssessment.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label5
