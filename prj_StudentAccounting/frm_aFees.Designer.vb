@@ -51,7 +51,7 @@ Partial Class frm_aFees
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.btnAddStudent = New System.Windows.Forms.Button()
+        Me.btnAddFees = New System.Windows.Forms.Button()
         Me.txt_amount = New System.Windows.Forms.TextBox()
         Me.txt_description = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -371,7 +371,7 @@ Partial Class frm_aFees
         Me.Panel12.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel12.Controls.Add(Me.Button4)
-        Me.Panel12.Controls.Add(Me.btnAddStudent)
+        Me.Panel12.Controls.Add(Me.btnAddFees)
         Me.Panel12.Controls.Add(Me.txt_amount)
         Me.Panel12.Controls.Add(Me.txt_description)
         Me.Panel12.Controls.Add(Me.Label12)
@@ -397,19 +397,19 @@ Partial Class frm_aFees
         Me.Button4.Text = "Cancel"
         Me.Button4.UseVisualStyleBackColor = False
         '
-        'btnAddStudent
+        'btnAddFees
         '
-        Me.btnAddStudent.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnAddStudent.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.btnAddStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAddStudent.ForeColor = System.Drawing.Color.White
-        Me.btnAddStudent.Location = New System.Drawing.Point(109, 205)
-        Me.btnAddStudent.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnAddStudent.Name = "btnAddStudent"
-        Me.btnAddStudent.Size = New System.Drawing.Size(110, 24)
-        Me.btnAddStudent.TabIndex = 44
-        Me.btnAddStudent.Text = "Add"
-        Me.btnAddStudent.UseVisualStyleBackColor = False
+        Me.btnAddFees.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnAddFees.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btnAddFees.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAddFees.ForeColor = System.Drawing.Color.White
+        Me.btnAddFees.Location = New System.Drawing.Point(109, 205)
+        Me.btnAddFees.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnAddFees.Name = "btnAddFees"
+        Me.btnAddFees.Size = New System.Drawing.Size(110, 24)
+        Me.btnAddFees.TabIndex = 44
+        Me.btnAddFees.Text = "Add"
+        Me.btnAddFees.UseVisualStyleBackColor = False
         '
         'txt_amount
         '
@@ -633,7 +633,7 @@ Partial Class frm_aFees
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents Panel12 As Panel
     Friend WithEvents Button4 As Button
-    Friend WithEvents btnAddStudent As Button
+    Friend WithEvents btnAddFees As Button
     Friend WithEvents txt_amount As TextBox
     Friend WithEvents txt_description As TextBox
     Friend WithEvents Label12 As Label
