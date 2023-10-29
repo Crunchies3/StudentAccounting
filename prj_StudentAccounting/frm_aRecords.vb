@@ -118,7 +118,7 @@ Public Class frm_aRecords
 
             With command
                 .Parameters.Clear()
-                .CommandText = "prcDisplayRecords"
+                .CommandText = "prcAdminDisplayRecords"
                 .CommandType = CommandType.StoredProcedure
                 .Parameters.AddWithValue("@p_id", dgv_studentList.CurrentRow.Cells(0).Value)
                 .Parameters.AddWithValue("@p_type", "subject")
@@ -167,7 +167,7 @@ Public Class frm_aRecords
 
             With command
                 .Parameters.Clear()
-                .CommandText = "prcDisplayRecords"
+                .CommandText = "prcAdminDisplayRecords"
                 .CommandType = CommandType.StoredProcedure
                 .Parameters.AddWithValue("@p_id", dgv_studentList.CurrentRow.Cells(0).Value)
                 .Parameters.AddWithValue("@p_type", "info")
