@@ -22,15 +22,15 @@ Partial Class frm_aRecords
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_aRecords))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -63,18 +63,18 @@ Partial Class frm_aRecords
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.txt_status = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.txtStudentname = New System.Windows.Forms.TextBox()
+        Me.txt_year = New System.Windows.Forms.TextBox()
+        Me.txt_program = New System.Windows.Forms.TextBox()
+        Me.txt_email = New System.Windows.Forms.TextBox()
+        Me.txt_Gender = New System.Windows.Forms.TextBox()
+        Me.txt_birth = New System.Windows.Forms.TextBox()
+        Me.txt_mobile = New System.Windows.Forms.TextBox()
+        Me.txt_F = New System.Windows.Forms.TextBox()
+        Me.txt_M = New System.Windows.Forms.TextBox()
+        Me.txt_L = New System.Windows.Forms.TextBox()
+        Me.txt_id = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -87,10 +87,12 @@ Partial Class frm_aRecords
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lbl_totalAssessment = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel8.SuspendLayout()
@@ -175,6 +177,7 @@ Partial Class frm_aRecords
         Me.Panel7.Controls.Add(Me.Button2)
         Me.Panel7.Controls.Add(Me.Label2)
         Me.Panel7.Controls.Add(Me.Panel11)
+        Me.Panel7.Controls.Add(Me.lbl_totalAssessment)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(0, 407)
         Me.Panel7.Name = "Panel7"
@@ -230,36 +233,36 @@ Partial Class frm_aRecords
         Me.dgv_assessment.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgv_assessment.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.dgv_assessment.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_assessment.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_assessment.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
         Me.dgv_assessment.ColumnHeadersHeight = 35
         Me.dgv_assessment.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_assessment.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_assessment.DefaultCellStyle = DataGridViewCellStyle11
         Me.dgv_assessment.Location = New System.Drawing.Point(1, 1)
         Me.dgv_assessment.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv_assessment.Name = "dgv_assessment"
         Me.dgv_assessment.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_assessment.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_assessment.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
         Me.dgv_assessment.RowHeadersWidth = 51
         Me.dgv_assessment.RowTemplate.Height = 35
         Me.dgv_assessment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -326,37 +329,37 @@ Partial Class frm_aRecords
         Me.dgv_subjects.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgv_subjects.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.dgv_subjects.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_subjects.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_subjects.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
         Me.dgv_subjects.ColumnHeadersHeight = 35
-        Me.dgv_subjects.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2, Me.Column3, Me.Column4, Me.Column6})
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_subjects.DefaultCellStyle = DataGridViewCellStyle5
+        Me.dgv_subjects.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column6})
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_subjects.DefaultCellStyle = DataGridViewCellStyle14
         Me.dgv_subjects.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgv_subjects.Location = New System.Drawing.Point(1, 1)
         Me.dgv_subjects.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv_subjects.Name = "dgv_subjects"
         Me.dgv_subjects.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_subjects.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_subjects.RowHeadersDefaultCellStyle = DataGridViewCellStyle15
         Me.dgv_subjects.RowHeadersWidth = 51
         Me.dgv_subjects.RowTemplate.Height = 35
         Me.dgv_subjects.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -486,38 +489,38 @@ Partial Class frm_aRecords
         Me.dgv_studentList.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgv_studentList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.dgv_studentList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_studentList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_studentList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle16
         Me.dgv_studentList.ColumnHeadersHeight = 35
         Me.dgv_studentList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_studentList.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle17.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
+        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_studentList.DefaultCellStyle = DataGridViewCellStyle17
         Me.dgv_studentList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_studentList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgv_studentList.Location = New System.Drawing.Point(1, 1)
         Me.dgv_studentList.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv_studentList.Name = "dgv_studentList"
         Me.dgv_studentList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_studentList.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle18.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_studentList.RowHeadersDefaultCellStyle = DataGridViewCellStyle18
         Me.dgv_studentList.RowHeadersWidth = 51
         Me.dgv_studentList.RowTemplate.Height = 35
         Me.dgv_studentList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -553,18 +556,18 @@ Partial Class frm_aRecords
         '
         'Panel9
         '
-        Me.Panel9.Controls.Add(Me.TextBox10)
+        Me.Panel9.Controls.Add(Me.txt_status)
         Me.Panel9.Controls.Add(Me.Label17)
-        Me.Panel9.Controls.Add(Me.TextBox8)
-        Me.Panel9.Controls.Add(Me.TextBox9)
-        Me.Panel9.Controls.Add(Me.TextBox7)
-        Me.Panel9.Controls.Add(Me.TextBox5)
-        Me.Panel9.Controls.Add(Me.TextBox4)
-        Me.Panel9.Controls.Add(Me.TextBox6)
-        Me.Panel9.Controls.Add(Me.TextBox2)
-        Me.Panel9.Controls.Add(Me.TextBox3)
-        Me.Panel9.Controls.Add(Me.TextBox1)
-        Me.Panel9.Controls.Add(Me.txtStudentname)
+        Me.Panel9.Controls.Add(Me.txt_year)
+        Me.Panel9.Controls.Add(Me.txt_program)
+        Me.Panel9.Controls.Add(Me.txt_email)
+        Me.Panel9.Controls.Add(Me.txt_Gender)
+        Me.Panel9.Controls.Add(Me.txt_birth)
+        Me.Panel9.Controls.Add(Me.txt_mobile)
+        Me.Panel9.Controls.Add(Me.txt_F)
+        Me.Panel9.Controls.Add(Me.txt_M)
+        Me.Panel9.Controls.Add(Me.txt_L)
+        Me.Panel9.Controls.Add(Me.txt_id)
         Me.Panel9.Controls.Add(Me.Label16)
         Me.Panel9.Controls.Add(Me.Label15)
         Me.Panel9.Controls.Add(Me.Label14)
@@ -583,15 +586,15 @@ Partial Class frm_aRecords
         Me.Panel9.Size = New System.Drawing.Size(528, 515)
         Me.Panel9.TabIndex = 52
         '
-        'TextBox10
+        'txt_status
         '
-        Me.TextBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox10.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(330, 381)
-        Me.TextBox10.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(157, 23)
-        Me.TextBox10.TabIndex = 99
+        Me.txt_status.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_status.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_status.Location = New System.Drawing.Point(330, 381)
+        Me.txt_status.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_status.Name = "txt_status"
+        Me.txt_status.Size = New System.Drawing.Size(157, 23)
+        Me.txt_status.TabIndex = 99
         '
         'Label17
         '
@@ -605,105 +608,105 @@ Partial Class frm_aRecords
         Me.Label17.TabIndex = 76
         Me.Label17.Text = "Student Info"
         '
-        'TextBox8
+        'txt_year
         '
-        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox8.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(330, 321)
-        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(157, 23)
-        Me.TextBox8.TabIndex = 97
+        Me.txt_year.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_year.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_year.Location = New System.Drawing.Point(330, 321)
+        Me.txt_year.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_year.Name = "txt_year"
+        Me.txt_year.Size = New System.Drawing.Size(157, 23)
+        Me.txt_year.TabIndex = 97
         '
-        'TextBox9
+        'txt_program
         '
-        Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox9.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(330, 351)
-        Me.TextBox9.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(157, 23)
-        Me.TextBox9.TabIndex = 96
+        Me.txt_program.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_program.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_program.Location = New System.Drawing.Point(330, 351)
+        Me.txt_program.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_program.Name = "txt_program"
+        Me.txt_program.Size = New System.Drawing.Size(157, 23)
+        Me.txt_program.TabIndex = 96
         '
-        'TextBox7
+        'txt_email
         '
-        Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(330, 291)
-        Me.TextBox7.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(157, 23)
-        Me.TextBox7.TabIndex = 95
+        Me.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_email.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_email.Location = New System.Drawing.Point(330, 291)
+        Me.txt_email.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_email.Name = "txt_email"
+        Me.txt_email.Size = New System.Drawing.Size(157, 23)
+        Me.txt_email.TabIndex = 95
         '
-        'TextBox5
+        'txt_Gender
         '
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(330, 231)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(157, 23)
-        Me.TextBox5.TabIndex = 94
+        Me.txt_Gender.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Gender.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Gender.Location = New System.Drawing.Point(330, 231)
+        Me.txt_Gender.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_Gender.Name = "txt_Gender"
+        Me.txt_Gender.Size = New System.Drawing.Size(157, 23)
+        Me.txt_Gender.TabIndex = 94
         '
-        'TextBox4
+        'txt_birth
         '
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(330, 201)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(157, 23)
-        Me.TextBox4.TabIndex = 93
+        Me.txt_birth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_birth.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_birth.Location = New System.Drawing.Point(330, 201)
+        Me.txt_birth.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_birth.Name = "txt_birth"
+        Me.txt_birth.Size = New System.Drawing.Size(157, 23)
+        Me.txt_birth.TabIndex = 93
         '
-        'TextBox6
+        'txt_mobile
         '
-        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(330, 261)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(157, 23)
-        Me.TextBox6.TabIndex = 92
+        Me.txt_mobile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_mobile.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_mobile.Location = New System.Drawing.Point(330, 261)
+        Me.txt_mobile.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_mobile.Name = "txt_mobile"
+        Me.txt_mobile.Size = New System.Drawing.Size(157, 23)
+        Me.txt_mobile.TabIndex = 92
         '
-        'TextBox2
+        'txt_F
         '
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(330, 141)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(157, 23)
-        Me.TextBox2.TabIndex = 91
+        Me.txt_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_F.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_F.Location = New System.Drawing.Point(330, 141)
+        Me.txt_F.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_F.Name = "txt_F"
+        Me.txt_F.Size = New System.Drawing.Size(157, 23)
+        Me.txt_F.TabIndex = 91
         '
-        'TextBox3
+        'txt_M
         '
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(330, 171)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(157, 23)
-        Me.TextBox3.TabIndex = 90
+        Me.txt_M.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_M.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_M.Location = New System.Drawing.Point(330, 171)
+        Me.txt_M.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_M.Name = "txt_M"
+        Me.txt_M.Size = New System.Drawing.Size(157, 23)
+        Me.txt_M.TabIndex = 90
         '
-        'TextBox1
+        'txt_L
         '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(330, 111)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(157, 23)
-        Me.TextBox1.TabIndex = 89
+        Me.txt_L.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_L.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_L.Location = New System.Drawing.Point(330, 111)
+        Me.txt_L.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_L.Name = "txt_L"
+        Me.txt_L.Size = New System.Drawing.Size(157, 23)
+        Me.txt_L.TabIndex = 89
         '
-        'txtStudentname
+        'txt_id
         '
-        Me.txtStudentname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtStudentname.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtStudentname.Location = New System.Drawing.Point(330, 81)
-        Me.txtStudentname.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtStudentname.Name = "txtStudentname"
-        Me.txtStudentname.Size = New System.Drawing.Size(157, 23)
-        Me.txtStudentname.TabIndex = 98
+        Me.txt_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_id.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_id.Location = New System.Drawing.Point(330, 81)
+        Me.txt_id.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_id.Name = "txt_id"
+        Me.txt_id.Size = New System.Drawing.Size(157, 23)
+        Me.txt_id.TabIndex = 98
         '
         'Label16
         '
@@ -838,6 +841,11 @@ Partial Class frm_aRecords
         Me.PictureBox1.TabIndex = 77
         Me.PictureBox1.TabStop = False
         '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Code"
+        Me.Column1.Name = "Column1"
+        '
         'Column2
         '
         Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
@@ -866,6 +874,18 @@ Partial Class frm_aRecords
         Me.Column6.MinimumWidth = 100
         Me.Column6.Name = "Column6"
         Me.Column6.Width = 125
+        '
+        'lbl_totalAssessment
+        '
+        Me.lbl_totalAssessment.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.lbl_totalAssessment.AutoSize = True
+        Me.lbl_totalAssessment.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_totalAssessment.Location = New System.Drawing.Point(36, 413)
+        Me.lbl_totalAssessment.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_totalAssessment.Name = "lbl_totalAssessment"
+        Me.lbl_totalAssessment.Size = New System.Drawing.Size(115, 17)
+        Me.lbl_totalAssessment.TabIndex = 82
+        Me.lbl_totalAssessment.Text = "Total Assessment: "
         '
         'frm_aRecords
         '
@@ -926,17 +946,17 @@ Partial Class frm_aRecords
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel12 As Panel
     Friend WithEvents Panel9 As Panel
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents txtStudentname As TextBox
+    Friend WithEvents txt_status As TextBox
+    Friend WithEvents txt_year As TextBox
+    Friend WithEvents txt_program As TextBox
+    Friend WithEvents txt_email As TextBox
+    Friend WithEvents txt_Gender As TextBox
+    Friend WithEvents txt_birth As TextBox
+    Friend WithEvents txt_mobile As TextBox
+    Friend WithEvents txt_F As TextBox
+    Friend WithEvents txt_M As TextBox
+    Friend WithEvents txt_L As TextBox
+    Friend WithEvents txt_id As TextBox
     Friend WithEvents Label16 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label14 As Label
@@ -960,8 +980,10 @@ Partial Class frm_aRecords
     Friend WithEvents btn_search As Button
     Friend WithEvents txt_search As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents lbl_totalAssessment As Label
 End Class
