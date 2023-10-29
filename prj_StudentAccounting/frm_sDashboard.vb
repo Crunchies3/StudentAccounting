@@ -41,7 +41,7 @@ Public Class frm_sDashboard
 
     End Sub
 
-    Private Sub displayLabels()
+    Public Sub displayLabels()
         lbl_accountNumber.Text = "Account Number: " & userID
 
         Try

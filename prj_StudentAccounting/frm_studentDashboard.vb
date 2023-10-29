@@ -6,6 +6,9 @@ Public Class frm_StudentDashboard
 
     Dim button As Integer = 1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim refreshList As frm_sDashboard = DirectCast(Application.OpenForms("frm_sDashboard"), frm_sDashboard)
+        refreshList.displayLabels()
+
         button = 1
         responsive()
 
