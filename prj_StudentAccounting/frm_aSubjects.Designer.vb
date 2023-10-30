@@ -22,17 +22,17 @@ Partial Class frm_aSubjects
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle45 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle54 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle55 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle46 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle47 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle48 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle49 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle50 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle51 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle52 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle53 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -50,6 +50,14 @@ Partial Class frm_aSubjects
         Me.txt_search = New System.Windows.Forms.TextBox()
         Me.pnl_Datagrid = New System.Windows.Forms.Panel()
         Me.dgv_subjects = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.cmb_sem = New System.Windows.Forms.ComboBox()
@@ -88,14 +96,7 @@ Partial Class frm_aSubjects
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btn_remove = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -315,43 +316,123 @@ Partial Class frm_aSubjects
         Me.dgv_subjects.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgv_subjects.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.dgv_subjects.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_subjects.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle45.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle45.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle45.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_subjects.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle45
         Me.dgv_subjects.ColumnHeadersHeight = 35
         Me.dgv_subjects.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column7, Me.Column8, Me.Column4, Me.Column5, Me.Column6})
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_subjects.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle54.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle54.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle54.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle54.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_subjects.DefaultCellStyle = DataGridViewCellStyle54
         Me.dgv_subjects.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_subjects.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgv_subjects.Location = New System.Drawing.Point(1, 1)
         Me.dgv_subjects.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv_subjects.Name = "dgv_subjects"
         Me.dgv_subjects.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_subjects.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle55.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle55.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle55.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle55.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle55.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_subjects.RowHeadersDefaultCellStyle = DataGridViewCellStyle55
         Me.dgv_subjects.RowHeadersWidth = 51
         Me.dgv_subjects.RowTemplate.Height = 35
         Me.dgv_subjects.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgv_subjects.Size = New System.Drawing.Size(1009, 448)
         Me.dgv_subjects.TabIndex = 3
+        '
+        'Column1
+        '
+        DataGridViewCellStyle46.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.White
+        Me.Column1.DefaultCellStyle = DataGridViewCellStyle46
+        Me.Column1.HeaderText = "ID"
+        Me.Column1.MinimumWidth = 50
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 50
+        '
+        'Column2
+        '
+        DataGridViewCellStyle47.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle47.SelectionForeColor = System.Drawing.Color.White
+        Me.Column2.DefaultCellStyle = DataGridViewCellStyle47
+        Me.Column2.HeaderText = "Code"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 108
+        '
+        'Column3
+        '
+        DataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle48.SelectionForeColor = System.Drawing.Color.White
+        Me.Column3.DefaultCellStyle = DataGridViewCellStyle48
+        Me.Column3.HeaderText = "Title"
+        Me.Column3.MinimumWidth = 50
+        Me.Column3.Name = "Column3"
+        '
+        'Column7
+        '
+        Me.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        DataGridViewCellStyle49.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle49.SelectionForeColor = System.Drawing.Color.White
+        Me.Column7.DefaultCellStyle = DataGridViewCellStyle49
+        Me.Column7.HeaderText = "Description"
+        Me.Column7.MinimumWidth = 50
+        Me.Column7.Name = "Column7"
+        '
+        'Column8
+        '
+        Me.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        DataGridViewCellStyle50.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle50.SelectionForeColor = System.Drawing.Color.White
+        Me.Column8.DefaultCellStyle = DataGridViewCellStyle50
+        Me.Column8.HeaderText = "Units"
+        Me.Column8.MinimumWidth = 50
+        Me.Column8.Name = "Column8"
+        Me.Column8.Width = 50
+        '
+        'Column4
+        '
+        DataGridViewCellStyle51.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle51.SelectionForeColor = System.Drawing.Color.White
+        Me.Column4.DefaultCellStyle = DataGridViewCellStyle51
+        Me.Column4.HeaderText = "Level"
+        Me.Column4.MinimumWidth = 50
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 50
+        '
+        'Column5
+        '
+        DataGridViewCellStyle52.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle52.SelectionForeColor = System.Drawing.Color.White
+        Me.Column5.DefaultCellStyle = DataGridViewCellStyle52
+        Me.Column5.HeaderText = "Program"
+        Me.Column5.MinimumWidth = 6
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 125
+        '
+        'Column6
+        '
+        DataGridViewCellStyle53.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle53.SelectionForeColor = System.Drawing.Color.White
+        Me.Column6.DefaultCellStyle = DataGridViewCellStyle53
+        Me.Column6.HeaderText = "Semester"
+        Me.Column6.MinimumWidth = 6
+        Me.Column6.Name = "Column6"
+        Me.Column6.Width = 125
         '
         'TabPage2
         '
@@ -614,6 +695,7 @@ Partial Class frm_aSubjects
         '
         Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel5.Controls.Add(Me.btn_remove)
         Me.Panel5.Controls.Add(Me.cmb_eSem)
         Me.Panel5.Controls.Add(Me.cmb_eProgram)
         Me.Panel5.Controls.Add(Me.cmb_eLevel)
@@ -843,85 +925,19 @@ Partial Class frm_aSubjects
         Me.Label18.TabIndex = 40
         Me.Label18.Text = "Edit Subject"
         '
-        'Column1
+        'btn_remove
         '
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
-        Me.Column1.DefaultCellStyle = DataGridViewCellStyle2
-        Me.Column1.HeaderText = "ID"
-        Me.Column1.MinimumWidth = 50
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 50
-        '
-        'Column2
-        '
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
-        Me.Column2.DefaultCellStyle = DataGridViewCellStyle3
-        Me.Column2.HeaderText = "Code"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 108
-        '
-        'Column3
-        '
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White
-        Me.Column3.DefaultCellStyle = DataGridViewCellStyle4
-        Me.Column3.HeaderText = "Title"
-        Me.Column3.MinimumWidth = 50
-        Me.Column3.Name = "Column3"
-        '
-        'Column7
-        '
-        Me.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White
-        Me.Column7.DefaultCellStyle = DataGridViewCellStyle5
-        Me.Column7.HeaderText = "Description"
-        Me.Column7.MinimumWidth = 50
-        Me.Column7.Name = "Column7"
-        '
-        'Column8
-        '
-        Me.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
-        Me.Column8.DefaultCellStyle = DataGridViewCellStyle6
-        Me.Column8.HeaderText = "Units"
-        Me.Column8.MinimumWidth = 50
-        Me.Column8.Name = "Column8"
-        Me.Column8.Width = 50
-        '
-        'Column4
-        '
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White
-        Me.Column4.DefaultCellStyle = DataGridViewCellStyle7
-        Me.Column4.HeaderText = "Level"
-        Me.Column4.MinimumWidth = 50
-        Me.Column4.Name = "Column4"
-        Me.Column4.Width = 50
-        '
-        'Column5
-        '
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White
-        Me.Column5.DefaultCellStyle = DataGridViewCellStyle8
-        Me.Column5.HeaderText = "Program"
-        Me.Column5.MinimumWidth = 6
-        Me.Column5.Name = "Column5"
-        Me.Column5.Width = 125
-        '
-        'Column6
-        '
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White
-        Me.Column6.DefaultCellStyle = DataGridViewCellStyle9
-        Me.Column6.HeaderText = "Semester"
-        Me.Column6.MinimumWidth = 6
-        Me.Column6.Name = "Column6"
-        Me.Column6.Width = 125
+        Me.btn_remove.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btn_remove.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btn_remove.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_remove.ForeColor = System.Drawing.Color.White
+        Me.btn_remove.Location = New System.Drawing.Point(473, 375)
+        Me.btn_remove.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_remove.Name = "btn_remove"
+        Me.btn_remove.Size = New System.Drawing.Size(110, 24)
+        Me.btn_remove.TabIndex = 47
+        Me.btn_remove.Text = "Remove Subject"
+        Me.btn_remove.UseVisualStyleBackColor = False
         '
         'frm_aSubjects
         '
@@ -1020,4 +1036,5 @@ Partial Class frm_aSubjects
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents btn_remove As Button
 End Class

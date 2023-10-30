@@ -22,21 +22,21 @@ Partial Class frm_aStudentsList
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_aStudentsList))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -103,6 +103,7 @@ Partial Class frm_aStudentsList
         Me.cmbEyearlevel = New System.Windows.Forms.ComboBox()
         Me.cmbEgender = New System.Windows.Forms.ComboBox()
         Me.dtEbirthdate = New System.Windows.Forms.DateTimePicker()
+        Me.btn_remove = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnSaveEdit = New System.Windows.Forms.Button()
         Me.btnBrowsePic2 = New System.Windows.Forms.Button()
@@ -349,38 +350,38 @@ Partial Class frm_aStudentsList
         Me.dgv_TotalStudents.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgv_TotalStudents.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.dgv_TotalStudents.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_TotalStudents.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_TotalStudents.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle16
         Me.dgv_TotalStudents.ColumnHeadersHeight = 35
         Me.dgv_TotalStudents.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column7, Me.Column8, Me.Column4, Me.Column5, Me.Column6, Me.Column9, Me.Column10, Me.Column11, Me.Column12, Me.Column13})
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_TotalStudents.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle29.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_TotalStudents.DefaultCellStyle = DataGridViewCellStyle29
         Me.dgv_TotalStudents.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_TotalStudents.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgv_TotalStudents.Location = New System.Drawing.Point(1, 1)
         Me.dgv_TotalStudents.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv_TotalStudents.Name = "dgv_TotalStudents"
         Me.dgv_TotalStudents.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_TotalStudents.RowHeadersDefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle30.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle30.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle30.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_TotalStudents.RowHeadersDefaultCellStyle = DataGridViewCellStyle30
         Me.dgv_TotalStudents.RowHeadersWidth = 51
         Me.dgv_TotalStudents.RowTemplate.Height = 35
         Me.dgv_TotalStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -389,18 +390,18 @@ Partial Class frm_aStudentsList
         '
         'Column1
         '
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
-        Me.Column1.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.White
+        Me.Column1.DefaultCellStyle = DataGridViewCellStyle17
         Me.Column1.HeaderText = "ID"
         Me.Column1.MinimumWidth = 100
         Me.Column1.Name = "Column1"
         '
         'Column2
         '
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
-        Me.Column2.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.White
+        Me.Column2.DefaultCellStyle = DataGridViewCellStyle18
         Me.Column2.HeaderText = "Student ID"
         Me.Column2.MinimumWidth = 6
         Me.Column2.Name = "Column2"
@@ -409,9 +410,9 @@ Partial Class frm_aStudentsList
         'Column3
         '
         Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White
-        Me.Column3.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.White
+        Me.Column3.DefaultCellStyle = DataGridViewCellStyle19
         Me.Column3.HeaderText = "Lastname"
         Me.Column3.MinimumWidth = 50
         Me.Column3.Name = "Column3"
@@ -419,9 +420,9 @@ Partial Class frm_aStudentsList
         'Column7
         '
         Me.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White
-        Me.Column7.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.White
+        Me.Column7.DefaultCellStyle = DataGridViewCellStyle20
         Me.Column7.HeaderText = "Firstname"
         Me.Column7.MinimumWidth = 50
         Me.Column7.Name = "Column7"
@@ -429,18 +430,18 @@ Partial Class frm_aStudentsList
         'Column8
         '
         Me.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
-        Me.Column8.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.White
+        Me.Column8.DefaultCellStyle = DataGridViewCellStyle21
         Me.Column8.HeaderText = "Middlename"
         Me.Column8.MinimumWidth = 50
         Me.Column8.Name = "Column8"
         '
         'Column4
         '
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White
-        Me.Column4.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.White
+        Me.Column4.DefaultCellStyle = DataGridViewCellStyle22
         Me.Column4.HeaderText = "Gender"
         Me.Column4.MinimumWidth = 6
         Me.Column4.Name = "Column4"
@@ -448,9 +449,9 @@ Partial Class frm_aStudentsList
         '
         'Column5
         '
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White
-        Me.Column5.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.White
+        Me.Column5.DefaultCellStyle = DataGridViewCellStyle23
         Me.Column5.HeaderText = "Program"
         Me.Column5.MinimumWidth = 6
         Me.Column5.Name = "Column5"
@@ -458,9 +459,9 @@ Partial Class frm_aStudentsList
         '
         'Column6
         '
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White
-        Me.Column6.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.White
+        Me.Column6.DefaultCellStyle = DataGridViewCellStyle24
         Me.Column6.HeaderText = "Year Level"
         Me.Column6.MinimumWidth = 6
         Me.Column6.Name = "Column6"
@@ -468,9 +469,9 @@ Partial Class frm_aStudentsList
         '
         'Column9
         '
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White
-        Me.Column9.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.White
+        Me.Column9.DefaultCellStyle = DataGridViewCellStyle25
         Me.Column9.HeaderText = "Birthdate"
         Me.Column9.MinimumWidth = 100
         Me.Column9.Name = "Column9"
@@ -478,9 +479,9 @@ Partial Class frm_aStudentsList
         '
         'Column10
         '
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White
-        Me.Column10.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.White
+        Me.Column10.DefaultCellStyle = DataGridViewCellStyle26
         Me.Column10.HeaderText = "Mobile No."
         Me.Column10.MinimumWidth = 100
         Me.Column10.Name = "Column10"
@@ -488,9 +489,9 @@ Partial Class frm_aStudentsList
         '
         'Column11
         '
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White
-        Me.Column11.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.White
+        Me.Column11.DefaultCellStyle = DataGridViewCellStyle27
         Me.Column11.HeaderText = "Email Address"
         Me.Column11.MinimumWidth = 100
         Me.Column11.Name = "Column11"
@@ -499,9 +500,9 @@ Partial Class frm_aStudentsList
         'Column12
         '
         Me.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White
-        Me.Column12.DefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.White
+        Me.Column12.DefaultCellStyle = DataGridViewCellStyle28
         Me.Column12.HeaderText = "Address"
         Me.Column12.MinimumWidth = 100
         Me.Column12.Name = "Column12"
@@ -885,6 +886,7 @@ Partial Class frm_aStudentsList
         Me.Panel2.Controls.Add(Me.cmbEyearlevel)
         Me.Panel2.Controls.Add(Me.cmbEgender)
         Me.Panel2.Controls.Add(Me.dtEbirthdate)
+        Me.Panel2.Controls.Add(Me.btn_remove)
         Me.Panel2.Controls.Add(Me.btnCancel)
         Me.Panel2.Controls.Add(Me.btnSaveEdit)
         Me.Panel2.Controls.Add(Me.btnBrowsePic2)
@@ -954,6 +956,20 @@ Partial Class frm_aStudentsList
         Me.dtEbirthdate.Name = "dtEbirthdate"
         Me.dtEbirthdate.Size = New System.Drawing.Size(285, 25)
         Me.dtEbirthdate.TabIndex = 45
+        '
+        'btn_remove
+        '
+        Me.btn_remove.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btn_remove.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btn_remove.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_remove.ForeColor = System.Drawing.Color.White
+        Me.btn_remove.Location = New System.Drawing.Point(581, 446)
+        Me.btn_remove.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_remove.Name = "btn_remove"
+        Me.btn_remove.Size = New System.Drawing.Size(110, 24)
+        Me.btn_remove.TabIndex = 44
+        Me.btn_remove.Text = "Delete Student"
+        Me.btn_remove.UseVisualStyleBackColor = False
         '
         'btnCancel
         '
@@ -1343,4 +1359,5 @@ Partial Class frm_aStudentsList
     Friend WithEvents Column12 As DataGridViewTextBoxColumn
     Friend WithEvents Column13 As DataGridViewTextBoxColumn
     Friend WithEvents btnAll As Button
+    Friend WithEvents btn_remove As Button
 End Class

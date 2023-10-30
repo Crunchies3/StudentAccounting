@@ -36,20 +36,7 @@ Public Class frm_aSubjects
             TabControl1.SelectedIndex = 0
 
             Try
-                With command
-                    .Parameters.Clear()
-                    .CommandText = "prcAdminAddSubject"
-                    .CommandType = CommandType.StoredProcedure
-                    .Parameters.AddWithValue("@p_code", txt_code.Text)
-                    .Parameters.AddWithValue("@p_title", txt_title.Text)
-                    .Parameters.AddWithValue("@p_description", txt_desc.Text)
-                    .Parameters.AddWithValue("@p_units", txt_unit.Text)
-                    .Parameters.AddWithValue("@p_level", cmb_lvl.Text)
-                    .Parameters.AddWithValue("@p_program", cmb_program.Text)
-                    .Parameters.AddWithValue("@p_semester", cmb_sem.Text)
-                    .ExecuteNonQuery()
-
-                End With
+                subjectfunc("add")
                 MessageBox.Show("Subject Added", "Add Subject", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                 txt_code.Clear()
@@ -68,6 +55,50 @@ Public Class frm_aSubjects
             End Try
 
         End If
+
+    End Sub
+
+    Private Sub subjectfunc(type As String)
+
+        If type = "edit" Or type = "delete" Then
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminSubject"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", id)
+                .Parameters.AddWithValue("@p_code", txt_eCode.Text)
+                .Parameters.AddWithValue("@p_title", txt_eTitle.Text)
+                .Parameters.AddWithValue("@p_description", txt_eDesc.Text)
+                .Parameters.AddWithValue("@p_units", txt_eUnit.Text)
+                .Parameters.AddWithValue("@p_level", cmb_eLevel.Text)
+                .Parameters.AddWithValue("@p_program", cmb_eProgram.Text)
+                .Parameters.AddWithValue("@p_semester", cmb_eSem.Text)
+                .Parameters.AddWithValue("@p_type", type)
+                .ExecuteNonQuery()
+
+            End With
+
+        ElseIf type = "add" Then
+
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminSubject"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", id)
+                .Parameters.AddWithValue("@p_code", txt_code.Text)
+                .Parameters.AddWithValue("@p_title", txt_title.Text)
+                .Parameters.AddWithValue("@p_description", txt_desc.Text)
+                .Parameters.AddWithValue("@p_units", txt_unit.Text)
+                .Parameters.AddWithValue("@p_level", cmb_lvl.Text)
+                .Parameters.AddWithValue("@p_program", cmb_program.Text)
+                .Parameters.AddWithValue("@p_semester", cmb_sem.Text)
+                .Parameters.AddWithValue("@p_type", type)
+                .ExecuteNonQuery()
+
+            End With
+        End If
+
+
 
     End Sub
 
@@ -100,21 +131,7 @@ Public Class frm_aSubjects
             TabControl1.SelectedIndex = 0
 
             Try
-                With command
-                    .Parameters.Clear()
-                    .CommandText = "prcAdminEditSubject"
-                    .CommandType = CommandType.StoredProcedure
-                    .Parameters.AddWithValue("@p_id", id)
-                    .Parameters.AddWithValue("@p_code", txt_eCode.Text)
-                    .Parameters.AddWithValue("@p_title", txt_eTitle.Text)
-                    .Parameters.AddWithValue("@p_description", txt_eDesc.Text)
-                    .Parameters.AddWithValue("@p_units", txt_eUnit.Text)
-                    .Parameters.AddWithValue("@p_level", cmb_eLevel.Text)
-                    .Parameters.AddWithValue("@p_program", cmb_eProgram.Text)
-                    .Parameters.AddWithValue("@p_semester", cmb_eSem.Text)
-                    .ExecuteNonQuery()
-
-                End With
+                subjectfunc("edit")
                 MessageBox.Show("Subject Info saved", "Edit Subject", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                 txt_eCode.Clear()
@@ -187,6 +204,22 @@ Public Class frm_aSubjects
             MessageBox.Show("" & ex.Message)
         End Try
 
+    End Sub
+
+    Private Sub btn_remove_Click(sender As Object, e As EventArgs) Handles btn_remove.Click
+        TabControl1.SelectedIndex = 0
+        Try
+
+            subjectfunc("delete")
+            MessageBox.Show("Subject  Removed", "Remove Subject", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            DisplaySubject()
+
+
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
     End Sub
 
 End Class

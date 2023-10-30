@@ -1,4 +1,5 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports CrystalDecisions.[Shared].Json
+Imports MySql.Data.MySqlClient
 
 Public Class frm_aStudentsList
     Dim id As Integer
@@ -16,13 +17,27 @@ Public Class frm_aStudentsList
         txtEmiddlename.Text = dgv_TotalStudents.CurrentRow.Cells(4).Value
         cmbEgender.Text = dgv_TotalStudents.CurrentRow.Cells(5).Value
         cmbEprogram.Text = dgv_TotalStudents.CurrentRow.Cells(6).Value
-        cmbEyearlevel.Text = dgv_TotalStudents.CurrentRow.Cells(7).Value
+        cmbEyearlevel.Text = convertYearNumberToWord(dgv_TotalStudents.CurrentRow.Cells(7).Value)
         dtEbirthdate.Value = Format(Convert.ToDateTime(dgv_TotalStudents.CurrentRow.Cells(8).Value), "yyyy,MMM,dd")
         txtEmobileno.Text = dgv_TotalStudents.CurrentRow.Cells(9).Value
         txtEemailadd.Text = dgv_TotalStudents.CurrentRow.Cells(10).Value
         txtEaddress.Text = dgv_TotalStudents.CurrentRow.Cells(11).Value
 
     End Sub
+
+    Private Function convertYearNumberToWord(yearlvl As Integer) As String
+        If yearlvl = 1 Then
+            Return "1st Year"
+        ElseIf yearlvl = 2 Then
+            Return "2nd Year"
+        ElseIf yearlvl = 3 Then
+            Return "3rd Year"
+        ElseIf yearlvl = 4 Then
+            Return "4th Year"
+        End If
+
+        Return ""
+    End Function
 
     Private Sub btnAddStudent_Click(sender As Object, e As EventArgs) Handles btnAddStudent.Click
 
@@ -55,25 +70,7 @@ Public Class frm_aStudentsList
             End If
 
             Try
-                With command
-                    .Parameters.Clear()
-                    .CommandText = "prcAdminAddStudent"
-                    .CommandType = CommandType.StoredProcedure
-                    .Parameters.AddWithValue("@p_studentid", txtStudentID.Text)
-                    .Parameters.AddWithValue("@p_lastname", txtLastname.Text)
-                    .Parameters.AddWithValue("@p_firstname", txtFirstname.Text)
-                    .Parameters.AddWithValue("@p_middlename", txtMiddlename.Text)
-                    .Parameters.AddWithValue("@p_gender", cmbGender.Text)
-                    .Parameters.AddWithValue("@p_birthdate", dtBirthdate.Value)
-                    .Parameters.AddWithValue("@p_mobileno", txtMobileno.Text)
-                    .Parameters.AddWithValue("@p_emailadd", txtEmailadd.Text)
-                    .Parameters.AddWithValue("@p_address", txtAddress.Text)
-                    .Parameters.AddWithValue("@p_yearlevel", yrno)
-                    .Parameters.AddWithValue("@p_program", cmbProgram.Text)
-                    .Parameters.AddWithValue("@p_photoPath", studentPhotoPath)
-                    .ExecuteNonQuery()
-
-                End With
+                studentFunc(yrno, "add")
                 MessageBox.Show("Student Successfully Added", "Add Student", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
 
@@ -145,7 +142,7 @@ Public Class frm_aStudentsList
             cmbEprogram.SelectedIndex = -1 Then
             MessageBox.Show("Please fill in all required fields before submitting.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
-        ElseIf txtStudentID.Text.Length <> 6 Then
+        ElseIf txtEStudentID.Text.Length <> 6 Then
             MessageBox.Show("Student ID must contain 6 digit.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
         Else
@@ -163,26 +160,7 @@ Public Class frm_aStudentsList
             End If
 
             Try
-                With command
-                    .Parameters.Clear()
-                    .CommandText = "prcAdminEditStudent"
-                    .CommandType = CommandType.StoredProcedure
-                    .Parameters.AddWithValue("@p_id", id)
-                    .Parameters.AddWithValue("@p_studentid", txtEstudentID.Text)
-                    .Parameters.AddWithValue("@p_lastname", txtElastname.Text)
-                    .Parameters.AddWithValue("@p_firstname", txtEfirstname.Text)
-                    .Parameters.AddWithValue("@p_middlename", txtEmiddlename.Text)
-                    .Parameters.AddWithValue("@p_gender", cmbEgender.Text)
-                    .Parameters.AddWithValue("@p_birthdate", dtEbirthdate.Value)
-                    .Parameters.AddWithValue("@p_mobileno", txtEmobileno.Text)
-                    .Parameters.AddWithValue("@p_emailadd", txtEemailadd.Text)
-                    .Parameters.AddWithValue("@p_address", txtEaddress.Text)
-                    .Parameters.AddWithValue("@p_yearlevel", yrno)
-                    .Parameters.AddWithValue("@p_program", cmbEprogram.Text)
-                    .Parameters.AddWithValue("@p_photoPath", studentPhotoPath)
-                    .ExecuteNonQuery()
-
-                End With
+                studentFunc(yrno, "edit")
                 MessageBox.Show("Student Info Updated", "Edit Student", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                 funcDisplayAllStudents()
@@ -191,6 +169,61 @@ Public Class frm_aStudentsList
                 MessageBox.Show("" & ex.Message)
             End Try
         End If
+
+    End Sub
+
+
+    Private Sub studentFunc(yrno As Integer, type As String)
+
+        If type = "edit" Or type = "delete" Then
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminStudent"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", id)
+                .Parameters.AddWithValue("@p_studentid", txtEstudentID.Text)
+                .Parameters.AddWithValue("@p_lastname", txtElastname.Text)
+                .Parameters.AddWithValue("@p_firstname", txtEfirstname.Text)
+                .Parameters.AddWithValue("@p_middlename", txtEmiddlename.Text)
+                .Parameters.AddWithValue("@p_gender", cmbEgender.Text)
+                .Parameters.AddWithValue("@p_birthdate", dtEbirthdate.Value)
+                .Parameters.AddWithValue("@p_mobileno", txtEmobileno.Text)
+                .Parameters.AddWithValue("@p_emailadd", txtEemailadd.Text)
+                .Parameters.AddWithValue("@p_address", txtEaddress.Text)
+                .Parameters.AddWithValue("@p_yearlevel", yrno)
+                .Parameters.AddWithValue("@p_program", cmbEprogram.Text)
+                .Parameters.AddWithValue("@p_photoPath", studentPhotoPath)
+                .Parameters.AddWithValue("@p_type", type)
+
+                .ExecuteNonQuery()
+
+            End With
+        ElseIf type = "add" Then
+
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminStudent"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", id)
+                .Parameters.AddWithValue("@p_studentid", txtStudentID.Text)
+                .Parameters.AddWithValue("@p_lastname", txtLastname.Text)
+                .Parameters.AddWithValue("@p_firstname", txtFirstname.Text)
+                .Parameters.AddWithValue("@p_middlename", txtMiddlename.Text)
+                .Parameters.AddWithValue("@p_gender", cmbGender.Text)
+                .Parameters.AddWithValue("@p_birthdate", dtBirthdate.Value)
+                .Parameters.AddWithValue("@p_mobileno", txtMobileno.Text)
+                .Parameters.AddWithValue("@p_emailadd", txtEmailadd.Text)
+                .Parameters.AddWithValue("@p_address", txtAddress.Text)
+                .Parameters.AddWithValue("@p_yearlevel", yrno)
+                .Parameters.AddWithValue("@p_program", cmbProgram.Text)
+                .Parameters.AddWithValue("@p_photoPath", studentPhotoPath)
+                .Parameters.AddWithValue("@p_type", type)
+
+                .ExecuteNonQuery()
+            End With
+        End If
+
+
 
     End Sub
 
@@ -381,5 +414,25 @@ Public Class frm_aStudentsList
 
     Private Sub btnAll_Click(sender As Object, e As EventArgs) Handles btnAll.Click
         funcDisplayAllStudents()
+    End Sub
+
+    Private Sub btn_remove_Click(sender As Object, e As EventArgs) Handles btn_remove.Click
+        TabControl1.SelectedIndex = 0
+        Try
+
+            studentFunc(1, "delete")
+            MessageBox.Show("Student Info Removed", "Remove Student", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            funcDisplayAllStudents()
+
+
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+    End Sub
+
+    Private Sub TabControl1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControl1.SelectedIndexChanged
+
     End Sub
 End Class
