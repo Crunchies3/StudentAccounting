@@ -2,6 +2,10 @@
 
     Dim button As Integer = 1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim refreshList As frm_aDashboard_v2 = DirectCast(Application.OpenForms("frm_aDashboard_v2"), frm_aDashboard_v2)
+        refreshList.DashboardStudentsAndDisplayables()
+
         button = 1
         responsive()
 
@@ -122,12 +126,14 @@
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+
         button = 6
         responsive()
 
         With frm_aRecords
             .TopLevel = False
             pnl_main.Controls.Add(frm_aRecords)
+            .frm_load()
             .BringToFront()
             .Show()
         End With

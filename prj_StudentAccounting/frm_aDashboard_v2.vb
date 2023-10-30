@@ -88,7 +88,7 @@ Public Class frm_aDashboard_v2
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         TabControl1.SelectedIndex = 0
     End Sub
-    Private Sub DashboardStudentsAndDisplayables()
+    Public Sub DashboardStudentsAndDisplayables()
         Try
             sqlDBAdapter = New MySqlDataAdapter
             dataTable = New DataTable

@@ -1,9 +1,25 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class frm_aRecords
-    Private Sub frm_aRecords_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Public Sub frm_load()
         checkDatabaseConnection()
         funcDisplayAllStudents()
+        clearLabels()
+    End Sub
 
+    Private Sub clearLabels()
+        txt_birth.Clear()
+        txt_email.Clear()
+        txt_F.Clear()
+        txt_Gender.Clear()
+        txt_id.Clear()
+        txt_L.Clear()
+        txt_M.Clear()
+        txt_mobile.Clear()
+        txt_program.Clear()
+        txt_status.Clear()
+        txt_year.Clear()
+        dgv_subjects.Rows.Clear()
+        dgv_assessment.Rows.Clear()
     End Sub
 
     Private Sub funcDisplayAllStudents()
