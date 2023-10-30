@@ -62,9 +62,6 @@ Public Class frm_sSubjects
         Catch ex As Exception
             MessageBox.Show("" & ex.Message)
         End Try
-        Dim refreshList As frm_sAssessment = DirectCast(Application.OpenForms("frm_sAssessment"), frm_sAssessment)
-        refreshList.displayTable()
-        refreshList.loadLabel()
 
     End Sub
 
