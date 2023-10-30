@@ -22,7 +22,6 @@ Partial Class frm_sAssessment
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -48,7 +47,6 @@ Partial Class frm_sAssessment
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.lbl_semester = New System.Windows.Forms.Label()
         Me.lbl_program = New System.Windows.Forms.Label()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel7.SuspendLayout()
@@ -358,9 +356,6 @@ Partial Class frm_sAssessment
         Me.lbl_program.Text = "Bachelor Of Science In Computer Science"
         Me.lbl_program.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Timer1
-        '
-        '
         'frm_sAssessment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -413,5 +408,4 @@ Partial Class frm_sAssessment
     Friend WithEvents Label5 As Label
     Friend WithEvents lbl_program As Label
     Friend WithEvents lbl_semester As Label
-    Friend WithEvents Timer1 As Timer
 End Class

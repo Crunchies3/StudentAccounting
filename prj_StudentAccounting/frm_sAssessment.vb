@@ -3,7 +3,7 @@ Public Class frm_sAssessment
     Private Sub frm_sAssessment_Load(sender As Object, e As EventArgs) Handles Me.Load
         loadLabel()
         displayTable()
-        Timer1.Start()
+
 
     End Sub
 
@@ -19,15 +19,6 @@ Public Class frm_sAssessment
         dataTable = New DataTable
 
         With command
-            .Parameters.Clear()
-            .CommandText = "prcStudentFinalSubjectStatus"
-            .CommandType = CommandType.StoredProcedure
-            sqlDBAdapter.SelectCommand = command
-            dataTable.Clear()
-            sqlDBAdapter.Fill(dataTable)
-
-            If dataTable.Rows(0).Item("subjStatus") = True Then
-                With command
 
                     Dim totalUnits As Integer = 0
                     Dim totalAss As Double = 0
@@ -78,29 +69,11 @@ Public Class frm_sAssessment
 
                     lbl_totalAssessment.Text = "₱ " & totalAss
                 End With
-            End If
 
-        End With
 
         sqlDBAdapter.Dispose()
         dataTable.Dispose()
 
     End Sub
 
-    Private Sub Timer1_Tick_1(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Timer1.Stop()
-
-        With command
-            .Parameters.Clear()
-            .CommandText = "prcStudentFinalSubjectStatus"
-            .CommandType = CommandType.StoredProcedure
-            sqlDBAdapter.SelectCommand = command
-            dataTable.Clear()
-            sqlDBAdapter.Fill(dataTable)
-
-            If dataTable.Rows(0).Item("subjStatus") = False Then
-                MessageBox.Show("At least submit 1 final subject to display shenanigans", "Submit a Final Subject", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            End If
-        End With
-    End Sub
 End Class

@@ -94,14 +94,32 @@ Public Class frm_StudentDashboard
     End Sub
 
     Private Sub button5_click(sender As Object, e As EventArgs) Handles Button5.Click
-        button = 4
-        responsive()
-        With frm_sAssessment
-            .TopLevel = False
-            pnl_main.Controls.Add(frm_sAssessment)
-            .BringToFront()
-            .Show()
+        With command
+            .Parameters.Clear()
+            .CommandText = "prcStudentFinalSubjectStatus"
+            .CommandType = CommandType.StoredProcedure
+            .Parameters.AddWithValue("@p_studentid", userID)
+            sqlDBAdapter.SelectCommand = command
+            dataTable.Clear()
+            sqlDBAdapter.Fill(dataTable)
+
+            If dataTable.Rows(0).Item("subjStatus") = True Then
+                button = 4
+                responsive()
+                With frm_sAssessment
+                    .TopLevel = False
+                    pnl_main.Controls.Add(frm_sAssessment)
+                    .BringToFront()
+                    .Show()
+                End With
+                Dim refreshList As frm_sAssessment = DirectCast(Application.OpenForms("frm_sAssessment"), frm_sAssessment)
+                refreshList.displayTable()
+                refreshList.loadLabel()
+            Else
+                MessageBox.Show("At least submit 1 final subject to display shenanigans", "Submit a Final Subject", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
         End With
+
     End Sub
 
     Private Sub frm_StudentDashboard_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
