@@ -181,51 +181,20 @@ Public Class frm_sEnrollSubject
     Private Sub btn_enlist_Click(sender As Object, e As EventArgs) Handles btn_enlist.Click
         getStudentIdAndSid()
         Try
-            If fncCheckDuplicateSubject(userID, dgv_enrollSubject.CurrentRow.Cells(1).Value) = False Then
-                With command
-                    .Parameters.Clear()
-                    .CommandText = "prcStudentEnlistSubject"
-                    .CommandType = CommandType.StoredProcedure
-                    .Parameters.AddWithValue("@p_stid", id)
-                    .Parameters.AddWithValue("@p_sid", sid)
-                    .ExecuteNonQuery()
-                End With
-                MessageBox.Show("Done", "Enlist Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Else
-                MessageBox.Show("Subject Already Enrolled", "Duplicate Subject", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End If
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcStudentEnlistSubject"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_stid", id)
+                .Parameters.AddWithValue("@p_sid", sid)
+                .ExecuteNonQuery()
+            End With
+            MessageBox.Show("Subject Enlisted", "Enlist Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
         Catch ex As Exception
             MessageBox.Show("" & ex.Message)
         End Try
-        Dim refreshList As frm_sSubjects = DirectCast(Application.OpenForms("frm_sSubjects"), frm_sSubjects)
-        refreshList.prcDisplaySubject()
+        funcDisplaySubject()
     End Sub
 
-    Private Function fncCheckDuplicateSubject(p_studentid As String, p_title As String) As Boolean
-        Dim result As String
-
-        sqlDBAdapter = New MySqlDataAdapter
-        dataTable = New DataTable
-
-
-        With command
-            .Parameters.Clear()
-            .CommandText = "prcStudentCheckDuplicateEnrollment"
-            .CommandType = CommandType.StoredProcedure
-            .Parameters.AddWithValue("@p_studentid", p_studentid)
-            .Parameters.AddWithValue("@p_title", p_title)
-            sqlDBAdapter.SelectCommand = command
-            dataTable.Clear()
-            sqlDBAdapter.Fill(dataTable)
-            If dataTable.Rows.Count > 0 Then
-                result = True
-            Else
-                result = False
-            End If
-        End With
-        sqlDBAdapter.Dispose()
-        dataTable.Dispose()
-
-        Return result
-    End Function
 End Class
