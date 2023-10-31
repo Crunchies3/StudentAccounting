@@ -294,7 +294,7 @@ Partial Class frm_aDashboard_v2
         Me.btn_search.Name = "btn_search"
         Me.btn_search.Size = New System.Drawing.Size(81, 22)
         Me.btn_search.TabIndex = 14
-        Me.btn_search.Text = "Search"
+        Me.btn_search.Text = "Search ID"
         Me.btn_search.UseVisualStyleBackColor = False
         '
         'txt_search
