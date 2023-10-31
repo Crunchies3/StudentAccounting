@@ -192,7 +192,7 @@ Partial Class frm_aFees
         Me.btnAll.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btnAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAll.ForeColor = System.Drawing.Color.White
-        Me.btnAll.Location = New System.Drawing.Point(382, 79)
+        Me.btnAll.Location = New System.Drawing.Point(437, 80)
         Me.btnAll.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAll.Name = "btnAll"
         Me.btnAll.Size = New System.Drawing.Size(81, 22)
@@ -248,9 +248,9 @@ Partial Class frm_aFees
         Me.btn_search.Location = New System.Drawing.Point(297, 80)
         Me.btn_search.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_search.Name = "btn_search"
-        Me.btn_search.Size = New System.Drawing.Size(81, 22)
+        Me.btn_search.Size = New System.Drawing.Size(125, 22)
         Me.btn_search.TabIndex = 14
-        Me.btn_search.Text = "Search"
+        Me.btn_search.Text = "Search Description"
         Me.btn_search.UseVisualStyleBackColor = False
         '
         'txt_search
