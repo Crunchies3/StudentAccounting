@@ -230,6 +230,7 @@ Partial Class frm_sEnrollSubject
         '
         'dgv_enrollSubject
         '
+        Me.dgv_enrollSubject.AllowUserToAddRows = False
         Me.dgv_enrollSubject.AllowUserToResizeColumns = False
         Me.dgv_enrollSubject.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.dgv_enrollSubject.BorderStyle = System.Windows.Forms.BorderStyle.None

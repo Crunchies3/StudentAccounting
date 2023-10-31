@@ -47,15 +47,24 @@ Public Class frm_sSubjects
 
     Private Sub btn_submit_Click(sender As Object, e As EventArgs) Handles btn_submit.Click
         Try
-            With command
-                .Parameters.Clear()
-                .CommandText = "prcStudentSubmitFinalSubjects"
-                .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@p_sid", CInt(dgv_subjects.CurrentRow.Cells(0).Value))
-                .Parameters.AddWithValue("@p_stid", userID)
-                .ExecuteNonQuery()
+            For Each row As DataGridViewRow In dgv_subjects.Rows
+                If Not row.IsNewRow Then
 
-            End With
+                    If row.Cells("Column1").Value IsNot Nothing AndAlso Not IsDBNull(row.Cells("Column1").Value) Then
+                        Dim idValue As Integer = CInt(row.Cells("Column1").Value)
+
+                        With command
+                            .Parameters.Clear()
+                            .CommandText = "prcStudentSubmitFinalSubjects"
+                            .CommandType = CommandType.StoredProcedure
+                            .Parameters.AddWithValue("@p_sid", idValue)
+                            .Parameters.AddWithValue("@p_stid", userID)
+                            .ExecuteNonQuery()
+                        End With
+                    End If
+                End If
+            Next
+
             MessageBox.Show("Subject Submitted As Final", "Subject Finalized", MessageBoxButtons.OK, MessageBoxIcon.Information)
             prcDisplaySubject()
 

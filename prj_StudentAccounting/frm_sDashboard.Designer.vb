@@ -357,6 +357,7 @@ Partial Class frm_sDashboard
         '
         'dgv_transactionHistory
         '
+        Me.dgv_transactionHistory.AllowUserToAddRows = False
         Me.dgv_transactionHistory.AllowUserToResizeColumns = False
         Me.dgv_transactionHistory.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.dgv_transactionHistory.BorderStyle = System.Windows.Forms.BorderStyle.None
