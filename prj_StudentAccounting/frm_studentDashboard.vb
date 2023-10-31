@@ -49,6 +49,8 @@ Public Class frm_StudentDashboard
             .BringToFront()
             .Show()
         End With
+        Dim refreshList As frm_sSubjects = DirectCast(Application.OpenForms("frm_sSubjects"), frm_sSubjects)
+        refreshList.prcDisplaySubject()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
