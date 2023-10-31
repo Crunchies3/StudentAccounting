@@ -166,6 +166,7 @@ Partial Class frm_sAssessment
         '
         'dgv_assessment
         '
+        Me.dgv_assessment.AllowUserToAddRows = False
         Me.dgv_assessment.AllowUserToResizeColumns = False
         Me.dgv_assessment.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.dgv_assessment.BorderStyle = System.Windows.Forms.BorderStyle.None
