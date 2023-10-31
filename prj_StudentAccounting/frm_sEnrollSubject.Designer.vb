@@ -74,7 +74,7 @@ Partial Class frm_sEnrollSubject
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1052, 69)
+        Me.Panel1.Size = New System.Drawing.Size(1052, 44)
         Me.Panel1.TabIndex = 1
         '
         'Label9
@@ -92,19 +92,19 @@ Partial Class frm_sEnrollSubject
         'Panel3
         '
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel3.Location = New System.Drawing.Point(0, 69)
+        Me.Panel3.Location = New System.Drawing.Point(0, 44)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(42, 618)
+        Me.Panel3.Size = New System.Drawing.Size(27, 643)
         Me.Panel3.TabIndex = 2
         '
         'Panel4
         '
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel4.Location = New System.Drawing.Point(996, 69)
+        Me.Panel4.Location = New System.Drawing.Point(1016, 44)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(56, 618)
+        Me.Panel4.Size = New System.Drawing.Size(36, 643)
         Me.Panel4.TabIndex = 3
         '
         'Panel2
@@ -114,10 +114,10 @@ Partial Class frm_sEnrollSubject
         Me.Panel2.Controls.Add(Me.Panel7)
         Me.Panel2.Controls.Add(Me.Panel6)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(42, 69)
+        Me.Panel2.Location = New System.Drawing.Point(27, 44)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(954, 618)
+        Me.Panel2.Size = New System.Drawing.Size(989, 643)
         Me.Panel2.TabIndex = 4
         '
         'Panel8
@@ -136,7 +136,7 @@ Partial Class frm_sEnrollSubject
         Me.Panel8.Location = New System.Drawing.Point(0, 189)
         Me.Panel8.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(954, 429)
+        Me.Panel8.Size = New System.Drawing.Size(989, 454)
         Me.Panel8.TabIndex = 3
         '
         'btnAll
@@ -194,7 +194,7 @@ Partial Class frm_sEnrollSubject
         Me.btn_enlist.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btn_enlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_enlist.ForeColor = System.Drawing.Color.White
-        Me.btn_enlist.Location = New System.Drawing.Point(140, 361)
+        Me.btn_enlist.Location = New System.Drawing.Point(140, 386)
         Me.btn_enlist.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_enlist.Name = "btn_enlist"
         Me.btn_enlist.Size = New System.Drawing.Size(81, 31)
@@ -225,7 +225,7 @@ Partial Class frm_sEnrollSubject
         Me.pnl_Datagrid.Margin = New System.Windows.Forms.Padding(2)
         Me.pnl_Datagrid.Name = "pnl_Datagrid"
         Me.pnl_Datagrid.Padding = New System.Windows.Forms.Padding(1)
-        Me.pnl_Datagrid.Size = New System.Drawing.Size(690, 246)
+        Me.pnl_Datagrid.Size = New System.Drawing.Size(725, 271)
         Me.pnl_Datagrid.TabIndex = 6
         '
         'dgv_enrollSubject
@@ -271,7 +271,7 @@ Partial Class frm_sEnrollSubject
         Me.dgv_enrollSubject.RowHeadersWidth = 51
         Me.dgv_enrollSubject.RowTemplate.Height = 35
         Me.dgv_enrollSubject.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_enrollSubject.Size = New System.Drawing.Size(688, 244)
+        Me.dgv_enrollSubject.Size = New System.Drawing.Size(723, 269)
         Me.dgv_enrollSubject.TabIndex = 3
         '
         'Column1
@@ -325,7 +325,7 @@ Partial Class frm_sEnrollSubject
         Me.Panel7.Location = New System.Drawing.Point(0, 99)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(954, 90)
+        Me.Panel7.Size = New System.Drawing.Size(989, 90)
         Me.Panel7.TabIndex = 2
         '
         'Panel9
@@ -338,7 +338,7 @@ Partial Class frm_sEnrollSubject
         Me.Panel9.Location = New System.Drawing.Point(140, 38)
         Me.Panel9.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(690, 32)
+        Me.Panel9.Size = New System.Drawing.Size(725, 32)
         Me.Panel9.TabIndex = 0
         '
         'lvl_studentType
@@ -372,7 +372,7 @@ Partial Class frm_sEnrollSubject
         Me.Panel5.Location = New System.Drawing.Point(140, 10)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(690, 32)
+        Me.Panel5.Size = New System.Drawing.Size(725, 32)
         Me.Panel5.TabIndex = 0
         '
         'lbl_programYear
@@ -404,7 +404,7 @@ Partial Class frm_sEnrollSubject
         Me.Panel6.Location = New System.Drawing.Point(0, 0)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(954, 99)
+        Me.Panel6.Size = New System.Drawing.Size(989, 99)
         Me.Panel6.TabIndex = 1
         '
         'lbl_name
