@@ -324,7 +324,8 @@ Partial Class frm_aDashboard_v2
         '
         'dgv_enrolledStudents
         '
-        Me.dgv_enrolledStudents.AllowUserToResizeColumns = False
+        Me.dgv_enrolledStudents.AllowUserToAddRows = False
+        Me.dgv_enrolledStudents.AllowUserToOrderColumns = True
         Me.dgv_enrolledStudents.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.dgv_enrolledStudents.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgv_enrolledStudents.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal

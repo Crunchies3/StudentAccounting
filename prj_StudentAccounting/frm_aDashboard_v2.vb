@@ -218,7 +218,7 @@ Public Class frm_aDashboard_v2
                 .Parameters.Clear()
                 .CommandText = "prcAdminSearchDashboardAutoComplete"
                 .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@p_lastname", txt_search.Text)
+                .Parameters.AddWithValue("@p_id", txt_search.Text)
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
@@ -268,7 +268,7 @@ Public Class frm_aDashboard_v2
                 .Parameters.Clear()
                 .CommandText = "prcAdminSearchDashboardEnrolledStudents"
                 .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@p_lastname", txt_search.Text)
+                .Parameters.AddWithValue("@p_id", txt_search.Text)
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)

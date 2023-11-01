@@ -197,7 +197,7 @@ Public Class frm_aTeacher
                 .Parameters.Clear()
                 .CommandText = "prcAdminSearchTeacherAutoComplete"
                 .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@p_fullname", txt_search.Text)
+                .Parameters.AddWithValue("@p_id", txt_search.Text)
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
@@ -238,7 +238,7 @@ Public Class frm_aTeacher
                 .Parameters.Clear()
                 .CommandText = "prcAdminSearchTeacher"
                 .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@p_fullname", txt_search.Text)
+                .Parameters.AddWithValue("@p_id", txt_search.Text)
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)

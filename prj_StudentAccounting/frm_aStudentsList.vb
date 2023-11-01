@@ -329,7 +329,7 @@ Public Class frm_aStudentsList
                 .Parameters.Clear()
                 .CommandText = "prcAdminSearchStudent"
                 .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@p_lastname", txt_search.Text)
+                .Parameters.AddWithValue("@p_id", txt_search.Text)
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
@@ -370,7 +370,7 @@ Public Class frm_aStudentsList
                 .Parameters.Clear()
                 .CommandText = "prcAdminSearchStudentAutoComplete"
                 .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@p_lastname", txt_search.Text)
+                .Parameters.AddWithValue("@p_id", txt_search.Text)
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
