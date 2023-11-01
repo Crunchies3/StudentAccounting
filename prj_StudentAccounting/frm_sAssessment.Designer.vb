@@ -76,9 +76,9 @@ Partial Class frm_sAssessment
         Me.Label9.Location = New System.Drawing.Point(28, 11)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(143, 25)
+        Me.Label9.Size = New System.Drawing.Size(113, 25)
         Me.Label9.TabIndex = 0
-        Me.Label9.Text = "Enroll Subjects"
+        Me.Label9.Text = "Assessment"
         '
         'Panel3
         '

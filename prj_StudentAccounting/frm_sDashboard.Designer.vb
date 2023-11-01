@@ -55,6 +55,7 @@ Partial Class frm_sDashboard
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.pnl_Datagrid = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -66,6 +67,7 @@ Partial Class frm_sDashboard
         CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.pnl_Datagrid.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -107,6 +109,7 @@ Partial Class frm_sDashboard
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel3.BackColor = System.Drawing.Color.White
+        Me.Panel3.Controls.Add(Me.PictureBox1)
         Me.Panel3.Controls.Add(Me.lbl_accountNumber)
         Me.Panel3.Controls.Add(Me.Label11)
         Me.Panel3.Controls.Add(Me.lbl_program)
@@ -476,6 +479,16 @@ Partial Class frm_sDashboard
         Me.pnl_Datagrid.Size = New System.Drawing.Size(728, 312)
         Me.pnl_Datagrid.TabIndex = 4
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.prj_StudentAccounting.My.Resources.Resources.cash
+        Me.PictureBox1.Location = New System.Drawing.Point(233, 55)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
+        '
         'frm_sDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -511,6 +524,7 @@ Partial Class frm_sDashboard
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.pnl_Datagrid.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -545,4 +559,5 @@ Partial Class frm_sDashboard
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents lbl_program As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

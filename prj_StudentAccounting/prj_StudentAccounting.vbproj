@@ -299,5 +299,26 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house-fill2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-half.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-arrow-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\666007069677.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
