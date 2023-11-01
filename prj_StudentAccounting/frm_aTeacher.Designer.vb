@@ -22,10 +22,10 @@ Partial Class frm_aTeacher
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_aTeacher))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_aTeacher))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -42,16 +42,6 @@ Partial Class frm_aTeacher
         Me.btn_search = New System.Windows.Forms.Button()
         Me.txt_search = New System.Windows.Forms.TextBox()
         Me.pnl_Datagrid = New System.Windows.Forms.Panel()
-        Me.dgv_teacherTable = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.cmbTgender = New System.Windows.Forms.ComboBox()
@@ -79,6 +69,7 @@ Partial Class frm_aTeacher
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btn_remove = New System.Windows.Forms.Button()
         Me.EcmbTgender = New System.Windows.Forms.ComboBox()
         Me.EdtTbirthdate = New System.Windows.Forms.DateTimePicker()
         Me.btnCancelEdit = New System.Windows.Forms.Button()
@@ -103,19 +94,29 @@ Partial Class frm_aTeacher
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.dgv_teacherTable = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.pnl_Datagrid.SuspendLayout()
-        CType(Me.dgv_teacherTable, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         Me.Panel12.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage3.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgv_teacherTable, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -317,112 +318,6 @@ Partial Class frm_aTeacher
         Me.pnl_Datagrid.Padding = New System.Windows.Forms.Padding(1)
         Me.pnl_Datagrid.Size = New System.Drawing.Size(1011, 456)
         Me.pnl_Datagrid.TabIndex = 5
-        '
-        'dgv_teacherTable
-        '
-        Me.dgv_teacherTable.AllowUserToResizeColumns = False
-        Me.dgv_teacherTable.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.dgv_teacherTable.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgv_teacherTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.dgv_teacherTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_teacherTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgv_teacherTable.ColumnHeadersHeight = 35
-        Me.dgv_teacherTable.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column7, Me.Column4, Me.Column5, Me.Column6, Me.Column8, Me.Column9})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_teacherTable.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgv_teacherTable.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgv_teacherTable.Location = New System.Drawing.Point(1, 1)
-        Me.dgv_teacherTable.Margin = New System.Windows.Forms.Padding(2)
-        Me.dgv_teacherTable.Name = "dgv_teacherTable"
-        Me.dgv_teacherTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_teacherTable.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.dgv_teacherTable.RowHeadersWidth = 51
-        Me.dgv_teacherTable.RowTemplate.Height = 35
-        Me.dgv_teacherTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_teacherTable.Size = New System.Drawing.Size(1009, 454)
-        Me.dgv_teacherTable.TabIndex = 3
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "ID"
-        Me.Column1.MinimumWidth = 50
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 53
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Teacher ID"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 108
-        '
-        'Column3
-        '
-        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column3.HeaderText = "Fullname"
-        Me.Column3.MinimumWidth = 100
-        Me.Column3.Name = "Column3"
-        '
-        'Column7
-        '
-        Me.Column7.HeaderText = "Birthdate"
-        Me.Column7.MinimumWidth = 150
-        Me.Column7.Name = "Column7"
-        Me.Column7.Width = 150
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Gender"
-        Me.Column4.MinimumWidth = 100
-        Me.Column4.Name = "Column4"
-        Me.Column4.Width = 125
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Mobile Number"
-        Me.Column5.MinimumWidth = 150
-        Me.Column5.Name = "Column5"
-        Me.Column5.Width = 150
-        '
-        'Column6
-        '
-        Me.Column6.HeaderText = "Email Address"
-        Me.Column6.MinimumWidth = 150
-        Me.Column6.Name = "Column6"
-        Me.Column6.Width = 150
-        '
-        'Column8
-        '
-        Me.Column8.HeaderText = "Address"
-        Me.Column8.MinimumWidth = 150
-        Me.Column8.Name = "Column8"
-        Me.Column8.Width = 150
-        '
-        'Column9
-        '
-        Me.Column9.HeaderText = "teacherPhotoPath"
-        Me.Column9.Name = "Column9"
-        Me.Column9.Visible = False
         '
         'TabPage2
         '
@@ -742,6 +637,7 @@ Partial Class frm_aTeacher
         '
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.btn_remove)
         Me.Panel2.Controls.Add(Me.EcmbTgender)
         Me.Panel2.Controls.Add(Me.EdtTbirthdate)
         Me.Panel2.Controls.Add(Me.btnCancelEdit)
@@ -770,6 +666,20 @@ Partial Class frm_aTeacher
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(776, 445)
         Me.Panel2.TabIndex = 2
+        '
+        'btn_remove
+        '
+        Me.btn_remove.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btn_remove.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btn_remove.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_remove.ForeColor = System.Drawing.Color.White
+        Me.btn_remove.Location = New System.Drawing.Point(581, 394)
+        Me.btn_remove.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_remove.Name = "btn_remove"
+        Me.btn_remove.Size = New System.Drawing.Size(110, 24)
+        Me.btn_remove.TabIndex = 49
+        Me.btn_remove.Text = "Remove Teacher"
+        Me.btn_remove.UseVisualStyleBackColor = False
         '
         'EcmbTgender
         '
@@ -1031,6 +941,113 @@ Partial Class frm_aTeacher
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'dgv_teacherTable
+        '
+        Me.dgv_teacherTable.AllowUserToAddRows = False
+        Me.dgv_teacherTable.AllowUserToResizeColumns = False
+        Me.dgv_teacherTable.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.dgv_teacherTable.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgv_teacherTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.dgv_teacherTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_teacherTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgv_teacherTable.ColumnHeadersHeight = 35
+        Me.dgv_teacherTable.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column6, Me.Column5, Me.Column10, Me.Column7, Me.Column8})
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_teacherTable.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgv_teacherTable.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgv_teacherTable.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
+        Me.dgv_teacherTable.Location = New System.Drawing.Point(1, 1)
+        Me.dgv_teacherTable.Margin = New System.Windows.Forms.Padding(2)
+        Me.dgv_teacherTable.Name = "dgv_teacherTable"
+        Me.dgv_teacherTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_teacherTable.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgv_teacherTable.RowHeadersWidth = 51
+        Me.dgv_teacherTable.RowTemplate.Height = 35
+        Me.dgv_teacherTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_teacherTable.Size = New System.Drawing.Size(1009, 454)
+        Me.dgv_teacherTable.TabIndex = 6
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "ID"
+        Me.Column1.MinimumWidth = 60
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 60
+        '
+        'Column2
+        '
+        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.Column2.HeaderText = "Teacher ID"
+        Me.Column2.MinimumWidth = 100
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 125
+        '
+        'Column3
+        '
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.HeaderText = "Fullname"
+        Me.Column3.MinimumWidth = 200
+        Me.Column3.Name = "Column3"
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Birthdate"
+        Me.Column4.MinimumWidth = 100
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 125
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Gender"
+        Me.Column6.MinimumWidth = 60
+        Me.Column6.Name = "Column6"
+        Me.Column6.Width = 60
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Mobile No."
+        Me.Column5.Name = "Column5"
+        '
+        'Column10
+        '
+        Me.Column10.HeaderText = "Email Address"
+        Me.Column10.MinimumWidth = 125
+        Me.Column10.Name = "Column10"
+        Me.Column10.Width = 125
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "Address"
+        Me.Column7.MinimumWidth = 125
+        Me.Column7.Name = "Column7"
+        Me.Column7.Width = 125
+        '
+        'Column8
+        '
+        Me.Column8.HeaderText = "photoPath"
+        Me.Column8.Name = "Column8"
+        Me.Column8.Visible = False
+        '
         'frm_aTeacher
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1054,7 +1071,6 @@ Partial Class frm_aTeacher
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.pnl_Datagrid.ResumeLayout(False)
-        CType(Me.dgv_teacherTable, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.Panel12.ResumeLayout(False)
         Me.Panel12.PerformLayout()
@@ -1063,6 +1079,7 @@ Partial Class frm_aTeacher
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv_teacherTable, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1083,7 +1100,6 @@ Partial Class frm_aTeacher
     Friend WithEvents btn_search As Button
     Friend WithEvents txt_search As TextBox
     Friend WithEvents pnl_Datagrid As Panel
-    Friend WithEvents dgv_teacherTable As DataGridView
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents Panel12 As Panel
     Friend WithEvents cmbTgender As ComboBox
@@ -1135,13 +1151,15 @@ Partial Class frm_aTeacher
     Friend WithEvents Label25 As Label
     Friend WithEvents Label26 As Label
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents btn_remove As Button
+    Friend WithEvents dgv_teacherTable As DataGridView
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column10 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents Column8 As DataGridViewTextBoxColumn
-    Friend WithEvents Column9 As DataGridViewTextBoxColumn
 End Class

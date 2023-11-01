@@ -254,10 +254,10 @@ Public Class frm_aStudentsList
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
                 If dataTable.Rows.Count > 0 Then
-                    dgv_TotalStudents.RowCount = dataTable.Rows.Count + 1
+                    dgv_TotalStudents.RowCount = dataTable.Rows.Count
                     row = 0
                     While Not dataTable.Rows.Count - 1 < row
-                        dgv_TotalStudents.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
+                        dgv_TotalStudents.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id")
                         dgv_TotalStudents.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("studentid").ToString
                         dgv_TotalStudents.Rows(row).Cells(2).Value = dataTable.Rows(row).Item("lastname").ToString
                         dgv_TotalStudents.Rows(row).Cells(3).Value = dataTable.Rows(row).Item("firstname").ToString

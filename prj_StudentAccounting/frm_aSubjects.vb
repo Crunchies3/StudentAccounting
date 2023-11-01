@@ -182,11 +182,11 @@ Public Class frm_aSubjects
                 sqlDBAdapter.Fill(dataTable)
 
                 If Not dataTable.Rows.Count = 0 Then
-                    dgv_subjects.RowCount = dataTable.Rows.Count + 1
+                    dgv_subjects.RowCount = dataTable.Rows.Count
                     row = 0
 
                     While Not dataTable.Rows.Count - 1 < row
-                        dgv_subjects.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
+                        dgv_subjects.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id")
                         dgv_subjects.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("code").ToString
                         dgv_subjects.Rows(row).Cells(2).Value = dataTable.Rows(row).Item("title").ToString
                         dgv_subjects.Rows(row).Cells(3).Value = dataTable.Rows(row).Item("description").ToString

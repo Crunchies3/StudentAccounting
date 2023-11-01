@@ -39,6 +39,48 @@ Public Class frm_aTeacher
 
 
     End Sub
+    Private Sub teacherFunc(type As String)
+
+        If type = "edit" Or type = "delete" Then
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminTeacher"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", Tid)
+                .Parameters.AddWithValue("@p_teacherid", EtxtTeacherID.Text)
+                .Parameters.AddWithValue("@p_fullname", EtxtTlastname.Text & ", " & EtxtTfirstname.Text & " " & If(EtxtTmiddlename.Text.Length > 0, EtxtTmiddlename.Text.Substring(0, 1), ""))
+                .Parameters.AddWithValue("@p_gender", EcmbTgender.Text)
+                .Parameters.AddWithValue("@p_birthdate", EdtTbirthdate.Value)
+                .Parameters.AddWithValue("@p_mobileno", EtxtTmobileno.Text)
+                .Parameters.AddWithValue("@p_emailadd", EtxtTemailadd.Text)
+                .Parameters.AddWithValue("@p_address", EtxtTaddress.Text)
+                .Parameters.AddWithValue("@p_photoPath", teacherPhotoPath)
+                .Parameters.AddWithValue("@p_type", type)
+                .ExecuteNonQuery()
+
+            End With
+
+        ElseIf type = "add" Then
+
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminTeacher"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", Tid)
+                .Parameters.AddWithValue("@p_teacherid", txtTeacherID.Text)
+                .Parameters.AddWithValue("@p_fullname", txtTlastname.Text & ", " & txtTfirstname.Text & " " & If(txtTmiddlename.Text.Length > 0, txtTmiddlename.Text.Substring(0, 1), ""))
+                .Parameters.AddWithValue("@p_gender", cmbTgender.Text)
+                .Parameters.AddWithValue("@p_birthdate", dtTbirthdate.Value)
+                .Parameters.AddWithValue("@p_mobileno", txtTmobileno.Text)
+                .Parameters.AddWithValue("@p_emailadd", txtTemailadd.Text)
+                .Parameters.AddWithValue("@p_address", txtTaddress.Text)
+                .Parameters.AddWithValue("@p_photoPath", teacherPhotoPath)
+                .Parameters.AddWithValue("@p_type", type)
+                .ExecuteNonQuery()
+
+            End With
+        End If
+    End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnAddTeacher.Click
 
@@ -53,22 +95,7 @@ Public Class frm_aTeacher
         Else
             TabControl1.SelectedIndex = 0
             Try
-                With command
-                    .Parameters.Clear()
-                    .CommandText = "prcAdminAddTeacher"
-                    .CommandType = CommandType.StoredProcedure
-                    .Parameters.AddWithValue("@p_teacherid", txtTeacherID.Text)
-                    .Parameters.AddWithValue("@p_fullname", txtTlastname.Text & ", " & txtTfirstname.Text & " " & If(txtTmiddlename.Text.Length > 0, txtTmiddlename.Text.Substring(0, 1), ""))
-                    .Parameters.AddWithValue("@p_gender", cmbTgender.Text)
-                    .Parameters.AddWithValue("@p_birthdate", dtTbirthdate.Value)
-                    .Parameters.AddWithValue("@p_mobileno", txtTmobileno.Text)
-                    .Parameters.AddWithValue("@p_emailadd", txtTemailadd.Text)
-                    .Parameters.AddWithValue("@p_address", txtTaddress.Text)
-                    .Parameters.AddWithValue("@p_photoPath", teacherPhotoPath)
-
-                    .ExecuteNonQuery()
-
-                End With
+                teacherFunc("add")
                 MessageBox.Show("Teacher Successfully Added", "Add Teacher", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                 txtTeacherID.Clear()
@@ -90,9 +117,6 @@ Public Class frm_aTeacher
         End If
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        TabControl1.SelectedIndex = 0
-    End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles btnSaveEditTeacher.Click
 
@@ -107,22 +131,7 @@ Public Class frm_aTeacher
         Else
             TabControl1.SelectedIndex = 0
             Try
-                With command
-                    .Parameters.Clear()
-                    .CommandText = "prcAdminAddTeacher"
-                    .CommandType = CommandType.StoredProcedure
-                    .Parameters.AddWithValue("@p_teacherid", EtxtTeacherID.Text)
-                    .Parameters.AddWithValue("@p_fullname", EtxtTlastname.Text & ", " & EtxtTfirstname.Text & " " & If(EtxtTmiddlename.Text.Length > 0, EtxtTmiddlename.Text.Substring(0, 1), ""))
-                    .Parameters.AddWithValue("@p_gender", EcmbTgender.Text)
-                    .Parameters.AddWithValue("@p_birthdate", EdtTbirthdate.Value)
-                    .Parameters.AddWithValue("@p_mobileno", EtxtTmobileno.Text)
-                    .Parameters.AddWithValue("@p_emailadd", EtxtTemailadd.Text)
-                    .Parameters.AddWithValue("@p_address", EtxtTaddress.Text)
-                    .Parameters.AddWithValue("@p_photoPath", teacherPhotoPath)
-
-                    .ExecuteNonQuery()
-
-                End With
+                teacherFunc("edit")
                 MessageBox.Show("Teacher Details Successfully Edited", "Edit Teacher", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                 EtxtTeacherID.Clear()
@@ -161,10 +170,10 @@ Public Class frm_aTeacher
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
                 If dataTable.Rows.Count > 0 Then
-                    dgv_teacherTable.RowCount = dataTable.Rows.Count + 1
+                    dgv_teacherTable.RowCount = dataTable.Rows.Count
                     row = 0
                     While Not dataTable.Rows.Count - 1 < row
-                        dgv_teacherTable.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
+                        dgv_teacherTable.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id")
                         dgv_teacherTable.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("teacherid").ToString
                         dgv_teacherTable.Rows(row).Cells(2).Value = dataTable.Rows(row).Item("fullname").ToString
                         dgv_teacherTable.Rows(row).Cells(3).Value = Format(Convert.ToDateTime(dataTable.Rows(row).Item("birthdate").ToString), "MMM dd, yyyy")
@@ -313,6 +322,20 @@ Public Class frm_aTeacher
                     teacherPhotoPath = .FileName
                 End If
             End With
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+    End Sub
+
+    Private Sub btn_remove_Click(sender As Object, e As EventArgs) Handles btn_remove.Click
+        TabControl1.SelectedIndex = 0
+        Try
+
+            teacherFunc("delete")
+            MessageBox.Show("Teacher  Removed", "Remove Teacher", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            funcDisplayAllTeachers()
+
         Catch ex As Exception
             MessageBox.Show("" & ex.Message)
         End Try

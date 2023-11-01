@@ -102,7 +102,7 @@ Public Class frm_aDashboard_v2
                 sqlDBAdapter.Fill(dataTable)
 
                 If dataTable.Rows.Count > 0 Then
-                    dgv_enrolledStudents.RowCount = dataTable.Rows.Count + 1
+                    dgv_enrolledStudents.RowCount = dataTable.Rows.Count
                     row = 0
                     While Not dataTable.Rows.Count - 1 < row
                         dgv_enrolledStudents.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
