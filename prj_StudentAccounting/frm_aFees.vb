@@ -13,6 +13,40 @@ Public Class frm_aFees
         txt_editAmount.Text = dgv_Fees.CurrentRow.Cells(2).Value
     End Sub
 
+    Private Sub FeesFunc(type As String)
+
+        If type = "edit" Or type = "delete" Then
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminFees"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", id)
+                .Parameters.AddWithValue("@p_description", txt_editDescription.Text)
+                .Parameters.AddWithValue("@p_amount", txt_editAmount.Text)
+                .Parameters.AddWithValue("@p_type", type)
+                .ExecuteNonQuery()
+
+            End With
+
+        ElseIf type = "add" Then
+
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminFees"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", id)
+                .Parameters.AddWithValue("@p_description", txt_description.Text)
+                .Parameters.AddWithValue("@p_amount", txt_amount.Text)
+                .Parameters.AddWithValue("@p_type", type)
+                .ExecuteNonQuery()
+
+            End With
+        End If
+
+
+
+    End Sub
+
     Private Sub btnAddStudent_Click(sender As Object, e As EventArgs) Handles btnAddFees.Click
 
         If String.IsNullOrEmpty(txt_description.Text) OrElse
@@ -21,15 +55,7 @@ Public Class frm_aFees
         Else
             TabControl1.SelectedIndex = 0
             Try
-                With command
-                    .Parameters.Clear()
-                    .CommandText = "prcAdminAddFees"
-                    .CommandType = CommandType.StoredProcedure
-                    .Parameters.AddWithValue("@p_desc", txt_description.Text)
-                    .Parameters.AddWithValue("@p_amount", txt_amount.Text)
-                    .ExecuteNonQuery()
-
-                End With
+                FeesFunc("add")
                 MessageBox.Show("Fee Added", "Add Fee", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                 txt_amount.Clear()
@@ -57,17 +83,8 @@ Public Class frm_aFees
         Else
             TabControl1.SelectedIndex = 0
             Try
-                With command
-                    .Parameters.Clear()
-                    .CommandText = "prcAdminEditFees"
-                    .CommandType = CommandType.StoredProcedure
-                    .Parameters.AddWithValue("@p_id", id)
-                    .Parameters.AddWithValue("@p_desc", txt_editDescription.Text)
-                    .Parameters.AddWithValue("@p_amount", txt_editAmount.Text)
-                    .ExecuteNonQuery()
-
-                End With
-                MessageBox.Show("Fee Added", "Add Fee", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                FeesFunc("edit")
+                MessageBox.Show("Fee Edited", "Edit Fee", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                 txt_amount.Clear()
                 txt_description.Clear()
@@ -106,11 +123,11 @@ Public Class frm_aFees
                 sqlDBAdapter.Fill(dataTable)
 
                 If Not dataTable.Rows.Count = 0 Then
-                    dgv_Fees.RowCount = dataTable.Rows.Count + 1
+                    dgv_Fees.RowCount = dataTable.Rows.Count
                     row = 0
 
                     While Not dataTable.Rows.Count - 1 < row
-                        dgv_Fees.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
+                        dgv_Fees.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id")
                         dgv_Fees.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("description").ToString
                         dgv_Fees.Rows(row).Cells(2).Value = dataTable.Rows(row).Item("amount").ToString
                         row = row + 1
@@ -123,5 +140,106 @@ Public Class frm_aFees
             MessageBox.Show("" & ex.Message)
         End Try
 
+    End Sub
+
+    Private Sub btn_search_Click(sender As Object, e As EventArgs) Handles btn_search.Click
+        sqlDBAdapter = New MySqlDataAdapter
+        dataTable = New DataTable
+        Try
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminSearchFees"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_description", txt_search.Text)
+                sqlDBAdapter.SelectCommand = command
+                dataTable.Clear()
+                sqlDBAdapter.Fill(dataTable)
+                If dataTable.Rows.Count > 0 Then
+                    dgv_Fees.RowCount = dataTable.Rows.Count
+                    row = 0
+                    While Not dataTable.Rows.Count - 1 < row
+                        dgv_Fees.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
+                        dgv_Fees.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("description").ToString
+                        dgv_Fees.Rows(row).Cells(2).Value = dataTable.Rows(row).Item("amount").ToString
+                        row = row + 1
+                    End While
+                Else
+                    txt_search.Clear()
+                    MessageBox.Show("No Available Records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+                txt_search.Clear()
+            End With
+            sqlDBAdapter.Dispose()
+            dataTable.Dispose()
+
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+    End Sub
+
+    Private Sub FeesSearchAutoComplete()
+        sqlDBAdapter = New MySqlDataAdapter
+        dataTable = New DataTable
+
+        Try
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminSearchFeesAutoComplete"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_description", txt_search.Text)
+                sqlDBAdapter.SelectCommand = command
+                dataTable.Clear()
+                sqlDBAdapter.Fill(dataTable)
+                If dataTable.Rows.Count > 0 Then
+                    dgv_Fees.RowCount = dataTable.Rows.Count
+                    row = 0
+                    While Not dataTable.Rows.Count - 1 < row
+                        dgv_Fees.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
+                        dgv_Fees.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("description").ToString
+                        dgv_Fees.Rows(row).Cells(2).Value = dataTable.Rows(row).Item("amount").ToString
+                        row = row + 1
+                    End While
+                Else
+                    txt_search.Clear()
+                    MessageBox.Show("No Available Records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+
+
+            End With
+            sqlDBAdapter.Dispose()
+            dataTable.Dispose()
+
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+
+    End Sub
+
+    Private Sub txt_search_TextChanged(sender As Object, e As EventArgs) Handles txt_search.TextChanged
+        If chk_autocomplete.Checked = True Then
+            FeesSearchAutoComplete()
+        Else
+
+        End If
+    End Sub
+
+    Private Sub btnAll_Click(sender As Object, e As EventArgs) Handles btnAll.Click
+        DisplayFees()
+    End Sub
+
+    Private Sub btn_remove_Click(sender As Object, e As EventArgs) Handles btn_remove.Click
+        TabControl1.SelectedIndex = 0
+        Try
+
+            FeesFunc("delete")
+            MessageBox.Show("Fee  Removed", "Remove Fee", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            DisplayFees()
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
     End Sub
 End Class

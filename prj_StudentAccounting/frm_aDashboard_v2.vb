@@ -102,7 +102,7 @@ Public Class frm_aDashboard_v2
                 sqlDBAdapter.Fill(dataTable)
 
                 If dataTable.Rows.Count > 0 Then
-                    dgv_enrolledStudents.RowCount = dataTable.Rows.Count + 1
+                    dgv_enrolledStudents.RowCount = dataTable.Rows.Count
                     row = 0
                     While Not dataTable.Rows.Count - 1 < row
                         dgv_enrolledStudents.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
@@ -218,7 +218,7 @@ Public Class frm_aDashboard_v2
                 .Parameters.Clear()
                 .CommandText = "prcAdminSearchDashboardAutoComplete"
                 .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@p_lastname", txt_search.Text)
+                .Parameters.AddWithValue("@p_id", txt_search.Text)
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)
@@ -268,7 +268,7 @@ Public Class frm_aDashboard_v2
                 .Parameters.Clear()
                 .CommandText = "prcAdminSearchDashboardEnrolledStudents"
                 .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@p_lastname", txt_search.Text)
+                .Parameters.AddWithValue("@p_id", txt_search.Text)
                 sqlDBAdapter.SelectCommand = command
                 dataTable.Clear()
                 sqlDBAdapter.Fill(dataTable)

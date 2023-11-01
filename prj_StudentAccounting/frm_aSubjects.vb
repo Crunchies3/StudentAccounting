@@ -182,11 +182,11 @@ Public Class frm_aSubjects
                 sqlDBAdapter.Fill(dataTable)
 
                 If Not dataTable.Rows.Count = 0 Then
-                    dgv_subjects.RowCount = dataTable.Rows.Count + 1
+                    dgv_subjects.RowCount = dataTable.Rows.Count
                     row = 0
 
                     While Not dataTable.Rows.Count - 1 < row
-                        dgv_subjects.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
+                        dgv_subjects.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id")
                         dgv_subjects.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("code").ToString
                         dgv_subjects.Rows(row).Cells(2).Value = dataTable.Rows(row).Item("title").ToString
                         dgv_subjects.Rows(row).Cells(3).Value = dataTable.Rows(row).Item("description").ToString
@@ -222,4 +222,99 @@ Public Class frm_aSubjects
         End Try
     End Sub
 
+    Private Sub btn_search_Click(sender As Object, e As EventArgs) Handles btn_search.Click
+        sqlDBAdapter = New MySqlDataAdapter
+        dataTable = New DataTable
+        Try
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminSearchSubject"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_title", txt_search.Text)
+                sqlDBAdapter.SelectCommand = command
+                dataTable.Clear()
+                sqlDBAdapter.Fill(dataTable)
+                If dataTable.Rows.Count > 0 Then
+                    dgv_subjects.RowCount = dataTable.Rows.Count
+                    row = 0
+                    While Not dataTable.Rows.Count - 1 < row
+                        dgv_subjects.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
+                        dgv_subjects.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("code").ToString
+                        dgv_subjects.Rows(row).Cells(2).Value = dataTable.Rows(row).Item("title").ToString
+                        dgv_subjects.Rows(row).Cells(3).Value = dataTable.Rows(row).Item("description").ToString
+                        dgv_subjects.Rows(row).Cells(4).Value = dataTable.Rows(row).Item("units").ToString
+                        dgv_subjects.Rows(row).Cells(5).Value = dataTable.Rows(row).Item("level").ToString
+                        dgv_subjects.Rows(row).Cells(6).Value = dataTable.Rows(row).Item("program").ToString
+                        dgv_subjects.Rows(row).Cells(7).Value = dataTable.Rows(row).Item("semester").ToString
+                        row = row + 1
+                    End While
+                Else
+                    txt_search.Clear()
+                    MessageBox.Show("No Available Records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+                txt_search.Clear()
+            End With
+            sqlDBAdapter.Dispose()
+            dataTable.Dispose()
+
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+    End Sub
+    Private Sub SubjectSearchAutoComplete()
+        sqlDBAdapter = New MySqlDataAdapter
+        dataTable = New DataTable
+
+        Try
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminSearchSubjectAutoComplete"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_title", txt_search.Text)
+                sqlDBAdapter.SelectCommand = command
+                dataTable.Clear()
+                sqlDBAdapter.Fill(dataTable)
+                If dataTable.Rows.Count > 0 Then
+                    dgv_subjects.RowCount = dataTable.Rows.Count
+                    row = 0
+                    While Not dataTable.Rows.Count - 1 < row
+                        dgv_subjects.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
+                        dgv_subjects.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("code").ToString
+                        dgv_subjects.Rows(row).Cells(2).Value = dataTable.Rows(row).Item("title").ToString
+                        dgv_subjects.Rows(row).Cells(3).Value = dataTable.Rows(row).Item("description").ToString
+                        dgv_subjects.Rows(row).Cells(4).Value = dataTable.Rows(row).Item("units").ToString
+                        dgv_subjects.Rows(row).Cells(5).Value = dataTable.Rows(row).Item("level").ToString
+                        dgv_subjects.Rows(row).Cells(6).Value = dataTable.Rows(row).Item("program").ToString
+                        dgv_subjects.Rows(row).Cells(7).Value = dataTable.Rows(row).Item("semester").ToString
+                        row = row + 1
+                    End While
+                Else
+                    txt_search.Clear()
+                    MessageBox.Show("No Available Records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+
+
+            End With
+            sqlDBAdapter.Dispose()
+            dataTable.Dispose()
+
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+
+    End Sub
+
+    Private Sub txt_search_TextChanged(sender As Object, e As EventArgs) Handles txt_search.TextChanged
+        If chk_autocomplete.Checked = True Then
+            SubjectSearchAutoComplete()
+        Else
+
+        End If
+    End Sub
+
+    Private Sub btnAll_Click(sender As Object, e As EventArgs) Handles btnAll.Click
+        DisplaySubject()
+    End Sub
 End Class
