@@ -25,6 +25,7 @@ Public Class frm_StudentDashboard
         button = 1
         responsive()
 
+
         With frm_sDashboard
             .TopLevel = False
             pnl_main.Controls.Add(frm_sDashboard)
@@ -32,7 +33,7 @@ Public Class frm_StudentDashboard
             .Show()
         End With
 
-        funcInitializeUserInfo()
+
 
 
     End Sub
@@ -126,7 +127,9 @@ Public Class frm_StudentDashboard
 
     Private Sub frm_StudentDashboard_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
 
+        funcInitializeUserInfo()
         responsive()
+
 
 
     End Sub

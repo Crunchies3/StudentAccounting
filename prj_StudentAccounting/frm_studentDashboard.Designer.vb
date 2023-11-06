@@ -39,7 +39,6 @@ Partial Class frm_StudentDashboard
         Me.pnl_menuicon = New System.Windows.Forms.Panel()
         Me.pnl_header = New System.Windows.Forms.Panel()
         Me.pnl_main = New System.Windows.Forms.Panel()
-        Me.pic_user = New System.Windows.Forms.PictureBox()
         Me.pnl_menu.SuspendLayout()
         Me.pnl_buttons.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -48,7 +47,6 @@ Partial Class frm_StudentDashboard
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnl_studentname.SuspendLayout()
-        CType(Me.pic_user, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnl_menu
@@ -214,7 +212,6 @@ Partial Class frm_StudentDashboard
         'pnl_studentname
         '
         Me.pnl_studentname.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.pnl_studentname.Controls.Add(Me.pic_user)
         Me.pnl_studentname.Controls.Add(Me.Label1)
         Me.pnl_studentname.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnl_studentname.Location = New System.Drawing.Point(0, 32)
@@ -263,16 +260,6 @@ Partial Class frm_StudentDashboard
         Me.pnl_main.Size = New System.Drawing.Size(846, 728)
         Me.pnl_main.TabIndex = 4
         '
-        'pic_user
-        '
-        Me.pic_user.Image = Global.prj_StudentAccounting.My.Resources.Resources._666007069677
-        Me.pic_user.Location = New System.Drawing.Point(38, 35)
-        Me.pic_user.Name = "pic_user"
-        Me.pic_user.Size = New System.Drawing.Size(157, 122)
-        Me.pic_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pic_user.TabIndex = 1
-        Me.pic_user.TabStop = False
-        '
         'frm_StudentDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -296,7 +283,6 @@ Partial Class frm_StudentDashboard
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnl_studentname.ResumeLayout(False)
-        CType(Me.pic_user, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -318,5 +304,4 @@ Partial Class frm_StudentDashboard
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents pic_user As PictureBox
 End Class

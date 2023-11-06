@@ -5,6 +5,8 @@ Public Class frm_sAssessment
         displayTable()
 
 
+
+
     End Sub
 
     Public Sub loadLabel()
@@ -73,6 +75,12 @@ Public Class frm_sAssessment
 
         sqlDBAdapter.Dispose()
         dataTable.Dispose()
+
+        If String.Compare(studentProgram, "BSCS") = 0 Then
+            lbl_program.Text = "Bachelor of Science in Computer Science"
+        Else
+            lbl_program.Text = "Bachelor of Science in Information Technology"
+        End If
 
     End Sub
 

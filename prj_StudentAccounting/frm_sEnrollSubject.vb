@@ -14,6 +14,7 @@ Public Class frm_sEnrollSubject
     Private Sub funcLoadLabels()
         lbl_accountNumber.Text = userID
         lbl_name.Text = studentName
+        If studentProgram Then
     End Sub
 
     Private Sub funcDisplaySubject()

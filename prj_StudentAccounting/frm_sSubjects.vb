@@ -43,6 +43,12 @@ Public Class frm_sSubjects
             MessageBox.Show("" & ex.Message)
         End Try
 
+        If String.Compare(studentProgram, "BSCS") = 0 Then
+            lbl_program.Text = "Bachelor of Science in Computer Science"
+        Else
+            lbl_program.Text = "Bachelor of Science in Information Technology"
+        End If
+
     End Sub
 
     Private Sub btn_submit_Click(sender As Object, e As EventArgs) Handles btn_submit.Click
