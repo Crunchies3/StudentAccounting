@@ -14,7 +14,21 @@ Public Class frm_sEnrollSubject
     Private Sub funcLoadLabels()
         lbl_accountNumber.Text = userID
         lbl_name.Text = studentName
-        If studentProgram Then
+        If studentYearLevel = 3 Then
+            lbl_programYear.Text = "3rd Year"
+        ElseIf studentYearLevel = 2 Then
+            lbl_programYear.Text = "2nd Year"
+        ElseIf studentYearLevel = 1 Then
+            lbl_programYear.Text = "1st Year"
+        ElseIf studentYearLevel = 4 Then
+            lbl_programYear.Text = "4th Year"
+        End If
+
+        If studentYearLevel > 1 Then
+            lvl_studentType.Text = "Old Student"
+        Else
+            lvl_studentType.Text = "New Student"
+        End If
     End Sub
 
     Private Sub funcDisplaySubject()

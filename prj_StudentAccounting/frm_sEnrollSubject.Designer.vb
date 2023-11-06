@@ -174,7 +174,7 @@ Partial Class frm_sEnrollSubject
         Me.btn_search.Name = "btn_search"
         Me.btn_search.Size = New System.Drawing.Size(81, 22)
         Me.btn_search.TabIndex = 10
-        Me.btn_search.Text = "Search"
+        Me.btn_search.Text = "Search Title"
         Me.btn_search.UseVisualStyleBackColor = False
         '
         'txt_search
