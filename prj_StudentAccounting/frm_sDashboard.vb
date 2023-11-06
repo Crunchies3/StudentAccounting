@@ -81,6 +81,13 @@ Public Class frm_sDashboard
         Catch ex As Exception
             MessageBox.Show("" & ex.Message)
         End Try
+
+        If String.Compare(studentProgram, "BSCS") = 0 Then
+            lbl_program.Text = "Bachelor of Science in Computer Science"
+        Else
+            lbl_program.Text = "Bachelor of Science in Information Technology"
+        End If
+
     End Sub
 
 
