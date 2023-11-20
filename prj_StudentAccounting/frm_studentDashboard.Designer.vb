@@ -125,7 +125,7 @@ Partial Class frm_StudentDashboard
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.prj_StudentAccounting.My.Resources.Resources.house_fill
-        Me.PictureBox1.Location = New System.Drawing.Point(35, 34)
+        Me.PictureBox1.Location = New System.Drawing.Point(35, 33)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(19, 19)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
