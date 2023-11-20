@@ -24,7 +24,7 @@ Namespace My
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Public Sub New()
             MyBase.New(Global.Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.Windows)
-            Me.IsSingleInstance = false
+            Me.IsSingleInstance = true
             Me.EnableVisualStyles = false
             Me.SaveMySettingsOnExit = true
             Me.ShutDownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses
@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.prj_StudentAccounting.frm_adminLogin
+            Me.MainForm = Global.prj_StudentAccounting.frm_loginStudent
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _

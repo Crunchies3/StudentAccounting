@@ -20,6 +20,7 @@ Module ModGlobalVariable
     Public studID As Integer
     Public userID As String
     Public studentName As String
+    Public studentLast As String
     Public studentProgram As String
     Public studentYearLevel As String
 
