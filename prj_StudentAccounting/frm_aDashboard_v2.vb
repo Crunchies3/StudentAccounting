@@ -113,7 +113,6 @@ Public Class frm_aDashboard_v2
                         dgv_enrolledStudents.Rows(row).Cells(3).Value = dataTable.Rows(row).Item("gender").ToString
                         dgv_enrolledStudents.Rows(row).Cells(4).Value = dataTable.Rows(row).Item("program").ToString
                         dgv_enrolledStudents.Rows(row).Cells(5).Value = dataTable.Rows(row).Item("yearlevel").ToString
-                        dgv_enrolledStudents.Rows(row).Cells(6).Value = dataTable.Rows(row).Item("semester").ToString
                         row = row + 1
                     End While
                 End If
