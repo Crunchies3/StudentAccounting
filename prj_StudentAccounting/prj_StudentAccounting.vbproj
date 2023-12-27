@@ -321,6 +321,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_AdminDashboard.resx">
       <DependentUpon>frm_AdminDashboard.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_adminLogin.resx">
       <DependentUpon>frm_adminLogin.vb</DependentUpon>
