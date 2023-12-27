@@ -11,6 +11,7 @@ Public Class frm_aDashboard_v2
     Dim ds2 As New DataSet()
 
     Private Sub createPrintables()
+        ds2.Tables.Clear()
         Dim dataTable As New DataTable("ReceiptPrintables")
 
         dataTable.Columns.Add("studID", GetType(String))

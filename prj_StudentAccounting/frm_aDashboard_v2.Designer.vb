@@ -119,6 +119,7 @@ Partial Class frm_aDashboard_v2
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -148,6 +149,7 @@ Partial Class frm_aDashboard_v2
         Me.Panel21.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -806,6 +808,7 @@ Partial Class frm_aDashboard_v2
         '
         'Panel12
         '
+        Me.Panel12.Controls.Add(Me.PictureBox2)
         Me.Panel12.Controls.Add(Me.Panel13)
         Me.Panel12.Controls.Add(Me.PictureBox1)
         Me.Panel12.Controls.Add(Me.txtSemester)
@@ -1319,6 +1322,16 @@ Partial Class frm_aDashboard_v2
         Me.Panel2.Size = New System.Drawing.Size(1338, 783)
         Me.Panel2.TabIndex = 5
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.prj_StudentAccounting.My.Resources.Resources.cash
+        Me.PictureBox2.Location = New System.Drawing.Point(326, 42)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(19, 19)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 45
+        Me.PictureBox2.TabStop = False
+        '
         'frm_aDashboard_v2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1378,6 +1391,7 @@ Partial Class frm_aDashboard_v2
         Me.Panel21.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1472,4 +1486,5 @@ Partial Class frm_aDashboard_v2
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column10 As DataGridViewTextBoxColumn
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
