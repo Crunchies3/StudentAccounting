@@ -4,8 +4,8 @@ Imports MySql.Data.MySqlClient
 Public Class frm_aDashboard_v2
 
     Dim access As Boolean = False
-    Dim id As Integer
-    Dim studID As String
+    Public id As Integer
+    Public studID As String
     Private Shared random As New Random()
     Dim referenceNo As Integer
     Dim ds2 As New DataSet()
@@ -52,11 +52,11 @@ Public Class frm_aDashboard_v2
         txtStudentname.Text = dgv_enrolledStudents.CurrentRow.Cells(2).Value
         txtProgram.Text = dgv_enrolledStudents.CurrentRow.Cells(4).Value
         txtYearlevel.Text = dgv_enrolledStudents.CurrentRow.Cells(5).Value
-        txtSemester.Text = dgv_enrolledStudents.CurrentRow.Cells(6).Value
+        txtSemester.Text = "1"
         PaymentTransactionsAndDisplayables()
     End Sub
 
-    Private Sub PaymentTransactionsAndDisplayables()
+    Public Sub PaymentTransactionsAndDisplayables()
         Try
             sqlDBAdapter = New MySqlDataAdapter
             dataTable = New DataTable
@@ -79,6 +79,8 @@ Public Class frm_aDashboard_v2
                         dgv_transactionHistory.Rows(row).Cells(3).Value = dataTable.Rows(row).Item("amount").ToString
                         row = row + 1
                     End While
+                Else
+                    dgv_transactionHistory.Rows.Clear()
                 End If
 
             End With
@@ -146,7 +148,6 @@ Public Class frm_aDashboard_v2
                         dgv_enrolledStudents.Rows(row).Cells(3).Value = dataTable.Rows(row).Item("gender").ToString
                         dgv_enrolledStudents.Rows(row).Cells(4).Value = dataTable.Rows(row).Item("program").ToString
                         dgv_enrolledStudents.Rows(row).Cells(5).Value = dataTable.Rows(row).Item("yearlevel").ToString
-                        dgv_enrolledStudents.Rows(row).Cells(6).Value = dataTable.Rows(row).Item("semester").ToString
                         row = row + 1
                     End While
                 End If
