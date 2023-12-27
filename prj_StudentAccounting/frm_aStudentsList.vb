@@ -435,25 +435,4 @@ Public Class frm_aStudentsList
     Private Sub TabControl1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControl1.SelectedIndexChanged
 
     End Sub
-
-    Private Sub btn_view_Click(sender As Object, e As EventArgs) Handles btn_view.Click
-        Dim refreshList As frm_aDashboard_v2 = DirectCast(Application.OpenForms("frm_aDashboard_v2"), frm_aDashboard_v2)
-        refreshList.DashboardStudentsAndDisplayables()
-
-        With frm_aDashboard_v2
-            .TopLevel = False
-            .BringToFront()
-            .Show()
-
-            .TabControl1.SelectedIndex = 1
-            .id = CInt(dgv_TotalStudents.CurrentRow.Cells(0).Value)
-            .studID = dgv_TotalStudents.CurrentRow.Cells(1).Value
-            .txtStudentid.Text = dgv_TotalStudents.CurrentRow.Cells(1).Value
-            .txtStudentname.Text = dgv_TotalStudents.CurrentRow.Cells(2).Value & ", " & dgv_TotalStudents.CurrentRow.Cells(3).Value & " " & dgv_TotalStudents.CurrentRow.Cells(4).Value
-            .txtProgram.Text = dgv_TotalStudents.CurrentRow.Cells(6).Value
-            .txtYearlevel.Text = dgv_TotalStudents.CurrentRow.Cells(7).Value
-            .txtSemester.Text = "1"
-            .PaymentTransactionsAndDisplayables()
-        End With
-    End Sub
 End Class
