@@ -24,29 +24,30 @@ Partial Class frm_StudentDashboard
     Private Sub InitializeComponent()
         Me.pnl_menu = New System.Windows.Forms.Panel()
         Me.pnl_buttons = New System.Windows.Forms.Panel()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.pnl_studentname = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.pnl_menuicon = New System.Windows.Forms.Panel()
         Me.pnl_header = New System.Windows.Forms.Panel()
         Me.pnl_main = New System.Windows.Forms.Panel()
+        Me.btn_profile = New System.Windows.Forms.Button()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pnl_menu.SuspendLayout()
         Me.pnl_buttons.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnl_studentname.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnl_menu
@@ -64,6 +65,8 @@ Partial Class frm_StudentDashboard
         'pnl_buttons
         '
         Me.pnl_buttons.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.pnl_buttons.Controls.Add(Me.PictureBox6)
+        Me.pnl_buttons.Controls.Add(Me.btn_profile)
         Me.pnl_buttons.Controls.Add(Me.PictureBox5)
         Me.pnl_buttons.Controls.Add(Me.PictureBox4)
         Me.pnl_buttons.Controls.Add(Me.PictureBox3)
@@ -80,57 +83,6 @@ Partial Class frm_StudentDashboard
         Me.pnl_buttons.Name = "pnl_buttons"
         Me.pnl_buttons.Size = New System.Drawing.Size(237, 466)
         Me.pnl_buttons.TabIndex = 3
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox5.Image = Global.prj_StudentAccounting.My.Resources.Resources.box_arrow_left
-        Me.PictureBox5.Location = New System.Drawing.Point(35, 411)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(19, 19)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 1
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.prj_StudentAccounting.My.Resources.Resources.calculator_fill
-        Me.PictureBox4.Location = New System.Drawing.Point(35, 164)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(19, 19)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 1
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.prj_StudentAccounting.My.Resources.Resources.pen_fill
-        Me.PictureBox3.Location = New System.Drawing.Point(36, 120)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(19, 19)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 1
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.prj_StudentAccounting.My.Resources.Resources.book_half
-        Me.PictureBox2.Location = New System.Drawing.Point(35, 77)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(19, 19)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.prj_StudentAccounting.My.Resources.Resources.house_fill
-        Me.PictureBox1.Location = New System.Drawing.Point(35, 34)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(19, 19)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
         '
         'Button6
         '
@@ -212,24 +164,12 @@ Partial Class frm_StudentDashboard
         'pnl_studentname
         '
         Me.pnl_studentname.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.pnl_studentname.Controls.Add(Me.Label1)
         Me.pnl_studentname.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnl_studentname.Location = New System.Drawing.Point(0, 32)
         Me.pnl_studentname.Margin = New System.Windows.Forms.Padding(2)
         Me.pnl_studentname.Name = "pnl_studentname"
         Me.pnl_studentname.Size = New System.Drawing.Size(237, 262)
         Me.pnl_studentname.TabIndex = 2
-        '
-        'Label1
-        '
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(34, 176)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(161, 64)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Cyril Charles Ojena Alvez"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'pnl_menuicon
         '
@@ -260,6 +200,84 @@ Partial Class frm_StudentDashboard
         Me.pnl_main.Size = New System.Drawing.Size(846, 728)
         Me.pnl_main.TabIndex = 4
         '
+        'btn_profile
+        '
+        Me.btn_profile.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btn_profile.FlatAppearance.BorderSize = 0
+        Me.btn_profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_profile.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_profile.ForeColor = System.Drawing.Color.White
+        Me.btn_profile.Location = New System.Drawing.Point(59, 363)
+        Me.btn_profile.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_profile.Name = "btn_profile"
+        Me.btn_profile.Size = New System.Drawing.Size(136, 32)
+        Me.btn_profile.TabIndex = 2
+        Me.btn_profile.Text = "Cyril Charles"
+        Me.btn_profile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_profile.UseVisualStyleBackColor = True
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox6.Image = Global.prj_StudentAccounting.My.Resources.Resources.person_circle
+        Me.PictureBox6.Location = New System.Drawing.Point(36, 369)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 3
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox5.Image = Global.prj_StudentAccounting.My.Resources.Resources.box_arrow_left
+        Me.PictureBox5.Location = New System.Drawing.Point(35, 411)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(19, 19)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 1
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.prj_StudentAccounting.My.Resources.Resources.calculator_fill
+        Me.PictureBox4.Location = New System.Drawing.Point(35, 164)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(19, 19)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 1
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.prj_StudentAccounting.My.Resources.Resources.pen_fill
+        Me.PictureBox3.Location = New System.Drawing.Point(36, 120)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(19, 19)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 1
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.prj_StudentAccounting.My.Resources.Resources.book_half
+        Me.PictureBox2.Location = New System.Drawing.Point(35, 77)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(19, 19)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 1
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.prj_StudentAccounting.My.Resources.Resources.house_fill
+        Me.PictureBox1.Location = New System.Drawing.Point(35, 33)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(19, 19)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
         'frm_StudentDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -277,12 +295,12 @@ Partial Class frm_StudentDashboard
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.pnl_menu.ResumeLayout(False)
         Me.pnl_buttons.ResumeLayout(False)
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnl_studentname.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -303,5 +321,6 @@ Partial Class frm_StudentDashboard
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents btn_profile As Button
+    Friend WithEvents PictureBox6 As PictureBox
 End Class

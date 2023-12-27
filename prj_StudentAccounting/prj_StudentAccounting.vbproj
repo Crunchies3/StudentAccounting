@@ -274,15 +274,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_aDashboard_v2.resx">
       <DependentUpon>frm_aDashboard_v2.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_AdminDashboard.resx">
       <DependentUpon>frm_AdminDashboard.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_adminLogin.resx">
       <DependentUpon>frm_adminLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_aFees.resx">
       <DependentUpon>frm_aFees.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_aRecords.resx">
       <DependentUpon>frm_aRecords.vb</DependentUpon>
@@ -362,7 +366,11 @@
     <None Include="Resources\666007069677.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\person-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
