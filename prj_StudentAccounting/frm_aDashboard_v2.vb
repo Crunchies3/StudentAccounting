@@ -8,6 +8,41 @@ Public Class frm_aDashboard_v2
     Public studID As String
     Private Shared random As New Random()
     Dim referenceNo As Integer
+    Dim ds2 As New DataSet()
+
+    Private Sub createPrintables()
+        Dim dataTable As New DataTable("ReceiptPrintables")
+
+        dataTable.Columns.Add("studID", GetType(String))
+        dataTable.Columns.Add("txtStudentid", GetType(String))
+        dataTable.Columns.Add("txtStudentname", GetType(String))
+        dataTable.Columns.Add("txtProgram", GetType(String))
+        dataTable.Columns.Add("txtYearlevel", GetType(String))
+        dataTable.Columns.Add("txtSemester", GetType(String))
+        dataTable.Columns.Add("txtReference", GetType(String))
+        dataTable.Columns.Add("studentbalance", GetType(String))
+        dataTable.Columns.Add("studentperexam", GetType(String))
+        dataTable.Columns.Add("transactionType", GetType(String))
+        dataTable.Columns.Add("paymentamount", GetType(String))
+
+        Dim row As DataRow = dataTable.NewRow()
+        row("studID") = studID
+        row("txtStudentid") = txtStudentid.Text
+        row("txtStudentname") = txtStudentname.Text
+        row("txtProgram") = txtProgram.Text
+        row("txtYearlevel") = txtYearlevel.Text
+        row("txtSemester") = txtSemester.Text
+        row("txtReference") = txtReferenceno.Text
+        row("studentbalance") = lbl_StudentTotalBalance.Text
+        row("studentperexam") = lbl_StudentPerExam.Text
+        row("transactionType") = cmbTransactionType.Text
+        row("paymentamount") = txtAmount.Text
+
+
+        dataTable.Rows.Add(row)
+        ds2.Tables.Add(dataTable)
+
+    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btn_viewPayment.Click
         TabControl1.SelectedIndex = 1
@@ -177,6 +212,7 @@ Public Class frm_aDashboard_v2
     End Sub
 
     Private Sub btnConfirmPayment_Click(sender As Object, e As EventArgs) Handles btnConfirmPayment.Click
+
         Try
 
             With command
@@ -208,6 +244,16 @@ Public Class frm_aDashboard_v2
         Catch ex As Exception
             MessageBox.Show("" & ex.Message)
         End Try
+
+        createPrintables()
+        ds2.WriteXmlSchema("receipt.xml")
+        Dim prntRcpts As New PrintReceipt()
+        Dim cr2 As New CrystalReport2
+        cr2.SetDataSource(ds2)
+        prntRcpts.CrystalReportViewer1.ReportSource = cr2
+        prntRcpts.CrystalReportViewer1.Refresh()
+        prntRcpts.Show()
+
     End Sub
 
     Private Sub DashboardSearchAutoComplete()
