@@ -33,8 +33,6 @@ Public Class frm_StudentDashboard
             .Show()
         End With
 
-        btn_profile.Text = studentLast
-
 
 
 
@@ -192,9 +190,6 @@ Public Class frm_StudentDashboard
                 studentYearLevel = dataTable.Rows(0).Item("yearlevel").ToString
 
             End With
-            Dim word As String() = studentName.Split(New Char() {" "c})
-            studentLast = word(0) & " " & word(1)
-            studentLast = studentLast.Substring(0, word(0).Length + 2)
 
             sqlDBAdapter.Dispose()
             dataTable.Dispose()
@@ -205,7 +200,4 @@ Public Class frm_StudentDashboard
 
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles btn_profile.Click
-
-    End Sub
 End Class
