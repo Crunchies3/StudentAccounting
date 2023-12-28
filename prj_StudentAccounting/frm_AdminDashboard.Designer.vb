@@ -29,6 +29,7 @@ Partial Class frm_AdminDashboard
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
@@ -37,6 +38,7 @@ Partial Class frm_AdminDashboard
         Me.Button7 = New System.Windows.Forms.Button()
         Me.btn_profile = New System.Windows.Forms.Button()
         Me.btn_logout = New System.Windows.Forms.Button()
+        Me.btn_admins = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -56,6 +58,7 @@ Partial Class frm_AdminDashboard
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,7 +78,7 @@ Partial Class frm_AdminDashboard
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(250, 589)
+        Me.Panel1.Size = New System.Drawing.Size(250, 697)
         Me.Panel1.TabIndex = 0
         '
         'pnl_buttons
@@ -84,6 +87,7 @@ Partial Class frm_AdminDashboard
         Me.pnl_buttons.Controls.Add(Me.PictureBox6)
         Me.pnl_buttons.Controls.Add(Me.PictureBox10)
         Me.pnl_buttons.Controls.Add(Me.PictureBox9)
+        Me.pnl_buttons.Controls.Add(Me.PictureBox11)
         Me.pnl_buttons.Controls.Add(Me.PictureBox8)
         Me.pnl_buttons.Controls.Add(Me.PictureBox5)
         Me.pnl_buttons.Controls.Add(Me.PictureBox4)
@@ -92,6 +96,7 @@ Partial Class frm_AdminDashboard
         Me.pnl_buttons.Controls.Add(Me.Button7)
         Me.pnl_buttons.Controls.Add(Me.btn_profile)
         Me.pnl_buttons.Controls.Add(Me.btn_logout)
+        Me.pnl_buttons.Controls.Add(Me.btn_admins)
         Me.pnl_buttons.Controls.Add(Me.Button6)
         Me.pnl_buttons.Controls.Add(Me.Button5)
         Me.pnl_buttons.Controls.Add(Me.Button4)
@@ -102,7 +107,7 @@ Partial Class frm_AdminDashboard
         Me.pnl_buttons.Location = New System.Drawing.Point(0, 180)
         Me.pnl_buttons.Margin = New System.Windows.Forms.Padding(2)
         Me.pnl_buttons.Name = "pnl_buttons"
-        Me.pnl_buttons.Size = New System.Drawing.Size(250, 409)
+        Me.pnl_buttons.Size = New System.Drawing.Size(250, 517)
         Me.pnl_buttons.TabIndex = 2
         '
         'PictureBox7
@@ -129,7 +134,7 @@ Partial Class frm_AdminDashboard
         '
         Me.PictureBox10.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
-        Me.PictureBox10.Location = New System.Drawing.Point(32, 345)
+        Me.PictureBox10.Location = New System.Drawing.Point(32, 453)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(19, 19)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -140,12 +145,22 @@ Partial Class frm_AdminDashboard
         '
         Me.PictureBox9.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
-        Me.PictureBox9.Location = New System.Drawing.Point(32, 307)
+        Me.PictureBox9.Location = New System.Drawing.Point(32, 415)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(19, 19)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox9.TabIndex = 2
         Me.PictureBox9.TabStop = False
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
+        Me.PictureBox11.Location = New System.Drawing.Point(32, 284)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox11.TabIndex = 2
+        Me.PictureBox11.TabStop = False
         '
         'PictureBox8
         '
@@ -219,7 +234,7 @@ Partial Class frm_AdminDashboard
         Me.btn_profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_profile.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_profile.ForeColor = System.Drawing.Color.White
-        Me.btn_profile.Location = New System.Drawing.Point(56, 302)
+        Me.btn_profile.Location = New System.Drawing.Point(56, 410)
         Me.btn_profile.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_profile.Name = "btn_profile"
         Me.btn_profile.Size = New System.Drawing.Size(136, 29)
@@ -235,7 +250,7 @@ Partial Class frm_AdminDashboard
         Me.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_logout.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_logout.ForeColor = System.Drawing.Color.White
-        Me.btn_logout.Location = New System.Drawing.Point(56, 340)
+        Me.btn_logout.Location = New System.Drawing.Point(56, 448)
         Me.btn_logout.Margin = New System.Windows.Forms.Padding(2)
         Me.btn_logout.Name = "btn_logout"
         Me.btn_logout.Size = New System.Drawing.Size(136, 29)
@@ -243,6 +258,21 @@ Partial Class frm_AdminDashboard
         Me.btn_logout.Text = "Logout"
         Me.btn_logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btn_logout.UseVisualStyleBackColor = True
+        '
+        'btn_admins
+        '
+        Me.btn_admins.FlatAppearance.BorderSize = 0
+        Me.btn_admins.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_admins.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_admins.ForeColor = System.Drawing.Color.White
+        Me.btn_admins.Location = New System.Drawing.Point(56, 280)
+        Me.btn_admins.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_admins.Name = "btn_admins"
+        Me.btn_admins.Size = New System.Drawing.Size(136, 25)
+        Me.btn_admins.TabIndex = 1
+        Me.btn_admins.Text = "Administrators"
+        Me.btn_admins.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_admins.UseVisualStyleBackColor = True
         '
         'Button6
         '
@@ -404,14 +434,14 @@ Partial Class frm_AdminDashboard
         Me.pnl_main.Location = New System.Drawing.Point(250, 43)
         Me.pnl_main.Margin = New System.Windows.Forms.Padding(2)
         Me.pnl_main.Name = "pnl_main"
-        Me.pnl_main.Size = New System.Drawing.Size(747, 546)
+        Me.pnl_main.Size = New System.Drawing.Size(747, 654)
         Me.pnl_main.TabIndex = 2
         '
         'frm_AdminDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(997, 589)
+        Me.ClientSize = New System.Drawing.Size(997, 697)
         Me.Controls.Add(Me.pnl_main)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
@@ -426,6 +456,7 @@ Partial Class frm_AdminDashboard
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -465,4 +496,6 @@ Partial Class frm_AdminDashboard
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents btn_admins As Button
 End Class
