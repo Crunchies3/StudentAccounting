@@ -37,6 +37,7 @@ Partial Class frm_aStudentsList
         Me.Label8 = New System.Windows.Forms.Label()
         Me.btnAll = New System.Windows.Forms.Button()
         Me.chk_autocomplete = New System.Windows.Forms.CheckBox()
+        Me.btn_view = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btn_search = New System.Windows.Forms.Button()
@@ -116,7 +117,6 @@ Partial Class frm_aStudentsList
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.btn_view = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -266,6 +266,20 @@ Partial Class frm_aStudentsList
         Me.chk_autocomplete.TabIndex = 15
         Me.chk_autocomplete.Text = "Auto Complete"
         Me.chk_autocomplete.UseVisualStyleBackColor = True
+        '
+        'btn_view
+        '
+        Me.btn_view.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btn_view.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.btn_view.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_view.ForeColor = System.Drawing.Color.White
+        Me.btn_view.Location = New System.Drawing.Point(372, 608)
+        Me.btn_view.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_view.Name = "btn_view"
+        Me.btn_view.Size = New System.Drawing.Size(110, 24)
+        Me.btn_view.TabIndex = 14
+        Me.btn_view.Text = "View Payment"
+        Me.btn_view.UseVisualStyleBackColor = False
         '
         'Button8
         '
@@ -1181,20 +1195,6 @@ Partial Class frm_aStudentsList
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
-        'btn_view
-        '
-        Me.btn_view.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btn_view.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.btn_view.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_view.ForeColor = System.Drawing.Color.White
-        Me.btn_view.Location = New System.Drawing.Point(372, 608)
-        Me.btn_view.Margin = New System.Windows.Forms.Padding(2)
-        Me.btn_view.Name = "btn_view"
-        Me.btn_view.Size = New System.Drawing.Size(110, 24)
-        Me.btn_view.TabIndex = 14
-        Me.btn_view.Text = "View Payment"
-        Me.btn_view.UseVisualStyleBackColor = False
         '
         'frm_aStudentsList
         '

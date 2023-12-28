@@ -22,12 +22,12 @@ Partial Class frm_aUserAcounts
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -40,10 +40,10 @@ Partial Class frm_aUserAcounts
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btn_searchAll_admin = New System.Windows.Forms.Button()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.chk_autoCompletead = New System.Windows.Forms.CheckBox()
         Me.btn_changepass_admin = New System.Windows.Forms.Button()
         Me.btn_search_admin = New System.Windows.Forms.Button()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txt_search2 = New System.Windows.Forms.TextBox()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.dgv_adminAccount = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -51,10 +51,10 @@ Partial Class frm_aUserAcounts
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btn_searchAll_stud = New System.Windows.Forms.Button()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.chk_autoCompletestud = New System.Windows.Forms.CheckBox()
         Me.btn_changePass_student = New System.Windows.Forms.Button()
         Me.btn_search_stud = New System.Windows.Forms.Button()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txt_search = New System.Windows.Forms.TextBox()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.dgv_studentAccount = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -193,10 +193,10 @@ Partial Class frm_aUserAcounts
         '
         Me.Panel11.Controls.Add(Me.Label7)
         Me.Panel11.Controls.Add(Me.btn_searchAll_admin)
-        Me.Panel11.Controls.Add(Me.CheckBox3)
+        Me.Panel11.Controls.Add(Me.chk_autoCompletead)
         Me.Panel11.Controls.Add(Me.btn_changepass_admin)
         Me.Panel11.Controls.Add(Me.btn_search_admin)
-        Me.Panel11.Controls.Add(Me.TextBox3)
+        Me.Panel11.Controls.Add(Me.txt_search2)
         Me.Panel11.Controls.Add(Me.Panel12)
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel11.Location = New System.Drawing.Point(637, 2)
@@ -230,17 +230,17 @@ Partial Class frm_aUserAcounts
         Me.btn_searchAll_admin.Text = "All"
         Me.btn_searchAll_admin.UseVisualStyleBackColor = False
         '
-        'CheckBox3
+        'chk_autoCompletead
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox3.Location = New System.Drawing.Point(59, 106)
-        Me.CheckBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(100, 17)
-        Me.CheckBox3.TabIndex = 15
-        Me.CheckBox3.Text = "Auto Complete"
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.chk_autoCompletead.AutoSize = True
+        Me.chk_autoCompletead.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.chk_autoCompletead.Location = New System.Drawing.Point(59, 106)
+        Me.chk_autoCompletead.Margin = New System.Windows.Forms.Padding(2)
+        Me.chk_autoCompletead.Name = "chk_autoCompletead"
+        Me.chk_autoCompletead.Size = New System.Drawing.Size(100, 17)
+        Me.chk_autoCompletead.TabIndex = 15
+        Me.chk_autoCompletead.Text = "Auto Complete"
+        Me.chk_autoCompletead.UseVisualStyleBackColor = True
         '
         'btn_changepass_admin
         '
@@ -269,16 +269,16 @@ Partial Class frm_aUserAcounts
         Me.btn_search_admin.Text = "Search ID"
         Me.btn_search_admin.UseVisualStyleBackColor = False
         '
-        'TextBox3
+        'txt_search2
         '
-        Me.TextBox3.BackColor = System.Drawing.Color.White
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.TextBox3.Location = New System.Drawing.Point(59, 80)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(153, 21)
-        Me.TextBox3.TabIndex = 13
+        Me.txt_search2.BackColor = System.Drawing.Color.White
+        Me.txt_search2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_search2.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txt_search2.Location = New System.Drawing.Point(59, 80)
+        Me.txt_search2.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_search2.Name = "txt_search2"
+        Me.txt_search2.Size = New System.Drawing.Size(153, 21)
+        Me.txt_search2.TabIndex = 13
         '
         'Panel12
         '
@@ -301,38 +301,38 @@ Partial Class frm_aUserAcounts
         Me.dgv_adminAccount.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgv_adminAccount.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.dgv_adminAccount.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_adminAccount.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_adminAccount.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
         Me.dgv_adminAccount.ColumnHeadersHeight = 35
         Me.dgv_adminAccount.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_adminAccount.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_adminAccount.DefaultCellStyle = DataGridViewCellStyle14
         Me.dgv_adminAccount.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_adminAccount.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgv_adminAccount.Location = New System.Drawing.Point(1, 1)
         Me.dgv_adminAccount.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv_adminAccount.Name = "dgv_adminAccount"
         Me.dgv_adminAccount.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_adminAccount.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_adminAccount.RowHeadersDefaultCellStyle = DataGridViewCellStyle15
         Me.dgv_adminAccount.RowHeadersWidth = 51
         Me.dgv_adminAccount.RowTemplate.Height = 35
         Me.dgv_adminAccount.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -358,10 +358,10 @@ Partial Class frm_aUserAcounts
         '
         Me.Panel9.Controls.Add(Me.Label6)
         Me.Panel9.Controls.Add(Me.btn_searchAll_stud)
-        Me.Panel9.Controls.Add(Me.CheckBox2)
+        Me.Panel9.Controls.Add(Me.chk_autoCompletestud)
         Me.Panel9.Controls.Add(Me.btn_changePass_student)
         Me.Panel9.Controls.Add(Me.btn_search_stud)
-        Me.Panel9.Controls.Add(Me.TextBox2)
+        Me.Panel9.Controls.Add(Me.txt_search)
         Me.Panel9.Controls.Add(Me.Panel10)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel9.Location = New System.Drawing.Point(2, 2)
@@ -395,17 +395,17 @@ Partial Class frm_aUserAcounts
         Me.btn_searchAll_stud.Text = "All"
         Me.btn_searchAll_stud.UseVisualStyleBackColor = False
         '
-        'CheckBox2
+        'chk_autoCompletestud
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox2.Location = New System.Drawing.Point(199, 106)
-        Me.CheckBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(100, 17)
-        Me.CheckBox2.TabIndex = 15
-        Me.CheckBox2.Text = "Auto Complete"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.chk_autoCompletestud.AutoSize = True
+        Me.chk_autoCompletestud.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.chk_autoCompletestud.Location = New System.Drawing.Point(199, 106)
+        Me.chk_autoCompletestud.Margin = New System.Windows.Forms.Padding(2)
+        Me.chk_autoCompletestud.Name = "chk_autoCompletestud"
+        Me.chk_autoCompletestud.Size = New System.Drawing.Size(100, 17)
+        Me.chk_autoCompletestud.TabIndex = 15
+        Me.chk_autoCompletestud.Text = "Auto Complete"
+        Me.chk_autoCompletestud.UseVisualStyleBackColor = True
         '
         'btn_changePass_student
         '
@@ -434,16 +434,16 @@ Partial Class frm_aUserAcounts
         Me.btn_search_stud.Text = "Search ID"
         Me.btn_search_stud.UseVisualStyleBackColor = False
         '
-        'TextBox2
+        'txt_search
         '
-        Me.TextBox2.BackColor = System.Drawing.Color.White
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.TextBox2.Location = New System.Drawing.Point(199, 80)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(153, 21)
-        Me.TextBox2.TabIndex = 13
+        Me.txt_search.BackColor = System.Drawing.Color.White
+        Me.txt_search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_search.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.txt_search.Location = New System.Drawing.Point(199, 80)
+        Me.txt_search.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_search.Name = "txt_search"
+        Me.txt_search.Size = New System.Drawing.Size(153, 21)
+        Me.txt_search.TabIndex = 13
         '
         'Panel10
         '
@@ -466,38 +466,38 @@ Partial Class frm_aUserAcounts
         Me.dgv_studentAccount.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgv_studentAccount.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.dgv_studentAccount.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_studentAccount.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
+        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_studentAccount.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle16
         Me.dgv_studentAccount.ColumnHeadersHeight = 35
         Me.dgv_studentAccount.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_studentAccount.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle17.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(132, Byte), Integer))
+        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_studentAccount.DefaultCellStyle = DataGridViewCellStyle17
         Me.dgv_studentAccount.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_studentAccount.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgv_studentAccount.Location = New System.Drawing.Point(1, 1)
         Me.dgv_studentAccount.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv_studentAccount.Name = "dgv_studentAccount"
         Me.dgv_studentAccount.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_studentAccount.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle18.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_studentAccount.RowHeadersDefaultCellStyle = DataGridViewCellStyle18
         Me.dgv_studentAccount.RowHeadersWidth = 51
         Me.dgv_studentAccount.RowTemplate.Height = 35
         Me.dgv_studentAccount.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -700,19 +700,19 @@ Partial Class frm_aUserAcounts
     Friend WithEvents Panel11 As Panel
     Friend WithEvents Label7 As Label
     Friend WithEvents btn_searchAll_admin As Button
-    Friend WithEvents CheckBox3 As CheckBox
+    Friend WithEvents chk_autoCompletead As CheckBox
     Friend WithEvents btn_changepass_admin As Button
     Friend WithEvents btn_search_admin As Button
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txt_search2 As TextBox
     Friend WithEvents Panel12 As Panel
     Friend WithEvents dgv_adminAccount As DataGridView
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Label6 As Label
     Friend WithEvents btn_searchAll_stud As Button
-    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents chk_autoCompletestud As CheckBox
     Friend WithEvents btn_changePass_student As Button
     Friend WithEvents btn_search_stud As Button
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txt_search As TextBox
     Friend WithEvents Panel10 As Panel
     Friend WithEvents dgv_studentAccount As DataGridView
     Friend WithEvents TabPage3 As TabPage

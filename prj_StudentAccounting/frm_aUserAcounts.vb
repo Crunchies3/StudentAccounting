@@ -135,4 +135,175 @@ Public Class frm_aUserAcounts
         txt_id.Text = dgv_adminAccount.CurrentRow.Cells(1).Value
         who = "admin"
     End Sub
+
+    Private Sub btn_search_stud_Click(sender As Object, e As EventArgs) Handles btn_search_stud.Click
+        sqlDBAdapter = New MySqlDataAdapter
+        dataTable = New DataTable
+        Try
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminSearchUserAccounts"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", txt_search.Text)
+                .Parameters.AddWithValue("@p_type", "studAll")
+                sqlDBAdapter.SelectCommand = command
+                dataTable.Clear()
+                sqlDBAdapter.Fill(dataTable)
+                If dataTable.Rows.Count > 0 Then
+                    dgv_studentAccount.RowCount = dataTable.Rows.Count
+                    row = 0
+                    While Not dataTable.Rows.Count - 1 < row
+                        dgv_studentAccount.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
+                        dgv_studentAccount.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("studentid").ToString
+                        row = row + 1
+                    End While
+                Else
+                    txt_search.Clear()
+                    MessageBox.Show("No Available Records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+                txt_search.Clear()
+            End With
+            sqlDBAdapter.Dispose()
+            dataTable.Dispose()
+
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+    End Sub
+
+    Private Sub btn_search_admin_Click(sender As Object, e As EventArgs) Handles btn_search_admin.Click
+        sqlDBAdapter = New MySqlDataAdapter
+        dataTable = New DataTable
+        Try
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminSearchUserAccounts"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", txt_search2.Text)
+                .Parameters.AddWithValue("@p_type", "adAll")
+                sqlDBAdapter.SelectCommand = command
+                dataTable.Clear()
+                sqlDBAdapter.Fill(dataTable)
+                If dataTable.Rows.Count > 0 Then
+                    dgv_adminAccount.RowCount = dataTable.Rows.Count
+                    row = 0
+                    While Not dataTable.Rows.Count - 1 < row
+                        dgv_adminAccount.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
+                        dgv_adminAccount.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("adminid").ToString
+                        row = row + 1
+                    End While
+                Else
+                    txt_search.Clear()
+                    MessageBox.Show("No Available Records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+                txt_search.Clear()
+            End With
+            sqlDBAdapter.Dispose()
+            dataTable.Dispose()
+
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+    End Sub
+    Private Sub studSearchAutoComplete()
+        sqlDBAdapter = New MySqlDataAdapter
+        dataTable = New DataTable
+
+        Try
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminSearchUserAccounts"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", txt_search.Text)
+                .Parameters.AddWithValue("@p_type", "studAuto")
+                sqlDBAdapter.SelectCommand = command
+                dataTable.Clear()
+                sqlDBAdapter.Fill(dataTable)
+                If dataTable.Rows.Count > 0 Then
+                    dgv_studentAccount.RowCount = dataTable.Rows.Count
+                    row = 0
+                    While Not dataTable.Rows.Count - 1 < row
+                        dgv_studentAccount.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
+                        dgv_studentAccount.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("studentid").ToString
+                        row = row + 1
+                    End While
+                Else
+                    txt_search.Clear()
+                    MessageBox.Show("No Available Records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+
+
+            End With
+            sqlDBAdapter.Dispose()
+            dataTable.Dispose()
+
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+    End Sub
+
+    Private Sub adSearchAutoComplete()
+        sqlDBAdapter = New MySqlDataAdapter
+        dataTable = New DataTable
+
+        Try
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminSearchUserAccounts"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", txt_search2.Text)
+                .Parameters.AddWithValue("@p_type", "adAuto")
+                sqlDBAdapter.SelectCommand = command
+                dataTable.Clear()
+                sqlDBAdapter.Fill(dataTable)
+                If dataTable.Rows.Count > 0 Then
+                    dgv_adminAccount.RowCount = dataTable.Rows.Count
+                    row = 0
+                    While Not dataTable.Rows.Count - 1 < row
+                        dgv_adminAccount.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
+                        dgv_adminAccount.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("adminid").ToString
+                        row = row + 1
+                    End While
+                Else
+                    txt_search.Clear()
+                    MessageBox.Show("No Available Records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+
+
+            End With
+            sqlDBAdapter.Dispose()
+            dataTable.Dispose()
+
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+    End Sub
+
+    Private Sub txt_search_TextChanged(sender As Object, e As EventArgs) Handles txt_search.TextChanged
+        If chk_autoCompletestud.Checked = True Then
+            studSearchAutoComplete()
+        Else
+
+        End If
+    End Sub
+
+    Private Sub txt_search2_TextChanged(sender As Object, e As EventArgs) Handles txt_search2.TextChanged
+        If chk_autoCompletead.Checked = True Then
+            adSearchAutoComplete()
+        Else
+
+        End If
+    End Sub
+
+    Private Sub btn_searchAll_stud_Click(sender As Object, e As EventArgs) Handles btn_searchAll_stud.Click
+        funcDisplayAllStudentsAccount()
+    End Sub
+
+    Private Sub btn_searchAll_admin_Click(sender As Object, e As EventArgs) Handles btn_searchAll_admin.Click
+        funcDisplayAllAdminAccount()
+    End Sub
 End Class
