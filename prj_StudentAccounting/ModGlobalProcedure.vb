@@ -8,7 +8,7 @@ Module ModGlobalProcedure
             server_name = "localhost"
             DB_name = "db_studentaccountingmanagement"
             DB_user = "root"
-            DB_pass = "cyril2003"
+            DB_pass = "root"
             port = "3306"
 
 

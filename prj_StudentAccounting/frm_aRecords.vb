@@ -57,6 +57,7 @@ Public Class frm_aRecords
     End Sub
 
     Private Sub btnAll_Click(sender As Object, e As EventArgs) Handles btnAll.Click
+        ds.Tables.Clear()
         displayStudentInfo()
         displayStudentSubject()
         displayStudentAssessment()
@@ -219,14 +220,18 @@ Public Class frm_aRecords
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Try
+            ds.WriteXmlSchema("print.xml")
+            Dim prntfrm As New PrintForm
+            Dim cr As New CrystalReport1
+            cr.SetDataSource(ds)
 
-
-        ds.WriteXmlSchema("print.xml")
-        Dim prntfrm As New PrintForm
-        Dim cr As New CrystalReport1
-        cr.SetDataSource(ds)
-        prntfrm.CrystalReportViewer1.ReportSource = cr
-        prntfrm.CrystalReportViewer1.Refresh()
-        prntfrm.Show()
+            ' Set the report source after setting the new dataset
+            prntfrm.CrystalReportViewer1.ReportSource = cr
+            prntfrm.CrystalReportViewer1.Refresh()
+            prntfrm.Show()
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
     End Sub
 End Class
