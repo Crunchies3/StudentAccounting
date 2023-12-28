@@ -116,12 +116,12 @@ Partial Class frm_adminLogin
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(570, 99)
+        Me.Label3.Location = New System.Drawing.Point(580, 100)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(186, 32)
+        Me.Label3.Size = New System.Drawing.Size(161, 32)
         Me.Label3.TabIndex = 11
-        Me.Label3.Text = "Administration"
+        Me.Label3.Text = "Admin Login"
         '
         'frm_adminLogin
         '
