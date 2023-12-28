@@ -80,6 +80,7 @@ Partial Class frm_aDashboard_v2
         Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel13 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel14 = New System.Windows.Forms.Panel()
@@ -119,7 +120,9 @@ Partial Class frm_aDashboard_v2
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -138,6 +141,7 @@ Partial Class frm_aDashboard_v2
         Me.Panel18.SuspendLayout()
         CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel12.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel13.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel14.SuspendLayout()
@@ -149,7 +153,9 @@ Partial Class frm_aDashboard_v2
         Me.Panel21.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -419,6 +425,8 @@ Partial Class frm_aDashboard_v2
         '
         'Panel11
         '
+        Me.Panel11.Controls.Add(Me.PictureBox5)
+        Me.Panel11.Controls.Add(Me.PictureBox4)
         Me.Panel11.Controls.Add(Me.Label11)
         Me.Panel11.Controls.Add(Me.Label8)
         Me.Panel11.Controls.Add(Me.TableLayoutPanel2)
@@ -669,6 +677,7 @@ Partial Class frm_aDashboard_v2
         '
         'Panel17
         '
+        Me.Panel17.Controls.Add(Me.PictureBox3)
         Me.Panel17.Controls.Add(Me.Button2)
         Me.Panel17.Controls.Add(Me.btnConfirmPayment)
         Me.Panel17.Controls.Add(Me.Panel18)
@@ -828,6 +837,16 @@ Partial Class frm_aDashboard_v2
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(1271, 236)
         Me.Panel12.TabIndex = 1
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.prj_StudentAccounting.My.Resources.Resources.cash
+        Me.PictureBox2.Location = New System.Drawing.Point(326, 42)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(19, 19)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 45
+        Me.PictureBox2.TabStop = False
         '
         'Panel13
         '
@@ -1322,15 +1341,35 @@ Partial Class frm_aDashboard_v2
         Me.Panel2.Size = New System.Drawing.Size(1338, 783)
         Me.Panel2.TabIndex = 5
         '
-        'PictureBox2
+        'PictureBox3
         '
-        Me.PictureBox2.Image = Global.prj_StudentAccounting.My.Resources.Resources.cash
-        Me.PictureBox2.Location = New System.Drawing.Point(326, 42)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(19, 19)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 45
-        Me.PictureBox2.TabStop = False
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(313, 20)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(19, 19)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 46
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(243, 42)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(19, 19)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 46
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(441, 212)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(19, 19)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 47
+        Me.PictureBox5.TabStop = False
         '
         'frm_aDashboard_v2
         '
@@ -1375,6 +1414,7 @@ Partial Class frm_aDashboard_v2
         CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel12.ResumeLayout(False)
         Me.Panel12.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel13.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.Panel14.ResumeLayout(False)
@@ -1391,7 +1431,9 @@ Partial Class frm_aDashboard_v2
         Me.Panel21.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1487,4 +1529,7 @@ Partial Class frm_aDashboard_v2
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column10 As DataGridViewTextBoxColumn
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents PictureBox5 As PictureBox
 End Class
