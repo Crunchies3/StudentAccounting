@@ -52,6 +52,10 @@ Public Class frm_AdminDashboard
                 frm_aUserAcounts.Size = pnl_main.Size
                 frm_aUserAcounts.Show()
                 frm_aUserAcounts.Location = New Point(0, 0)
+            Case 8
+                frm_aAdministrators.Size = pnl_main.Size
+                frm_aAdministrators.Show()
+                frm_aAdministrators.Location = New Point(0, 0)
 
 
         End Select
@@ -195,5 +199,19 @@ Public Class frm_AdminDashboard
             .Show()
             .TabControl1.SelectedIndex = 0
         End With
+    End Sub
+
+    Private Sub btn_admins_Click(sender As Object, e As EventArgs) Handles btn_admins.Click
+        button = 8
+        responsive()
+
+        With frm_aAdministrators
+            .TopLevel = False
+            pnl_main.Controls.Add(frm_aAdministrators)
+            .BringToFront()
+            .Show()
+            .TabControl1.SelectedIndex = 0
+        End With
+
     End Sub
 End Class
