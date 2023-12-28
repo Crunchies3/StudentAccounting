@@ -25,6 +25,7 @@ Module ModGlobalVariable
 
     'Admin details'
     Public adminUserID As String
+    Public adminName As String
 
     Public ds As New DataSet
 

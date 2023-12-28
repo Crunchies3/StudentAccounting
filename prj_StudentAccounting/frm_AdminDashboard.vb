@@ -1,4 +1,6 @@
-﻿Public Class frm_AdminDashboard
+﻿Imports MySql.Data.MySqlClient
+
+Public Class frm_AdminDashboard
 
     Dim button As Integer = 1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -46,6 +48,10 @@
                 frm_aRecords.Size = pnl_main.Size
                 frm_aRecords.Location = New Point(0, 0)
                 frm_aRecords.Show()
+            Case 7
+                frm_aUserAcounts.Size = pnl_main.Size
+                frm_aUserAcounts.Show()
+                frm_aUserAcounts.Location = New Point(0, 0)
 
 
         End Select
@@ -63,9 +69,43 @@
             .Show()
         End With
 
+        funcInitAdminDetail()
+
     End Sub
 
+    Private Sub funcInitAdminDetail()
+        Try
+            sqlDBAdapter = New MySqlDataAdapter
+            dataTable = New DataTable
+
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminGetDetails"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", adminUserID)
+                sqlDBAdapter.SelectCommand = command
+                dataTable.Clear()
+                sqlDBAdapter.Fill(dataTable)
+
+                adminName = dataTable.Rows(0).Item("fullname").ToString
+            End With
+
+            Dim word As String() = adminName.Split(New Char() {" "c})
+            Dim adminLast = word(0) & " " & word(1) 
+            adminLast = adminLast.Substring(0, word(0).Length + 2)
+
+            sqlDBAdapter.Dispose()
+            dataTable.Dispose()
+
+
+            btn_profile.Text = adminLast & "."
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+    End Sub
     Private Sub frm_AdminDashboard_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        funcInitAdminDetail()
         responsive()
     End Sub
 
@@ -136,6 +176,24 @@
             .frm_load()
             .BringToFront()
             .Show()
+        End With
+    End Sub
+
+    Private Sub btn_logout_Click(sender As Object, e As EventArgs) Handles btn_logout.Click
+        frm_adminLogin.Show()
+        Me.Dispose()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        button = 7
+        responsive()
+
+        With frm_aUserAcounts
+            .TopLevel = False
+            pnl_main.Controls.Add(frm_aUserAcounts)
+            .BringToFront()
+            .Show()
+            .TabControl1.SelectedIndex = 0
         End With
     End Sub
 End Class
