@@ -86,6 +86,9 @@ Public Class frm_aRecords
 
             totalUnits = dataTableAssessment.Rows(0).Item("totalunits")
 
+            If totalUnits = 0 Then
+                Return
+            End If
 
             .Parameters.Clear()
             .CommandText = "prcDisplayStudentAssessment"
@@ -202,6 +205,8 @@ Public Class frm_aRecords
                 txt_year.Text = datatableinfo.Rows(0).Item("yearlevel").ToString
                 txt_program.Text = datatableinfo.Rows(0).Item("program").ToString
                 txt_status.Text = datatableinfo.Rows(0).Item("status").ToString
+
+                Label3.Text = "Student ID: " & datatableinfo.Rows(0).Item("studentid").ToString
             End With
             ds.Tables.Add(datatableinfo)
             sqlDBAdapter.Dispose()
