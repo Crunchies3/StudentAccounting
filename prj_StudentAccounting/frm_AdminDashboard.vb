@@ -50,8 +50,8 @@ Public Class frm_AdminDashboard
                 frm_aRecords.Show()
             Case 7
                 frm_aUserAcounts.Size = pnl_main.Size
-                frm_aUserAcounts.Location = New Point(0, 0)
                 frm_aUserAcounts.Show()
+                frm_aUserAcounts.Location = New Point(0, 0)
 
 
         End Select
@@ -193,6 +193,7 @@ Public Class frm_AdminDashboard
             pnl_main.Controls.Add(frm_aUserAcounts)
             .BringToFront()
             .Show()
+            .TabControl1.SelectedIndex = 0
         End With
     End Sub
 End Class
