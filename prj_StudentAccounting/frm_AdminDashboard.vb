@@ -1,4 +1,6 @@
-﻿Public Class frm_AdminDashboard
+﻿Imports MySql.Data.MySqlClient
+
+Public Class frm_AdminDashboard
 
     Dim button As Integer = 1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -63,9 +65,43 @@
             .Show()
         End With
 
+        funcInitAdminDetail()
+
     End Sub
 
+    Private Sub funcInitAdminDetail()
+        Try
+            sqlDBAdapter = New MySqlDataAdapter
+            dataTable = New DataTable
+
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminGetDetails"
+                .CommandType = CommandType.StoredProcedure
+                .Parameters.AddWithValue("@p_id", adminUserID)
+                sqlDBAdapter.SelectCommand = command
+                dataTable.Clear()
+                sqlDBAdapter.Fill(dataTable)
+
+                adminName = dataTable.Rows(0).Item("fullname").ToString
+            End With
+
+            Dim word As String() = adminName.Split(New Char() {" "c})
+            Dim adminLast = word(0) & " " & word(1) 
+            adminLast = adminLast.Substring(0, word(0).Length + 2)
+
+            sqlDBAdapter.Dispose()
+            dataTable.Dispose()
+
+
+            btn_profile.Text = adminLast & "."
+
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+    End Sub
     Private Sub frm_AdminDashboard_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        funcInitAdminDetail()
         responsive()
     End Sub
 
@@ -137,5 +173,10 @@
             .BringToFront()
             .Show()
         End With
+    End Sub
+
+    Private Sub btn_logout_Click(sender As Object, e As EventArgs) Handles btn_logout.Click
+        frm_adminLogin.Show()
+        Me.Dispose()
     End Sub
 End Class

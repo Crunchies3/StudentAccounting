@@ -35,7 +35,7 @@ Partial Class frm_AdminDashboard
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
+        Me.btn_profile = New System.Windows.Forms.Button()
         Me.btn_logout = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -90,7 +90,7 @@ Partial Class frm_AdminDashboard
         Me.pnl_buttons.Controls.Add(Me.PictureBox3)
         Me.pnl_buttons.Controls.Add(Me.PictureBox2)
         Me.pnl_buttons.Controls.Add(Me.Button7)
-        Me.pnl_buttons.Controls.Add(Me.Button8)
+        Me.pnl_buttons.Controls.Add(Me.btn_profile)
         Me.pnl_buttons.Controls.Add(Me.btn_logout)
         Me.pnl_buttons.Controls.Add(Me.Button6)
         Me.pnl_buttons.Controls.Add(Me.Button5)
@@ -212,21 +212,21 @@ Partial Class frm_AdminDashboard
         Me.Button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button7.UseVisualStyleBackColor = True
         '
-        'Button8
+        'btn_profile
         '
-        Me.Button8.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.ForeColor = System.Drawing.Color.White
-        Me.Button8.Location = New System.Drawing.Point(56, 302)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(136, 29)
-        Me.Button8.TabIndex = 1
-        Me.Button8.Text = "Alvez C."
-        Me.Button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.btn_profile.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btn_profile.FlatAppearance.BorderSize = 0
+        Me.btn_profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_profile.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_profile.ForeColor = System.Drawing.Color.White
+        Me.btn_profile.Location = New System.Drawing.Point(56, 302)
+        Me.btn_profile.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_profile.Name = "btn_profile"
+        Me.btn_profile.Size = New System.Drawing.Size(136, 29)
+        Me.btn_profile.TabIndex = 1
+        Me.btn_profile.Text = "#"
+        Me.btn_profile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_profile.UseVisualStyleBackColor = True
         '
         'btn_logout
         '
@@ -360,9 +360,9 @@ Partial Class frm_AdminDashboard
         '
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 5.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(105, 84)
+        Me.Label2.Location = New System.Drawing.Point(105, 82)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(98, 21)
+        Me.Label2.Size = New System.Drawing.Size(115, 39)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "STUDENT ACOUNTING AND RECORD MANAGEMENT SYSTEM"
         '
@@ -371,7 +371,7 @@ Partial Class frm_AdminDashboard
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(103, 59)
+        Me.Label1.Location = New System.Drawing.Point(103, 58)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(72, 21)
         Me.Label1.TabIndex = 0
@@ -451,7 +451,7 @@ Partial Class frm_AdminDashboard
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
+    Friend WithEvents btn_profile As Button
     Friend WithEvents btn_logout As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
