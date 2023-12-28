@@ -48,6 +48,10 @@ Public Class frm_AdminDashboard
                 frm_aRecords.Size = pnl_main.Size
                 frm_aRecords.Location = New Point(0, 0)
                 frm_aRecords.Show()
+            Case 7
+                frm_aUserAcounts.Size = pnl_main.Size
+                frm_aUserAcounts.Location = New Point(0, 0)
+                frm_aUserAcounts.Show()
 
 
         End Select
@@ -178,5 +182,17 @@ Public Class frm_AdminDashboard
     Private Sub btn_logout_Click(sender As Object, e As EventArgs) Handles btn_logout.Click
         frm_adminLogin.Show()
         Me.Dispose()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        button = 7
+        responsive()
+
+        With frm_aUserAcounts
+            .TopLevel = False
+            pnl_main.Controls.Add(frm_aUserAcounts)
+            .BringToFront()
+            .Show()
+        End With
     End Sub
 End Class
