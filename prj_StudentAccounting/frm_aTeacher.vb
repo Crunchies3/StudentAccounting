@@ -338,4 +338,8 @@ Public Class frm_aTeacher
             MessageBox.Show("" & ex.Message)
         End Try
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        TabControl1.SelectedIndex = 0
+    End Sub
 End Class
