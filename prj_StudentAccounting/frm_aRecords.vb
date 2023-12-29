@@ -42,8 +42,6 @@ Public Class frm_aRecords
                         dgv_studentList.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("lastname").ToString & ", " & dataTable.Rows(row).Item("firstname").ToString & " " & (dataTable.Rows(row).Item("middlename").ToString).Substring(0, 1) & "."
                         row = row + 1
                     End While
-                Else
-                    MessageBox.Show("No Available Records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Question)
                 End If
 
             End With

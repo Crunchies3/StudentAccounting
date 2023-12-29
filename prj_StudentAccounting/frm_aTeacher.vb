@@ -184,8 +184,6 @@ Public Class frm_aTeacher
                         dgv_teacherTable.Rows(row).Cells(8).Value = teacherPhotoPath
                         row = row + 1
                     End While
-                Else
-                    MessageBox.Show("No Available Records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Question)
                 End If
 
             End With
