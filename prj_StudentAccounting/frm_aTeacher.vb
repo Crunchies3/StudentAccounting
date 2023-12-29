@@ -184,8 +184,6 @@ Public Class frm_aTeacher
                         dgv_teacherTable.Rows(row).Cells(8).Value = teacherPhotoPath
                         row = row + 1
                     End While
-                Else
-                    MessageBox.Show("No Available Records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Question)
                 End If
 
             End With
@@ -339,5 +337,9 @@ Public Class frm_aTeacher
         Catch ex As Exception
             MessageBox.Show("" & ex.Message)
         End Try
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        TabControl1.SelectedIndex = 0
     End Sub
 End Class

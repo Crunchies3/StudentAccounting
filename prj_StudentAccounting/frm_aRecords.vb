@@ -1,5 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class frm_aRecords
+
+    Dim status As Integer
     Public Sub frm_load()
         checkDatabaseConnection()
         funcDisplayAllStudents()
@@ -42,8 +44,6 @@ Public Class frm_aRecords
                         dgv_studentList.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("lastname").ToString & ", " & dataTable.Rows(row).Item("firstname").ToString & " " & (dataTable.Rows(row).Item("middlename").ToString).Substring(0, 1) & "."
                         row = row + 1
                     End While
-                Else
-                    MessageBox.Show("No Available Records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Question)
                 End If
 
             End With
@@ -88,8 +88,11 @@ Public Class frm_aRecords
             totalUnits = dataTableAssessment.Rows(0).Item("totalunits")
 
             If totalUnits = 0 Then
+                status = 0
                 Return
             End If
+
+            status = 1
 
             .Parameters.Clear()
             .CommandText = "prcDisplayStudentAssessment"
@@ -220,6 +223,13 @@ Public Class frm_aRecords
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+
+        If (status = 0) Then
+            MessageBox.Show("Student is not currently enrolled", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return
+        End If
+
         Try
             ds.WriteXmlSchema("print.xml")
             Dim prntfrm As New PrintForm

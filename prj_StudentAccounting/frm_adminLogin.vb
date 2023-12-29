@@ -43,4 +43,8 @@ Public Class frm_adminLogin
     Private Sub frm_adminLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         checkDatabaseConnection()
     End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        frm_loginStudent.Show()
+    End Sub
 End Class

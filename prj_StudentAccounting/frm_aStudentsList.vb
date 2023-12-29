@@ -272,8 +272,6 @@ Public Class frm_aStudentsList
                         dgv_TotalStudents.Rows(row).Cells(12).Value = dataTable.Rows(row).Item("photoPath").ToString
                         row = row + 1
                     End While
-                Else
-                    MessageBox.Show("No Available Records", "Records", MessageBoxButtons.OK, MessageBoxIcon.Question)
                 End If
 
             End With
