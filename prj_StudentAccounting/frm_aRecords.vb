@@ -209,6 +209,7 @@ Public Class frm_aRecords
                 txt_year.Text = datatableinfo.Rows(0).Item("yearlevel").ToString
                 txt_program.Text = datatableinfo.Rows(0).Item("program").ToString
                 txt_status.Text = datatableinfo.Rows(0).Item("status").ToString
+                PictureBox1.Image = Image.FromFile(datatableinfo.Rows(0).Item("photoPath").ToString)
 
                 Label3.Text = "Student ID: " & datatableinfo.Rows(0).Item("studentid").ToString
             End With

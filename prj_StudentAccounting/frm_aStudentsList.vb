@@ -452,6 +452,7 @@ Public Class frm_aStudentsList
             .txtYearlevel.Text = dgv_TotalStudents.CurrentRow.Cells(7).Value
             .txtSemester.Text = "1"
             .PaymentTransactionsAndDisplayables()
+            .PictureBox1.Image = Image.FromFile(dgv_TotalStudents.CurrentRow.Cells(12).Value)
         End With
     End Sub
 End Class

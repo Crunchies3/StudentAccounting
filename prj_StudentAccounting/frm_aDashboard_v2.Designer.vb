@@ -25,10 +25,10 @@ Partial Class frm_aDashboard_v2
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_aDashboard_v2))
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_aDashboard_v2))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -44,14 +44,9 @@ Partial Class frm_aDashboard_v2
         Me.txt_search = New System.Windows.Forms.TextBox()
         Me.pnl_Datagrid = New System.Windows.Forms.Panel()
         Me.dgv_enrolledStudents = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
@@ -70,6 +65,7 @@ Partial Class frm_aDashboard_v2
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btnConfirmPayment = New System.Windows.Forms.Button()
         Me.Panel18 = New System.Windows.Forms.Panel()
@@ -120,9 +116,14 @@ Partial Class frm_aDashboard_v2
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -131,6 +132,8 @@ Partial Class frm_aDashboard_v2
         Me.pnl_Datagrid.SuspendLayout()
         CType(Me.dgv_enrolledStudents, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel11.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel8.SuspendLayout()
@@ -138,6 +141,7 @@ Partial Class frm_aDashboard_v2
         Me.Panel10.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.Panel17.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel18.SuspendLayout()
         CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel12.SuspendLayout()
@@ -153,9 +157,6 @@ Partial Class frm_aDashboard_v2
         Me.Panel21.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -347,7 +348,7 @@ Partial Class frm_aDashboard_v2
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_enrolledStudents.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgv_enrolledStudents.ColumnHeadersHeight = 35
-        Me.dgv_enrolledStudents.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column6, Me.Column5, Me.Column10})
+        Me.dgv_enrolledStudents.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column6, Me.Column5, Me.Column10, Me.Column11})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -376,53 +377,6 @@ Partial Class frm_aDashboard_v2
         Me.dgv_enrolledStudents.Size = New System.Drawing.Size(1009, 298)
         Me.dgv_enrolledStudents.TabIndex = 5
         '
-        'Column1
-        '
-        Me.Column1.HeaderText = "ID"
-        Me.Column1.MinimumWidth = 60
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 60
-        '
-        'Column2
-        '
-        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.Column2.HeaderText = "Student ID"
-        Me.Column2.MinimumWidth = 100
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 125
-        '
-        'Column3
-        '
-        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column3.HeaderText = "Fullname"
-        Me.Column3.MinimumWidth = 200
-        Me.Column3.Name = "Column3"
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Gender"
-        Me.Column4.MinimumWidth = 50
-        Me.Column4.Name = "Column4"
-        Me.Column4.Width = 50
-        '
-        'Column6
-        '
-        Me.Column6.HeaderText = "Program"
-        Me.Column6.MinimumWidth = 100
-        Me.Column6.Name = "Column6"
-        Me.Column6.Width = 125
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Year Level"
-        Me.Column5.Name = "Column5"
-        '
-        'Column10
-        '
-        Me.Column10.HeaderText = "Semester"
-        Me.Column10.Name = "Column10"
-        Me.Column10.Visible = False
-        '
         'Panel11
         '
         Me.Panel11.Controls.Add(Me.PictureBox5)
@@ -436,6 +390,26 @@ Partial Class frm_aDashboard_v2
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(1271, 236)
         Me.Panel11.TabIndex = 0
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(441, 212)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(19, 19)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 47
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(243, 42)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(19, 19)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 46
+        Me.PictureBox4.TabStop = False
         '
         'Label11
         '
@@ -688,6 +662,16 @@ Partial Class frm_aDashboard_v2
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(1271, 470)
         Me.Panel17.TabIndex = 2
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(313, 20)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(19, 19)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 46
+        Me.PictureBox3.TabStop = False
         '
         'Button2
         '
@@ -1341,35 +1325,58 @@ Partial Class frm_aDashboard_v2
         Me.Panel2.Size = New System.Drawing.Size(1338, 783)
         Me.Panel2.TabIndex = 5
         '
-        'PictureBox3
+        'Column1
         '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(313, 20)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(19, 19)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 46
-        Me.PictureBox3.TabStop = False
+        Me.Column1.HeaderText = "ID"
+        Me.Column1.MinimumWidth = 60
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 60
         '
-        'PictureBox4
+        'Column2
         '
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(243, 42)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(19, 19)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 46
-        Me.PictureBox4.TabStop = False
+        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.Column2.HeaderText = "Student ID"
+        Me.Column2.MinimumWidth = 100
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 125
         '
-        'PictureBox5
+        'Column3
         '
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(441, 212)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(19, 19)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 47
-        Me.PictureBox5.TabStop = False
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.HeaderText = "Fullname"
+        Me.Column3.MinimumWidth = 200
+        Me.Column3.Name = "Column3"
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Gender"
+        Me.Column4.MinimumWidth = 50
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 50
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Program"
+        Me.Column6.MinimumWidth = 100
+        Me.Column6.Name = "Column6"
+        Me.Column6.Width = 125
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Year Level"
+        Me.Column5.Name = "Column5"
+        '
+        'Column10
+        '
+        Me.Column10.HeaderText = "Semester"
+        Me.Column10.Name = "Column10"
+        Me.Column10.Visible = False
+        '
+        'Column11
+        '
+        Me.Column11.HeaderText = "PhotoPath"
+        Me.Column11.Name = "Column11"
+        Me.Column11.Visible = False
         '
         'frm_aDashboard_v2
         '
@@ -1398,6 +1405,8 @@ Partial Class frm_aDashboard_v2
         CType(Me.dgv_enrolledStudents, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel11.ResumeLayout(False)
         Me.Panel11.PerformLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
@@ -1410,6 +1419,7 @@ Partial Class frm_aDashboard_v2
         Me.TabPage2.ResumeLayout(False)
         Me.Panel17.ResumeLayout(False)
         Me.Panel17.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel18.ResumeLayout(False)
         CType(Me.dgv_transactionHistory, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel12.ResumeLayout(False)
@@ -1431,9 +1441,6 @@ Partial Class frm_aDashboard_v2
         Me.Panel21.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1521,6 +1528,10 @@ Partial Class frm_aDashboard_v2
     Friend WithEvents Label18 As Label
     Friend WithEvents Label23 As Label
     Friend WithEvents dgv_enrolledStudents As DataGridView
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
@@ -1528,8 +1539,5 @@ Partial Class frm_aDashboard_v2
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column10 As DataGridViewTextBoxColumn
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents Column11 As DataGridViewTextBoxColumn
 End Class

@@ -54,6 +54,7 @@ Public Class frm_aDashboard_v2
         txtProgram.Text = dgv_enrolledStudents.CurrentRow.Cells(4).Value
         txtYearlevel.Text = dgv_enrolledStudents.CurrentRow.Cells(5).Value
         txtSemester.Text = "1"
+        PictureBox1.Image = Image.FromFile(dgv_enrolledStudents.CurrentRow.Cells(6).Value)
         PaymentTransactionsAndDisplayables()
     End Sub
 
@@ -149,6 +150,7 @@ Public Class frm_aDashboard_v2
                         dgv_enrolledStudents.Rows(row).Cells(3).Value = dataTable.Rows(row).Item("gender").ToString
                         dgv_enrolledStudents.Rows(row).Cells(4).Value = dataTable.Rows(row).Item("program").ToString
                         dgv_enrolledStudents.Rows(row).Cells(5).Value = dataTable.Rows(row).Item("yearlevel").ToString
+                        dgv_enrolledStudents.Rows(row).Cells(6).Value = dataTable.Rows(row).Item("photoPath").ToString
                         row = row + 1
                     End While
                 End If
