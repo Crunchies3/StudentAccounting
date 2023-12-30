@@ -153,6 +153,11 @@ Public Class frm_StudentDashboard
                 frm_sAssessment.Size = pnl_main.Size
                 frm_sAssessment.Location = New Point(0, 0)
                 frm_sAssessment.Show()
+            Case 5
+                frm_sProfile.Size = pnl_main.Size
+                frm_sProfile.Show()
+                frm_sProfile.Location = New Point(0, 0)
+
 
         End Select
     End Sub
@@ -191,6 +196,12 @@ Public Class frm_StudentDashboard
 
             End With
 
+            Dim word As String() = studentName.Split(New Char() {" "c})
+            Dim studLast = word(0) & " " & word(1)
+            studLast = studLast.Substring(0, word(0).Length + 2)
+
+            btn_profile.Text = studLast & "."
+
             sqlDBAdapter.Dispose()
             dataTable.Dispose()
 
@@ -200,4 +211,15 @@ Public Class frm_StudentDashboard
 
     End Sub
 
+    Private Sub btn_profile_Click(sender As Object, e As EventArgs) Handles btn_profile.Click
+        button = 5
+        responsive()
+
+        With frm_sProfile
+            .TopLevel = False
+            pnl_main.Controls.Add(frm_sProfile)
+            .BringToFront()
+            .Show()
+        End With
+    End Sub
 End Class

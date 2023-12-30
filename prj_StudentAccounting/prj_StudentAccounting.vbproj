@@ -289,6 +289,12 @@
     <Compile Include="frm_sEnrollSubject.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_sProfile.Designer.vb">
+      <DependentUpon>frm_sProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_sProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_sSubjects.Designer.vb">
       <DependentUpon>frm_sSubjects.vb</DependentUpon>
     </Compile>
@@ -385,6 +391,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_sEnrollSubject.resx">
       <DependentUpon>frm_sEnrollSubject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_sProfile.resx">
+      <DependentUpon>frm_sProfile.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_sSubjects.resx">
       <DependentUpon>frm_sSubjects.vb</DependentUpon>
