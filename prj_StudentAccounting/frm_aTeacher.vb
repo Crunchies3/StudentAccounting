@@ -342,4 +342,71 @@ Public Class frm_aTeacher
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         TabControl1.SelectedIndex = 0
     End Sub
+
+    Private Sub btn_assign_Click(sender As Object, e As EventArgs) Handles btn_assign.Click
+        loadAvailSubject()
+        TabControl1.SelectedIndex = 3
+        lbl_teacherId.Text = "Teacher ID: " & dgv_teacherTable.CurrentRow.Cells(1).Value
+
+    End Sub
+
+    Private Sub loadAvailSubject()
+        sqlDBAdapter = New MySqlDataAdapter
+        dataTable = New DataTable
+        Try
+            With command
+                .Parameters.Clear()
+                .CommandText = "prcAdminGetEnrolledSubject"
+                .CommandType = CommandType.StoredProcedure
+                sqlDBAdapter.SelectCommand = command
+                dataTable.Clear()
+                sqlDBAdapter.Fill(dataTable)
+                If dataTable.Rows.Count > 0 Then
+                    dgv_availableSubject.RowCount = dataTable.Rows.Count
+                    row = 0
+                    While Not dataTable.Rows.Count - 1 < row
+                        dgv_availableSubject.Rows(row).Cells(0).Value = dataTable.Rows(row).Item("id").ToString
+                        dgv_availableSubject.Rows(row).Cells(1).Value = dataTable.Rows(row).Item("code").ToString
+                        dgv_availableSubject.Rows(row).Cells(2).Value = dataTable.Rows(row).Item("title").ToString
+                        dgv_availableSubject.Rows(row).Cells(3).Value = dataTable.Rows(row).Item("description").ToString
+                        dgv_availableSubject.Rows(row).Cells(4).Value = dataTable.Rows(row).Item("units").ToString
+                        dgv_availableSubject.Rows(row).Cells(5).Value = dataTable.Rows(row).Item("level").ToString
+                        dgv_availableSubject.Rows(row).Cells(6).Value = dataTable.Rows(row).Item("program").ToString
+                        row = row + 1
+                    End While
+                End If
+            End With
+            sqlDBAdapter.Dispose()
+            dataTable.Dispose()
+        Catch ex As Exception
+            MessageBox.Show("" & ex.Message)
+        End Try
+    End Sub
+
+    Private Sub Button6_Click_1(sender As Object, e As EventArgs) Handles Button6.Click
+        If False Then
+            sqlDBAdapter = New MySqlDataAdapter
+            dataTable = New DataTable
+            Try
+                With command
+                    .Parameters.Clear()
+                    .CommandText = "prcAdminGetEnrolledSubject"
+                    .CommandType = CommandType.StoredProcedure
+                    sqlDBAdapter.SelectCommand = command
+                    dataTable.Clear()
+                    sqlDBAdapter.Fill(dataTable)
+                    If dataTable.Rows.Count > 0 Then
+                        dgv_availableSubject.RowCount = dataTable.Rows.Count
+                        row = 0
+                    End If
+                End With
+                sqlDBAdapter.Dispose()
+                dataTable.Dispose()
+            Catch ex As Exception
+                MessageBox.Show("" & ex.Message)
+            End Try
+        End If
+        MessageBox.Show("Teacher Assigned successfully ", "Assign Teacher", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        TabControl1.SelectedIndex = 0
+    End Sub
 End Class
